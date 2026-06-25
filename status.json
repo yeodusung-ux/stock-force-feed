@@ -1,15 +1,15 @@
 {
- "ts": 1782363272,
- "ts_str": "2026-06-25 13:54:32",
+ "ts": 1782363574,
+ "ts_str": "2026-06-25 13:59:34",
  "kiwoom_alive": true,
- "kiwoom_connected": false,
+ "kiwoom_connected": true,
  "trading": true,
- "collect_auto_on": false,
- "collect_sched": "",
+ "collect_auto_on": true,
+ "collect_sched": "18:30",
  "collect_done_today": false,
  "collect_last_complete": "",
- "collect_progress": "",
+ "collect_progress": "275/2451",
  "watchdog_pid": 4628,
- "restarts_today": 0,
+ "restarts_today": 1,
  "active_window": "07:00-22:00"
 }
