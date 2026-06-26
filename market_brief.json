@@ -1,14 +1,50 @@
 {
- "asof": "2026-06-26 21:09",
- "generated_at": "2026-06-26T21:09:12.917018+09:00",
- "summary": "오늘 국내 금융시장은 극심한 변동성을 보이며 코스피와 코스닥 지수가 5%대 급락을 기록했습니다. 증시의 가파른 조정과 함께 서킷브레이커와 사이드카가 발동되는 등 널뛰기 장세가 이어졌습니다. 원·달러 환율 상승세가 지속되며 투자 심리를 위축시켰고, 이에 따른 위험 회피 심리가 확산하며 중국 증시를 비롯한 글로벌 증시 전반이 약세를 보였습니다.\n\n주식 시장의 불안정한 흐름 속에 자금은 채권 시장으로 향했습니다. 주가 조정과 환율 영향으로 국고채 3년물 금리가 3.5bp 하락하는 등 채권 시장에서는 매수세가 유입되었습니다. 다만, 환율 부담이 여전한 가운데 투자자들은 긴축 우려와 물가 지표 등 거시경제 상황을 예의주시하고 있습니다. \n\n개별 기업 이슈로는 삼부토건이 제3자 배정 유상증자를 결정했고, 깨끗한나라가 펫푸드 시장 진출을 알렸습니다. 또한 소노인터내셔널이 코스피 상장예비심사를 신청했으며, SK하이닉스는 나스닥 상장 관련 전망이 제기되기도 했습니다. 스테이블코인엑스 역시 스팩 합병을 통해 나스닥 상장을 완료했습니다. 극심한 혼돈 장세 속에서 시장의 방향성을 가늠하기 위한 투자자들의 고민이 깊어지는 하루였습니다.",
+ "asof": "2026-06-26 22:00",
+ "generated_at": "2026-06-26T22:00:37.503148+09:00",
+ "summary": "글로벌 증시의 변동성이 확대되면서 국내 금융시장이 극심한 혼돈을 겪고 있습니다. 오늘 코스피 지수는 5.8% 급락하며 장중 금융위기 수준을 넘어서는 널뛰기 장세를 보였고, 코스닥 지수 또한 850선까지 밀려나는 등 투자 심리가 급격히 위축되었습니다. 이러한 급락세는 AI 투자비 부담에 따른 기술주 조정과 9월 미국 연방준비제도(Fed)의 금리 인상 가능성 제기 등이 복합적으로 작용하며 '리스크 오프' 심리를 부추긴 결과로 풀이됩니다.\n\n증시가 가파른 조정을 보이자 안전자산인 채권시장으로 매수세가 유입되면서 국고채 3년물 금리는 3.5bp 하락했습니다. 환율 변동성 또한 커지며 외환시장과 금융 전반에 불안감이 가중되는 모습입니다. 시장의 불확실성이 커진 가운데, 개별 기업 이슈로는 SK하이닉스의 나스닥 상장 추진과 관련해 향후 주가 흐름에 대한 시장의 관심이 집중되었습니다. 반면, 삼부토건은 제3자 배정 유상증자 소식을 알렸고, 깨끗한나라는 펫푸드 시장 진출을 발표하는 등 기업별 움직임이 엇갈렸습니다. 당분간 증시 변동성 확대에 따른 경계감이 이어질 것으로 보입니다.",
  "themes": [
   "반도체",
   "금리/연준",
   "환율",
-  "중국/수출"
+  "유가/원자재"
  ],
  "highlights": [
+  {
+   "title": "뉴욕증시 프리뷰, AI 투자비 부담에 기술주 또 급락…나스닥 선물 1%대 하락",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB4SnFwS2ZSX3FZZGI3TC1MWWJiVEIyVnVsQlQ5TVRBa3pxWVZXNUdDOUNlZDB1R0ljRGpRanR1dF9sWmdNRFNia1UtN2ZwN1dzbzF2MTlqOFVmbUo0?oc=5",
+   "source": "뉴스핌",
+   "time": "21:24"
+  },
+  {
+   "title": "어제의 호재가 오늘은 악재…코스피, 극심한 혼돈 왜?",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1zZnJiTHlZNnptNzBaRnFFQ283NnRoTGJYenRZTnZXcXJuSHFQMmVpeVhWUXpsNnFWUi1VVE1Td0hzLWN1NXg1cWs0bkNUa0dWM0dhaEpJdGxwc0VUQzN4OGVwdFJyMm8?oc=5",
+   "source": "한겨레",
+   "time": "21:14"
+  },
+  {
+   "title": "바클레이즈, 9월 Fed 금리인상 가능성 높아지며 여름 변동성 지속 경고",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE04TjNQS2E5dnRxeTZwY0h3Z2xhREVBU090VXc3LVVjZ0l3SzFobklXNC1BdXQ0VWttV3ZHZTR1M2xVUks0cUhIT3k2Smk0VzA3YnpxTWhSVy02MHRwRzZ3S1RSU3JnMlFaOXk4dEdsekc?oc=5",
+   "source": "Investing.com 한국어",
+   "time": "21:11"
+  },
+  {
+   "title": "[기후+] 독일 경제, 폭염으로 수십억 유로 손실 발생 ①",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9xdmMtM1BXdGxLYWNMc2ZZU19PM21TYXBLVHNxRmVCZ0lYem9SWUNwQTZOVXhpY3pGRzI3UzVJOUVsZkctNkRvNEZkVmotcGZsN244U2xYbDJRLTlXMnFXZWcwZGI1THdRVFNwSDZ3?oc=5",
+   "source": "S저널",
+   "time": "21:08"
+  },
+  {
+   "title": "지캐시 채굴사 포티튜드, 하트사이언시스 합병 통해 나스닥 상장 추진",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9rTWxHdVE3ZzBSWlI3U29CeE54dE5RNjhoOU5XTEpKd0Y4dXpaTmlsMFZ2ZXMxQUZnY3lDUElFa3RZOGkzUHRZc3F1c2d3TEpiVS16bENTSl8yT0lCWGg1X2JGV2YtelUwa2ItM29nUGJqWE0?oc=5",
+   "source": "디지털투데이",
+   "time": "21:07"
+  },
+  {
+   "title": "한-시리아, 경제 협력 관련 회의 개최…기업 진출 확대 논의 - 뉴스1",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85UTJreWRvR3B1dFIyTGxENERwRllhUTJqbmg4dFpPMUhfWUZVS1UwcUV4aUJmTHBIQVpsU2V3UDRpZ3RXbElVMzhlX0k0bmhMc2lKVTN3NFNqM2FQUFYxSkYzcXItazQ?oc=5",
+   "source": "뉴스1",
+   "time": "20:20"
+  },
   {
    "title": "강원도지사직 인수위 농산어업상생분과, '강원형 숲경제 산업벨트'추진",
    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1Z1AwbmdlWmxJd3FjX2NkQnFab2lwb191Si01ek1oV0prSjlka0RMcUU5TTlpT0RiSFpUWkg0S1RYR2N6VUZmeTVRSkI3MlktWmh6elNGUEJXbjdQYkJDNg?oc=5",
@@ -20,42 +56,6 @@
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE53OXo0ckJPd0EwMC05bUxrdHNZd0F4NUVKS1hhWEJVcGF1eUdDb2ZEYl80M2phNlZXeVNjOVFuekVIRXQ4NEVaeGJNSUZESF9kTWZxSnRrbFhiWjRfZ3c2OS03bXhOSk03ZTR0bjBWSTA?oc=5",
    "source": "Investing.com 한국어",
    "time": "20:06"
-  },
-  {
-   "title": "스테이블코인X, 나스닥 데뷔...에테나 생태계에 베팅",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9qTDNhSjFmeC1hRzZ0ZnlHdUl2UDJ3TzZmakRaVmg1Y0k2QVZQUk93MG51UmY4dWlNeWx5MjE0REEtUmFUTkU0V2JzSE1jR0VMS3YzOWFSTk9WWFpNWGw2VUQwVE10c29NdFhyTTZfcWJUdFE?oc=5",
-   "source": "디지털투데이",
-   "time": "20:05"
-  },
-  {
-   "title": "전남창조경제혁신센터, '2026년 고흥군 청년 창업 도전 프로젝트' 선정자 협약 체결",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9NQXM3NU5xNHV5YlY3LTVJWlNPdjh3Mko0TVVCZF9Gc0ZSaWNLUGhFTkxHa3JqZjBPYWJfb3hIMksxakkyUXZ4ZWN2VUtoUQ?oc=5",
-   "source": "전자신문",
-   "time": "19:29"
-  },
-  {
-   "title": "광진구, 사회적경제기업 창업·성장 돕는 사무공간 ‘1인 기업실’지원",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zckNGLVpvVHVnQ3A3ZE9JLU9Tb09pVmllQ185QTdrZm9tYS03QS0wbjBGNkU4Y0xTN2RhZEh4bWVOLWpoYS0yUHowTGxHUzVRQTlQTA?oc=5",
-   "source": "성광일보",
-   "time": "19:24"
-  },
-  {
-   "title": "1613원? 공항서 환율 보고 ‘헉’ \"미국 여행 다음에 갈까…\"",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBXcFhlTmNZZzhvNFpMOUhjdG5wX2NNaXE5V09uTlFVSHc0ZDJFb0ZuQ0lSSnVOUTlDT1BiZE9CRzRHX2dBYk56QlNOcmo3SC1OUjcwdg?oc=5",
-   "source": "JTBC",
-   "time": "19:16"
-  },
-  {
-   "title": "스테이블코인엑스, SPAC 합병 완료하고 나스닥 상장… 26일부터 거래 개시",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1uT1E5MDJwQUEyb3o5d1RYd1UyNy1qaVFtV01meTE4UGk3bW1hYTVfVi0tVEdmemV5eE0xZXBWYTQ4MEVGY2dIVXdGdUFFMGRDaEFMcVF5VDFZdEd2LUZBRzlHR1VlTFZJalJjUUFUOFN0UQ?oc=5",
-   "source": "데이터투자",
-   "time": "19:15"
-  },
-  {
-   "title": "삼부토건, 유상증자…리빌드삼부홀딩스에 제3자배정",
-   "link": "https://www.yna.co.kr/view/AKR20260626160300008",
-   "source": "",
-   "time": "19:13"
   }
  ],
  "note": "AI 작성 시황 · 참고용(투자판단 책임은 본인)"
