@@ -1,6 +1,14 @@
 {
- "updated": "2026-06-28 11:02",
+ "updated": "2026-06-29 02:09",
  "stocks": [
+  {
+   "code": "389260",
+   "name": "대명에너지",
+   "entry": "2026-06-24",
+   "exit": "2026-06-25",
+   "days": 1,
+   "ret": 22.0
+  },
   {
    "code": "013720",
    "name": "THE CUBE&",
@@ -26,33 +34,25 @@
    "ret": 0.4
   },
   {
-   "code": "131090",
-   "name": "시큐브",
-   "entry": "2026-06-24",
-   "exit": "2026-06-26",
-   "days": 2,
-   "ret": -2.2
-  },
-  {
-   "code": "037400",
-   "name": "우리엔터프라이즈",
+   "code": "357230",
+   "name": "에이치피오",
    "entry": "2026-06-24",
    "exit": "2026-06-25",
    "days": 1,
-   "ret": -2.3
+   "ret": -1.8
   }
  ],
  "summary": {
-  "count": 9,
-  "wins": 3,
-  "losses": 6,
-  "win_rate": 33.3,
-  "total_amt": -31469859,
-  "avg_amt": -3496651,
-  "avg_ret": -2.2,
-  "avg_days": 2,
-  "best_name": "THE CUBE&",
-  "best_ret": 6.2,
+  "count": 13,
+  "wins": 4,
+  "losses": 9,
+  "win_rate": 30.8,
+  "total_amt": 249613825,
+  "avg_amt": 19201063,
+  "avg_ret": -0.8,
+  "avg_days": 1,
+  "best_name": "대명에너지",
+  "best_ret": 22.0,
   "worst_name": "천일고속",
   "worst_ret": -7.1
  }
