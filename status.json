@@ -1,6 +1,6 @@
 {
- "ts": 1782621507,
- "ts_str": "2026-06-28 13:38:27",
+ "ts": 1782621809,
+ "ts_str": "2026-06-28 13:43:29",
  "kiwoom_alive": true,
  "kiwoom_connected": false,
  "trading": false,
@@ -11,9 +11,9 @@
  "collect_last_complete": "",
  "collect_progress": "",
  "watchdog_pid": 11128,
- "restarts_today": 16,
+ "restarts_today": 17,
  "active_window": "07:00-22:00",
- "last_restart_result": "capped(4/h) 10:48",
+ "last_restart_result": "relaunch(dead) ok 13:42",
  "restart_capped": false,
  "task_ok": true,
  "push_fail_streak": 0
