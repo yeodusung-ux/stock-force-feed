@@ -1,5 +1,5 @@
 {
- "updated": "2026-06-26 23:11",
+ "updated": "2026-06-28 11:02",
  "stocks": [
   {
    "code": "013720",
@@ -41,5 +41,19 @@
    "days": 1,
    "ret": -2.3
   }
- ]
+ ],
+ "summary": {
+  "count": 9,
+  "wins": 3,
+  "losses": 6,
+  "win_rate": 33.3,
+  "total_amt": -31469859,
+  "avg_amt": -3496651,
+  "avg_ret": -2.2,
+  "avg_days": 2,
+  "best_name": "THE CUBE&",
+  "best_ret": 6.2,
+  "worst_name": "천일고속",
+  "worst_ret": -7.1
+ }
 }
