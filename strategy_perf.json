@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02 08:27",
+  "updated": "2026-07-02 08:33",
   "strategies": [
     {
       "key": "morning",
@@ -27,11 +27,11 @@
       "key": "surge",
       "name": "🚀 급등주",
       "desc": "탐지가매수→익일시가",
-      "n": 0,
-      "open": 19,
+      "n": 19,
+      "open": 0,
       "win_rate": 0.0,
-      "avg_ret": 0.0,
-      "cum_ret": 0.0,
+      "avg_ret": -1.26,
+      "cum_ret": -23.9,
       "pf": 0.0
     },
     {
@@ -49,12 +49,12 @@
       "key": "supply",
       "name": "💰 수급(쌍끌이)",
       "desc": "탐지가매수→3일후시가",
-      "n": 0,
-      "open": 10,
-      "win_rate": 0.0,
-      "avg_ret": 0.0,
-      "cum_ret": 0.0,
-      "pf": 0.0
+      "n": 10,
+      "open": 0,
+      "win_rate": 90.0,
+      "avg_ret": 11.2,
+      "cum_ret": 112.0,
+      "pf": 126.85
     },
     {
       "key": "instodd",
