@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02 01:16",
+  "updated": "2026-07-02 01:25",
   "strategies": [
     {
       "key": "morning",
@@ -71,12 +71,12 @@
       "key": "force",
       "name": "🔍 세력탐지기",
       "desc": "이탈표 실현(매집→청산 수익률)",
-      "n": 30,
+      "n": 2,
       "open": 0,
-      "win_rate": 53.3,
-      "avg_ret": -0.13,
-      "cum_ret": -3.8,
-      "pf": 0.97
+      "win_rate": 50.0,
+      "avg_ret": -0.15,
+      "cum_ret": -0.3,
+      "pf": 0.25
     },
     {
       "key": "q_value",
