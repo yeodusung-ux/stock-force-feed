@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02 09:13",
+  "updated": "2026-07-02 09:23",
   "strategies": [
     {
       "key": "morning",
@@ -17,7 +17,7 @@
       "name": "🌆 종가베팅",
       "desc": "종가매수→익일시가",
       "n": 36,
-      "open": 36,
+      "open": 51,
       "win_rate": 27.8,
       "avg_ret": -0.43,
       "cum_ret": -15.5,
@@ -28,7 +28,7 @@
       "name": "🚀 급등주",
       "desc": "탐지가매수→익일시가",
       "n": 19,
-      "open": 10,
+      "open": 17,
       "win_rate": 0.0,
       "avg_ret": -1.26,
       "cum_ret": -23.9,
