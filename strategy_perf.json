@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06 03:27",
+  "updated": "2026-07-06 03:37",
   "strategies": [
     {
       "key": "morning",
@@ -181,12 +181,12 @@
       "key": "closebet",
       "name": "🌆 종가베팅",
       "desc": "종가매수→익일시가",
-      "n": 11527,
-      "open": 23,
-      "win_rate": 48.2,
-      "avg_ret": 0.59,
-      "cum_ret": 6760.5,
-      "pf": 1.79,
+      "n": 12143,
+      "open": 25,
+      "win_rate": 48.1,
+      "avg_ret": 0.58,
+      "cum_ret": 7041.8,
+      "pf": 1.78,
       "buy_rule": "당일 강세·거래 급증 종목 종가 매수",
       "sell_rule": "익일 시가 청산",
       "open_stocks": [
@@ -327,6 +327,18 @@
           "code": "251970",
           "name": "펌텍코리아",
           "buy": 43000
+        },
+        {
+          "date": "20260703",
+          "code": "289250",
+          "name": "TIGER MSCI KOREA ESG유니버설",
+          "buy": 41240
+        },
+        {
+          "date": "20260703",
+          "code": "293180",
+          "name": "HANARO 200",
+          "buy": 131035
         }
       ],
       "closed_stocks": [
