@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06 01:54",
+  "updated": "2026-07-06 02:04",
   "strategies": [
     {
       "key": "morning",
@@ -117,12 +117,12 @@
       "key": "closebet",
       "name": "🌆 종가베팅",
       "desc": "종가매수→익일시가",
-      "n": 5968,
-      "open": 14,
+      "n": 6151,
+      "open": 15,
       "win_rate": 48.6,
-      "avg_ret": 0.59,
-      "cum_ret": 3544.6,
-      "pf": 1.77,
+      "avg_ret": 0.6,
+      "cum_ret": 3660.0,
+      "pf": 1.78,
       "buy_rule": "당일 강세·거래 급증 종목 종가 매수",
       "sell_rule": "익일 시가 청산",
       "open_stocks": [
@@ -209,6 +209,12 @@
           "code": "053350",
           "name": "이니텍",
           "buy": 3100
+        },
+        {
+          "date": "20260703",
+          "code": "067770",
+          "name": "세진티에스",
+          "buy": 2135
         }
       ],
       "closed_stocks": [
