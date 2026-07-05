@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06 01:19",
+  "updated": "2026-07-06 01:28",
   "strategies": [
     {
       "key": "morning",
@@ -117,12 +117,12 @@
       "key": "closebet",
       "name": "🌆 종가베팅",
       "desc": "종가매수→익일시가",
-      "n": 4018,
-      "open": 8,
+      "n": 4138,
+      "open": 9,
       "win_rate": 49.3,
-      "avg_ret": 0.64,
-      "cum_ret": 2570.5,
-      "pf": 1.79,
+      "avg_ret": 0.63,
+      "cum_ret": 2621.7,
+      "pf": 1.8,
       "buy_rule": "당일 강세·거래 급증 종목 종가 매수",
       "sell_rule": "익일 시가 청산",
       "open_stocks": [
@@ -173,6 +173,12 @@
           "code": "019770",
           "name": "서연탑메탈",
           "buy": 3325
+        },
+        {
+          "date": "20260703",
+          "code": "035890",
+          "name": "서희건설",
+          "buy": 2260
         }
       ],
       "closed_stocks": [
