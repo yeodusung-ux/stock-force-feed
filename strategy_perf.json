@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06 02:17",
+  "updated": "2026-07-06 02:18",
   "strategies": [
     {
       "key": "morning",
@@ -1058,16 +1058,25 @@
       "key": "force",
       "name": "🔍 세력탐지기",
       "desc": "이탈표 실현(매집→청산 수익률)",
-      "n": 0,
+      "n": 1,
       "open": 0,
       "win_rate": 0.0,
-      "avg_ret": 0.0,
-      "cum_ret": 0.0,
+      "avg_ret": -12.6,
+      "cum_ret": -12.6,
       "pf": 0.0,
       "buy_rule": "세력(주체·창구) 매집 구간 진입",
       "sell_rule": "매집 이탈 전환 시 청산",
       "open_stocks": [],
-      "closed_stocks": []
+      "closed_stocks": [
+        {
+          "date": "20260629",
+          "code": "009410",
+          "name": "태영건설",
+          "buy": 1949,
+          "sell": 1703,
+          "ret": -12.6
+        }
+      ]
     },
     {
       "key": "q_value",
