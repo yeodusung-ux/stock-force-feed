@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06 02:14",
+  "updated": "2026-07-06 02:17",
   "strategies": [
     {
       "key": "morning",
@@ -157,12 +157,12 @@
       "key": "closebet",
       "name": "🌆 종가베팅",
       "desc": "종가매수→익일시가",
-      "n": 6786,
-      "open": 16,
-      "win_rate": 48.5,
-      "avg_ret": 0.59,
-      "cum_ret": 3982.5,
-      "pf": 1.77,
+      "n": 7032,
+      "open": 17,
+      "win_rate": 48.3,
+      "avg_ret": 0.57,
+      "cum_ret": 4043.2,
+      "pf": 1.76,
       "buy_rule": "당일 강세·거래 급증 종목 종가 매수",
       "sell_rule": "익일 시가 청산",
       "open_stocks": [
@@ -261,6 +261,12 @@
           "code": "069620",
           "name": "대웅제약",
           "buy": 132500
+        },
+        {
+          "date": "20260703",
+          "code": "085810",
+          "name": "알티캐스트",
+          "buy": 1431
         }
       ],
       "closed_stocks": [
