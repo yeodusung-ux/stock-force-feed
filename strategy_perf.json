@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06 03:57",
+  "updated": "2026-07-06 07:00",
   "strategies": [
     {
       "key": "morning",
@@ -261,12 +261,12 @@
       "key": "closebet",
       "name": "🌆 종가베팅",
       "desc": "종가매수→익일시가",
-      "n": 13630,
+      "n": 13791,
       "open": 26,
-      "win_rate": 47.9,
-      "avg_ret": 0.56,
-      "cum_ret": 7643.9,
-      "pf": 1.75,
+      "win_rate": 48.0,
+      "avg_ret": 0.57,
+      "cum_ret": 7834.4,
+      "pf": 1.77,
       "buy_rule": "당일 강세·거래 급증 종목 종가 매수",
       "sell_rule": "익일 시가 청산",
       "open_stocks": [
