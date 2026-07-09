@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09 15:00",
+  "updated": "2026-07-09 15:10",
   "strategies": [
     {
       "key": "morning",
@@ -1334,14 +1334,23 @@
       "name": "📉 과대낙폭주",
       "desc": "조회=진행 / 이탈=종료",
       "n": 1,
-      "open": 0,
+      "open": 1,
       "win_rate": 0.0,
       "avg_ret": 0.0,
       "cum_ret": 0.0,
       "pf": 0.0,
       "buy_rule": "과매도(낙폭과대) 반등 후보 종목 포착 시 진입",
       "sell_rule": "조회 이탈 시 청산",
-      "open_stocks": [],
+      "open_stocks": [
+        {
+          "date": "2026-07-09",
+          "code": "277810",
+          "name": "레인보우로보틱스",
+          "buy": 430500,
+          "cur": 430500,
+          "ret": 0.0
+        }
+      ],
       "closed_stocks": [
         {
           "date": "2026-07-09",
