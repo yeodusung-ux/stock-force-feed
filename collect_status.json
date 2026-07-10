@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11 07:10:10",
+  "updated": "2026-07-11 07:15:10",
   "system": {
     "connected": true,
     "trading": true,
@@ -136,7 +136,7 @@
       "target": 2453,
       "first": "20250410",
       "last": "20260707",
-      "progress_pct": 0,
+      "progress_pct": 99,
       "busy": true,
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
@@ -149,8 +149,8 @@
       "target": 2453,
       "first": "20250409",
       "last": "20260710",
-      "progress_pct": 82,
-      "busy": false,
+      "progress_pct": 0,
+      "busy": true,
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
