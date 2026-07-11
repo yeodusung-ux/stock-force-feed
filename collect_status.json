@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12 02:45:04",
+  "updated": "2026-07-12 02:50:03",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,20 +7,20 @@
     "pid": 2376,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 5037396,
+      "rows": 5065944,
       "codes": 2511,
       "target": 2453,
       "first": "2022-11-03",
       "last": "2026-07-10",
-      "progress_pct": 13,
-      "busy": false,
+      "progress_pct": null,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
@@ -32,21 +32,21 @@
       "target": 2453,
       "first": "2026-06-24",
       "last": "2026-07-10",
-      "progress_pct": 100,
-      "busy": false,
+      "progress_pct": null,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 276188,
+      "rows": 276213,
       "codes": 2511,
       "target": 2453,
       "first": "2026-01-26",
-      "last": "2026-07-09",
-      "progress_pct": 100,
-      "busy": false,
+      "last": "2026-07-10",
+      "progress_pct": null,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
@@ -58,8 +58,8 @@
       "target": 2453,
       "first": "2026-05-28",
       "last": "2026-07-10",
-      "progress_pct": 100,
-      "busy": false,
+      "progress_pct": null,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
@@ -72,7 +72,7 @@
       "first": "2026-04-15",
       "last": "2026-07-10",
       "progress_pct": null,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
@@ -85,14 +85,14 @@
       "first": "2026-07-02",
       "last": "2026-07-11",
       "progress_pct": null,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 24178772,
+      "rows": 24189972,
       "codes": 960,
       "target": 2453,
       "first": "2023-03-24",
@@ -136,7 +136,7 @@
       "target": 2453,
       "first": "20250410",
       "last": "20260707",
-      "progress_pct": 65,
+      "progress_pct": 66,
       "busy": true,
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
