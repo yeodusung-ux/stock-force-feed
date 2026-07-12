@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12 11:52:04",
+  "updated": "2026-07-12 11:57:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 13556,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 32
+    "heartbeat_age_sec": 33
   },
   "collections": [
     {
@@ -136,8 +136,8 @@
       "target": 2453,
       "first": "20250410",
       "last": "20260707",
-      "progress_pct": 99,
-      "busy": true,
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
@@ -149,7 +149,7 @@
       "target": 2453,
       "first": "20250409",
       "last": "20260710",
-      "progress_pct": 89,
+      "progress_pct": 91,
       "busy": true,
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
