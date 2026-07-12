@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13 00:58:33",
+  "updated": "2026-07-13 01:03:32",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,14 +7,14 @@
     "pid": 12060,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 29
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 13450996,
+      "rows": 13489268,
       "codes": 2511,
       "target": 2453,
       "first": "2022-11-03",
@@ -92,7 +92,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 27460112,
+      "rows": 27467528,
       "codes": 1037,
       "target": 2453,
       "first": "2023-03-24",
@@ -136,7 +136,7 @@
       "target": 2453,
       "first": "20250410",
       "last": "20260707",
-      "progress_pct": 41,
+      "progress_pct": 44,
       "busy": true,
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
@@ -144,12 +144,12 @@
       "table": "closebet_pool",
       "label": "종가베팅풀",
       "tr": "opt10081/CSV",
-      "rows": 7958,
-      "codes": 2884,
+      "rows": 49348,
+      "codes": 3677,
       "target": 2453,
-      "first": "20260422",
+      "first": "20250409",
       "last": "20260710",
-      "progress_pct": 35,
+      "progress_pct": 39,
       "busy": true,
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
