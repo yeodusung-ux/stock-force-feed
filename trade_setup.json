@@ -1,0 +1,23 @@
+{
+  "account": "3699285811",
+  "auto_trade_enabled": true,
+  "emergency_stop": false,
+  "setup": {
+    "buy_profit_rate": -15.0,
+    "ts_profit": 20.0,
+    "stop_rate": 20.0,
+    "buy_amount": 200000,
+    "ts_step": 10.0,
+    "max_buy_large": 7,
+    "max_buy_mid": 5,
+    "max_buy_small": 3,
+    "add_buy_pct": 100,
+    "new_entry_acct_return": 5.0,
+    "cap_large_eok": 10000,
+    "cap_mid_eok": 1000,
+    "max_position_amount": 0,
+    "max_buy_count": 5,
+    "max_holdings": 20
+  },
+  "updated": "2026-07-13 13:09:09"
+}
