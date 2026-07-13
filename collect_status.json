@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13 22:06:50",
+  "updated": "2026-07-13 22:11:50",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,19 +7,19 @@
     "pid": 10336,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 29
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 22543261,
+      "rows": 22599213,
       "codes": 2511,
       "target": 2451,
       "first": "2022-11-03",
       "last": "2026-07-13",
-      "progress_pct": 77,
+      "progress_pct": 79,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -27,12 +27,12 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 191147,
+      "rows": 191435,
       "codes": 2511,
       "target": 2451,
       "first": "2026-06-24",
       "last": "2026-07-13",
-      "progress_pct": 77,
+      "progress_pct": 79,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -40,12 +40,12 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 278070,
+      "rows": 278111,
       "codes": 2511,
       "target": 2451,
       "first": "2026-01-26",
       "last": "2026-07-10",
-      "progress_pct": 77,
+      "progress_pct": 79,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -58,7 +58,7 @@
       "target": 2451,
       "first": "2026-05-28",
       "last": "2026-07-10",
-      "progress_pct": 77,
+      "progress_pct": 79,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -71,7 +71,7 @@
       "target": 2451,
       "first": "2026-04-15",
       "last": "2026-07-10",
-      "progress_pct": 77,
+      "progress_pct": 79,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -84,7 +84,7 @@
       "target": 2451,
       "first": "2026-07-02",
       "last": "2026-07-13",
-      "progress_pct": 77,
+      "progress_pct": 79,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -92,7 +92,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 31279690,
+      "rows": 31286890,
       "codes": 1129,
       "target": 2451,
       "first": "2023-03-24",
