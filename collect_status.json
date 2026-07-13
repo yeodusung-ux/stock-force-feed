@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13 21:31:50",
+  "updated": "2026-07-13 21:36:50",
   "system": {
     "connected": true,
     "trading": true,
@@ -19,7 +19,7 @@
       "target": 2451,
       "first": "2022-11-03",
       "last": "2026-07-13",
-      "progress_pct": 64,
+      "progress_pct": 66,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -27,12 +27,12 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 188998,
+      "rows": 189306,
       "codes": 2511,
       "target": 2451,
       "first": "2026-06-24",
       "last": "2026-07-13",
-      "progress_pct": 64,
+      "progress_pct": 66,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -40,12 +40,12 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 277760,
+      "rows": 277803,
       "codes": 2511,
       "target": 2451,
       "first": "2026-01-26",
       "last": "2026-07-10",
-      "progress_pct": 64,
+      "progress_pct": 66,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -58,7 +58,7 @@
       "target": 2451,
       "first": "2026-05-28",
       "last": "2026-07-10",
-      "progress_pct": 64,
+      "progress_pct": 66,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -71,7 +71,7 @@
       "target": 2451,
       "first": "2026-04-15",
       "last": "2026-07-10",
-      "progress_pct": 64,
+      "progress_pct": 66,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -84,7 +84,7 @@
       "target": 2451,
       "first": "2026-07-02",
       "last": "2026-07-13",
-      "progress_pct": 64,
+      "progress_pct": 66,
       "busy": true,
       "schedule": "매일 18:30"
     },
@@ -92,7 +92,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 31203650,
+      "rows": 31216450,
       "codes": 1127,
       "target": 2451,
       "first": "2023-03-24",
