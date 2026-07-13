@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13 18:26:50",
+  "updated": "2026-07-13 18:31:50",
   "system": {
     "connected": true,
     "trading": true,
@@ -14,26 +14,26 @@
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 21240518,
+      "rows": 21361886,
       "codes": 2511,
       "target": 2451,
       "first": "2022-11-03",
       "last": "2026-07-13",
-      "progress_pct": 76,
-      "busy": false,
+      "progress_pct": 0,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 177988,
+      "rows": 178047,
       "codes": 2511,
       "target": 2451,
       "first": "2026-06-24",
-      "last": "2026-07-10",
-      "progress_pct": 100,
-      "busy": false,
+      "last": "2026-07-13",
+      "progress_pct": 0,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
@@ -45,8 +45,8 @@
       "target": 2451,
       "first": "2026-01-26",
       "last": "2026-07-10",
-      "progress_pct": 100,
-      "busy": false,
+      "progress_pct": 0,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
@@ -58,8 +58,8 @@
       "target": 2451,
       "first": "2026-05-28",
       "last": "2026-07-10",
-      "progress_pct": 100,
-      "busy": false,
+      "progress_pct": 0,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
@@ -71,8 +71,8 @@
       "target": 2451,
       "first": "2026-04-15",
       "last": "2026-07-10",
-      "progress_pct": null,
-      "busy": false,
+      "progress_pct": 0,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
@@ -84,15 +84,15 @@
       "target": 2451,
       "first": "2026-07-02",
       "last": "2026-07-13",
-      "progress_pct": null,
-      "busy": false,
+      "progress_pct": 0,
+      "busy": true,
       "schedule": "매일 18:30"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 30793250,
+      "rows": 30822850,
       "codes": 1118,
       "target": 2451,
       "first": "2023-03-24",
