@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15 00:09:53",
+  "updated": "2026-07-15 00:14:53",
   "system": {
     "connected": true,
     "trading": true,
@@ -92,8 +92,8 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 36294414,
-      "codes": 1245,
+      "rows": 36326414,
+      "codes": 1246,
       "target": 2452,
       "first": "2023-03-24",
       "last": "2026-07-14",
@@ -144,13 +144,13 @@
       "table": "closebet_pool",
       "label": "종가베팅풀",
       "tr": "opt10081/CSV",
-      "rows": 49377,
+      "rows": 49398,
       "codes": 3677,
       "target": 2452,
       "first": "20250409",
       "last": "20260713",
-      "progress_pct": 0,
-      "busy": true,
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
