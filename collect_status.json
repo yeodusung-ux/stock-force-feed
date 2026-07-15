@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16 00:05:03",
+  "updated": "2026-07-16 00:11:19",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11580,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 1
   },
   "collections": [
     {
@@ -19,8 +19,8 @@
       "target": 2451,
       "first": "2022-11-03",
       "last": "2026-07-15",
-      "progress_pct": null,
-      "busy": true,
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "매일 18:30"
     },
     {
@@ -32,8 +32,8 @@
       "target": 2451,
       "first": "2026-06-24",
       "last": "2026-07-15",
-      "progress_pct": null,
-      "busy": true,
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "매일 18:30"
     },
     {
@@ -45,21 +45,21 @@
       "target": 2451,
       "first": "2026-01-26",
       "last": "2026-07-14",
-      "progress_pct": null,
-      "busy": true,
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "매일 18:30"
     },
     {
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 776236,
+      "rows": 776352,
       "codes": 2468,
       "target": 2451,
       "first": "2025-03-21",
       "last": "2026-07-15",
-      "progress_pct": null,
-      "busy": true,
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "매일 18:30"
     },
     {
@@ -72,7 +72,7 @@
       "first": "2026-04-15",
       "last": "2026-07-15",
       "progress_pct": null,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 18:30"
     },
     {
@@ -85,14 +85,14 @@
       "first": "2026-07-02",
       "last": "2026-07-15",
       "progress_pct": null,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 18:30"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 40729698,
+      "rows": 40736098,
       "codes": 1352,
       "target": 2451,
       "first": "2023-03-24",
@@ -144,13 +144,13 @@
       "table": "closebet_pool",
       "label": "종가베팅풀",
       "tr": "opt10081/CSV",
-      "rows": 49398,
+      "rows": 49585,
       "codes": 3677,
       "target": 2451,
       "first": "20250409",
-      "last": "20260713",
-      "progress_pct": 0,
-      "busy": true,
+      "last": "20260715",
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
