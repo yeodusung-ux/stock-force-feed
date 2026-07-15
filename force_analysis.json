@@ -1,8 +1,8 @@
 {
-  "updated": "2026-07-14T20:03:31",
-  "from": "2026-01-01",
-  "to": "2026-07-14",
-  "count": 13,
+  "updated": "2026-07-15T20:00:03",
+  "from": "2025-03-21",
+  "to": "2026-07-15",
+  "count": 20,
   "rows": [
     {
       "code": "143160",
@@ -19,6 +19,20 @@
       "current": true
     },
     {
+      "code": "095190",
+      "name": "신화프리텍",
+      "score": 82.4,
+      "subject": "기타법인",
+      "absorb_pct": 54.9,
+      "amt": 3053439551,
+      "days": 21,
+      "hit_days": 19,
+      "insider_ratio": 47.5,
+      "disp_pct": -17.2,
+      "credit_amt": 267831,
+      "current": true
+    },
+    {
       "code": "332370",
       "name": "아이디피",
       "score": 79.7,
@@ -30,6 +44,20 @@
       "insider_ratio": 63.6,
       "disp_pct": 2.6,
       "credit_amt": 731,
+      "current": true
+    },
+    {
+      "code": "037460",
+      "name": "삼지전자",
+      "score": 78.9,
+      "subject": "금융투자",
+      "absorb_pct": 200.0,
+      "amt": 4264627500,
+      "days": 21,
+      "hit_days": 1,
+      "insider_ratio": 6.7,
+      "disp_pct": -19.1,
+      "credit_amt": 196138,
       "current": true
     },
     {
@@ -49,12 +77,12 @@
     {
       "code": "035610",
       "name": "솔본",
-      "score": 73.8,
+      "score": 77.6,
       "subject": "기타법인",
       "absorb_pct": 147.0,
       "amt": 2731364995,
       "days": 40,
-      "hit_days": 8,
+      "hit_days": 13,
       "insider_ratio": 65.7,
       "disp_pct": 16.2,
       "credit_amt": 102903,
@@ -103,20 +131,6 @@
       "current": true
     },
     {
-      "code": "095190",
-      "name": "신화프리텍",
-      "score": 72.7,
-      "subject": "기타법인",
-      "absorb_pct": 54.9,
-      "amt": 3053439551,
-      "days": 21,
-      "hit_days": 6,
-      "insider_ratio": 47.5,
-      "disp_pct": -17.2,
-      "credit_amt": 267831,
-      "current": true
-    },
-    {
       "code": "053160",
       "name": "프리엠스",
       "score": 72.0,
@@ -159,6 +173,20 @@
       "current": true
     },
     {
+      "code": "417010",
+      "name": "나노팀",
+      "score": 67.2,
+      "subject": "기타법인",
+      "absorb_pct": 200.0,
+      "amt": 1421825750,
+      "days": 21,
+      "hit_days": 2,
+      "insider_ratio": 0.0,
+      "disp_pct": -45.7,
+      "credit_amt": 311140,
+      "current": true
+    },
+    {
       "code": "206400",
       "name": "베노티앤알",
       "score": 66.6,
@@ -173,6 +201,34 @@
       "current": true
     },
     {
+      "code": "066590",
+      "name": "스모트로닉",
+      "score": 66.3,
+      "subject": "기타법인",
+      "absorb_pct": 200.0,
+      "amt": 325686558,
+      "days": 28,
+      "hit_days": 7,
+      "insider_ratio": 29.9,
+      "disp_pct": 10.4,
+      "credit_amt": 614792,
+      "current": true
+    },
+    {
+      "code": "060310",
+      "name": "3S",
+      "score": 51.8,
+      "subject": "기타법인",
+      "absorb_pct": 0.0,
+      "amt": 1066505676,
+      "days": 23,
+      "hit_days": 7,
+      "insider_ratio": 13.7,
+      "disp_pct": -11.0,
+      "credit_amt": 922553,
+      "current": true
+    },
+    {
       "code": "216050",
       "name": "인크로스",
       "score": 44.0,
@@ -184,6 +240,48 @@
       "insider_ratio": 0.1,
       "disp_pct": -17.4,
       "credit_amt": 254684,
+      "current": true
+    },
+    {
+      "code": "039830",
+      "name": "오로라",
+      "score": 40.3,
+      "subject": "기타법인",
+      "absorb_pct": null,
+      "amt": -308479860,
+      "days": 21,
+      "hit_days": 5,
+      "insider_ratio": 8.6,
+      "disp_pct": 9.7,
+      "credit_amt": 48219,
+      "current": true
+    },
+    {
+      "code": "071950",
+      "name": "코아스",
+      "score": 33.3,
+      "subject": "기타법인",
+      "absorb_pct": 0.0,
+      "amt": 4375466,
+      "days": 22,
+      "hit_days": 1,
+      "insider_ratio": 21.3,
+      "disp_pct": 22.1,
+      "credit_amt": 0,
+      "current": false
+    },
+    {
+      "code": "025550",
+      "name": "한국선재",
+      "score": 26.1,
+      "subject": "기타법인",
+      "absorb_pct": null,
+      "amt": -12857190,
+      "days": 7,
+      "hit_days": 3,
+      "insider_ratio": 6.4,
+      "disp_pct": null,
+      "credit_amt": 582062,
       "current": true
     }
   ]
