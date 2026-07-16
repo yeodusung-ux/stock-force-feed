@@ -1,6 +1,6 @@
 {
-  "ts": 1784185006,
-  "ts_str": "2026-07-16 15:56:46",
+  "ts": 1784185306,
+  "ts_str": "2026-07-16 16:01:46",
   "kiwoom_alive": true,
   "kiwoom_connected": true,
   "programs": {
@@ -18,7 +18,7 @@
     }
   },
   "trading": true,
-  "last_real": 1784184984.5486755,
+  "last_real": 1784185200.12709,
   "collect_auto_on": true,
   "collect_sched": "17:00",
   "collect_done_today": false,
@@ -27,7 +27,7 @@
   "watchdog_pid": 16288,
   "restarts_today": 4,
   "active_window": "07-04",
-  "last_restart_result": "생존(age=1s)",
+  "last_restart_result": "생존(age=2s)",
   "restart_capped": false,
   "task_ok": true,
   "push_fail_streak": 0
