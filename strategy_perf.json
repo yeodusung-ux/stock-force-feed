@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16 10:48",
+  "updated": "2026-07-16 10:59",
   "strategies": [
     {
       "key": "morning",
@@ -995,25 +995,24 @@
       "key": "oversold",
       "name": "📉 과대낙폭주",
       "desc": "조회=진행 / 이탈=종료",
-      "n": 8,
-      "open": 1,
+      "n": 9,
+      "open": 0,
       "win_rate": 0.0,
-      "avg_ret": -0.22,
+      "avg_ret": -0.2,
       "cum_ret": -1.8,
       "pf": 0.0,
       "buy_rule": "과매도(낙폭과대) 반등 후보 종목 포착 시 진입",
       "sell_rule": "조회 이탈 시 청산",
-      "open_stocks": [
+      "open_stocks": [],
+      "closed_stocks": [
         {
           "date": "2026-07-16",
           "code": "329180",
           "name": "HD현대중공업",
           "buy": 473000,
-          "cur": 473000,
+          "sell": 473000,
           "ret": 0.0
-        }
-      ],
-      "closed_stocks": [
+        },
         {
           "date": "2026-07-15",
           "code": "087010",
