@@ -1,12 +1,12 @@
 {
-  "ts": 1784197101,
-  "ts_str": "2026-07-16 19:18:21",
+  "ts": 1784197341,
+  "ts_str": "2026-07-16 19:22:21",
   "kiwoom_alive": true,
   "kiwoom_connected": true,
   "programs": {
     "main": {
       "alive": true,
-      "age": 58
+      "age": 30
     },
     "strategy": {
       "alive": true,
@@ -27,7 +27,7 @@
   "watchdog_pid": 16288,
   "restarts_today": 4,
   "active_window": "07-04",
-  "last_restart_result": "생존(age=31s)",
+  "last_restart_result": "생존(age=5s)",
   "restart_capped": false,
   "task_ok": true,
   "push_fail_streak": 0
