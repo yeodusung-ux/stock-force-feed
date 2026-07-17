@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17 20:19:18",
+  "updated": "2026-07-17 20:24:19",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 6272,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 29
+    "heartbeat_age_sec": 27
   },
   "collections": [
     {
@@ -27,12 +27,12 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 243188,
+      "rows": 244141,
       "codes": 2516,
       "target": 2448,
       "first": "2026-06-24",
       "last": "2026-07-17",
-      "progress_pct": 76,
+      "progress_pct": 81,
       "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
@@ -92,12 +92,12 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 47929418,
-      "codes": 1523,
+      "rows": 47937418,
+      "codes": 1524,
       "target": 2448,
       "first": "2023-03-24",
       "last": "2026-07-16",
-      "progress_pct": 62,
+      "progress_pct": 63,
       "busy": true,
       "schedule": "상시(장외 이어받기)"
     },
