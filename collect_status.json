@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19 22:16:28",
+  "updated": "2026-07-19 22:21:28",
   "system": {
     "connected": true,
     "trading": true,
@@ -92,12 +92,12 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 58467716,
-      "codes": 1767,
+      "rows": 58494116,
+      "codes": 1768,
       "target": 2448,
       "first": "2023-03-24",
       "last": "2026-07-16",
-      "progress_pct": 72,
+      "progress_pct": 73,
       "busy": true,
       "schedule": "상시(장외 이어받기)"
     },
