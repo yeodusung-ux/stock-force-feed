@@ -1,20 +1,20 @@
 {
-  "ts": 1784477789,
-  "ts_str": "2026-07-20 01:16:29",
+  "ts": 1784478019,
+  "ts_str": "2026-07-20 01:20:19",
   "kiwoom_alive": true,
   "kiwoom_connected": true,
   "programs": {
     "main": {
       "alive": true,
-      "age": 68
+      "age": 9
     },
     "strategy": {
       "alive": true,
-      "age": 6
+      "age": 26
     },
     "analyzer": {
       "alive": true,
-      "age": 27
+      "age": 17
     }
   },
   "trading": true,
@@ -27,7 +27,7 @@
   "watchdog_pid": 16288,
   "restarts_today": 2,
   "active_window": "07-04",
-  "last_restart_result": "생존(age=66s)",
+  "last_restart_result": "앱에서 비활성 / 노후(age=276s>240)",
   "restart_capped": false,
   "task_ok": true,
   "push_fail_streak": 0
