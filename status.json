@@ -1,10 +1,10 @@
 {
- "ts": 1784507320,
- "ts_str": "2026-07-20 09:28:40",
- "kiwoom_alive": false,
- "kiwoom_connected": false,
+ "ts": 1784508243,
+ "ts_str": "2026-07-20 09:44:03",
+ "kiwoom_alive": true,
+ "kiwoom_connected": true,
  "trading": true,
- "last_real": 0.0,
+ "last_real": 1784508219.285532,
  "collect_auto_on": false,
  "collect_sched": "",
  "collect_done_today": false,
@@ -16,5 +16,5 @@
  "last_restart_result": "relaunch 노후(age=266s>240) @07:04",
  "restart_capped": false,
  "task_ok": true,
- "push_fail_streak": 0
+ "push_fail_streak": 2
 }
