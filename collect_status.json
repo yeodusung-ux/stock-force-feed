@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20 22:12:39",
+  "updated": "2026-07-20 22:16:26",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 8140,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 0
+    "heartbeat_age_sec": 28
   },
   "collections": [
     {
@@ -20,7 +20,7 @@
       "first": "2022-11-03",
       "last": "2026-07-20",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -33,7 +33,7 @@
       "first": "2026-06-24",
       "last": "2026-07-20",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -46,20 +46,20 @@
       "first": "2026-01-26",
       "last": "2026-07-16",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 779119,
-      "codes": 2469,
+      "rows": 779520,
+      "codes": 2470,
       "target": 2449,
       "first": "2025-03-21",
-      "last": "2026-07-16",
-      "progress_pct": 100,
-      "busy": false,
+      "last": "2026-07-20",
+      "progress_pct": 3,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -72,7 +72,7 @@
       "first": "2026-04-15",
       "last": "2026-07-20",
       "progress_pct": null,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -85,14 +85,14 @@
       "first": "2026-07-02",
       "last": "2026-07-20",
       "progress_pct": null,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 62185346,
+      "rows": 62193346,
       "codes": 1857,
       "target": 2449,
       "first": "2023-03-24",
