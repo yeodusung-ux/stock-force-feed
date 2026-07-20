@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20 22:06:26",
+  "updated": "2026-07-20 22:12:39",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 8140,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 29
+    "heartbeat_age_sec": 0
   },
   "collections": [
     {
@@ -20,7 +20,7 @@
       "first": "2022-11-03",
       "last": "2026-07-20",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -33,20 +33,20 @@
       "first": "2026-06-24",
       "last": "2026-07-20",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 288946,
+      "rows": 288962,
       "codes": 2517,
       "target": 2449,
       "first": "2026-01-26",
       "last": "2026-07-16",
-      "progress_pct": 94,
-      "busy": true,
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -59,20 +59,20 @@
       "first": "2025-03-21",
       "last": "2026-07-16",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 2629,
-      "codes": 1141,
+      "rows": 36750,
+      "codes": 2248,
       "target": 2449,
       "first": "2026-04-15",
       "last": "2026-07-20",
       "progress_pct": null,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -85,15 +85,15 @@
       "first": "2026-07-02",
       "last": "2026-07-20",
       "progress_pct": null,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 62177346,
-      "codes": 1856,
+      "rows": 62185346,
+      "codes": 1857,
       "target": 2449,
       "first": "2023-03-24",
       "last": "2026-07-20",
