@@ -1,34 +1,20 @@
 {
-  "ts": 1784539586,
-  "ts_str": "2026-07-20 18:26:26",
-  "kiwoom_alive": true,
-  "kiwoom_connected": true,
-  "programs": {
-    "main": {
-      "alive": true,
-      "age": 30
-    },
-    "strategy": {
-      "alive": true,
-      "age": 1
-    },
-    "analyzer": {
-      "alive": true,
-      "age": 8
-    }
-  },
-  "trading": true,
-  "last_real": 1784538835.4904468,
-  "collect_auto_on": true,
-  "collect_sched": "17:00",
-  "collect_done_today": false,
-  "collect_last_complete": "",
-  "collect_progress": "",
-  "watchdog_pid": 16288,
-  "restarts_today": 1,
-  "active_window": "07-04",
-  "last_restart_result": "생존(age=12s)",
-  "restart_capped": false,
-  "task_ok": true,
-  "push_fail_streak": 0
+ "ts": 1784539658,
+ "ts_str": "2026-07-20 18:27:38",
+ "kiwoom_alive": true,
+ "kiwoom_connected": true,
+ "trading": true,
+ "last_real": 1784538835.4904468,
+ "collect_auto_on": false,
+ "collect_sched": "",
+ "collect_done_today": false,
+ "collect_last_complete": "",
+ "collect_progress": "",
+ "watchdog_pid": 16288,
+ "restarts_today": 1,
+ "active_window": "07-04",
+ "last_restart_result": "relaunch 노후(age=266s>240) @07:04",
+ "restart_capped": false,
+ "task_ok": true,
+ "push_fail_streak": 0
 }
