@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22 00:09:42",
+  "updated": "2026-07-22 00:14:43",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 15896,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -170,8 +170,8 @@
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 99,
-      "codes": 99,
+      "rows": 159,
+      "codes": 159,
       "target": 2444,
       "first": "2026-07-22",
       "last": "2026-07-22",
