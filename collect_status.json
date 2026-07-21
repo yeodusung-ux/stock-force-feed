@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21 15:29:53",
+  "updated": "2026-07-21 15:34:53",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,20 +7,20 @@
     "pid": 7388,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 27
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27117688,
+      "rows": 27117779,
       "codes": 2517,
       "target": 2444,
       "first": "2022-11-03",
       "last": "2026-07-21",
       "progress_pct": 91,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -33,20 +33,20 @@
       "first": "2026-06-24",
       "last": "2026-07-20",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 288962,
+      "rows": 289028,
       "codes": 2517,
       "target": 2444,
       "first": "2026-01-26",
-      "last": "2026-07-16",
-      "progress_pct": 100,
-      "busy": false,
+      "last": "2026-07-20",
+      "progress_pct": 3,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -59,7 +59,7 @@
       "first": "2025-03-21",
       "last": "2026-07-20",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -72,7 +72,7 @@
       "first": "2026-04-15",
       "last": "2026-07-20",
       "progress_pct": null,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -85,14 +85,14 @@
       "first": "2026-07-02",
       "last": "2026-07-21",
       "progress_pct": null,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 64965830,
+      "rows": 64974630,
       "codes": 1928,
       "target": 2444,
       "first": "2023-03-24",
