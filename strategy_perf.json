@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21 13:24",
+  "updated": "2026-07-21 13:34",
   "strategies": [
     {
       "key": "morning",
@@ -1022,14 +1022,23 @@
       "name": "📉 과대낙폭주",
       "desc": "조회=진행 / 이탈=종료",
       "n": 9,
-      "open": 0,
+      "open": 1,
       "win_rate": 0.0,
       "avg_ret": -0.2,
       "cum_ret": -1.8,
       "pf": 0.0,
       "buy_rule": "과매도(낙폭과대) 반등 후보 종목 포착 시 진입",
       "sell_rule": "조회 이탈 시 청산",
-      "open_stocks": [],
+      "open_stocks": [
+        {
+          "date": "2026-07-21",
+          "code": "307950",
+          "name": "현대오토에버",
+          "buy": 380000,
+          "cur": 380000,
+          "ret": 0.0
+        }
+      ],
       "closed_stocks": [
         {
           "date": "2026-07-16",
