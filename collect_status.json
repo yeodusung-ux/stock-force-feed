@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22 01:52:57",
+  "updated": "2026-07-22 01:57:57",
   "system": {
     "connected": true,
     "trading": true,
@@ -92,12 +92,12 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 66290938,
-      "codes": 1962,
+      "rows": 66322938,
+      "codes": 1963,
       "target": 2444,
       "first": "2023-03-24",
       "last": "2026-07-21",
-      "progress_pct": 80,
+      "progress_pct": 81,
       "busy": true,
       "schedule": "상시(장외 이어받기)"
     },
@@ -170,8 +170,8 @@
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 780,
-      "codes": 780,
+      "rows": 840,
+      "codes": 840,
       "target": 2444,
       "first": "2026-07-22",
       "last": "2026-07-22",
