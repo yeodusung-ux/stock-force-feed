@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21 23:08:23",
+  "updated": "2026-07-21 23:13:22",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 10412,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 26
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -20,7 +20,7 @@
       "first": "2022-11-03",
       "last": "2026-07-21",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -33,7 +33,7 @@
       "first": "2026-06-24",
       "last": "2026-07-21",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -46,20 +46,20 @@
       "first": "2026-01-26",
       "last": "2026-07-20",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 784894,
+      "rows": 784968,
       "codes": 2472,
       "target": 2444,
       "first": "2025-03-21",
       "last": "2026-07-21",
-      "progress_pct": 99,
-      "busy": true,
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -72,7 +72,7 @@
       "first": "2026-04-15",
       "last": "2026-07-21",
       "progress_pct": null,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -85,14 +85,14 @@
       "first": "2026-07-02",
       "last": "2026-07-21",
       "progress_pct": null,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 65751016,
+      "rows": 65752616,
       "codes": 1947,
       "target": 2444,
       "first": "2023-03-24",
