@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-22 23:54:58",
+  "updated": "2026-07-23 00:00:55",
   "system": {
     "connected": true,
     "trading": true,
     "live": true,
-    "pid": 3504,
-    "watchdog_enabled": true,
+    "pid": 2232,
+    "watchdog_enabled": false,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 5
   },
   "collections": [
     {
@@ -20,7 +20,7 @@
       "first": "2022-11-03",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -33,7 +33,7 @@
       "first": "2026-06-24",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -46,20 +46,20 @@
       "first": "2026-01-26",
       "last": "2026-07-21",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 786966,
+      "rows": 787051,
       "codes": 2474,
       "target": 2441,
       "first": "2025-03-21",
       "last": "2026-07-22",
-      "progress_pct": 56,
-      "busy": true,
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -72,7 +72,7 @@
       "first": "2026-04-15",
       "last": "2026-07-22",
       "progress_pct": null,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -85,14 +85,14 @@
       "first": "2026-07-02",
       "last": "2026-07-22",
       "progress_pct": null,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 69164094,
+      "rows": 69172894,
       "codes": 2033,
       "target": 2441,
       "first": "2023-03-24",
@@ -170,8 +170,8 @@
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 4200,
-      "codes": 4200,
+      "rows": 4260,
+      "codes": 4260,
       "target": 2441,
       "first": "2026-07-22",
       "last": "2026-07-22",
