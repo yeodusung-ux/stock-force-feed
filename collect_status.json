@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22 11:45:13",
+  "updated": "2026-07-22 11:50:12",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16468,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -92,11 +92,11 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 0,
-      "codes": 0,
+      "rows": 67854850,
+      "codes": 2001,
       "target": 2443,
-      "first": "",
-      "last": "",
+      "first": "2023-03-24",
+      "last": "2026-07-22",
       "progress_pct": 82,
       "busy": true,
       "schedule": "상시(장외 이어받기)"
