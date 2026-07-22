@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22 23:49:59",
+  "updated": "2026-07-22 23:54:58",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 3504,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 32
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -53,12 +53,12 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 786514,
-      "codes": 2473,
+      "rows": 786966,
+      "codes": 2474,
       "target": 2441,
       "first": "2025-03-21",
       "last": "2026-07-22",
-      "progress_pct": 52,
+      "progress_pct": 56,
       "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
@@ -92,7 +92,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 69156894,
+      "rows": 69164094,
       "codes": 2033,
       "target": 2441,
       "first": "2023-03-24",
@@ -170,8 +170,8 @@
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 4140,
-      "codes": 4140,
+      "rows": 4200,
+      "codes": 4200,
       "target": 2441,
       "first": "2026-07-22",
       "last": "2026-07-22",
