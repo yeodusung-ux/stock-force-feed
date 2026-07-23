@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23 15:29:54",
+  "updated": "2026-07-23 15:34:55",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 18560,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -20,7 +20,7 @@
       "first": "2022-11-03",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -33,20 +33,20 @@
       "first": "2026-06-24",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 294060,
+      "rows": 294093,
       "codes": 2519,
       "target": 2444,
       "first": "2026-01-26",
-      "last": "2026-07-21",
-      "progress_pct": 100,
-      "busy": false,
+      "last": "2026-07-22",
+      "progress_pct": 2,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -59,7 +59,7 @@
       "first": "2025-03-21",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -72,7 +72,7 @@
       "first": "2026-04-15",
       "last": "2026-07-22",
       "progress_pct": null,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -85,14 +85,14 @@
       "first": "2026-07-02",
       "last": "2026-07-23",
       "progress_pct": null,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 71436804,
+      "rows": 71444004,
       "codes": 2090,
       "target": 2444,
       "first": "2023-03-24",
