@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23 21:42:17",
+  "updated": "2026-07-23 21:52:03",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 17764,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 43
+    "heartbeat_age_sec": 16
   },
   "collections": [
     {
@@ -19,7 +19,7 @@
       "target": 2443,
       "first": "",
       "last": "",
-      "progress_pct": 19,
+      "progress_pct": 20,
       "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
