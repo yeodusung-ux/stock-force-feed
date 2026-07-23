@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23 18:40:07",
+  "updated": "2026-07-23 18:45:01",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 18560,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 42
+    "heartbeat_age_sec": 36
   },
   "collections": [
     {
@@ -45,7 +45,7 @@
       "target": 2444,
       "first": "",
       "last": "",
-      "progress_pct": 52,
+      "progress_pct": 53,
       "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
@@ -105,11 +105,11 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 0,
-      "codes": 0,
+      "rows": 4617,
+      "codes": 229,
       "target": 2444,
-      "first": "",
-      "last": "",
+      "first": "2025-02-03",
+      "last": "2026-07-08",
       "progress_pct": null,
       "busy": false,
       "schedule": ""
