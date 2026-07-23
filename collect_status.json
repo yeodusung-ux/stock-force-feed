@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-23 09:17:20",
+  "updated": "2026-07-23 09:20:29",
   "system": {
     "connected": true,
     "trading": true,
     "live": true,
     "pid": 6836,
-    "watchdog_enabled": false,
+    "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 2
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
