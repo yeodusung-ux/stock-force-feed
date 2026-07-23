@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 00:27:01",
+  "updated": "2026-07-24 00:32:01",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,20 +7,20 @@
     "pid": 17764,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 21
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27261871,
+      "rows": 27264003,
       "codes": 2519,
       "target": 2443,
       "first": "2022-11-03",
       "last": "2026-07-23",
-      "progress_pct": 95,
-      "busy": true,
+      "progress_pct": 100,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -33,7 +33,7 @@
       "first": "2026-06-24",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -46,7 +46,7 @@
       "first": "2026-01-26",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -59,20 +59,20 @@
       "first": "2025-03-21",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 39445,
-      "codes": 2332,
+      "rows": 5809,
+      "codes": 1778,
       "target": 2443,
       "first": "2026-04-15",
-      "last": "2026-07-22",
+      "last": "2026-07-23",
       "progress_pct": null,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -85,14 +85,14 @@
       "first": "2026-07-02",
       "last": "2026-07-23",
       "progress_pct": null,
-      "busy": true,
+      "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 71731204,
+      "rows": 71739204,
       "codes": 2098,
       "target": 2443,
       "first": "2023-03-24",
