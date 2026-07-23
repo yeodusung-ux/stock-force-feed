@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23 20:22:15",
+  "updated": "2026-07-23 20:27:01",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,14 +7,14 @@
     "pid": 17764,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 36
+    "heartbeat_age_sec": 28
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27234844,
+      "rows": 0,
       "codes": 0,
       "target": 2443,
       "first": "",
