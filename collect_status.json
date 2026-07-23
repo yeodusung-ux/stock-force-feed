@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23 18:20:08",
+  "updated": "2026-07-23 18:25:02",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 18560,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 34
+    "heartbeat_age_sec": 37
   },
   "collections": [
     {
@@ -45,7 +45,7 @@
       "target": 2444,
       "first": "",
       "last": "",
-      "progress_pct": 49,
+      "progress_pct": 50,
       "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
@@ -53,12 +53,12 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 787051,
-      "codes": 2474,
+      "rows": 0,
+      "codes": 0,
       "target": 2444,
-      "first": "2025-03-21",
-      "last": "2026-07-22",
-      "progress_pct": 100,
+      "first": "",
+      "last": "",
+      "progress_pct": 0,
       "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
@@ -105,11 +105,11 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 4617,
-      "codes": 229,
+      "rows": 0,
+      "codes": 0,
       "target": 2444,
-      "first": "2025-02-03",
-      "last": "2026-07-08",
+      "first": "",
+      "last": "",
       "progress_pct": null,
       "busy": false,
       "schedule": ""
@@ -162,8 +162,8 @@
       "target": 2444,
       "first": "2026-06-29",
       "last": "2026-07-23",
-      "progress_pct": 100,
-      "busy": false,
+      "progress_pct": null,
+      "busy": true,
       "schedule": "10분 자동(장중·장후)"
     },
     {
