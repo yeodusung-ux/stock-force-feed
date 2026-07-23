@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 01:07:01",
+  "updated": "2026-07-24 01:12:01",
   "system": {
     "connected": true,
     "trading": true,
@@ -92,8 +92,8 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 71892804,
-      "codes": 2101,
+      "rows": 71908804,
+      "codes": 2102,
       "target": 2443,
       "first": "2023-03-24",
       "last": "2026-07-23",
@@ -170,11 +170,11 @@
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 4260,
-      "codes": 4260,
+      "rows": 4320,
+      "codes": 4320,
       "target": 2443,
-      "first": "2026-07-22",
-      "last": "2026-07-22",
+      "first": "2026-07-24",
+      "last": "2026-07-24",
       "progress_pct": null,
       "busy": false,
       "schedule": "5분 자동(DART)"
