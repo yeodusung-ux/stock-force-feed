@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 15:26:53",
+  "updated": "2026-07-24 15:31:54",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11832,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 29
+    "heartbeat_age_sec": 28
   },
   "collections": [
     {
@@ -20,7 +20,7 @@
       "first": "2022-11-03",
       "last": "2026-07-23",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -33,20 +33,20 @@
       "first": "2026-06-24",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 295438,
+      "rows": 295447,
       "codes": 2519,
       "target": 2442,
       "first": "2026-01-26",
-      "last": "2026-07-22",
-      "progress_pct": 100,
-      "busy": false,
+      "last": "2026-07-23",
+      "progress_pct": 0,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -59,7 +59,7 @@
       "first": "2025-03-21",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -72,7 +72,7 @@
       "first": "2026-04-15",
       "last": "2026-07-23",
       "progress_pct": null,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
@@ -85,15 +85,15 @@
       "first": "2026-07-02",
       "last": "2026-07-24",
       "progress_pct": null,
-      "busy": false,
+      "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 73882004,
-      "codes": 2151,
+      "rows": 73902804,
+      "codes": 2152,
       "target": 2442,
       "first": "2023-03-24",
       "last": "2026-07-24",
