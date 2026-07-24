@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 12:16:53",
+  "updated": "2026-07-24 12:21:54",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11832,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -92,7 +92,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 73466706,
+      "rows": 73482706,
       "codes": 2142,
       "target": 2442,
       "first": "2023-03-24",
@@ -157,8 +157,8 @@
       "table": "quant_universe",
       "label": "퀀트 유니버스",
       "tr": "opt10001",
-      "rows": 4323,
-      "codes": 4323,
+      "rows": 4324,
+      "codes": 4324,
       "target": 2442,
       "first": "2026-06-29",
       "last": "2026-07-24",
