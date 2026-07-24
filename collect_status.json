@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 20:51:55",
+  "updated": "2026-07-24 21:02:03",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11832,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 21
+    "heartbeat_age_sec": 39
   },
   "collections": [
     {
@@ -45,7 +45,7 @@
       "target": 2442,
       "first": "",
       "last": "",
-      "progress_pct": 62,
+      "progress_pct": 63,
       "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
@@ -79,11 +79,11 @@
       "table": "signal_log",
       "label": "세력신호",
       "tr": "파생",
-      "rows": 2943,
-      "codes": 1388,
+      "rows": 0,
+      "codes": 0,
       "target": 2442,
-      "first": "2026-07-02",
-      "last": "2026-07-24",
+      "first": "",
+      "last": "",
       "progress_pct": null,
       "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
@@ -118,11 +118,11 @@
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 40058,
-      "codes": 2050,
+      "rows": 0,
+      "codes": 0,
       "target": 2442,
-      "first": "2024-07-05",
-      "last": "2026-07-08",
+      "first": "",
+      "last": "",
       "progress_pct": null,
       "busy": false,
       "schedule": ""
