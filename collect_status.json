@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24 23:22:12",
+  "updated": "2026-07-24 23:26:57",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11832,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 41
+    "heartbeat_age_sec": 20
   },
   "collections": [
     {
@@ -40,7 +40,7 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 298277,
+      "rows": 298313,
       "codes": 2519,
       "target": 2442,
       "first": "2026-01-26",
