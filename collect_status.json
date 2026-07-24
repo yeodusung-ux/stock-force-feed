@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25 00:06:54",
+  "updated": "2026-07-25 00:11:59",
   "system": {
     "connected": true,
     "trading": true,
@@ -17,8 +17,8 @@
       "rows": 27264003,
       "codes": 2519,
       "target": 2442,
-      "first": "2022-11-03",
-      "last": "2026-07-23",
+      "first": "",
+      "last": "",
       "progress_pct": 100,
       "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
@@ -40,12 +40,12 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 298636,
+      "rows": 298690,
       "codes": 2519,
       "target": 2442,
       "first": "2026-01-26",
       "last": "2026-07-23",
-      "progress_pct": 93,
+      "progress_pct": 94,
       "busy": true,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
@@ -92,8 +92,8 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 74101204,
-      "codes": 0,
+      "rows": 74103604,
+      "codes": 2156,
       "target": 2442,
       "first": "",
       "last": "",
