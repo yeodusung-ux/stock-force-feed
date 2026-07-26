@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-26 18:08:34",
+  "updated": "2026-07-26 18:12:19",
   "system": {
     "connected": true,
     "trading": true,
     "live": true,
     "pid": 11752,
-    "watchdog_enabled": false,
+    "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -79,7 +79,7 @@
       "table": "signal_log",
       "label": "세력신호",
       "tr": "파생",
-      "rows": 2960,
+      "rows": 2963,
       "codes": 1388,
       "target": 2419,
       "first": "2026-07-02",
