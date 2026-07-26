@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26 10:48:10",
+  "updated": "2026-07-26 10:51:55",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,18 +7,18 @@
     "pid": 19860,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 7
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 0,
-      "codes": 0,
+      "rows": 27304212,
+      "codes": 2519,
       "target": 2419,
-      "first": "",
-      "last": "",
+      "first": "2022-11-03",
+      "last": "2026-07-24",
       "progress_pct": 58,
       "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
@@ -27,12 +27,12 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 0,
-      "codes": 0,
+      "rows": 299339,
+      "codes": 2519,
       "target": 2419,
-      "first": "",
-      "last": "",
-      "progress_pct": 0,
+      "first": "2026-06-24",
+      "last": "2026-07-22",
+      "progress_pct": 100,
       "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
@@ -79,7 +79,7 @@
       "table": "signal_log",
       "label": "세력신호",
       "tr": "파생",
-      "rows": 2958,
+      "rows": 2960,
       "codes": 1388,
       "target": 2419,
       "first": "2026-07-02",
@@ -92,11 +92,11 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 0,
-      "codes": 0,
+      "rows": 80949918,
+      "codes": 2322,
       "target": 2419,
-      "first": "",
-      "last": "",
+      "first": "2023-03-24",
+      "last": "2026-07-24",
       "progress_pct": 97,
       "busy": true,
       "schedule": "상시(장외 이어받기)"
