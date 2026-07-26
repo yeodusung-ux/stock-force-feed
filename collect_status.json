@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27 08:20:04",
+  "updated": "2026-07-27 08:40:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -19,7 +19,7 @@
       "target": 2420,
       "first": "2022-11-03",
       "last": "2026-07-27",
-      "progress_pct": 6,
+      "progress_pct": 7,
       "busy": false,
       "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
     },
@@ -98,7 +98,7 @@
       "first": "2023-03-24",
       "last": "2026-07-27",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "schedule": "상시(장외 이어받기)"
     },
     {
