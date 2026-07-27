@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27 23:09:21",
+  "updated": "2026-07-27 23:14:20",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,22 +7,22 @@
     "pid": 15944,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27362686,
+      "rows": 27365585,
       "codes": 2521,
       "target": 2420,
       "first": "2022-11-03",
       "last": "2026-07-27",
-      "progress_pct": 85,
+      "progress_pct": 88,
       "busy": true,
       "state": "busy",
-      "fmt": "2,048/2,420 (85%)",
+      "fmt": "2,121/2,420 (88%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
