@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27 23:55:58",
+  "updated": "2026-07-28 00:00:57",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16212,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -19,25 +19,25 @@
       "target": 2420,
       "first": "2022-11-03",
       "last": "2026-07-27",
-      "progress_pct": 100,
+      "progress_pct": 19,
       "busy": true,
-      "state": "done",
-      "fmt": "오늘완료",
+      "state": "busy",
+      "fmt": "464/2,396 (19%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 302071,
+      "rows": 302548,
       "codes": 2519,
       "target": 2420,
       "first": "2026-06-24",
       "last": "2026-07-27",
-      "progress_pct": 16,
+      "progress_pct": 19,
       "busy": true,
       "state": "busy",
-      "fmt": "392/2,420 (16%)",
+      "fmt": "456/2,420 (19%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -154,10 +154,10 @@
       "target": 2420,
       "first": "20250410",
       "last": "20260707",
-      "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 07-07 · 271행",
+      "progress_pct": 0,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
