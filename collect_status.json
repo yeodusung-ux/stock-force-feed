@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-28 00:07:22",
+  "updated": "2026-07-28 00:20:39",
   "system": {
     "connected": true,
     "trading": true,
     "live": true,
-    "pid": 3600,
+    "pid": 2348,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 15
   },
   "collections": [
     {
@@ -110,9 +110,9 @@
       "first": "2023-03-24",
       "last": "2026-07-27",
       "progress_pct": 100,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "busy": false,
+      "state": "done",
+      "fmt": "2,448/2,393 (100%)",
       "schedule": "상시(장외 이어받기)"
     },
     {
@@ -169,10 +169,10 @@
       "target": 2420,
       "first": "20250409",
       "last": "20260722",
-      "progress_pct": 100,
+      "progress_pct": null,
       "busy": false,
-      "state": "done",
-      "fmt": "",
+      "state": "idle",
+      "fmt": "최신 07-22 · 49,820행",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
