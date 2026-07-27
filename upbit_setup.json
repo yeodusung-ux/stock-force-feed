@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-27 10:41",
+ "updated": "2026-07-27 10:42",
  "auto_trade_enabled": true,
  "auto_trade_saved": true,
  "emergency_stop": false,
@@ -13,7 +13,7 @@
   "fx_live_steps": 10,
   "trim_multiplier": 2.0,
   "trim_sell_fraction": 0.5,
-  "trim_profit_threshold": 0.5,
+  "trim_profit_threshold": 0.6,
   "auto_start_trading": true
  },
  "coins": {
@@ -52,7 +52,7 @@
   },
   "KRW-BTC": {
    "interval": 500000,
-   "fixed_base": 300000.0,
+   "fixed_base": 1000000.0,
    "sell_profit_threshold": 0.0,
    "trim_enabled": false,
    "target_mode": "percent",
