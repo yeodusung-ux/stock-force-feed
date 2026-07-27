@@ -1,20 +1,20 @@
 {
-  "ts": 1785156014,
-  "ts_str": "2026-07-27 21:40:14",
+  "ts": 1785156299,
+  "ts_str": "2026-07-27 21:44:59",
   "kiwoom_alive": true,
   "kiwoom_connected": true,
   "programs": {
     "main": {
       "alive": true,
-      "age": 13
+      "age": 30
     },
     "strategy": {
-      "alive": false,
-      "age": 2201
+      "alive": true,
+      "age": 14
     },
     "analyzer": {
-      "alive": false,
-      "age": 2200
+      "alive": true,
+      "age": 21
     }
   },
   "trading": true,
@@ -27,7 +27,7 @@
   "watchdog_pid": 15776,
   "restarts_today": 0,
   "active_window": "07-04",
-  "last_restart_result": "생존(age=13s)",
+  "last_restart_result": "생존(age=16s)",
   "restart_capped": false,
   "task_ok": true,
   "push_fail_streak": 0
