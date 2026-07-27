@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28 00:20:39",
+  "updated": "2026-07-28 00:24:24",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 2348,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -110,9 +110,9 @@
       "first": "2023-03-24",
       "last": "2026-07-27",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,448/2,393 (100%)",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "상시(장외 이어받기)"
     },
     {
