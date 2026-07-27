@@ -1,29 +1,29 @@
 {
-  "updated": "2026-07-27 22:34:59",
+  "updated": "2026-07-27 22:40:35",
   "system": {
     "connected": true,
     "trading": true,
     "live": true,
-    "pid": 10804,
+    "pid": 15944,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 15
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27358305,
+      "rows": 27360008,
       "codes": 2521,
       "target": 2420,
       "first": "2022-11-03",
       "last": "2026-07-27",
-      "progress_pct": 66,
+      "progress_pct": 68,
       "busy": true,
       "state": "busy",
-      "fmt": "1,594/2,420 (66%)",
-      "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
+      "fmt": "1,635/2,420 (68%)",
+      "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_broker",
@@ -38,7 +38,7 @@
       "busy": true,
       "state": "done",
       "fmt": "2,519/2,420 (100%)",
-      "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
+      "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_credit",
@@ -53,7 +53,7 @@
       "busy": true,
       "state": "done",
       "fmt": "2,519/2,420 (100%)",
-      "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
+      "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "daily_ohlcv",
@@ -68,7 +68,7 @@
       "busy": true,
       "state": "done",
       "fmt": "2,474/2,420 (100%)",
-      "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
+      "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "match",
@@ -83,7 +83,7 @@
       "busy": true,
       "state": "busy",
       "fmt": "",
-      "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
+      "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "signal_log",
@@ -98,7 +98,7 @@
       "busy": true,
       "state": "busy",
       "fmt": "",
-      "schedule": "매일 투17:00·창16:00·신15:30·일19:00"
+      "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "broker_daily",
