@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28 10:25:59",
+  "updated": "2026-07-28 10:35:59",
   "system": {
     "connected": true,
     "trading": true,
@@ -183,11 +183,11 @@
       "codes": 4325,
       "target": 2424,
       "first": "2026-06-29",
-      "last": "2026-07-27",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "last": "2026-07-28",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,325/2,424 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
