@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28 16:32:32",
+  "updated": "2026-07-28 16:37:16",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 1300,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 39
+    "heartbeat_age_sec": 29
   },
   "collections": [
     {
@@ -29,30 +29,30 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 0,
-      "codes": 0,
+      "rows": 302635,
+      "codes": 2519,
       "target": 2424,
-      "first": "",
-      "last": "",
-      "progress_pct": 0,
+      "first": "2026-06-24",
+      "last": "2026-07-27",
+      "progress_pct": 100,
       "busy": true,
-      "state": "wait",
-      "fmt": "0/2,424 (0%)",
+      "state": "done",
+      "fmt": "2,519/2,424 (100%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 301835,
+      "rows": 302029,
       "codes": 2521,
       "target": 2424,
       "first": "2026-01-26",
       "last": "2026-07-27",
-      "progress_pct": 58,
+      "progress_pct": 62,
       "busy": true,
       "state": "busy",
-      "fmt": "1,397/2,424 (58%)",
+      "fmt": "1,510/2,424 (62%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
