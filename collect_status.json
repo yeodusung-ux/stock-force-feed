@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28 15:33:31",
+  "updated": "2026-07-28 15:37:16",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 1300,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -20,7 +20,7 @@
       "first": "2022-11-03",
       "last": "2026-07-28",
       "progress_pct": 31,
-      "busy": false,
+      "busy": true,
       "state": "busy",
       "fmt": "736/2,400 (31%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
@@ -35,7 +35,7 @@
       "first": "2026-06-24",
       "last": "2026-07-27",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "state": "done",
       "fmt": "2,519/2,424 (100%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 299620,
+      "rows": 299698,
       "codes": 2519,
       "target": 2424,
       "first": "2026-01-26",
       "last": "2026-07-27",
-      "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,519/2,424 (100%)",
+      "progress_pct": 15,
+      "busy": true,
+      "state": "busy",
+      "fmt": "364/2,424 (15%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -65,7 +65,7 @@
       "first": "2025-03-21",
       "last": "2026-07-22",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "state": "done",
       "fmt": "2,474/2,424 (100%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
@@ -80,9 +80,9 @@
       "first": "2026-04-15",
       "last": "2026-07-27",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 07-27 · 43,309행",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -95,9 +95,9 @@
       "first": "2026-07-02",
       "last": "2026-07-28",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 07-28 · 2,987행",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
