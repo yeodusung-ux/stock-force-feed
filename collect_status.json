@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29 08:45:05",
+  "updated": "2026-07-29 08:55:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -14,15 +14,15 @@
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27402453,
+      "rows": 27402752,
       "codes": 2521,
       "target": 2419,
       "first": "2022-11-03",
       "last": "2026-07-29",
-      "progress_pct": 100,
+      "progress_pct": 46,
       "busy": false,
-      "state": "done",
-      "fmt": "오늘완료",
+      "state": "busy",
+      "fmt": "1,096/2,400 (46%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -36,8 +36,8 @@
       "last": "2026-07-27",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "오늘완료",
+      "state": "idle",
+      "fmt": "2,519/2,419 (100%) · 최신 07-27 · 2일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -51,8 +51,8 @@
       "last": "2026-07-27",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "오늘완료",
+      "state": "idle",
+      "fmt": "2,521/2,419 (100%) · 최신 07-27 · 2일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -66,8 +66,8 @@
       "last": "2026-07-28",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "801,131봉·최신",
+      "state": "idle",
+      "fmt": "2,484/2,419 (100%) · 최신 07-28 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 86721132,
+      "rows": 86753086,
       "codes": 2449,
       "target": 2419,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,440종목(최대 27일)",
+      "fmt": "미도달 2,439종목(최대 27일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2440,
+        "behind": 2439,
         "max_lag": 27,
         "latest": "2026-07-29",
         "total": 2449
