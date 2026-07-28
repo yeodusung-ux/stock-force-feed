@@ -1,0 +1,47 @@
+{
+  "cond": {
+    "absorb_min": 70.0,
+    "brk_dom": true,
+    "brk_mult": 10.0,
+    "disp_hi": 15.0,
+    "disp_lo": -30.0,
+    "disp_on": false,
+    "exclude_exited": false,
+    "insider_min": 30.0,
+    "inv_dom": true,
+    "inv_mult": 20.0,
+    "match_min": 70.0,
+    "min_amt_eok": 20.0,
+    "min_buy_days": 5,
+    "offset": 10,
+    "span": 60,
+    "start_maxperiod": true,
+    "start_subjects": [
+      "기타법인",
+      "투신",
+      "사모펀드",
+      "기타금융"
+    ],
+    "started": true,
+    "subjects": [
+      "연기금등",
+      "보험",
+      "은행",
+      "국가"
+    ]
+  },
+  "weights": {
+    "amt": 50,
+    "days": 40,
+    "hit": 10,
+    "disp": 20,
+    "credit": 30,
+    "insider": 20,
+    "absorb": 60
+  },
+  "scan_from": "2023-01-01",
+  "publish_hour": 20,
+  "publish_minute": 0,
+  "updated": "2026-07-28T21:02:13",
+  "last_published": ""
+}
