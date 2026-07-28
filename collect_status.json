@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-28 11:21:00",
+  "updated": "2026-07-28 11:25:59",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,14 +7,14 @@
     "pid": 8284,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27370057,
+      "rows": 27370070,
       "codes": 2521,
       "target": 2424,
       "first": "2022-11-03",
@@ -29,15 +29,15 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 0,
-      "codes": 0,
+      "rows": 302635,
+      "codes": 2519,
       "target": 2424,
-      "first": "",
-      "last": "",
-      "progress_pct": 0,
+      "first": "2026-06-24",
+      "last": "2026-07-27",
+      "progress_pct": 100,
       "busy": false,
-      "state": "wait",
-      "fmt": "0/2,424 (0%)",
+      "state": "done",
+      "fmt": "2,519/2,424 (100%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 85580639,
+      "rows": 85582239,
       "codes": 2449,
       "target": 2424,
       "first": "2023-03-24",
@@ -179,8 +179,8 @@
       "table": "quant_universe",
       "label": "퀀트 유니버스",
       "tr": "opt10001",
-      "rows": 4325,
-      "codes": 4325,
+      "rows": 4330,
+      "codes": 4330,
       "target": 2424,
       "first": "2026-06-29",
       "last": "2026-07-28",
