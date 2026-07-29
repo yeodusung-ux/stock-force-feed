@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29 20:20:16",
+  "updated": "2026-07-29 20:25:15",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11344,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -44,30 +44,30 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 306302,
+      "rows": 306357,
       "codes": 2521,
       "target": 2419,
       "first": "2026-01-26",
       "last": "2026-07-28",
-      "progress_pct": 99,
+      "progress_pct": 100,
       "busy": true,
-      "state": "busy",
-      "fmt": "2,385/2,419 (99%)",
+      "state": "done",
+      "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 801131,
+      "rows": 801194,
       "codes": 2484,
       "target": 2419,
       "first": "2025-03-21",
-      "last": "2026-07-28",
-      "progress_pct": 100,
+      "last": "2026-07-29",
+      "progress_pct": 3,
       "busy": true,
-      "state": "idle",
-      "fmt": "2,484/2,419 (100%) · 최신 07-28 · 1일 지연",
+      "state": "busy",
+      "fmt": "82/2,419 (3%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
