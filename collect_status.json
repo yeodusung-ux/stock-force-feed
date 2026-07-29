@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29 21:20:16",
+  "updated": "2026-07-29 21:25:15",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11344,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -59,15 +59,15 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 802947,
+      "rows": 803076,
       "codes": 2484,
       "target": 2419,
       "first": "2025-03-21",
       "last": "2026-07-29",
-      "progress_pct": 75,
+      "progress_pct": 80,
       "busy": true,
       "state": "busy",
-      "fmt": "1,820/2,419 (75%)",
+      "fmt": "1,940/2,419 (80%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
