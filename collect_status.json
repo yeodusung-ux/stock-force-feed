@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29 09:40:05",
+  "updated": "2026-07-29 09:45:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -189,11 +189,11 @@
       "codes": 4330,
       "target": 2419,
       "first": "2026-06-29",
-      "last": "2026-07-28",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "last": "2026-07-29",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,330/2,419 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
