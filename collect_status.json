@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30 00:05:15",
+  "updated": "2026-07-30 00:10:16",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11344,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -170,14 +170,14 @@
       "table": "closebet_pool",
       "label": "종가베팅풀",
       "tr": "opt10081/CSV",
-      "rows": 50213,
+      "rows": 50249,
       "codes": 3680,
       "target": 2419,
       "first": "20250409",
-      "last": "20260728",
-      "progress_pct": 0,
-      "busy": true,
-      "state": "busy",
+      "last": "20260729",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
       "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
