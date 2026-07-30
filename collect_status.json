@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31 07:55:05",
+  "updated": "2026-07-31 08:05:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -14,7 +14,7 @@
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27464775,
+      "rows": 27464983,
       "codes": 2522,
       "target": 2414,
       "first": "2022-11-03",
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 88757428,
+      "rows": 88791428,
       "codes": 2451,
       "target": 2414,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,447종목(최대 29일)",
+      "fmt": "미도달 2,446종목(최대 29일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2447,
+        "behind": 2446,
         "max_lag": 29,
         "latest": "2026-07-31",
         "total": 2451
