@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30 21:29:14",
+  "updated": "2026-07-30 21:32:59",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 14364,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -64,10 +64,10 @@
       "target": 2416,
       "first": "2025-03-21",
       "last": "2026-07-30",
-      "progress_pct": 0,
+      "progress_pct": 3,
       "busy": true,
       "state": "busy",
-      "fmt": "3/2,416 (0%)",
+      "fmt": "72/2,416 (3%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -89,8 +89,8 @@
       "table": "signal_log",
       "label": "세력신호",
       "tr": "파생",
-      "rows": 3034,
-      "codes": 1392,
+      "rows": 3036,
+      "codes": 1393,
       "target": 2416,
       "first": "2026-07-02",
       "last": "2026-07-30",
@@ -112,8 +112,14 @@
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "2,450/2,400 (100%)",
-      "schedule": "상시(장외 이어받기)"
+      "fmt": "2,450/2,400 (100%) · 미도달 2,429종목(최대 28일)",
+      "schedule": "상시(장외 이어받기)",
+      "lag": {
+        "behind": 2429,
+        "max_lag": 28,
+        "latest": "2026-07-30",
+        "total": 2450
+      }
     },
     {
       "table": "news_volume",
