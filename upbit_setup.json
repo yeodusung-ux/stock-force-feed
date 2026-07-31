@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-31 09:39",
+ "updated": "2026-07-31 09:40",
  "auto_trade_enabled": true,
  "auto_trade_saved": true,
  "emergency_stop": false,
@@ -64,7 +64,7 @@
   "KRW-ETH": {
    "interval": 20000,
    "fixed_base": 200000.0,
-   "sell_profit_threshold": 10.0,
+   "sell_profit_threshold": -10.0,
    "trim_enabled": false,
    "target_mode": "percent",
    "target_value": 0.0,
