@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01 01:50:47",
+  "updated": "2026-08-01 01:55:47",
   "system": {
     "connected": true,
     "trading": true,
@@ -14,7 +14,7 @@
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27495923,
+      "rows": 27595659,
       "codes": 2522,
       "target": 2413,
       "first": "2022-11-03",
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,411종목(최대 29일)",
+      "fmt": "미도달 2,410종목(최대 29일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2411,
+        "behind": 2410,
         "max_lag": 29,
         "latest": "2026-07-31",
         "total": 2451
