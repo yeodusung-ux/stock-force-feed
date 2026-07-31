@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31 19:43:03",
+  "updated": "2026-07-31 19:48:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 292,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -19,10 +19,10 @@
       "target": 2413,
       "first": "2022-11-03",
       "last": "2026-07-31",
-      "progress_pct": 98,
+      "progress_pct": 100,
       "busy": true,
-      "state": "busy",
-      "fmt": "2,369/2,413 (98%)",
+      "state": "done",
+      "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -59,26 +59,26 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 806285,
+      "rows": 806318,
       "codes": 2485,
       "target": 2413,
       "first": "2025-03-21",
-      "last": "2026-07-30",
-      "progress_pct": 100,
+      "last": "2026-07-31",
+      "progress_pct": 2,
       "busy": true,
-      "state": "idle",
-      "fmt": "2,485/2,413 (100%) · 최신 07-30 · 1일 지연",
+      "state": "busy",
+      "fmt": "39/2,413 (2%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 44878,
-      "codes": 2469,
+      "rows": 45285,
+      "codes": 2470,
       "target": 2413,
       "first": "2026-04-15",
-      "last": "2026-07-30",
+      "last": "2026-07-31",
       "progress_pct": null,
       "busy": true,
       "state": "busy",
@@ -110,9 +110,9 @@
       "first": "2023-03-24",
       "last": "2026-07-31",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,451/2,400 (100%) · 미도달 2,438종목(최대 29일)",
+      "busy": true,
+      "state": "busy",
+      "fmt": "미도달 2,438종목(최대 29일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
         "behind": 2438,
@@ -275,7 +275,7 @@
       "table": "collect_meta",
       "label": "수집마커",
       "tr": "파생",
-      "rows": 17,
+      "rows": 18,
       "codes": 0,
       "target": 2413,
       "first": "",
@@ -283,7 +283,7 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "17행",
+      "fmt": "18행",
       "schedule": "자동(수집 진행에 따라)"
     }
   ]
