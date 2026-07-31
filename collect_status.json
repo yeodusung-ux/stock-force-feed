@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31 22:18:50",
+  "updated": "2026-07-31 22:22:25",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 9080,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 0
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -125,30 +125,30 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 10092,
-      "codes": 398,
+      "rows": 10434,
+      "codes": 407,
       "target": 2413,
       "first": "2025-02-03",
-      "last": "2026-07-30",
+      "last": "2026-07-31",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 07-30 · 10,092행",
+      "fmt": "최신 07-31 · 10,434행",
       "schedule": ""
     },
     {
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 40395,
-      "codes": 2061,
+      "rows": 40416,
+      "codes": 2062,
       "target": 2413,
       "first": "2024-07-05",
-      "last": "2026-07-30",
+      "last": "2026-07-31",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 07-30 · 40,395행",
+      "fmt": "최신 07-31 · 40,416행",
       "schedule": ""
     },
     {
@@ -275,7 +275,7 @@
       "table": "collect_meta",
       "label": "수집마커",
       "tr": "파생",
-      "rows": 18,
+      "rows": 20,
       "codes": 0,
       "target": 2413,
       "first": "",
@@ -283,7 +283,7 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "18행",
+      "fmt": "20행",
       "schedule": "자동(수집 진행에 따라)"
     }
   ]
