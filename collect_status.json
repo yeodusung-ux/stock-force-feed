@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03 14:22:20",
+  "updated": "2026-08-03 14:37:20",
   "system": {
     "connected": true,
     "trading": true,
@@ -14,11 +14,11 @@
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27595659,
+      "rows": 27595672,
       "codes": 2522,
       "target": 2411,
       "first": "2022-11-03",
-      "last": "2026-07-31",
+      "last": "2026-08-03",
       "progress_pct": 18,
       "busy": false,
       "state": "busy",
@@ -36,8 +36,8 @@
       "last": "2026-07-31",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "2,522/2,411 (100%)",
+      "state": "idle",
+      "fmt": "2,522/2,411 (100%) · 최신 07-31 · 3일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -52,7 +52,7 @@
       "progress_pct": 100,
       "busy": false,
       "state": "idle",
-      "fmt": "2,522/2,411 (100%) · 최신 07-30 · 1일 지연",
+      "fmt": "2,522/2,411 (100%) · 최신 07-30 · 4일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -66,8 +66,8 @@
       "last": "2026-07-31",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "2,485/2,411 (100%)",
+      "state": "idle",
+      "fmt": "2,485/2,411 (100%) · 최신 07-31 · 3일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -104,11 +104,11 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 90321489,
+      "rows": 90322289,
       "codes": 2451,
       "target": 2411,
       "first": "2023-03-24",
-      "last": "2026-07-31",
+      "last": "2026-08-03",
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
