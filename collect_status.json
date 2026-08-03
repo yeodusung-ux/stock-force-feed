@@ -1,13 +1,13 @@
 {
-  "updated": "2026-08-03 15:52:20",
+  "updated": "2026-08-03 15:57:37",
   "system": {
     "connected": true,
     "trading": true,
     "live": true,
-    "pid": 16812,
+    "pid": 14860,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 14
   },
   "collections": [
     {
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 311598,
+      "rows": 311662,
       "codes": 2522,
       "target": 2411,
       "first": "2026-01-26",
       "last": "2026-07-31",
-      "progress_pct": 12,
+      "progress_pct": 15,
       "busy": true,
       "state": "busy",
-      "fmt": "297/2,411 (12%)",
+      "fmt": "352/2,411 (15%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -160,10 +160,10 @@
       "target": 2411,
       "first": "20250416",
       "last": "20260707",
-      "progress_pct": 100,
+      "progress_pct": null,
       "busy": false,
-      "state": "done",
-      "fmt": "",
+      "state": "idle",
+      "fmt": "최신 07-07 · 92행",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
@@ -175,10 +175,10 @@
       "target": 2411,
       "first": "20250409",
       "last": "20260731",
-      "progress_pct": 100,
+      "progress_pct": null,
       "busy": false,
-      "state": "done",
-      "fmt": "",
+      "state": "idle",
+      "fmt": "최신 07-31 · 68,339행",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
@@ -215,15 +215,15 @@
       "table": "late_rise",
       "label": "후반급등",
       "tr": "opt10080",
-      "rows": 3806,
-      "codes": 1085,
+      "rows": 3951,
+      "codes": 1129,
       "target": 6304,
       "first": "20260630",
       "last": "20260731",
-      "progress_pct": 60,
-      "busy": true,
-      "state": "busy",
-      "fmt": "3,806/6,304 (60%) · 1,085종목",
+      "progress_pct": 63,
+      "busy": false,
+      "state": "idle",
+      "fmt": "3,951/6,304 (63%) · 1,129종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
     {
