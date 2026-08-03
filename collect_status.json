@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03 15:42:20",
+  "updated": "2026-08-03 15:47:20",
   "system": {
     "connected": true,
     "trading": true,
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 311444,
+      "rows": 311511,
       "codes": 2522,
       "target": 2411,
       "first": "2026-01-26",
       "last": "2026-07-31",
-      "progress_pct": 5,
+      "progress_pct": 9,
       "busy": true,
       "state": "busy",
-      "fmt": "132/2,411 (5%)",
+      "fmt": "214/2,411 (9%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -215,15 +215,15 @@
       "table": "late_rise",
       "label": "후반급등",
       "tr": "opt10080",
-      "rows": 3464,
-      "codes": 989,
+      "rows": 3623,
+      "codes": 1033,
       "target": 6304,
       "first": "20260630",
       "last": "20260731",
-      "progress_pct": 55,
+      "progress_pct": 57,
       "busy": true,
       "state": "busy",
-      "fmt": "3,464/6,304 (55%) · 989종목",
+      "fmt": "3,623/6,304 (57%) · 1,033종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
     {
