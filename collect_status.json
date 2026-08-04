@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04 10:10:05",
+  "updated": "2026-08-04 10:20:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -19,10 +19,10 @@
       "target": 2407,
       "first": "2022-11-03",
       "last": "2026-08-04",
-      "progress_pct": 41,
+      "progress_pct": 42,
       "busy": false,
       "state": "busy",
-      "fmt": "984/2,389 (41%)",
+      "fmt": "992/2,389 (42%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -185,8 +185,8 @@
       "table": "quant_universe",
       "label": "퀀트 유니버스",
       "tr": "opt10001",
-      "rows": 4330,
-      "codes": 4330,
+      "rows": 4335,
+      "codes": 4335,
       "target": 2407,
       "first": "2026-06-29",
       "last": "2026-08-04",
