@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06 14:50:39",
+  "updated": "2026-08-06 15:00:39",
   "system": {
     "connected": true,
     "trading": true,
@@ -221,8 +221,8 @@
       "first": "20260630",
       "last": "20260805",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
+      "busy": true,
+      "state": "busy",
       "fmt": "6,337/6,327 (100%) · 1,961종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
