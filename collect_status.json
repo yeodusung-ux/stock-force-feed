@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06 18:15:40",
+  "updated": "2026-08-06 18:20:39",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 7516,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 6
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -19,10 +19,10 @@
       "target": 2397,
       "first": "2022-11-03",
       "last": "2026-08-06",
-      "progress_pct": 0,
+      "progress_pct": 6,
       "busy": true,
       "state": "busy",
-      "fmt": "0/2,397 (0%)",
+      "fmt": "137/2,397 (6%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -74,8 +74,8 @@
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 40789,
-      "codes": 2465,
+      "rows": 47739,
+      "codes": 2472,
       "target": 2397,
       "first": "2026-04-15",
       "last": "2026-08-06",
@@ -260,7 +260,7 @@
       "table": "collect_log",
       "label": "수집커서",
       "tr": "파생",
-      "rows": 57,
+      "rows": 58,
       "codes": 0,
       "target": 2397,
       "first": "",
@@ -268,7 +268,7 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "57행",
+      "fmt": "58행",
       "schedule": "자동(수집 진행에 따라)"
     },
     {
