@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06 18:10:39",
+  "updated": "2026-08-06 18:15:40",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 7516,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 6
   },
   "collections": [
     {
@@ -19,25 +19,25 @@
       "target": 2397,
       "first": "2022-11-03",
       "last": "2026-08-06",
-      "progress_pct": 93,
+      "progress_pct": 0,
       "busy": true,
       "state": "busy",
-      "fmt": "2,232/2,390 (93%)",
+      "fmt": "0/2,397 (0%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 421051,
+      "rows": 421978,
       "codes": 2522,
       "target": 2397,
       "first": "2026-06-24",
       "last": "2026-08-06",
-      "progress_pct": 95,
+      "progress_pct": 100,
       "busy": true,
-      "state": "busy",
-      "fmt": "2,271/2,397 (95%)",
+      "state": "done",
+      "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -74,11 +74,11 @@
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 47738,
-      "codes": 2472,
+      "rows": 40789,
+      "codes": 2465,
       "target": 2397,
       "first": "2026-04-15",
-      "last": "2026-08-05",
+      "last": "2026-08-06",
       "progress_pct": null,
       "busy": true,
       "state": "busy",
