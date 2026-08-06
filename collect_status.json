@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06 15:20:39",
+  "updated": "2026-08-06 15:35:40",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 7516,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -20,7 +20,7 @@
       "first": "2022-11-03",
       "last": "2026-08-06",
       "progress_pct": 93,
-      "busy": false,
+      "busy": true,
       "state": "busy",
       "fmt": "2,232/2,390 (93%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
@@ -35,7 +35,7 @@
       "first": "2026-06-24",
       "last": "2026-08-05",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "state": "idle",
       "fmt": "2,522/2,397 (100%) · 최신 08-05 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
@@ -49,10 +49,10 @@
       "target": 2397,
       "first": "2026-01-26",
       "last": "2026-08-04",
-      "progress_pct": 100,
-      "busy": false,
-      "state": "idle",
-      "fmt": "2,522/2,397 (100%) · 최신 08-04 · 2일 지연",
+      "progress_pct": 0,
+      "busy": true,
+      "state": "busy",
+      "fmt": "0/2,397 (0%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -65,7 +65,7 @@
       "first": "2025-03-21",
       "last": "2026-08-05",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "state": "idle",
       "fmt": "2,485/2,397 (100%) · 최신 08-05 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
@@ -80,9 +80,9 @@
       "first": "2026-04-15",
       "last": "2026-08-05",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 08-05 · 47,422행",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -95,16 +95,16 @@
       "first": "2026-07-02",
       "last": "2026-08-06",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 08-06 · 3,155행",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 93688833,
+      "rows": 93691113,
       "codes": 2453,
       "target": 2397,
       "first": "2023-03-24",
@@ -236,8 +236,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
+      "busy": true,
+      "state": "busy",
       "fmt": "4,335행",
       "schedule": "자동(세력수집 시 갱신)"
     },
@@ -251,8 +251,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
+      "busy": true,
+      "state": "busy",
       "fmt": "54행",
       "schedule": "자동(세력수집 시 갱신)"
     },
@@ -266,8 +266,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
+      "busy": true,
+      "state": "busy",
       "fmt": "55행",
       "schedule": "자동(수집 진행에 따라)"
     },
@@ -281,8 +281,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
+      "busy": true,
+      "state": "busy",
       "fmt": "20행",
       "schedule": "자동(수집 진행에 따라)"
     }
