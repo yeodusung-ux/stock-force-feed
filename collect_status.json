@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07 20:40:07",
+  "updated": "2026-08-07 20:45:07",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 9092,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 27
   },
   "collections": [
     {
@@ -20,7 +20,7 @@
       "first": "2022-11-03",
       "last": "2026-08-07",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "state": "done",
       "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
@@ -35,7 +35,7 @@
       "first": "2026-06-24",
       "last": "2026-08-07",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "state": "done",
       "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
@@ -50,7 +50,7 @@
       "first": "2026-01-26",
       "last": "2026-08-06",
       "progress_pct": 100,
-      "busy": true,
+      "busy": false,
       "state": "done",
       "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
@@ -59,15 +59,15 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 821867,
+      "rows": 821900,
       "codes": 2485,
       "target": 2390,
       "first": "2025-03-21",
       "last": "2026-08-07",
-      "progress_pct": 99,
-      "busy": true,
-      "state": "busy",
-      "fmt": "2,371/2,390 (99%)",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "821,900봉·최신",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -80,9 +80,9 @@
       "first": "2026-04-15",
       "last": "2026-08-07",
       "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "busy": false,
+      "state": "idle",
+      "fmt": "최신 08-07 · 48,891행",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -95,9 +95,9 @@
       "first": "2026-07-02",
       "last": "2026-08-07",
       "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "busy": false,
+      "state": "idle",
+      "fmt": "최신 08-07 · 3,172행",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -125,30 +125,30 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 11575,
-      "codes": 433,
+      "rows": 11776,
+      "codes": 437,
       "target": 2390,
       "first": "2025-02-03",
-      "last": "2026-08-06",
+      "last": "2026-08-07",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-06 · 11,575행",
+      "fmt": "최신 08-07 · 11,776행",
       "schedule": ""
     },
     {
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 40555,
+      "rows": 40568,
       "codes": 2066,
       "target": 2390,
       "first": "2024-07-05",
-      "last": "2026-08-06",
+      "last": "2026-08-07",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-06 · 40,555행",
+      "fmt": "최신 08-07 · 40,568행",
       "schedule": ""
     },
     {
@@ -236,8 +236,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": true,
-      "state": "busy",
+      "busy": false,
+      "state": "idle",
       "fmt": "4,335행",
       "schedule": "자동(세력수집 시 갱신)"
     },
@@ -251,8 +251,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": true,
-      "state": "busy",
+      "busy": false,
+      "state": "idle",
       "fmt": "54행",
       "schedule": "자동(세력수집 시 갱신)"
     },
@@ -266,8 +266,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": true,
-      "state": "busy",
+      "busy": false,
+      "state": "idle",
       "fmt": "61행",
       "schedule": "자동(수집 진행에 따라)"
     },
@@ -281,8 +281,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": true,
-      "state": "busy",
+      "busy": false,
+      "state": "idle",
       "fmt": "20행",
       "schedule": "자동(수집 진행에 따라)"
     }
