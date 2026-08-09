@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10 07:15:05",
+  "updated": "2026-08-10 07:20:06",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,22 +7,22 @@
     "pid": 15492,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27752595,
-      "codes": 2522,
+      "rows": 27757795,
+      "codes": 2523,
       "target": 2388,
       "first": "2022-11-03",
-      "last": "2026-08-07",
-      "progress_pct": 0,
+      "last": "2026-08-10",
+      "progress_pct": 100,
       "busy": false,
-      "state": "idle",
-      "fmt": "0/1 (0%)",
+      "state": "done",
+      "fmt": "2,523/2,388 (100%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -36,8 +36,8 @@
       "last": "2026-08-07",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "2,522/2,388 (100%)",
+      "state": "idle",
+      "fmt": "2,522/2,388 (100%) · 최신 08-07 · 3일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -52,7 +52,7 @@
       "progress_pct": 100,
       "busy": false,
       "state": "idle",
-      "fmt": "2,522/2,388 (100%) · 최신 08-06 · 1일 지연",
+      "fmt": "2,522/2,388 (100%) · 최신 08-06 · 4일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -66,8 +66,8 @@
       "last": "2026-08-07",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "2,485/2,388 (100%)",
+      "state": "idle",
+      "fmt": "2,485/2,388 (100%) · 최신 08-07 · 3일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -104,11 +104,11 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 97919494,
-      "codes": 2454,
+      "rows": 97921094,
+      "codes": 2455,
       "target": 2388,
       "first": "2023-03-24",
-      "last": "2026-08-07",
+      "last": "2026-08-10",
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
