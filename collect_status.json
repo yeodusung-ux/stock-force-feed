@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12 07:01:18",
+  "updated": "2026-08-12 07:05:03",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 20620,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -230,15 +230,15 @@
       "table": "stock_name",
       "label": "종목명",
       "tr": "마스터",
-      "rows": 4338,
-      "codes": 4338,
+      "rows": 4339,
+      "codes": 4339,
       "target": 2389,
       "first": "",
       "last": "",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "4,338행",
+      "fmt": "4,339행",
       "schedule": "자동(세력수집 시 갱신)"
     },
     {
