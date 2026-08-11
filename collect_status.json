@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11 15:45:00",
+  "updated": "2026-08-11 15:50:00",
   "system": {
     "connected": true,
     "trading": true,
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 326140,
+      "rows": 326223,
       "codes": 2523,
       "target": 2387,
       "first": "2026-01-26",
       "last": "2026-08-10",
-      "progress_pct": 11,
+      "progress_pct": 15,
       "busy": true,
       "state": "busy",
-      "fmt": "266/2,387 (11%)",
+      "fmt": "348/2,387 (15%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
