@@ -1,6 +1,6 @@
 {
   "cond": {
-    "absorb_min": 70.0,
+    "absorb_min": 0.0,
     "brk_dom": true,
     "brk_mult": 10.0,
     "disp_hi": 15.0,
@@ -10,7 +10,7 @@
     "insider_min": 0.0,
     "inv_dom": true,
     "inv_mult": 20.0,
-    "match_min": 70.0,
+    "match_min": 0.0,
     "min_amt_eok": 20.0,
     "min_buy_days": 5,
     "offset": 10,
@@ -31,17 +31,17 @@
     ]
   },
   "weights": {
-    "amt": 60,
-    "days": 50,
-    "hit": 20,
-    "disp": 40,
-    "credit": 10,
-    "insider": 30,
-    "absorb": 70
+    "amt": 10,
+    "days": 10,
+    "hit": 0,
+    "disp": 60,
+    "credit": 0,
+    "insider": 20,
+    "absorb": 0
   },
   "scan_from": "2023-01-01",
   "publish_hour": 22,
   "publish_minute": 30,
-  "updated": "2026-08-12T08:15:03",
+  "updated": "2026-08-12T08:17:03",
   "last_published": ""
 }
