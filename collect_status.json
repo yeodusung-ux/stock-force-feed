@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-11 21:40:00",
+  "updated": "2026-08-11 21:45:00",
   "system": {
     "connected": true,
     "trading": true,
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,443종목(최대 40일)",
+      "fmt": "미도달 2,442종목(최대 40일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2443,
+        "behind": 2442,
         "max_lag": 40,
         "latest": "2026-08-11",
         "total": 2457
@@ -200,15 +200,15 @@
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 4335,
-      "codes": 4335,
+      "rows": 4338,
+      "codes": 4338,
       "target": 2387,
-      "first": "2026-08-08",
-      "last": "2026-08-08",
+      "first": "2026-08-11",
+      "last": "2026-08-11",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-08 · 4,335행",
+      "fmt": "최신 08-11 · 4,338행",
       "schedule": "5분 자동(DART)"
     },
     {
