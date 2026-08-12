@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13 08:50:04",
+  "updated": "2026-08-13 08:55:03",
   "system": {
     "connected": true,
     "trading": true,
@@ -22,7 +22,7 @@
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "오늘완료",
+      "fmt": "2,525/2,359 (100%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -36,8 +36,8 @@
       "last": "2026-08-12",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "오늘완료",
+      "state": "idle",
+      "fmt": "2,524/2,359 (100%) · 최신 08-12 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -51,8 +51,8 @@
       "last": "2026-08-11",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "오늘완료",
+      "state": "idle",
+      "fmt": "2,523/2,359 (100%) · 최신 08-11 · 2일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -66,8 +66,8 @@
       "last": "2026-08-12",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "829,462봉·최신",
+      "state": "idle",
+      "fmt": "2,487/2,359 (100%) · 최신 08-12 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,450종목(최대 42일)",
+      "fmt": "미도달 2,449종목(최대 42일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2450,
+        "behind": 2449,
         "max_lag": 42,
         "latest": "2026-08-13",
         "total": 2460
