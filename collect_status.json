@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12 18:09:17",
+  "updated": "2026-08-12 18:14:16",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 22152,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -19,10 +19,10 @@
       "target": 2389,
       "first": "2022-11-03",
       "last": "2026-08-12",
-      "progress_pct": 2,
+      "progress_pct": 8,
       "busy": true,
       "state": "busy",
-      "fmt": "44/2,389 (2%)",
+      "fmt": "182/2,389 (8%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
