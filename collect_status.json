@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12 18:34:16",
+  "updated": "2026-08-12 18:39:17",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,22 +7,22 @@
     "pid": 22152,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 27831999,
+      "rows": 27839123,
       "codes": 2524,
       "target": 2389,
       "first": "2022-11-03",
       "last": "2026-08-12",
-      "progress_pct": 31,
+      "progress_pct": 43,
       "busy": true,
       "state": "busy",
-      "fmt": "743/2,389 (31%)",
+      "fmt": "1,027/2,389 (43%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -185,8 +185,8 @@
       "table": "quant_universe",
       "label": "퀀트 유니버스",
       "tr": "opt10001",
-      "rows": 4338,
-      "codes": 4338,
+      "rows": 4339,
+      "codes": 4339,
       "target": 2389,
       "first": "2026-06-29",
       "last": "2026-08-12",
