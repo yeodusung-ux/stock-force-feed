@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12 21:38:46",
+  "updated": "2026-08-12 21:46:46",
   "by": "app",
   "count": 8,
   "posts": [
@@ -27,7 +27,7 @@
       "warnings": [],
       "blocked": [
         "enabled=false (마스터 스위치 꺼짐)",
-        "데이터가 오래됨 (21.6시간 > 허용 6시간)"
+        "데이터가 오래됨 (21.8시간 > 허용 6시간)"
       ],
       "image": ""
     },
@@ -47,9 +47,9 @@
       "warnings": [],
       "blocked": [
         "enabled=false (마스터 스위치 꺼짐)",
-        "데이터가 오래됨 (6.2시간 > 허용 6시간)"
+        "데이터가 오래됨 (6.3시간 > 허용 6시간)"
       ],
-      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/supply.png"
+      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/supply.png?v=f31d8a4e841c"
     },
     {
       "kind": "force",
@@ -104,7 +104,7 @@
       "blocked": [
         "enabled=false (마스터 스위치 꺼짐)"
       ],
-      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/perf.png"
+      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/perf.png?v=138c4191f5e5"
     },
     {
       "kind": "followup",
@@ -131,7 +131,7 @@
       "blocked": [
         "enabled=false (마스터 스위치 꺼짐)"
       ],
-      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/followup.png"
+      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/followup.png?v=0da17b65f550"
     },
     {
       "kind": "stat",
@@ -150,7 +150,7 @@
       "blocked": [
         "enabled=false (마스터 스위치 꺼짐)"
       ],
-      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stat.png"
+      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stat.png?v=37fff8b2f42b"
     },
     {
       "kind": "stock",
@@ -175,7 +175,7 @@
       "blocked": [
         "enabled=false (마스터 스위치 꺼짐)"
       ],
-      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock.png"
+      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock.png?v=bfd049b049d3"
     },
     {
       "kind": "about",
