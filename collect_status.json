@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12 09:41:55",
+  "updated": "2026-08-12 09:45:40",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 22532,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -203,12 +203,12 @@
       "rows": 4338,
       "codes": 4338,
       "target": 2389,
-      "first": "2026-08-11",
-      "last": "2026-08-11",
+      "first": "2026-08-12",
+      "last": "2026-08-12",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-11 · 4,338행",
+      "fmt": "최신 08-12 · 4,338행",
       "schedule": "5분 자동(DART)"
     },
     {
