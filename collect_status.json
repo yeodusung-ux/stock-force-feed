@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13 15:03:48",
+  "updated": "2026-08-13 15:08:49",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 3100,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -185,8 +185,8 @@
       "table": "quant_universe",
       "label": "퀀트 유니버스",
       "tr": "opt10001",
-      "rows": 4339,
-      "codes": 4339,
+      "rows": 4340,
+      "codes": 4340,
       "target": 2359,
       "first": "2026-06-29",
       "last": "2026-08-13",
@@ -221,8 +221,8 @@
       "first": "20260630",
       "last": "20260812",
       "progress_pct": 100,
-      "busy": true,
-      "state": "busy",
+      "busy": false,
+      "state": "done",
       "fmt": "7,197/5,748 (100%) · 2,037종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
