@@ -1,13 +1,13 @@
 {
-  "updated": "2026-08-13 09:08:58",
+  "updated": "2026-08-13 09:12:43",
   "system": {
     "connected": true,
     "trading": true,
     "live": true,
     "pid": 2736,
-    "watchdog_enabled": false,
+    "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -110,10 +110,16 @@
       "first": "2023-03-24",
       "last": "2026-08-13",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,460/2,407 (100%)",
-      "schedule": "상시(장외 이어받기)"
+      "busy": true,
+      "state": "busy",
+      "fmt": "미도달 2,448종목(최대 42일)",
+      "schedule": "상시(장외 이어받기)",
+      "lag": {
+        "behind": 2448,
+        "max_lag": 42,
+        "latest": "2026-08-13",
+        "total": 2460
+      }
     },
     {
       "table": "news_volume",
