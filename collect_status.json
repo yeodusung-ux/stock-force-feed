@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14 00:09:25",
+  "updated": "2026-08-14 00:14:26",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 12824,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 29
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -170,14 +170,14 @@
       "table": "closebet_pool",
       "label": "종가베팅풀",
       "tr": "일봉유도/CSV",
-      "rows": 69736,
+      "rows": 69893,
       "codes": 3195,
       "target": 2360,
       "first": "20250409",
-      "last": "20260812",
-      "progress_pct": 0,
-      "busy": true,
-      "state": "busy",
+      "last": "20260813",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
       "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
@@ -215,15 +215,15 @@
       "table": "late_rise",
       "label": "후반급등",
       "tr": "opt10080",
-      "rows": 7197,
-      "codes": 2037,
-      "target": 5748,
+      "rows": 7354,
+      "codes": 2046,
+      "target": 5788,
       "first": "20260630",
-      "last": "20260812",
+      "last": "20260813",
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "7,197/5,748 (100%) · 2,037종목",
+      "fmt": "7,354/5,788 (100%) · 2,046종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
     {
