@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13 21:34:27",
+  "updated": "2026-08-13 21:39:25",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 12824,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 29
   },
   "collections": [
     {
@@ -125,15 +125,15 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 12355,
-      "codes": 448,
+      "rows": 12383,
+      "codes": 449,
       "target": 2360,
       "first": "2025-02-03",
       "last": "2026-08-13",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-13 · 12,355행",
+      "fmt": "최신 08-13 · 12,383행",
       "schedule": ""
     },
     {
