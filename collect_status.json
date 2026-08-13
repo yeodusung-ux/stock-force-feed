@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13 16:58:49",
+  "updated": "2026-08-13 17:03:48",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 3100,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -29,15 +29,15 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 490010,
+      "rows": 491045,
       "codes": 2524,
       "target": 2359,
       "first": "2026-06-24",
       "last": "2026-08-13",
-      "progress_pct": 1,
+      "progress_pct": 6,
       "busy": true,
       "state": "busy",
-      "fmt": "22/2,359 (1%)",
+      "fmt": "152/2,359 (6%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
