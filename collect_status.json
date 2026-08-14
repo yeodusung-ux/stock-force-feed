@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14 11:49:16",
+  "updated": "2026-08-14 11:54:15",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 14024,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -275,7 +275,7 @@
       "table": "collect_meta",
       "label": "수집마커",
       "tr": "파생",
-      "rows": 20,
+      "rows": 21,
       "codes": 0,
       "target": 2359,
       "first": "",
@@ -283,7 +283,7 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "20행",
+      "fmt": "21행",
       "schedule": "자동(수집 진행에 따라)"
     }
   ]
