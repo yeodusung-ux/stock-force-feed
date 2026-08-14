@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14 15:41:57",
+  "updated": "2026-08-14 15:46:56",
   "system": {
     "connected": true,
     "trading": true,
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 333173,
+      "rows": 333231,
       "codes": 2524,
       "target": 2359,
       "first": "2026-01-26",
       "last": "2026-08-13",
-      "progress_pct": 4,
+      "progress_pct": 7,
       "busy": true,
       "state": "busy",
-      "fmt": "102/2,359 (4%)",
+      "fmt": "159/2,359 (7%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,445종목(최대 43일)",
+      "fmt": "미도달 2,444종목(최대 43일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2445,
+        "behind": 2444,
         "max_lag": 43,
         "latest": "2026-08-14",
         "total": 2460
