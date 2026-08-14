@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14 11:30:30",
+  "updated": "2026-08-14 11:34:15",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 14024,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -110,9 +110,9 @@
       "first": "2023-03-24",
       "last": "2026-08-14",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,460/2,407 (100%) · 미도달 2,448종목(최대 43일)",
+      "busy": true,
+      "state": "busy",
+      "fmt": "미도달 2,448종목(최대 43일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
         "behind": 2448,
