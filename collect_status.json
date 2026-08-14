@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14 21:06:57",
+  "updated": "2026-08-14 21:11:57",
   "system": {
     "connected": true,
     "trading": true,
@@ -59,7 +59,7 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 834242,
+      "rows": 834247,
       "codes": 2488,
       "target": 2359,
       "first": "2025-03-21",
@@ -67,7 +67,7 @@
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "834,242봉·최신",
+      "fmt": "834,247봉·최신",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -125,30 +125,30 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 12383,
-      "codes": 449,
+      "rows": 12472,
+      "codes": 450,
       "target": 2359,
       "first": "2025-02-03",
-      "last": "2026-08-13",
+      "last": "2026-08-14",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-13 · 12,383행",
+      "fmt": "최신 08-14 · 12,472행",
       "schedule": ""
     },
     {
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 40663,
+      "rows": 40688,
       "codes": 2069,
       "target": 2359,
       "first": "2024-07-05",
-      "last": "2026-08-12",
+      "last": "2026-08-14",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-12 · 40,663행",
+      "fmt": "최신 08-14 · 40,688행",
       "schedule": ""
     },
     {
