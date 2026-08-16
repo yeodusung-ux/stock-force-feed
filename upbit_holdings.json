@@ -1,4 +1,99 @@
 {
- "updated": "2026-08-17 00:59",
- "holdings": []
+ "updated": "2026-08-17 01:04",
+ "holdings": [
+  {
+   "code": "KRW-BTC",
+   "name": "BTC",
+   "shares": 0.04386832,
+   "avgPrice": 100437771.28824197
+  },
+  {
+   "code": "KRW-ETH",
+   "name": "ETH",
+   "shares": 1.7330354399999999,
+   "avgPrice": 2879136.40501158
+  },
+  {
+   "code": "KRW-XRP",
+   "name": "XRP",
+   "shares": 2447.92279261,
+   "avgPrice": 1751.70850705
+  },
+  {
+   "code": "KRW-USDT",
+   "name": "USDT",
+   "shares": 23912.802108930002,
+   "avgPrice": 1445.02407436
+  },
+  {
+   "code": "KRW-TRX",
+   "name": "TRX",
+   "shares": 9.9e-07,
+   "avgPrice": 290.99999999
+  },
+  {
+   "code": "KRW-ATOM",
+   "name": "ATOM",
+   "shares": 6.3e-07,
+   "avgPrice": 11404.63344285
+  },
+  {
+   "code": "KRW-TSHP",
+   "name": "TSHP",
+   "shares": 2315.78947368,
+   "avgPrice": 19.475
+  },
+  {
+   "code": "KRW-APENFT",
+   "name": "APENFT",
+   "shares": 417129.01052331,
+   "avgPrice": 0.0
+  },
+  {
+   "code": "KRW-SOLO",
+   "name": "SOLO",
+   "shares": 0.29779854,
+   "avgPrice": 0.0
+  },
+  {
+   "code": "KRW-AQUA",
+   "name": "AQUA",
+   "shares": 9617.937804,
+   "avgPrice": 0.0
+  },
+  {
+   "code": "KRW-ETHW",
+   "name": "ETHW",
+   "shares": 0.0651581,
+   "avgPrice": 0.0
+  },
+  {
+   "code": "KRW-ETHF",
+   "name": "ETHF",
+   "shares": 0.0651581,
+   "avgPrice": 0.0
+  },
+  {
+   "code": "KRW-XCORE",
+   "name": "XCORE",
+   "shares": 4.95117741,
+   "avgPrice": 0.0
+  },
+  {
+   "code": "KRW-USDC",
+   "name": "USDC",
+   "shares": 14796.4386023,
+   "avgPrice": 1442.62973424
+  }
+ ],
+ "account": {
+  "deposit": 5413957,
+  "monthRealized": 252001,
+  "yearRealized": 376109,
+  "cumRealized": 376109,
+  "acctMonthRealized": -1462008,
+  "acctYearRealized": 1591899,
+  "acctCumRealized": 1897440,
+  "acctSince": "2021-08-19"
+ }
 }
