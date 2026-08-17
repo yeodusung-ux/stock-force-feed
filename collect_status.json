@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17 20:40:03",
+  "updated": "2026-08-17 20:45:02",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 18412,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 29
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 99220895,
+      "rows": 99220915,
       "codes": 2460,
       "target": 2360,
       "first": "2023-03-24",
@@ -275,7 +275,7 @@
       "table": "collect_meta",
       "label": "수집마커",
       "tr": "파생",
-      "rows": 24,
+      "rows": 27,
       "codes": 0,
       "target": 2360,
       "first": "",
@@ -283,7 +283,7 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "24행",
+      "fmt": "27행",
       "schedule": "자동(수집 진행에 따라)"
     }
   ]
