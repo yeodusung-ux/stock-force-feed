@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18 23:20:05",
+  "updated": "2026-08-18 23:25:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,18 +7,18 @@
     "pid": 7452,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 0,
-      "codes": 0,
+      "rows": 27950299,
+      "codes": 2526,
       "target": 2363,
-      "first": "",
-      "last": "",
+      "first": "2022-11-03",
+      "last": "2026-08-18",
       "progress_pct": 100,
       "busy": false,
       "state": "done",
@@ -104,11 +104,11 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 0,
-      "codes": 0,
+      "rows": 99553600,
+      "codes": 2461,
       "target": 2363,
-      "first": "",
-      "last": "",
+      "first": "2023-03-24",
+      "last": "2026-08-18",
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
@@ -275,7 +275,7 @@
       "table": "collect_meta",
       "label": "수집마커",
       "tr": "파생",
-      "rows": 27,
+      "rows": 0,
       "codes": 0,
       "target": 2363,
       "first": "",
@@ -283,7 +283,7 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "27행",
+      "fmt": "대기",
       "schedule": "자동(수집 진행에 따라)"
     }
   ]
