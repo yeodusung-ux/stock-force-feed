@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18 13:55:04",
+  "updated": "2026-08-18 14:30:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 7452,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -185,8 +185,8 @@
       "table": "quant_universe",
       "label": "퀀트 유니버스",
       "tr": "opt10001",
-      "rows": 4340,
-      "codes": 4340,
+      "rows": 4341,
+      "codes": 4341,
       "target": 2363,
       "first": "2026-06-29",
       "last": "2026-08-18",
