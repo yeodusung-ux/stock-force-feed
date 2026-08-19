@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20 00:10:06",
+  "updated": "2026-08-20 00:15:06",
   "system": {
     "connected": true,
     "trading": true,
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,425종목(최대 48일)",
+      "fmt": "미도달 2,424종목(최대 48일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2425,
+        "behind": 2424,
         "max_lag": 48,
         "latest": "2026-08-19",
         "total": 2461
@@ -215,15 +215,15 @@
       "table": "late_rise",
       "label": "후반급등",
       "tr": "opt10080",
-      "rows": 8047,
-      "codes": 2118,
+      "rows": 8237,
+      "codes": 2124,
       "target": 6016,
       "first": "20260630",
       "last": "20260819",
       "progress_pct": 100,
-      "busy": true,
-      "state": "busy",
-      "fmt": "8,047/6,016 (100%) · 2,118종목",
+      "busy": false,
+      "state": "done",
+      "fmt": "8,237/6,016 (100%) · 2,124종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
     {
