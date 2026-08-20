@@ -1,6 +1,6 @@
 {
- "ts": 1787258997,
- "ts_str": "2026-08-21 05:49:57",
+ "ts": 1787259298,
+ "ts_str": "2026-08-21 05:54:58",
  "kiwoom_alive": false,
  "kiwoom_connected": true,
  "trading": true,
@@ -16,15 +16,15 @@
  "programs": {
   "main": {
    "alive": false,
-   "age": 6622
+   "age": 6923
   },
   "strategy": {
    "alive": true,
-   "age": 5
+   "age": 6
   },
   "analyzer": {
    "alive": true,
-   "age": 6
+   "age": 7
   }
  },
  "last_restart_result": "",
