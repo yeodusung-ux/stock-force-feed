@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21 00:35:04",
+  "updated": "2026-08-21 00:40:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 15940,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 29
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -29,11 +29,11 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 590538,
-      "codes": 2527,
+      "rows": 0,
+      "codes": 0,
       "target": 2361,
-      "first": "2026-06-24",
-      "last": "2026-08-20",
+      "first": "",
+      "last": "",
       "progress_pct": 100,
       "busy": false,
       "state": "done",
@@ -44,11 +44,11 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 342809,
-      "codes": 2527,
+      "rows": 0,
+      "codes": 0,
       "target": 2361,
-      "first": "2026-01-26",
-      "last": "2026-08-19",
+      "first": "",
+      "last": "",
       "progress_pct": 100,
       "busy": false,
       "state": "done",
@@ -125,15 +125,15 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 12989,
-      "codes": 461,
+      "rows": 0,
+      "codes": 0,
       "target": 2361,
-      "first": "2025-02-03",
-      "last": "2026-08-20",
+      "first": "",
+      "last": "",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-20 · 12,989행",
+      "fmt": "대기",
       "schedule": ""
     },
     {
