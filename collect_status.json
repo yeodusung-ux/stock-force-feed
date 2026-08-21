@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-21 19:05:04",
+  "updated": "2026-08-21 19:10:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 2088,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -19,10 +19,10 @@
       "target": 2356,
       "first": "2022-11-03",
       "last": "2026-08-21",
-      "progress_pct": 74,
+      "progress_pct": 79,
       "busy": true,
       "state": "busy",
-      "fmt": "1,746/2,356 (74%)",
+      "fmt": "1,873/2,356 (79%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -200,15 +200,15 @@
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 4344,
-      "codes": 4344,
+      "rows": 4345,
+      "codes": 4345,
       "target": 2356,
       "first": "2026-08-21",
       "last": "2026-08-21",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-21 · 4,344행",
+      "fmt": "최신 08-21 · 4,345행",
       "schedule": "5분 자동(DART)"
     },
     {
