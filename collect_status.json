@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22 07:01:19",
+  "updated": "2026-08-22 07:05:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 15084,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -89,15 +89,15 @@
       "table": "signal_log",
       "label": "세력신호",
       "tr": "파생",
-      "rows": 3384,
-      "codes": 1399,
+      "rows": 3397,
+      "codes": 1400,
       "target": 2354,
       "first": "2026-07-02",
-      "last": "2026-08-21",
+      "last": "2026-08-22",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-21 · 3,384행",
+      "fmt": "최신 08-22 · 3,397행",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
