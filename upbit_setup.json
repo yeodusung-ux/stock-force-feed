@@ -1,0 +1,83 @@
+{
+ "updated": "2026-08-26 18:16",
+ "auto_trade_enabled": true,
+ "auto_trade_saved": true,
+ "emergency_stop": false,
+ "global": {
+  "fx_target_enabled": true,
+  "fx_target_rate": 1500.0,
+  "fx_target_gap": 100.0,
+  "fx_target_steps": 5,
+  "fx_live_enabled": true,
+  "fx_live_gap": 100.0,
+  "fx_live_steps": 10,
+  "trim_multiplier": 2.0,
+  "trim_sell_fraction": 0.5,
+  "trim_profit_threshold": 0.5,
+  "auto_start_trading": true
+ },
+ "coins": {
+  "KRW-USDT": {
+   "interval": 4,
+   "fixed_base": null,
+   "sell_profit_threshold": -5.0,
+   "trim_enabled": false,
+   "target_mode": "fixed",
+   "target_value": 0.0,
+   "is_stablecoin": true,
+   "grid_state_mode": false,
+   "max_levels": 40
+  },
+  "KRW-USDC": {
+   "interval": 4,
+   "fixed_base": null,
+   "sell_profit_threshold": -5.0,
+   "trim_enabled": false,
+   "target_mode": "percent",
+   "target_value": 0.0,
+   "is_stablecoin": true,
+   "grid_state_mode": false,
+   "max_levels": 40
+  },
+  "KRW-XRP": {
+   "interval": 10,
+   "fixed_base": 200000.0,
+   "sell_profit_threshold": 0.0,
+   "trim_enabled": false,
+   "target_mode": "percent",
+   "target_value": 0.0,
+   "is_stablecoin": false,
+   "grid_state_mode": true,
+   "max_levels": 100
+  },
+  "KRW-BTC": {
+   "interval": 500000,
+   "fixed_base": 300000.0,
+   "sell_profit_threshold": 0.0,
+   "trim_enabled": false,
+   "target_mode": "percent",
+   "target_value": 0.0,
+   "is_stablecoin": false,
+   "grid_state_mode": true,
+   "max_levels": 100
+  },
+  "KRW-ETH": {
+   "interval": 20000,
+   "fixed_base": 200000.0,
+   "sell_profit_threshold": 0.0,
+   "trim_enabled": false,
+   "target_mode": "percent",
+   "target_value": 0.0,
+   "is_stablecoin": false,
+   "grid_state_mode": true,
+   "max_levels": 100
+  }
+ },
+ "coin_order": [
+  "KRW-USDT",
+  "KRW-USDC",
+  "KRW-XRP",
+  "KRW-BTC",
+  "KRW-ETH"
+ ]
+}
