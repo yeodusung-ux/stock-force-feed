@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28 22:24:42",
+  "updated": "2026-08-28 22:29:01",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 14800,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 87
+    "heartbeat_age_sec": 0
   },
   "collections": [
     {
@@ -140,15 +140,15 @@
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 40801,
+      "rows": 40803,
       "codes": 2071,
       "target": 2365,
       "first": "2024-07-05",
-      "last": "2026-08-27",
+      "last": "2026-08-28",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-27 · 40,801행",
+      "fmt": "최신 08-28 · 40,803행",
       "schedule": ""
     },
     {
