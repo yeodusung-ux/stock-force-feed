@@ -1,35 +1,35 @@
 {
- "ts": 1787912289,
- "ts_str": "2026-08-28 19:18:09",
- "kiwoom_alive": true,
- "kiwoom_connected": true,
- "trading": true,
- "last_real": 1787912279.9559999,
- "collect_auto_on": false,
- "collect_sched": "",
- "collect_done_today": false,
- "collect_last_complete": "",
- "collect_progress": "",
- "watchdog_pid": 3368,
- "restarts_today": 0,
- "active_window": "07-04",
- "programs": {
-  "main": {
-   "alive": true,
-   "age": 10
+  "ts": 1787912310,
+  "ts_str": "2026-08-28 19:18:30",
+  "kiwoom_alive": true,
+  "kiwoom_connected": true,
+  "programs": {
+    "main": {
+      "alive": true,
+      "age": 31
+    },
+    "strategy": {
+      "alive": true,
+      "age": 29
+    },
+    "analyzer": {
+      "alive": true,
+      "age": 3
+    }
   },
-  "strategy": {
-   "alive": true,
-   "age": 8
-  },
-  "analyzer": {
-   "alive": true,
-   "age": 12
-  }
- },
- "alert": null,
- "last_restart_result": "",
- "restart_capped": false,
- "task_ok": true,
- "push_fail_streak": 0
+  "trading": true,
+  "last_real": 1787912310.0796666,
+  "collect_auto_on": true,
+  "collect_sched": "17:00",
+  "collect_done_today": false,
+  "collect_last_complete": "",
+  "collect_progress": "",
+  "watchdog_pid": 3368,
+  "restarts_today": 0,
+  "active_window": "07-04",
+  "last_restart_result": "부팅 유예(279s/600s, age=10)",
+  "restart_capped": false,
+  "task_ok": true,
+  "push_fail_streak": 0,
+  "alert": null
 }
