@@ -14,7 +14,7 @@
     "match_min": 0.0,
     "min_amt_eok": 20.0,
     "min_buy_days": 5,
-    "offset": 10,
+    "offset": 0,
     "span": 60,
     "start_maxperiod": true,
     "start_subjects": [
@@ -43,6 +43,6 @@
   "scan_from": "2023-01-01",
   "publish_hour": 22,
   "publish_minute": 30,
-  "updated": "2026-08-29T14:36:05",
+  "updated": "2026-08-29T14:41:06",
   "last_published": ""
 }
