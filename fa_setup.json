@@ -1,11 +1,13 @@
 {
   "cond": {
     "absorb_min": 0.0,
+    "amt20_max_eok": 10.0,
     "brk_dom": true,
     "brk_mult": 10.0,
     "disp_hi": 15.0,
     "disp_lo": -30.0,
     "disp_on": false,
+    "dom_days90_max": 20,
     "entry_disp_max": 0.0,
     "exclude_exited": false,
     "insider_min": 0.0,
@@ -43,7 +45,6 @@
   "scan_from": "2023-01-01",
   "publish_hour": 22,
   "publish_minute": 30,
-  "updated": "2026-08-29T19:52:51",
-  "last_published": "2026-08-29 19:18:56",
-  "last_count": 100
+  "updated": "2026-08-29T19:55:40",
+  "last_published": ""
 }
