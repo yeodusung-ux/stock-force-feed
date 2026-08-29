@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29 14:17:02",
+  "updated": "2026-08-29 14:17:43",
   "flags": {
     "morning": {
       "fast_trail": true,
@@ -12,9 +12,9 @@
       "enabled": true
     },
     "surge_live": {
-      "fast_trail": true,
+      "fast_trail": false,
       "add_buy": false,
-      "enabled": false
+      "enabled": true
     }
   }
 }
