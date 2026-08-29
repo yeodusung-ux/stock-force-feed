@@ -1,35 +1,35 @@
 {
-  "ts": 1787981765,
-  "ts_str": "2026-08-29 14:36:05",
-  "kiwoom_alive": true,
-  "kiwoom_connected": true,
-  "programs": {
-    "main": {
-      "alive": true,
-      "age": 0
-    },
-    "strategy": {
-      "alive": true,
-      "age": 27
-    },
-    "analyzer": {
-      "alive": true,
-      "age": 22
-    }
+ "ts": 1787981946,
+ "ts_str": "2026-08-29 14:39:06",
+ "kiwoom_alive": true,
+ "kiwoom_connected": true,
+ "trading": true,
+ "last_real": 0.0,
+ "collect_auto_on": false,
+ "collect_sched": "",
+ "collect_done_today": false,
+ "collect_last_complete": "",
+ "collect_progress": "",
+ "watchdog_pid": 3368,
+ "restarts_today": 0,
+ "active_window": "07-04",
+ "programs": {
+  "main": {
+   "alive": true,
+   "age": 1
   },
-  "trading": true,
-  "last_real": 0.0,
-  "collect_auto_on": true,
-  "collect_sched": "17:00",
-  "collect_done_today": false,
-  "collect_last_complete": "",
-  "collect_progress": "",
-  "watchdog_pid": 3368,
-  "restarts_today": 0,
-  "active_window": "07-04",
-  "last_restart_result": "부팅 유예(271s/600s, age=1)",
-  "restart_capped": false,
-  "task_ok": true,
-  "push_fail_streak": 0,
-  "alert": null
+  "strategy": {
+   "alive": true,
+   "age": 28
+  },
+  "analyzer": {
+   "alive": true,
+   "age": 23
+  }
+ },
+ "alert": null,
+ "last_restart_result": "",
+ "restart_capped": false,
+ "task_ok": true,
+ "push_fail_streak": 0
 }
