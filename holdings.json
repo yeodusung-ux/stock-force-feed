@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29 20:57",
+  "updated": "2026-08-29 21:08",
   "holdings": [
     {
       "code": "000270",
@@ -11,6 +11,7 @@
       "dps": 6800,
       "plan": {
         "water": 116119,
+        "waterQty": 21,
         "trailArm": 163933
       }
     },
@@ -24,6 +25,7 @@
       "dps": 3000,
       "plan": {
         "water": 1542750,
+        "waterQty": 2,
         "trailArm": 2178000
       }
     },
@@ -36,7 +38,8 @@
       "maxLevel": 7,
       "dps": 19500,
       "plan": {
-        "water": 568650
+        "water": 568650,
+        "waterQty": 1
       }
     },
     {
@@ -48,7 +51,8 @@
       "maxLevel": 7,
       "dps": 1100,
       "plan": {
-        "water": 21845
+        "water": 21845,
+        "waterQty": 16
       }
     },
     {
@@ -61,6 +65,7 @@
       "dps": 36000,
       "plan": {
         "water": 422450,
+        "waterQty": 2,
         "trailArm": 596400
       }
     },
@@ -73,7 +78,8 @@
       "maxLevel": 7,
       "dps": 5000,
       "plan": {
-        "water": 133152
+        "water": 133152,
+        "waterQty": 2
       }
     },
     {
@@ -85,7 +91,6 @@
       "maxLevel": 7,
       "dps": 10000,
       "plan": {
-        "water": 418625,
         "trailArm": 591000
       }
     },
@@ -98,7 +103,8 @@
       "maxLevel": 7,
       "dps": 7600,
       "plan": {
-        "water": 159120
+        "water": 159120,
+        "waterQty": 1
       }
     },
     {
@@ -111,6 +117,7 @@
       "dps": 1668,
       "plan": {
         "water": 238425,
+        "waterQty": 4,
         "trailArm": 336600
       }
     },
@@ -124,6 +131,7 @@
       "dps": 1300,
       "plan": {
         "water": 25140,
+        "waterQty": 76,
         "trailArm": 35491
       }
     },
@@ -137,6 +145,7 @@
       "dps": 6576,
       "plan": {
         "water": 155550,
+        "waterQty": 5,
         "trailArm": 219600
       }
     },
@@ -150,6 +159,7 @@
       "dps": 3000,
       "plan": {
         "water": 168863,
+        "waterQty": 2,
         "trailArm": 278127
       }
     },
@@ -163,6 +173,7 @@
       "dps": 280,
       "plan": {
         "water": 4569,
+        "waterQty": 87,
         "trailArm": 6450
       }
     },
@@ -175,7 +186,8 @@
       "maxLevel": 7,
       "dps": 700,
       "plan": {
-        "water": 18360
+        "water": 18360,
+        "waterQty": 10
       }
     },
     {
@@ -188,6 +200,7 @@
       "dps": 5400,
       "plan": {
         "water": 11913,
+        "waterQty": 32,
         "trailArm": 16818
       }
     },
@@ -200,7 +213,8 @@
       "maxLevel": 7,
       "dps": 1542,
       "plan": {
-        "water": 30509
+        "water": 30509,
+        "waterQty": 9
       }
     },
     {
@@ -213,6 +227,7 @@
       "dps": 4000,
       "plan": {
         "water": 81417,
+        "waterQty": 24,
         "trailArm": 114942
       }
     },
@@ -225,7 +240,8 @@
       "maxLevel": 7,
       "dps": 1660,
       "plan": {
-        "water": 85170
+        "water": 85170,
+        "waterQty": 2
       }
     },
     {
@@ -237,7 +253,8 @@
       "maxLevel": 7,
       "dps": 14010,
       "plan": {
-        "water": 63891
+        "water": 63891,
+        "waterQty": 3
       }
     },
     {
@@ -250,6 +267,7 @@
       "dps": 1048,
       "plan": {
         "water": 17688,
+        "waterQty": 81,
         "trailArm": 24972
       }
     },
@@ -263,6 +281,7 @@
       "dps": 2800,
       "plan": {
         "water": 41929,
+        "waterQty": 16,
         "trailArm": 59194
       }
     },
@@ -276,6 +295,7 @@
       "dps": 6000,
       "plan": {
         "water": 156591,
+        "waterQty": 4,
         "trailArm": 221070
       }
     },
@@ -289,6 +309,7 @@
       "dps": 8009,
       "plan": {
         "water": 88853,
+        "waterQty": 7,
         "trailArm": 125440
       }
     },
@@ -301,7 +322,8 @@
       "maxLevel": 5,
       "dps": 800,
       "plan": {
-        "water": 8526
+        "water": 8526,
+        "waterQty": 28
       }
     },
     {
@@ -314,6 +336,7 @@
       "dps": 530,
       "plan": {
         "water": 4951,
+        "waterQty": 80,
         "trailArm": 6990
       }
     },
@@ -326,7 +349,8 @@
       "maxLevel": 7,
       "dps": 2590,
       "plan": {
-        "water": 90865
+        "water": 90865,
+        "waterQty": 2
       }
     },
     {
@@ -338,7 +362,6 @@
       "maxLevel": 7,
       "dps": 8690,
       "plan": {
-        "water": 164246,
         "trailArm": 231877
       }
     },
@@ -352,6 +375,7 @@
       "dps": 1320,
       "plan": {
         "water": 11329,
+        "waterQty": 35,
         "trailArm": 15994
       }
     },
@@ -364,7 +388,8 @@
       "maxLevel": 7,
       "dps": 3000,
       "plan": {
-        "water": 104210
+        "water": 104210,
+        "waterQty": 2
       }
     },
     {
@@ -376,7 +401,73 @@
       "maxLevel": 5,
       "dps": 850,
       "plan": {
-        "water": 12169
+        "water": 12169,
+        "waterQty": 19
+      }
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "shares": 2,
+      "avgPrice": 165950,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 4367,
+      "plan": {
+        "water": 141058,
+        "waterQty": 2
+      }
+    },
+    {
+      "code": "111770",
+      "name": "영원무역",
+      "shares": 3,
+      "avgPrice": 76633,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 2100,
+      "plan": {
+        "water": 65138,
+        "waterQty": 3
+      }
+    },
+    {
+      "code": "123890",
+      "name": "한국자산신탁",
+      "shares": 77,
+      "avgPrice": 2600,
+      "buyLevel": 1,
+      "maxLevel": 5,
+      "dps": 150,
+      "plan": {
+        "water": 2210,
+        "waterQty": 90
+      }
+    },
+    {
+      "code": "175330",
+      "name": "JB금융지주",
+      "shares": 10,
+      "avgPrice": 27640,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 1140,
+      "plan": {
+        "water": 23494,
+        "waterQty": 11
+      }
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "shares": 6,
+      "avgPrice": 32850,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 1360,
+      "plan": {
+        "water": 27922,
+        "waterQty": 7
       }
     }
   ]
