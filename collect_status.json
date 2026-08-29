@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29 10:33:28",
+  "updated": "2026-08-29 10:43:28",
   "system": {
     "connected": true,
     "trading": false,
@@ -7,7 +7,7 @@
     "pid": 17300,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 0
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -29,15 +29,15 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 691503,
-      "codes": 2531,
+      "rows": 0,
+      "codes": 0,
       "target": 2365,
-      "first": "2026-06-24",
-      "last": "2026-08-28",
-      "progress_pct": 100,
+      "first": "",
+      "last": "",
+      "progress_pct": 0,
       "busy": false,
-      "state": "done",
-      "fmt": "2,531/2,365 (100%)",
+      "state": "wait",
+      "fmt": "0/2,365 (0%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 101668987,
+      "rows": 101670811,
       "codes": 2464,
       "target": 2365,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,385종목(최대 57일)",
+      "fmt": "미도달 2,384종목(최대 57일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2385,
+        "behind": 2384,
         "max_lag": 57,
         "latest": "2026-08-28",
         "total": 2464
