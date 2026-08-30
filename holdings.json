@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30 16:30",
+  "updated": "2026-08-30 17:16",
   "holdings": [
     {
       "code": "000270",
@@ -419,6 +419,71 @@
       "plan": {
         "water": 12160,
         "waterQty": 20
+      }
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "shares": 2,
+      "avgPrice": 165950,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 4367,
+      "plan": {
+        "water": 141000,
+        "waterQty": 2
+      }
+    },
+    {
+      "code": "111770",
+      "name": "영원무역",
+      "shares": 3,
+      "avgPrice": 76633,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 2100,
+      "plan": {
+        "water": 65100,
+        "waterQty": 3
+      }
+    },
+    {
+      "code": "123890",
+      "name": "한국자산신탁",
+      "shares": 77,
+      "avgPrice": 2600,
+      "buyLevel": 1,
+      "maxLevel": 5,
+      "dps": 150,
+      "plan": {
+        "water": 2210,
+        "waterQty": 90
+      }
+    },
+    {
+      "code": "175330",
+      "name": "JB금융지주",
+      "shares": 10,
+      "avgPrice": 27640,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 1140,
+      "plan": {
+        "water": 23450,
+        "waterQty": 11
+      }
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "shares": 6,
+      "avgPrice": 32850,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 1360,
+      "plan": {
+        "water": 27900,
+        "waterQty": 7
       }
     }
   ]
