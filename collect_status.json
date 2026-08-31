@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31 18:08:42",
+  "updated": "2026-08-31 18:13:40",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16652,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 32
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -19,40 +19,40 @@
       "target": 2368,
       "first": "2022-11-03",
       "last": "2026-08-31",
-      "progress_pct": 39,
+      "progress_pct": 43,
       "busy": true,
       "state": "busy",
-      "fmt": "934/2,368 (39%)",
+      "fmt": "1,007/2,368 (43%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 697480,
-      "codes": 2531,
+      "rows": 0,
+      "codes": 0,
       "target": 2368,
-      "first": "2026-06-24",
-      "last": "2026-08-31",
-      "progress_pct": 100,
+      "first": "",
+      "last": "",
+      "progress_pct": 0,
       "busy": true,
-      "state": "done",
-      "fmt": "2,531/2,368 (100%)",
+      "state": "wait",
+      "fmt": "0/2,368 (0%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 358819,
-      "codes": 2531,
+      "rows": 0,
+      "codes": 0,
       "target": 2368,
-      "first": "2026-01-26",
-      "last": "2026-08-28",
-      "progress_pct": 100,
+      "first": "",
+      "last": "",
+      "progress_pct": 0,
       "busy": true,
-      "state": "idle",
-      "fmt": "2,531/2,368 (100%) · 최신 08-28 · 3일 지연",
+      "state": "wait",
+      "fmt": "0/2,368 (0%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -125,15 +125,15 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 13803,
-      "codes": 485,
+      "rows": 0,
+      "codes": 0,
       "target": 2368,
-      "first": "2025-02-03",
-      "last": "2026-08-28",
+      "first": "",
+      "last": "",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 08-28 · 13,803행",
+      "fmt": "대기",
       "schedule": ""
     },
     {
