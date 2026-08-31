@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31 15:16",
+  "updated": "2026-08-31 15:26",
   "count": 2279,
   "marks": {
     "026910": [
@@ -24824,26 +24824,28 @@
       {
         "entry": "2026-08-31",
         "entry_price": 11350,
-        "exit": "",
-        "exit_price": 0,
-        "ret": null,
-        "reason": "",
+        "exit": "2026-08-31",
+        "exit_price": 10320,
+        "ret": -9.07,
+        "reason": "eod",
         "origin": "real",
         "strategy": "장중",
-        "entry_time": "09:15:23"
+        "entry_time": "09:15:23",
+        "exit_time": "15:20:27"
       }
     ],
     "161000": [
       {
         "entry": "2026-08-31",
         "entry_price": 11450,
-        "exit": "",
-        "exit_price": 0,
-        "ret": null,
-        "reason": "",
+        "exit": "2026-08-31",
+        "exit_price": 10960,
+        "ret": -4.28,
+        "reason": "eod",
         "origin": "real",
         "strategy": "장중",
-        "entry_time": "09:15:24"
+        "entry_time": "09:15:24",
+        "exit_time": "15:20:27"
       }
     ]
   }
