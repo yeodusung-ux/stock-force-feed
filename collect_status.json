@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31 21:58:41",
+  "updated": "2026-08-31 22:03:40",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16652,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -230,15 +230,15 @@
       "table": "minute_ohlcv",
       "label": "분봉원본",
       "tr": "opt10080",
-      "rows": 3989277,
+      "rows": 3996086,
       "codes": 1097,
       "target": 2368,
       "first": "2025-08-01 09:00",
-      "last": "2026-08-28 15:30",
+      "last": "2026-08-31 15:30",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 08-28 · 3,989,277행",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "저녁 자동(이어받기·주1회)+원격"
     },
     {
@@ -290,7 +290,7 @@
       "table": "collect_meta",
       "label": "수집마커",
       "tr": "파생",
-      "rows": 28,
+      "rows": 29,
       "codes": 0,
       "target": 2368,
       "first": "",
@@ -298,7 +298,7 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "28행",
+      "fmt": "29행",
       "schedule": "자동(수집 진행에 따라)"
     }
   ]
