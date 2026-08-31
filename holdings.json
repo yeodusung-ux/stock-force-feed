@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31 09:00",
+  "updated": "2026-08-31 09:20",
   "holdings": [
     {
       "code": "000270",
@@ -280,6 +280,18 @@
       }
     },
     {
+      "code": "019170",
+      "name": "신풍제약",
+      "shares": 22,
+      "avgPrice": 11357,
+      "buyLevel": 1,
+      "maxLevel": 5,
+      "plan": {
+        "water": 9650,
+        "waterQty": 25
+      }
+    },
+    {
       "code": "019210",
       "name": "와이지-원",
       "shares": 17,
@@ -523,6 +535,19 @@
       "plan": {
         "water": 2210,
         "waterQty": 90
+      }
+    },
+    {
+      "code": "161000",
+      "name": "애경케미칼",
+      "shares": 22,
+      "avgPrice": 11300,
+      "buyLevel": 1,
+      "maxLevel": 5,
+      "dps": 140,
+      "plan": {
+        "water": 9600,
+        "waterQty": 25
       }
     },
     {
