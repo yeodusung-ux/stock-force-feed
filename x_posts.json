@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25 23:05:38",
+  "updated": "2026-08-31 16:35:55",
   "by": "app",
   "count": 8,
   "posts": [
@@ -157,12 +157,12 @@
       "label": "종목 심층",
       "parts": [
         {
-          "text": "동남합성(023450)\n\n세력평단 28,744원 대비 현재가 0.9% 아래\n\n자회사 동남합성이 주가 안정을 위해 6억 원 규모의 자사주를 매입했습니다. 또한 내년 3월까지 12억 원 규모의 자기주식을 취득하기로 결정했습니다.\n\n1/3",
-          "weighted": 204
+          "text": "써니전자(004770)\n\n최근 180거래일 주가는 +52.0% 입니다\n\n최근 제목들에서는 뚜렷한 호재를 찾지 못했습니다.\n\n1/3",
+          "weighted": 108
         },
         {
-          "text": "세력 순매수 50.8억\n창구 일치율 91.6%\n개인 매물 93.4% 흡수\n내부자 지분 53.2%\n\n2/3",
-          "weighted": 80
+          "text": "이 기간 주체별로 쪼개 보면\n개인투자자 392.0만주 팔았습니다\n기타법인 326.2만주 담았습니다\n외국인투자자 69.8만주 담았습니다\n내외국인 2.7만주 팔았습니다\n기관계 1.3만주 팔았습니다\n연기금등 4,977주 팔았습니다\n창구로 보면\n1위 NH투자증권 149.3만주 담았습니다\n\n2/3",
+          "weighted": 256
         },
         {
           "text": "위는 주가·거래량, 아래는 기타법인(파랑)·개인(회색) 누적 순매수입니다.\n파란 선이 오르고 회색이 내려가면 물량이 개인에게서 넘어간 겁니다. 그래도 매집이라 단정할 수 없습니다.\n제 지표는 검증에서 시장 대비 초과수익이 확인되지 않았습니다.\n키움 OpenAPI 집계 · 투자권유 아님\n\n3/3",
@@ -170,15 +170,17 @@
         }
       ],
       "warnings": [
+        "게이트 진입·세력평단 정보 없음",
+        "세력분석 포착 이력 없음 — 수급·창구만 다룬다",
         "2편은 **긍정 재료만** 추렸다(선택적 제시) — 올리기 전 확인"
       ],
       "blocked": [
         "enabled=false (마스터 스위치 꺼짐)"
       ],
-      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_3ee88de29ba4.png",
+      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_f9a2a9c759e5.png",
       "images": [
-        "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_3ee88de29ba4.png",
-        "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_fin_dcbf413b1214.png"
+        "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_f9a2a9c759e5.png",
+        "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_fin_a87fd933b6bf.png"
       ]
     },
     {
