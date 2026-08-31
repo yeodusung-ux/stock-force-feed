@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01 01:48:54",
+  "updated": "2026-09-01 01:53:40",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16652,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 44
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 102233301,
+      "rows": 102234885,
       "codes": 2464,
       "target": 2368,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,414종목(최대 60일)",
+      "fmt": "미도달 2,413종목(최대 60일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2414,
+        "behind": 2413,
         "max_lag": 60,
         "latest": "2026-08-31",
         "total": 2464
@@ -230,8 +230,8 @@
       "table": "minute_ohlcv",
       "label": "분봉원본",
       "tr": "opt10080",
-      "rows": 5188361,
-      "codes": 1172,
+      "rows": 5205723,
+      "codes": 1173,
       "target": 2368,
       "first": "2025-08-01 09:00",
       "last": "2026-08-31 15:30",
