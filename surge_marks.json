@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-31 09:10",
-  "count": 2277,
+  "updated": "2026-08-31 09:20",
+  "count": 2279,
   "marks": {
     "026910": [
       {
@@ -24818,6 +24818,32 @@
         "strategy": "장중",
         "entry_time": "09:48:50",
         "exit_time": "15:20:03"
+      }
+    ],
+    "019170": [
+      {
+        "entry": "2026-08-31",
+        "entry_price": 11350,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:15:23"
+      }
+    ],
+    "161000": [
+      {
+        "entry": "2026-08-31",
+        "entry_price": 11450,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:15:24"
       }
     ]
   }
