@@ -1,8 +1,39 @@
 {
-  "updated": "2026-08-31 20:12:25",
+  "updated": "2026-08-31 22:22:10",
   "by": "app",
   "count": 8,
   "posts": [
+    {
+      "kind": "stock",
+      "label": "종목 심층",
+      "parts": [
+        {
+          "text": "써니전자(004770)\n\n최근 180거래일 주가는 +52.0% 입니다\n\n최근 제목들에서는 뚜렷한 호재를 찾지 못했습니다.\n\n1/3",
+          "weighted": 108
+        },
+        {
+          "text": "차트에서 파란색 기타법인이 462.1만주를 담는 동안 회색선 개인은 549.1만주를 던졌더라고요. 주가가 52.0퍼센트 오르는 동안 물량이 완전히 갈아탔네요. 물론 이게 꼭 매집이라고 단정할 수는 없지만 흐름이 묘하게 엇갈려요.\n\n2/3",
+          "weighted": 216
+        },
+        {
+          "text": "써니전자는 매출의 거의 전부를 수정진동자사업부에서 벌고 있더라고요. 2023년 매출 128억 원에 영업이익 9억 원이었고, 2025년에는 매출 124억 원, 영업이익 22억 원을 기록했네요.\n\n※ 투자권유 아님 · 키움 OpenAPI·공시 집계\n\n3/3",
+          "weighted": 218
+        }
+      ],
+      "warnings": [
+        "게이트 진입·세력평단 정보 없음",
+        "세력분석 포착 이력 없음 — 수급·창구만 다룬다",
+        "1편은 **긍정 재료만** 추렸다(선택적 제시) — 올리기 전 확인"
+      ],
+      "blocked": [
+        "enabled=false (마스터 스위치 꺼짐)"
+      ],
+      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_52da92cecb7d.png",
+      "images": [
+        "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_52da92cecb7d.png",
+        "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_fin_a87fd933b6bf.png"
+      ]
+    },
     {
       "kind": "brief",
       "label": "아침 시황",
@@ -151,37 +182,6 @@
         "enabled=false (마스터 스위치 꺼짐)"
       ],
       "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stat.png?v=37fff8b2f42b"
-    },
-    {
-      "kind": "stock",
-      "label": "종목 심층",
-      "parts": [
-        {
-          "text": "써니전자(004770)\n\n최근 180거래일 주가는 +52.0% 입니다\n\n최근 제목들에서는 뚜렷한 호재를 찾지 못했습니다.\n\n1/3",
-          "weighted": 108
-        },
-        {
-          "text": "차트에서 파란색 기타법인이 462.1만주를 담는 동안 회색선 개인은 549.1만주를 던졌더라고요. 주가가 52.0퍼센트 오르는 동안 물량이 완전히 갈아탔네요. 물론 이게 꼭 매집이라고 단정할 수는 없지만 흐름이 묘하게 엇갈려요.\n\n2/3",
-          "weighted": 216
-        },
-        {
-          "text": "써니전자는 매출의 거의 전부를 수정진동자사업부에서 벌고 있더라고요. 2023년 매출 128억 원에 영업이익 9억 원이었고, 2025년에는 매출 124억 원, 영업이익 22억 원을 기록했네요.\n\n※ 투자권유 아님 · 키움 OpenAPI·공시 집계\n\n3/3",
-          "weighted": 218
-        }
-      ],
-      "warnings": [
-        "게이트 진입·세력평단 정보 없음",
-        "세력분석 포착 이력 없음 — 수급·창구만 다룬다",
-        "1편은 **긍정 재료만** 추렸다(선택적 제시) — 올리기 전 확인"
-      ],
-      "blocked": [
-        "enabled=false (마스터 스위치 꺼짐)"
-      ],
-      "image": "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_797ecd4d691f.png",
-      "images": [
-        "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_797ecd4d691f.png",
-        "https://raw.githubusercontent.com/yeodusung-ux/stock-force-feed/main/x_img/stock_fin_a87fd933b6bf.png"
-      ]
     },
     {
       "kind": "about",
