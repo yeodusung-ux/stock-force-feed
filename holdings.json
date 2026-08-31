@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31 14:36",
+  "updated": "2026-08-31 14:37",
   "holdings": [
     {
       "code": "000270",
@@ -287,8 +287,7 @@
       "buyLevel": 1,
       "maxLevel": 5,
       "plan": {
-        "water": 9650,
-        "waterQty": 25,
+        "maxStop": 9080,
         "fastArm": 11930
       }
     },
@@ -547,8 +546,7 @@
       "maxLevel": 5,
       "dps": 140,
       "plan": {
-        "water": 9600,
-        "waterQty": 25,
+        "maxStop": 9040,
         "fastArm": 11870
       }
     },
