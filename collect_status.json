@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01 09:30:06",
+  "updated": "2026-09-01 09:35:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 15540,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -231,14 +231,14 @@
       "label": "분봉원본",
       "tr": "opt10080",
       "rows": 5254283,
-      "codes": 0,
+      "codes": 1173,
       "target": 2369,
-      "first": "",
-      "last": "",
+      "first": "2025-08-01 09:00",
+      "last": "2026-08-31 15:30",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "5,254,283행",
+      "fmt": "최신 08-31 · 5,254,283행",
       "schedule": "저녁 자동(이어받기·주1회)+원격"
     },
     {
