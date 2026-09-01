@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01 18:10:05",
+  "updated": "2026-09-01 18:15:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 15540,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -19,25 +19,25 @@
       "target": 2369,
       "first": "2022-11-03",
       "last": "2026-08-31",
-      "progress_pct": 100,
+      "progress_pct": 2,
       "busy": true,
-      "state": "idle",
-      "fmt": "2,531/2,369 (100%) · 최신 08-31 · 1일 지연",
+      "state": "busy",
+      "fmt": "50/2,369 (2%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 725151,
+      "rows": 725619,
       "codes": 2531,
       "target": 2369,
       "first": "2026-06-24",
       "last": "2026-09-01",
-      "progress_pct": 97,
+      "progress_pct": 100,
       "busy": true,
-      "state": "busy",
-      "fmt": "2,308/2,369 (97%)",
+      "state": "done",
+      "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -74,8 +74,8 @@
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 54877,
-      "codes": 2484,
+      "rows": 59914,
+      "codes": 2485,
       "target": 2369,
       "first": "2026-04-15",
       "last": "2026-08-31",
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 102344539,
+      "rows": 102344561,
       "codes": 2464,
       "target": 2369,
       "first": "2023-03-24",
@@ -275,7 +275,7 @@
       "table": "collect_log",
       "label": "수집커서",
       "tr": "파생",
-      "rows": 110,
+      "rows": 111,
       "codes": 0,
       "target": 2369,
       "first": "",
@@ -283,7 +283,7 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "110행",
+      "fmt": "111행",
       "schedule": "자동(수집 진행에 따라)"
     },
     {
