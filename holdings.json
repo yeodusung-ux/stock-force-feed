@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01 09:50",
+  "updated": "2026-09-01 14:01",
   "holdings": [
     {
       "code": "000270",
@@ -125,14 +125,14 @@
     {
       "code": "005380",
       "name": "현대차",
-      "shares": 18,
-      "avgPrice": 492500,
-      "buyLevel": 5,
+      "shares": 33,
+      "avgPrice": 449772,
+      "buyLevel": 6,
       "maxLevel": 7,
       "dps": 10000,
       "plan": {
-        "trailArm": 591000,
-        "trailQty": 9
+        "trailArm": 540000,
+        "trailQty": 16
       }
     },
     {
@@ -452,6 +452,8 @@
       "maxLevel": 7,
       "dps": 8690,
       "plan": {
+        "water": 164200,
+        "waterQty": 44,
         "trailArm": 232000,
         "trailQty": 19
       }
