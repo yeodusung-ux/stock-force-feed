@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01 17:58",
+ "updated": "2026-09-01 18:03",
  "holdings": [
   {
    "code": "KRW-BTC",
@@ -22,7 +22,7 @@
   {
    "code": "KRW-USDT",
    "name": "USDT",
-   "shares": 31924.08210893,
+   "shares": 30472.70210893,
    "avgPrice": 1393.03557112
   },
   {
@@ -87,10 +87,10 @@
   }
  ],
  "account": {
-  "deposit": 8699740,
-  "monthRealized": 3808,
-  "yearRealized": 855098,
-  "cumRealized": 855098,
+  "deposit": 10704545,
+  "monthRealized": 7608,
+  "yearRealized": 858898,
+  "cumRealized": 858898,
   "acctMonthRealized": 0,
   "acctYearRealized": -4895420,
   "acctCumRealized": 7788937,
@@ -324,7 +324,7 @@
     "TRX": "ok",
     "TSHP": "ok",
     "USDC": "mismatch(재구성 13248.98926321 vs 잔고 14370.85537508)",
-    "USDT": "mismatch(재구성 33367.08210893 vs 잔고 31924.08210893)",
+    "USDT": "mismatch(재구성 31915.70210893 vs 잔고 30472.70210893)",
     "WAVES": "ok",
     "XCORE": "ok",
     "XEC": "ok",
