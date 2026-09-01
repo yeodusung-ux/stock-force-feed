@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-01 09:40",
-  "count": 2279,
+  "updated": "2026-09-01 09:50",
+  "count": 2280,
   "marks": {
     "026910": [
       {
@@ -24846,6 +24846,19 @@
         "strategy": "장중",
         "entry_time": "09:15:24",
         "exit_time": "15:20:27"
+      }
+    ],
+    "003160": [
+      {
+        "entry": "2026-09-01",
+        "entry_price": 26700,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:45:39"
       }
     ]
   }
