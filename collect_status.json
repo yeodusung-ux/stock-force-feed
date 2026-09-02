@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02 19:58:12",
+  "updated": "2026-09-02 20:03:13",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 36032,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -19,10 +19,10 @@
       "target": 2367,
       "first": "2022-11-03",
       "last": "2026-09-02",
-      "progress_pct": 99,
+      "progress_pct": 100,
       "busy": true,
-      "state": "busy",
-      "fmt": "2,338/2,367 (99%)",
+      "state": "done",
+      "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -59,26 +59,26 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 1117621,
+      "rows": 1117751,
       "codes": 2496,
       "target": 2367,
       "first": "2020-02-20",
       "last": "2026-09-02",
-      "progress_pct": 100,
+      "progress_pct": 6,
       "busy": true,
-      "state": "done",
-      "fmt": "2,496/2,367 (100%)",
+      "state": "busy",
+      "fmt": "143/2,367 (6%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 60632,
+      "rows": 60939,
       "codes": 2485,
       "target": 2367,
       "first": "2026-04-15",
-      "last": "2026-09-01",
+      "last": "2026-09-02",
       "progress_pct": null,
       "busy": true,
       "state": "busy",
