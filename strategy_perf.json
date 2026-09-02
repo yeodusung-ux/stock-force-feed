@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02 09:50",
+  "updated": "2026-09-02 10:00",
   "strategies": [
     {
       "key": "morning",
@@ -809,14 +809,23 @@
       "name": "💰 수급(쌍끌이)",
       "desc": "조회=진행 / 이탈=종료",
       "n": 576,
-      "open": 0,
+      "open": 1,
       "win_rate": 48.3,
       "avg_ret": -0.1,
       "cum_ret": -56.0,
       "pf": 0.95,
       "buy_rule": "외국인·기관 동반 순매수(쌍끌이) 종목 진입",
       "sell_rule": "조회 이탈 시 청산",
-      "open_stocks": [],
+      "open_stocks": [
+        {
+          "date": "2026-09-02",
+          "code": "003490",
+          "name": "대한항공",
+          "buy": 28650,
+          "cur": 28650,
+          "ret": 0.0
+        }
+      ],
       "closed_stocks": [
         {
           "date": "2026-09-02",
