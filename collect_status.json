@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03 00:03:03",
+  "updated": "2026-09-03 00:08:02",
   "system": {
     "connected": true,
     "trading": true,
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,416종목(최대 62일)",
+      "fmt": "미도달 2,415종목(최대 62일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2416,
+        "behind": 2415,
         "max_lag": 62,
         "latest": "2026-09-02",
         "total": 2464
@@ -155,14 +155,14 @@
       "table": "morning_pool",
       "label": "시가종가풀",
       "tr": "일봉유도/CSV",
-      "rows": 93,
-      "codes": 79,
+      "rows": 94,
+      "codes": 80,
       "target": 2367,
       "first": "20250416",
-      "last": "20260805",
-      "progress_pct": 0,
-      "busy": true,
-      "state": "busy",
+      "last": "20260902",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
       "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
@@ -175,10 +175,10 @@
       "target": 2367,
       "first": "20250409",
       "last": "20260901",
-      "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 09-01 · 71,939행",
+      "progress_pct": 0,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
