@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03 10:30",
+  "updated": "2026-09-03 10:34",
   "holdings": [
     {
       "code": "000270",
@@ -194,6 +194,19 @@
       }
     },
     {
+      "code": "010130",
+      "name": "고려아연",
+      "shares": 1,
+      "avgPrice": 1217000,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 20000,
+      "plan": {
+        "water": 1034000,
+        "waterQty": 1
+      }
+    },
+    {
       "code": "010240",
       "name": "흥국",
       "shares": 74,
@@ -219,6 +232,19 @@
       "plan": {
         "water": 18360,
         "waterQty": 10
+      }
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "shares": 1,
+      "avgPrice": 424500,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 6500,
+      "plan": {
+        "water": 360500,
+        "waterQty": 1
       }
     },
     {
