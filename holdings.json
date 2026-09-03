@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03 14:51",
+  "updated": "2026-09-03 15:30",
   "holdings": [
     {
       "code": "000270",
@@ -576,14 +576,16 @@
     {
       "code": "108320",
       "name": "LX세미콘",
-      "shares": 6,
-      "avgPrice": 36500,
-      "buyLevel": 1,
+      "shares": 14,
+      "avgPrice": 35985,
+      "buyLevel": 2,
       "maxLevel": 5,
       "dps": 1500,
       "plan": {
-        "water": 31000,
-        "waterQty": 7
+        "water": 30550,
+        "waterQty": 16,
+        "trailArm": 43200,
+        "trailQty": 7
       }
     },
     {
