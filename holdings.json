@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03 10:34",
+  "updated": "2026-09-03 10:42",
   "holdings": [
     {
       "code": "000270",
@@ -174,8 +174,7 @@
       "maxLevel": 7,
       "dps": 300,
       "plan": {
-        "water": 28100,
-        "waterQty": 8
+        "maxStop": 26450
       }
     },
     {
@@ -235,6 +234,19 @@
       }
     },
     {
+      "code": "011070",
+      "name": "LG이노텍",
+      "shares": 1,
+      "avgPrice": 564000,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 1880,
+      "plan": {
+        "water": 479000,
+        "waterQty": 1
+      }
+    },
+    {
       "code": "011200",
       "name": "HMM",
       "shares": 9,
@@ -256,8 +268,7 @@
       "maxLevel": 7,
       "dps": 6500,
       "plan": {
-        "water": 360500,
-        "waterQty": 1
+        "maxStop": 339500
       }
     },
     {
