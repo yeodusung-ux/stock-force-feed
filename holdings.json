@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03 07:00",
+  "updated": "2026-09-03 10:30",
   "holdings": [
     {
       "code": "000270",
@@ -377,6 +377,19 @@
       }
     },
     {
+      "code": "037710",
+      "name": "광주신세계",
+      "shares": 7,
+      "avgPrice": 35500,
+      "buyLevel": 1,
+      "maxLevel": 5,
+      "dps": 2400,
+      "plan": {
+        "water": 30150,
+        "waterQty": 8
+      }
+    },
+    {
       "code": "038390",
       "name": "레드캡투어",
       "shares": 24,
@@ -549,6 +562,19 @@
       "plan": {
         "water": 23450,
         "waterQty": 11
+      }
+    },
+    {
+      "code": "285490",
+      "name": "노바텍",
+      "shares": 21,
+      "avgPrice": 11629,
+      "buyLevel": 1,
+      "maxLevel": 5,
+      "dps": 2871,
+      "plan": {
+        "water": 9880,
+        "waterQty": 24
       }
     },
     {
