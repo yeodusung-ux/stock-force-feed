@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04 10:40:05",
+  "updated": "2026-09-04 10:45:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 48152,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -185,15 +185,15 @@
       "table": "quant_universe",
       "label": "퀀트 유니버스",
       "tr": "opt10001",
-      "rows": 4356,
-      "codes": 4356,
+      "rows": 4358,
+      "codes": 4358,
       "target": 2363,
       "first": "2026-06-29",
       "last": "2026-09-04",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,358/2,363 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
