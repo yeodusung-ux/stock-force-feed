@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07 09:54",
+  "updated": "2026-09-07 09:55",
   "holdings": [
     {
       "code": "000270",
@@ -241,8 +241,7 @@
       "maxLevel": 7,
       "dps": 1880,
       "plan": {
-        "water": 479000,
-        "waterQty": 1
+        "maxStop": 451000
       }
     },
     {
@@ -420,8 +419,7 @@
       "maxLevel": 7,
       "dps": 75,
       "plan": {
-        "water": 30600,
-        "waterQty": 7
+        "maxStop": 28800
       }
     },
     {
@@ -446,7 +444,8 @@
       "maxLevel": 5,
       "dps": 2400,
       "plan": {
-        "maxStop": 28400
+        "water": 30150,
+        "waterQty": 8
       }
     },
     {
@@ -635,7 +634,8 @@
       "maxLevel": 5,
       "dps": 2871,
       "plan": {
-        "maxStop": 9300
+        "water": 9880,
+        "waterQty": 24
       }
     },
     {
