@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07 09:55",
+  "updated": "2026-09-07 09:56",
   "holdings": [
     {
       "code": "000270",
@@ -241,7 +241,8 @@
       "maxLevel": 7,
       "dps": 1880,
       "plan": {
-        "maxStop": 451000
+        "water": 479000,
+        "waterQty": 1
       }
     },
     {
@@ -419,7 +420,8 @@
       "maxLevel": 7,
       "dps": 75,
       "plan": {
-        "maxStop": 28800
+        "water": 30600,
+        "waterQty": 7
       }
     },
     {
@@ -487,6 +489,19 @@
       "plan": {
         "water": 90800,
         "waterQty": 2
+      }
+    },
+    {
+      "code": "064350",
+      "name": "현대로템",
+      "shares": 1,
+      "avgPrice": 127600,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 600,
+      "plan": {
+        "water": 108400,
+        "waterQty": 1
       }
     },
     {
