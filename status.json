@@ -1,40 +1,39 @@
 {
-  "ts": 1788871337,
-  "ts_str": "2026-09-08 21:42:17",
-  "kiwoom_alive": true,
-  "kiwoom_connected": true,
-  "programs": {
-    "main": {
-      "alive": true,
-      "age": 31
-    },
-    "strategy": {
-      "alive": true,
-      "age": 12
-    },
-    "analyzer": {
-      "alive": true,
-      "age": 12
-    },
-    "watchdog": {
-      "alive": true,
-      "age": 27
-    }
+ "ts": 1788871490,
+ "ts_str": "2026-09-08 21:44:50",
+ "kiwoom_alive": true,
+ "kiwoom_connected": true,
+ "trading": true,
+ "last_real": 1788865237.1423442,
+ "collect_auto_on": false,
+ "collect_sched": "",
+ "collect_done_today": false,
+ "collect_last_complete": "",
+ "collect_progress": "",
+ "watchdog_pid": 14952,
+ "restarts_today": 1,
+ "active_window": "07-04",
+ "programs": {
+  "main": {
+   "alive": true,
+   "age": 4
   },
-  "trading": true,
-  "mode": "full",
-  "last_real": 1788865237.1423442,
-  "collect_auto_on": true,
-  "collect_sched": "17:00",
-  "collect_done_today": false,
-  "collect_last_complete": "",
-  "collect_progress": "",
-  "watchdog_pid": 14952,
-  "restarts_today": 1,
-  "active_window": "07-04",
-  "last_restart_result": "생존(age=4s)",
-  "restart_capped": false,
-  "task_ok": true,
-  "push_fail_streak": 0,
-  "alert": null
+  "strategy": {
+   "alive": true,
+   "age": 15
+  },
+  "analyzer": {
+   "alive": true,
+   "age": 15
+  },
+  "watchdog": {
+   "alive": true,
+   "age": 0
+  }
+ },
+ "alert": null,
+ "last_restart_result": "relaunch 하트비트 없음·활동 있으나 상한 900s 초과 @03:06",
+ "restart_capped": false,
+ "task_ok": true,
+ "push_fail_streak": 0
 }
