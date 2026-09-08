@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09 01:37:16",
+  "updated": "2026-09-09 01:42:17",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 1880,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 103527735,
+      "rows": 103529559,
       "codes": 2466,
       "target": 2364,
       "first": "2023-03-24",
@@ -230,7 +230,7 @@
       "table": "minute_ohlcv",
       "label": "분봉원본",
       "tr": "opt10080",
-      "rows": 5856114,
+      "rows": 5872327,
       "codes": 1198,
       "target": 2364,
       "first": "2025-08-01 09:00",
