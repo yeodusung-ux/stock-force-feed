@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08 21:22:19",
+  "updated": "2026-09-08 21:27:16",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 1880,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 33
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -125,7 +125,7 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 14594,
+      "rows": 14611,
       "codes": 501,
       "target": 2364,
       "first": "2025-02-03",
@@ -133,22 +133,22 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 09-08 · 14,594행",
+      "fmt": "최신 09-08 · 14,611행",
       "schedule": ""
     },
     {
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 40932,
-      "codes": 2074,
+      "rows": 40969,
+      "codes": 2075,
       "target": 2364,
       "first": "2024-07-05",
-      "last": "2026-09-07",
+      "last": "2026-09-08",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 09-07 · 40,932행",
+      "fmt": "최신 09-08 · 40,969행",
       "schedule": ""
     },
     {
@@ -245,15 +245,15 @@
       "table": "analyst_report",
       "label": "리포트",
       "tr": "웹크롤",
-      "rows": 1096,
-      "codes": 424,
+      "rows": 1106,
+      "codes": 428,
       "target": 2364,
       "first": "2026-08-03",
-      "last": "2026-09-07",
+      "last": "2026-09-08",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 09-07 · 1,096행",
+      "fmt": "최신 09-08 · 1,106행",
       "schedule": ""
     },
     {
