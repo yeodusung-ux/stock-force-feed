@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08 12:55",
+  "updated": "2026-09-08 13:08",
   "holdings": [
     {
       "code": "000270",
@@ -86,20 +86,6 @@
       }
     },
     {
-      "code": "0039P0",
-      "name": "매드업",
-      "shares": 27,
-      "avgPrice": 9060,
-      "buyLevel": 1,
-      "maxLevel": 5,
-      "plan": {
-        "maxStop": 7240,
-        "trailArm": 10880,
-        "trailQty": 27,
-        "trailExitFlag": 1
-      }
-    },
-    {
       "code": "004800",
       "name": "효성",
       "shares": 2,
@@ -180,7 +166,8 @@
         "maxStop": 26450,
         "trailArm": 39750,
         "trailQty": 7,
-        "trailExitFlag": 1
+        "trailExitFlag": 1,
+        "fastStop": 34700
       }
     },
     {
@@ -223,7 +210,8 @@
         "maxStop": 973000,
         "trailArm": 1461000,
         "trailQty": 1,
-        "trailExitFlag": 1
+        "trailExitFlag": 1,
+        "fastArm": 1278000
       }
     },
     {
@@ -279,7 +267,8 @@
         "maxStop": 339500,
         "trailArm": 510000,
         "trailQty": 1,
-        "trailExitFlag": 1
+        "trailExitFlag": 1,
+        "fastArm": 446000
       }
     },
     {
@@ -363,7 +352,8 @@
         "maxStop": 11440,
         "trailArm": 17160,
         "trailQty": 17,
-        "trailExitFlag": 1
+        "trailExitFlag": 1,
+        "fastArm": 15020
       }
     },
     {
@@ -464,7 +454,8 @@
         "maxStop": 28400,
         "trailArm": 42600,
         "trailQty": 7,
-        "trailExitFlag": 1
+        "trailExitFlag": 1,
+        "fastArm": 37300
       }
     },
     {
@@ -520,7 +511,8 @@
         "maxStop": 102000,
         "trailArm": 153200,
         "trailQty": 1,
-        "trailExitFlag": 1
+        "trailExitFlag": 1,
+        "fastArm": 134000
       }
     },
     {
@@ -671,7 +663,8 @@
         "maxStop": 9300,
         "trailArm": 13960,
         "trailQty": 21,
-        "trailExitFlag": 1
+        "trailExitFlag": 1,
+        "fastArm": 12210
       }
     },
     {
