@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08 13:08",
+  "updated": "2026-09-08 14:13",
   "holdings": [
     {
       "code": "000270",
@@ -639,6 +639,18 @@
       }
     },
     {
+      "code": "145020",
+      "name": "휴젤",
+      "shares": 1,
+      "avgPrice": 240000,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "plan": {
+        "water": 204000,
+        "waterQty": 1
+      }
+    },
+    {
       "code": "175330",
       "name": "JB금융지주",
       "shares": 10,
@@ -649,6 +661,32 @@
       "plan": {
         "water": 23450,
         "waterQty": 11
+      }
+    },
+    {
+      "code": "214150",
+      "name": "클래시스",
+      "shares": 7,
+      "avgPrice": 31850,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 1000,
+      "plan": {
+        "water": 27050,
+        "waterQty": 8
+      }
+    },
+    {
+      "code": "259960",
+      "name": "크래프톤",
+      "shares": 1,
+      "avgPrice": 215000,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 2240,
+      "plan": {
+        "water": 182700,
+        "waterQty": 1
       }
     },
     {
@@ -678,6 +716,32 @@
       "plan": {
         "water": 27900,
         "waterQty": 7
+      }
+    },
+    {
+      "code": "330590",
+      "name": "롯데리츠",
+      "shares": 63,
+      "avgPrice": 3915,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 117,
+      "plan": {
+        "water": 3325,
+        "waterQty": 74
+      }
+    },
+    {
+      "code": "395400",
+      "name": "SK리츠",
+      "shares": 47,
+      "avgPrice": 5231,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 70,
+      "plan": {
+        "water": 4445,
+        "waterQty": 55
       }
     }
   ]
