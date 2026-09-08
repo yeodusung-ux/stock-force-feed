@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08 09:50",
+  "updated": "2026-09-08 12:55",
   "holdings": [
     {
       "code": "000270",
@@ -93,7 +93,10 @@
       "buyLevel": 1,
       "maxLevel": 5,
       "plan": {
-        "maxStop": 7240
+        "maxStop": 7240,
+        "trailArm": 10880,
+        "trailQty": 27,
+        "trailExitFlag": 1
       }
     },
     {
@@ -174,7 +177,10 @@
       "maxLevel": 7,
       "dps": 300,
       "plan": {
-        "maxStop": 26450
+        "maxStop": 26450,
+        "trailArm": 39750,
+        "trailQty": 7,
+        "trailExitFlag": 1
       }
     },
     {
@@ -214,7 +220,10 @@
       "maxLevel": 7,
       "dps": 20000,
       "plan": {
-        "maxStop": 973000
+        "maxStop": 973000,
+        "trailArm": 1461000,
+        "trailQty": 1,
+        "trailExitFlag": 1
       }
     },
     {
@@ -267,7 +276,10 @@
       "maxLevel": 7,
       "dps": 6500,
       "plan": {
-        "maxStop": 339500
+        "maxStop": 339500,
+        "trailArm": 510000,
+        "trailQty": 1,
+        "trailExitFlag": 1
       }
     },
     {
@@ -348,7 +360,10 @@
       "maxLevel": 5,
       "dps": 190,
       "plan": {
-        "maxStop": 11440
+        "maxStop": 11440,
+        "trailArm": 17160,
+        "trailQty": 17,
+        "trailExitFlag": 1
       }
     },
     {
@@ -446,7 +461,10 @@
       "maxLevel": 5,
       "dps": 2400,
       "plan": {
-        "maxStop": 28400
+        "maxStop": 28400,
+        "trailArm": 42600,
+        "trailQty": 7,
+        "trailExitFlag": 1
       }
     },
     {
@@ -499,7 +517,10 @@
       "maxLevel": 7,
       "dps": 600,
       "plan": {
-        "maxStop": 102000
+        "maxStop": 102000,
+        "trailArm": 153200,
+        "trailQty": 1,
+        "trailExitFlag": 1
       }
     },
     {
@@ -647,7 +668,10 @@
       "maxLevel": 5,
       "dps": 2871,
       "plan": {
-        "maxStop": 9300
+        "maxStop": 9300,
+        "trailArm": 13960,
+        "trailQty": 21,
+        "trailExitFlag": 1
       }
     },
     {
