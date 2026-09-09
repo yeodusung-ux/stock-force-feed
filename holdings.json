@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09 10:57",
+  "updated": "2026-09-09 11:21",
   "holdings": [
     {
       "code": "000240",
@@ -678,11 +678,8 @@
       "buyLevel": 1,
       "maxLevel": 7,
       "plan": {
-        "maxStop": 192000,
-        "trailArm": 288000,
-        "trailQty": 1,
-        "trailExitFlag": 1,
-        "fastArm": 252000
+        "water": 204000,
+        "waterQty": 1
       }
     },
     {
@@ -707,11 +704,8 @@
       "maxLevel": 7,
       "dps": 1000,
       "plan": {
-        "maxStop": 25450,
-        "trailArm": 38250,
-        "trailQty": 7,
-        "trailExitFlag": 1,
-        "fastArm": 33450
+        "water": 27050,
+        "waterQty": 8
       }
     },
     {
@@ -723,11 +717,8 @@
       "maxLevel": 7,
       "dps": 2240,
       "plan": {
-        "maxStop": 172000,
-        "trailArm": 258000,
-        "trailQty": 1,
-        "trailExitFlag": 1,
-        "fastArm": 226000
+        "water": 182700,
+        "waterQty": 1
       }
     },
     {
@@ -768,11 +759,8 @@
       "maxLevel": 7,
       "dps": 117,
       "plan": {
-        "maxStop": 3130,
-        "trailArm": 4700,
-        "trailQty": 63,
-        "trailExitFlag": 1,
-        "fastArm": 4115
+        "water": 3325,
+        "waterQty": 74
       }
     },
     {
@@ -784,11 +772,8 @@
       "maxLevel": 7,
       "dps": 70,
       "plan": {
-        "maxStop": 4185,
-        "trailArm": 6280,
-        "trailQty": 47,
-        "trailExitFlag": 1,
-        "fastArm": 5500
+        "water": 4445,
+        "waterQty": 55
       }
     }
   ]
