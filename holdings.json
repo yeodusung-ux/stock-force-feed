@@ -1,6 +1,19 @@
 {
-  "updated": "2026-09-09 07:00",
+  "updated": "2026-09-09 10:54",
   "holdings": [
+    {
+      "code": "000240",
+      "name": "한국앤컴퍼니",
+      "shares": 10,
+      "avgPrice": 24050,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 1100,
+      "plan": {
+        "water": 20400,
+        "waterQty": 11
+      }
+    },
     {
       "code": "000270",
       "name": "기아",
@@ -70,6 +83,19 @@
         "waterQty": 2,
         "trailArm": 597000,
         "trailQty": 1
+      }
+    },
+    {
+      "code": "003550",
+      "name": "LG",
+      "shares": 2,
+      "avgPrice": 118800,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 3100,
+      "plan": {
+        "water": 100900,
+        "waterQty": 2
       }
     },
     {
@@ -646,8 +672,11 @@
       "buyLevel": 1,
       "maxLevel": 7,
       "plan": {
-        "water": 204000,
-        "waterQty": 1
+        "maxStop": 192000,
+        "trailArm": 288000,
+        "trailQty": 1,
+        "trailExitFlag": 1,
+        "fastArm": 252000
       }
     },
     {
@@ -672,8 +701,11 @@
       "maxLevel": 7,
       "dps": 1000,
       "plan": {
-        "water": 27050,
-        "waterQty": 8
+        "maxStop": 25450,
+        "trailArm": 38250,
+        "trailQty": 7,
+        "trailExitFlag": 1,
+        "fastArm": 33450
       }
     },
     {
@@ -685,8 +717,11 @@
       "maxLevel": 7,
       "dps": 2240,
       "plan": {
-        "water": 182700,
-        "waterQty": 1
+        "maxStop": 172000,
+        "trailArm": 258000,
+        "trailQty": 1,
+        "trailExitFlag": 1,
+        "fastArm": 226000
       }
     },
     {
@@ -727,8 +762,11 @@
       "maxLevel": 7,
       "dps": 117,
       "plan": {
-        "water": 3325,
-        "waterQty": 74
+        "maxStop": 3130,
+        "trailArm": 4700,
+        "trailQty": 63,
+        "trailExitFlag": 1,
+        "fastArm": 4115
       }
     },
     {
@@ -740,8 +778,11 @@
       "maxLevel": 7,
       "dps": 70,
       "plan": {
-        "water": 4445,
-        "waterQty": 55
+        "maxStop": 4185,
+        "trailArm": 6280,
+        "trailQty": 47,
+        "trailExitFlag": 1,
+        "fastArm": 5500
       }
     }
   ]
