@@ -1,15 +1,15 @@
 {
-  "updated": "2026-09-11 08:35:31",
+  "updated": "2026-09-11 08:40:07",
   "flags": {
     "morning": {
+      "enabled": true,
       "fast_trail": true,
-      "add_buy": false,
-      "enabled": true
+      "add_buy": false
     },
     "force_gate": {
+      "enabled": true,
       "fast_trail": true,
-      "add_buy": true,
-      "enabled": true
+      "add_buy": true
     }
   }
 }
