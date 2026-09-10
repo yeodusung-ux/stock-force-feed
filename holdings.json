@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10 15:25",
+  "updated": "2026-09-10 15:30",
   "holdings": [
     {
       "code": "000240",
@@ -330,14 +330,16 @@
     {
       "code": "017670",
       "name": "SK텔레콤",
-      "shares": 2,
-      "avgPrice": 100200,
-      "buyLevel": 1,
+      "shares": 4,
+      "avgPrice": 95300,
+      "buyLevel": 2,
       "maxLevel": 7,
       "dps": 1660,
       "plan": {
-        "water": 85100,
-        "waterQty": 2
+        "water": 81000,
+        "waterQty": 4,
+        "trailArm": 114400,
+        "trailQty": 1
       }
     },
     {
