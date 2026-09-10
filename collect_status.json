@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10 12:40:04",
+  "updated": "2026-09-10 12:45:03",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 4636,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 29
   },
   "collections": [
     {
@@ -29,30 +29,30 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 0,
-      "codes": 0,
+      "rows": 828077,
+      "codes": 2533,
       "target": 2364,
-      "first": "",
-      "last": "",
-      "progress_pct": 0,
+      "first": "2026-06-24",
+      "last": "2026-09-09",
+      "progress_pct": 100,
       "busy": false,
-      "state": "wait",
-      "fmt": "0/2,364 (0%)",
+      "state": "idle",
+      "fmt": "2,533/2,364 (100%) · 최신 09-09 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 0,
-      "codes": 0,
+      "rows": 376487,
+      "codes": 2533,
       "target": 2364,
-      "first": "",
-      "last": "",
-      "progress_pct": 0,
+      "first": "2026-01-26",
+      "last": "2026-09-08",
+      "progress_pct": 100,
       "busy": false,
-      "state": "wait",
-      "fmt": "0/2,364 (0%)",
+      "state": "idle",
+      "fmt": "2,533/2,364 (100%) · 최신 09-08 · 2일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,441종목(최대 70일)",
+      "fmt": "미도달 2,440종목(최대 70일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2441,
+        "behind": 2440,
         "max_lag": 70,
         "latest": "2026-09-10",
         "total": 2466
@@ -190,10 +190,10 @@
       "target": 2364,
       "first": "2026-06-29",
       "last": "2026-09-10",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,361/2,364 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
