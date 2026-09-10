@@ -1,40 +1,39 @@
 {
-  "ts": 1789084183,
-  "ts_str": "2026-09-11 08:49:43",
-  "kiwoom_alive": true,
-  "kiwoom_connected": true,
-  "programs": {
-    "main": {
-      "alive": true,
-      "age": 1
-    },
-    "strategy": {
-      "alive": true,
-      "age": 20
-    },
-    "analyzer": {
-      "alive": true,
-      "age": 20
-    },
-    "watchdog": {
-      "alive": true,
-      "age": 17
-    }
+ "ts": 1789084316,
+ "ts_str": "2026-09-11 08:51:56",
+ "kiwoom_alive": true,
+ "kiwoom_connected": true,
+ "trading": true,
+ "last_real": 1789084301.4288445,
+ "collect_auto_on": false,
+ "collect_sched": "",
+ "collect_done_today": false,
+ "collect_last_complete": "",
+ "collect_progress": "",
+ "watchdog_pid": 15956,
+ "restarts_today": 0,
+ "active_window": "07-04",
+ "programs": {
+  "main": {
+   "alive": true,
+   "age": 15
   },
-  "trading": true,
-  "mode": "full",
-  "last_real": 1789084183.0305233,
-  "collect_auto_on": true,
-  "collect_sched": "17:00",
-  "collect_done_today": false,
-  "collect_last_complete": "",
-  "collect_progress": "",
-  "watchdog_pid": 15956,
-  "restarts_today": 0,
-  "active_window": "07-04",
-  "last_restart_result": "부팅 유예(584s/600s, age=15)",
-  "restart_capped": false,
-  "task_ok": true,
-  "push_fail_streak": 0,
-  "alert": null
+  "strategy": {
+   "alive": true,
+   "age": 3
+  },
+  "analyzer": {
+   "alive": true,
+   "age": 3
+  },
+  "watchdog": {
+   "alive": true,
+   "age": 0
+  }
+ },
+ "alert": null,
+ "last_restart_result": "",
+ "restart_capped": false,
+ "task_ok": true,
+ "push_fail_streak": 0
 }
