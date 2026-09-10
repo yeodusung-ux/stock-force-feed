@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10 10:35:03",
+  "updated": "2026-09-10 10:45:03",
   "system": {
     "connected": true,
     "trading": true,
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,448종목(최대 70일)",
+      "fmt": "미도달 2,447종목(최대 70일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2448,
+        "behind": 2447,
         "max_lag": 70,
         "latest": "2026-09-10",
         "total": 2466
@@ -185,15 +185,15 @@
       "table": "quant_universe",
       "label": "퀀트 유니버스",
       "tr": "opt10001",
-      "rows": 4360,
-      "codes": 4360,
+      "rows": 4361,
+      "codes": 4361,
       "target": 2364,
       "first": "2026-06-29",
       "last": "2026-09-10",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,361/2,364 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
