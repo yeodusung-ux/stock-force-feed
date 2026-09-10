@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10 21:05",
+  "updated": "2026-09-10 21:10",
   "holdings": [
     {
       "code": "000240",
@@ -13,8 +13,7 @@
         "maxStop": 19240,
         "trailArm": 28900,
         "trailQty": 10,
-        "trailExitFlag": 1,
-        "fastStop": 25000
+        "trailExitFlag": 1
       }
     },
     {
@@ -100,8 +99,7 @@
         "maxStop": 95000,
         "trailArm": 142600,
         "trailQty": 2,
-        "trailExitFlag": 1,
-        "fastArm": 124800
+        "trailExitFlag": 1
       }
     },
     {
@@ -226,8 +224,7 @@
         "maxStop": 973000,
         "trailStop": 1443000,
         "trailQty": 1,
-        "trailExitFlag": 1,
-        "fastStop": 1358000
+        "trailExitFlag": 1
       }
     },
     {
@@ -283,8 +280,7 @@
         "maxStop": 339500,
         "trailArm": 510000,
         "trailQty": 1,
-        "trailExitFlag": 1,
-        "fastArm": 446000
+        "trailExitFlag": 1
       }
     },
     {
@@ -370,8 +366,7 @@
         "maxStop": 11440,
         "trailArm": 17160,
         "trailQty": 17,
-        "trailExitFlag": 1,
-        "fastArm": 15020
+        "trailExitFlag": 1
       }
     },
     {
@@ -469,8 +464,10 @@
       "maxLevel": 5,
       "dps": 2400,
       "plan": {
-        "water": 30150,
-        "waterQty": 8
+        "maxStop": 28400,
+        "trailArm": 42600,
+        "trailQty": 7,
+        "trailExitFlag": 1
       }
     },
     {
@@ -526,8 +523,7 @@
         "maxStop": 102000,
         "trailArm": 153200,
         "trailQty": 1,
-        "trailExitFlag": 1,
-        "fastArm": 134000
+        "trailExitFlag": 1
       }
     },
     {
@@ -716,8 +712,7 @@
         "maxStop": 9300,
         "trailArm": 13960,
         "trailQty": 21,
-        "trailExitFlag": 1,
-        "fastArm": 12210
+        "trailExitFlag": 1
       }
     },
     {
