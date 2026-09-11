@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11 14:39:42",
+  "updated": "2026-09-11 14:44:41",
   "system": {
     "connected": true,
     "trading": true,
@@ -190,25 +190,25 @@
       "target": 2365,
       "first": "2026-06-29",
       "last": "2026-09-11",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,361/2,365 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 4360,
-      "codes": 4360,
+      "rows": 4361,
+      "codes": 4361,
       "target": 2365,
       "first": "2026-09-11",
       "last": "2026-09-11",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 09-11 · 4,360행",
+      "fmt": "최신 09-11 · 4,361행",
       "schedule": "5분 자동(DART)"
     },
     {
