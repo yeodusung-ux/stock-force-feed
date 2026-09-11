@@ -450,8 +450,11 @@
       "maxLevel": 5,
       "dps": 2400,
       "plan": {
-        "water": 30150,
-        "waterQty": 8
+        "maxStop": 28400,
+        "trailArm": 42600,
+        "trailQty": 7,
+        "trailExitFlag": 1,
+        "fastArm": 37300
       }
     },
     {
