@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12 08:50:05",
+  "updated": "2026-09-12 08:55:04",
   "system": {
     "connected": false,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 14776,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -22,7 +22,7 @@
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "오늘완료",
+      "fmt": "2,533/2,364 (100%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -37,7 +37,7 @@
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "오늘완료",
+      "fmt": "2,533/2,364 (100%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -51,8 +51,8 @@
       "last": "2026-09-10",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "오늘완료",
+      "state": "idle",
+      "fmt": "2,533/2,364 (100%) · 최신 09-10 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -67,7 +67,7 @@
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "1,135,533봉·최신",
+      "fmt": "2,498/2,364 (100%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
