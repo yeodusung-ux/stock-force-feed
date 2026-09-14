@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14 07:00",
+  "updated": "2026-09-14 09:18",
   "holdings": [
     {
       "code": "000270",
@@ -660,6 +660,19 @@
       }
     },
     {
+      "code": "192080",
+      "name": "더블유게임즈",
+      "shares": 4,
+      "avgPrice": 57600,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 1200,
+      "plan": {
+        "water": 48950,
+        "waterQty": 4
+      }
+    },
+    {
       "code": "214150",
       "name": "클래시스",
       "shares": 7,
@@ -723,8 +736,11 @@
       "maxLevel": 7,
       "dps": 117,
       "plan": {
-        "water": 3325,
-        "waterQty": 74
+        "maxStop": 3130,
+        "trailArm": 4700,
+        "trailQty": 63,
+        "trailExitFlag": 1,
+        "fastArm": 4115
       }
     },
     {
@@ -736,8 +752,11 @@
       "maxLevel": 7,
       "dps": 70,
       "plan": {
-        "water": 4445,
-        "waterQty": 55
+        "maxStop": 4185,
+        "trailArm": 6280,
+        "trailQty": 47,
+        "trailExitFlag": 1,
+        "fastArm": 5500
       }
     }
   ],
