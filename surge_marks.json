@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-14 09:40",
-  "count": 2294,
+  "updated": "2026-09-14 09:50",
+  "count": 2295,
   "marks": {
     "026910": [
       {
@@ -18332,6 +18332,17 @@
         "reason": "eod",
         "origin": "sim",
         "strategy": "장중"
+      },
+      {
+        "entry": "2026-09-14",
+        "entry_price": 2895,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:45:23"
       }
     ],
     "488280": [
