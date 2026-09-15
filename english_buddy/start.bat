@@ -19,17 +19,22 @@ call .venv\Scripts\python.exe -m pip install --quiet --upgrade pip
 call .venv\Scripts\python.exe -m pip install --quiet -r requirements.txt
 
 if not exist .env (
-  if "%ANTHROPIC_API_KEY%"=="" (
+  if "%ANTHROPIC_API_KEY%%GEMINI_API_KEY%"=="" (
     echo.
-    echo Claude API 키가 필요합니다. https://console.anthropic.com/settings/keys 에서 만들 수 있습니다.
-    set /p KEY="키를 붙여넣고 Enter (sk-ant-...): "
-    if "!KEY!"=="" (
-      echo 키가 비어 있습니다. 다시 실행해 주세요.
+    echo API 키가 필요합니다. 둘 중 아무거나 쓰면 됩니다.
+    echo   무료: Google Gemini 키 ^(AIza...^)  https://aistudio.google.com/apikey
+    echo   유료: Anthropic Claude 키 ^(sk-ant-...^)  https://console.anthropic.com/settings/keys
+    set /p KEY="키를 붙여넣고 Enter: "
+    set NAME=
+    echo !KEY! | findstr /b /c:"sk-ant-" >nul && set NAME=ANTHROPIC_API_KEY
+    echo !KEY! | findstr /b /c:"AIza" >nul && set NAME=GEMINI_API_KEY
+    if "!NAME!"=="" (
+      echo 키 형식을 알아보지 못했습니다. Gemini 키는 AIza, Claude 키는 sk-ant- 로 시작합니다.
       pause
       exit /b 1
     )
-    > .env echo ANTHROPIC_API_KEY=!KEY!
-    echo .env 에 저장했습니다. 다음부터는 묻지 않습니다.
+    > .env echo !NAME!=!KEY!
+    echo .env 에 !NAME! 으로 저장했습니다. 다음부터는 묻지 않습니다.
   )
 )
 

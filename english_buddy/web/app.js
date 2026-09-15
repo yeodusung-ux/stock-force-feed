@@ -157,7 +157,7 @@ async function start() {
   $("start").textContent = "질문을 만드는 중…";
 
   try {
-    const data = await Claude.questions({ text, mode: state.mode, level: state.level });
+    const data = await AI.questions({ text, mode: state.mode, level: state.level });
     $("setup").hidden = true;
     $("session").hidden = false;
     $("summary").textContent = data.topic_summary_ko;
@@ -194,7 +194,7 @@ async function send() {
   $("send").disabled = true;
 
   try {
-    const data = await Claude.chat({
+    const data = await AI.chat({
       message,
       topic: state.topic,
       history: state.history,
@@ -227,7 +227,7 @@ async function send() {
 async function review() {
   $("review").disabled = true;
   try {
-    const data = await Claude.review({
+    const data = await AI.review({
       history: state.history,
       mode: state.mode,
       level: state.level,
@@ -341,7 +341,7 @@ function showKeyGate() {
   $("keygate").hidden = false;
   $("setup").hidden = true;
   $("session").hidden = true;
-  $("clear-key").hidden = !Claude.getKey();
+  $("clear-key").hidden = !AI.getKey();
   $("apikey").value = "";
   $("apikey").focus();
 }
@@ -353,12 +353,12 @@ function showSetup() {
 
 function saveKey() {
   const key = $("apikey").value.trim();
-  if (!key.startsWith("sk-ant-")) {
-    showError($("key-error"), "키는 sk-ant- 로 시작합니다. 다시 확인해 주세요.");
+  if (!AI.providerOfKey(key)) {
+    showError($("key-error"), "키 형식을 알아보지 못했습니다. Gemini 키는 AIza, Claude 키는 sk-ant- 로 시작합니다.");
     return;
   }
-  Claude.setKey(key);
-  if (!Claude.getKey()) {
+  AI.setKey(key);
+  if (!AI.getKey()) {
     showError($("key-error"), "이 브라우저가 저장을 막고 있습니다. 시크릿 모드가 아닌 창에서 열어 주세요.");
     return;
   }
@@ -366,10 +366,10 @@ function saveKey() {
   showSetup();
 }
 
-async function boot() {
-  await Claude.detectTransport();
+function boot() {
+  AI.detectTransport();
 
-  if (Claude.transport === "direct") {
+  if (AI.transport === "direct") {
     $("open-settings").hidden = false;
     $("open-settings").addEventListener("click", showKeyGate);
     $("save-key").addEventListener("click", saveKey);
@@ -377,13 +377,13 @@ async function boot() {
       if (event.key === "Enter") saveKey();
     });
     $("clear-key").addEventListener("click", () => {
-      Claude.clearKey();
+      AI.clearKey();
       $("clear-key").hidden = true;
       showError($("key-error"), "저장된 키를 지웠습니다.");
     });
   }
 
-  if (Claude.needsKey()) showKeyGate();
+  if (AI.needsKey()) showKeyGate();
   else showSetup();
 
   if ("serviceWorker" in navigator && location.protocol !== "file:") {

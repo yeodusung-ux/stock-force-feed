@@ -16,17 +16,23 @@ fi
 ./.venv/bin/pip install --quiet --upgrade pip
 ./.venv/bin/pip install --quiet -r requirements.txt
 
-if [ ! -f .env ] && [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+if [ ! -f .env ] && [ -z "${ANTHROPIC_API_KEY:-}" ] && [ -z "${GEMINI_API_KEY:-}" ]; then
   echo
-  echo "Claude API 키가 필요합니다. https://console.anthropic.com/settings/keys 에서 만들 수 있습니다."
-  read -r -p "키를 붙여넣고 Enter (sk-ant-...): " key
-  if [ -z "$key" ]; then
-    echo "키가 비어 있습니다. 다시 실행해 주세요."
-    exit 1
-  fi
-  printf 'ANTHROPIC_API_KEY=%s\n' "$key" > .env
+  echo "API 키가 필요합니다. 둘 중 아무거나 쓰면 됩니다."
+  echo "  무료: Google Gemini 키 (AIza...)   https://aistudio.google.com/apikey"
+  echo "  유료: Anthropic Claude 키 (sk-ant-...)  https://console.anthropic.com/settings/keys"
+  read -r -p "키를 붙여넣고 Enter: " key
+  case "$key" in
+    sk-ant-*) name=ANTHROPIC_API_KEY ;;
+    AIza*)    name=GEMINI_API_KEY ;;
+    *)
+      echo "키 형식을 알아보지 못했습니다. Gemini 키는 AIza, Claude 키는 sk-ant- 로 시작합니다."
+      exit 1
+      ;;
+  esac
+  printf '%s=%s\n' "$name" "$key" > .env
   chmod 600 .env
-  echo ".env 에 저장했습니다. 다음부터는 묻지 않습니다."
+  echo ".env 에 $name 으로 저장했습니다. 다음부터는 묻지 않습니다."
 fi
 
 PORT="${PORT:-8000}"
