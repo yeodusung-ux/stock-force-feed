@@ -39,17 +39,47 @@
 
 ## 실행 방법
 
+### 가장 빠른 방법 (스크립트 한 번)
+
+1. **Claude API 키 발급** — https://console.anthropic.com/settings/keys 에서 키를 만들고
+   (결제 수단 등록이 필요합니다) `sk-ant-...` 로 시작하는 문자열을 복사해 둡니다.
+2. 이 폴더에서 스크립트를 실행합니다.
+   - macOS · Linux: 터미널에서 `./start.sh`
+   - Windows: 탐색기에서 **start.bat 더블클릭**
+3. 처음 한 번만 키를 물어봅니다. 붙여넣고 Enter 하면 `.env` 에 저장되고 다음부터는 묻지 않습니다.
+   (`.env` 는 git 에 올라가지 않습니다.)
+4. 브라우저가 열리면 http://localhost:8000 에서 바로 사용합니다. 끄려면 실행한 창에서 `Ctrl+C`.
+
+스크립트가 가상환경(`.venv`) 생성 → 패키지 설치 → 서버 실행 → 브라우저 열기까지 알아서 합니다.
+
+### 직접 실행하고 싶다면
+
 ```bash
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY=sk-ant-...        # https://console.anthropic.com 에서 발급
+export ANTHROPIC_API_KEY=sk-ant-...        # Windows: set ANTHROPIC_API_KEY=sk-ant-...
 python server.py                            # http://localhost:8000
 ```
 
-환경변수로 조절할 수 있는 것:
+### 휴대폰에서 쓰려면
+
+같은 와이파이에서 `http://<PC의 IP>:8000` 으로 접속하면 **글로 하는 대화는 그대로 됩니다.**
+다만 브라우저 정책상 마이크는 HTTPS 또는 localhost 에서만 열리기 때문에, 이 방식에서는 음성이 막힙니다.
+음성까지 쓰려면 임시 HTTPS 주소를 하나 만들면 됩니다.
+
+```bash
+# PC 에서 서버를 켜 둔 상태로, 다른 터미널에서
+cloudflared tunnel --url http://localhost:8000     # 또는: ngrok http 8000
+```
+
+출력되는 `https://...` 주소를 폰에서 열면 마이크까지 동작합니다.
+API 키는 PC 안에만 있고 주소로 노출되지는 않지만, **주소를 아는 사람은 당신의 크레딧으로 대화할 수 있으니**
+쓰지 않을 때는 터널을 꺼 두세요.
+
+### 환경변수
 
 | 변수 | 기본값 | 설명 |
 |---|---|---|
-| `ANTHROPIC_API_KEY` | (필수) | Claude API 키 |
+| `ANTHROPIC_API_KEY` | (필수) | Claude API 키. `.env` 파일에 넣어도 됩니다 |
 | `ENGLISH_BUDDY_MODEL` | `claude-opus-5` | 모델 교체 (`claude-sonnet-5`, `claude-haiku-4-5` 등) |
 | `PORT` | `8000` | 서버 포트 |
 | `ENGLISH_BUDDY_FALLBACKS` | `1` | 서버사이드 폴백 비활성화하려면 `0` |
@@ -60,6 +90,17 @@ API 키 없이 배선만 확인하려면:
 python smoke_test.py
 ```
 
+### 잘 안 될 때
+
+| 증상 | 해결 |
+|---|---|
+| `authentication_error` / 401 | 키가 잘못됐거나 만료됐습니다. `.env` 의 키를 다시 확인하세요 |
+| `credit balance is too low` | 콘솔에서 크레딧을 충전해야 합니다 |
+| `Address already in use` | 8000 포트를 다른 프로그램이 쓰는 중입니다. `PORT=8100 ./start.sh` |
+| 마이크 버튼이 안 보임 | 파이어폭스에는 받아쓰기 기능이 없습니다. 크롬 · 엣지 · 사파리를 쓰세요 |
+| 마이크를 눌러도 반응이 없음 | 주소가 `localhost` 또는 `https://` 인지 확인하고, 브라우저에서 마이크 권한을 허용하세요 |
+| 소리가 안 남 | 「자동으로 읽어주기」 체크 여부와 기기 음량을 확인하세요 |
+
 ## 구조
 
 ```
@@ -67,6 +108,7 @@ server.py            파이썬 표준 라이브러리 HTTP 서버 + Claude 호�
   /api/questions     첫 글 → 요약 · 리액션 · 어휘 · 질문 12~15개
   /api/chat          답변 한 턴 → 리액션 · 교정 · 표현 · 새 질문
   /api/review        대화 전체 → 복습 노트
+start.sh / start.bat 설치 · 키 입력 · 실행을 한 번에 해 주는 실행 스크립트
 static/              index.html · app.js · style.css (바닐라 JS, 빌드 도구 없음)
   voice.js           Web Speech API 래퍼 (읽어주기 큐 · 마이크 받아쓰기)
 smoke_test.py        모델을 목으로 대체한 엔드투엔드 배선 테스트

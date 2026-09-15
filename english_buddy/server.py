@@ -18,6 +18,21 @@ from urllib.parse import urlparse
 
 import anthropic
 
+def load_env_file() -> None:
+    """옆에 있는 .env 파일을 환경변수로 읽어 온다(이미 설정된 값은 건드리지 않는다)."""
+    env_path = Path(__file__).parent / ".env"
+    if not env_path.is_file():
+        return
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        os.environ.setdefault(key.strip(), value.strip().strip("\"").strip("'"))
+
+
+load_env_file()
+
 MODEL = os.environ.get("ENGLISH_BUDDY_MODEL", "claude-opus-5")
 PORT = int(os.environ.get("PORT", "8000"))
 STATIC_DIR = Path(__file__).parent / "static"
@@ -485,7 +500,11 @@ class Handler(BaseHTTPRequestHandler):
 
 def main() -> None:
     if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
-        print("경고: ANTHROPIC_API_KEY 가 설정되어 있지 않습니다. `export ANTHROPIC_API_KEY=sk-ant-...`")
+        print(
+            "경고: Claude API 키가 없습니다.\n"
+            "  이 폴더에 .env 파일을 만들고 `ANTHROPIC_API_KEY=sk-ant-...` 한 줄을 넣거나,\n"
+            "  `export ANTHROPIC_API_KEY=sk-ant-...` 로 설정한 뒤 다시 실행해 주세요."
+        )
     print(f"English Buddy: http://localhost:{PORT}  (model: {MODEL})")
     ThreadingHTTPServer(("0.0.0.0", PORT), Handler).serve_forever()
 
