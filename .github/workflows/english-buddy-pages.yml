@@ -1,40 +1,42 @@
-# english_buddy/web 폴더를 깃허브 Pages(무료 HTTPS)로 배포한다.
-# configure-pages 의 enablement 가 Pages 를 대신 켜 주므로 저장소 설정을 손댈 필요가 없다.
+# english_buddy/web 폴더를 gh-pages 브랜치로 발행한다. 깃허브가 그 브랜치를 Pages(HTTPS)로 서빙한다.
+# gh-pages 는 빌드 결과물 전용 브랜치라서 매번 통째로 덮어쓴다.
 name: Deploy English Buddy
 
 on:
   push:
     branches:
       - main
-      - claude/english-conversation-app-feasibility-0wyv91
     paths:
       - "english_buddy/web/**"
       - ".github/workflows/english-buddy-pages.yml"
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: english-buddy-pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  publish:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-        with:
-          # 저장소에 Pages 가 아직 없으면 여기서 켠다 (Source = GitHub Actions)
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: english_buddy/web
-      - id: deployment
-        uses: actions/deploy-pages@v4
+
+      - name: Publish web/ to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          site="$(mktemp -d)"
+          cp -r english_buddy/web/. "$site"/
+          touch "$site/.nojekyll"          # Jekyll 처리를 건너뛰게 한다
+          cd "$site"
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Publish English Buddy (${GITHUB_SHA:0:7})"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+          echo "배포 완료: https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
