@@ -20,15 +20,13 @@ const ANGLE_LABEL = {
   ROLE_PLAY: "역할극", SUMMARY_CHALLENGE: "요약 도전",
 };
 
-async function post(path, body) {
-  const res = await fetch(path, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  });
-  const data = await res.json().catch(() => ({ error: "응답을 읽지 못했습니다." }));
-  if (!res.ok) throw new Error(data.error || "요청에 실패했습니다.");
-  return data;
+/** 키가 없다는 신호면 키 화면으로 돌려보내고, 그 외에는 메시지를 그대로 보여 준다. */
+function describeError(error) {
+  if (error && error.message === "NO_KEY") {
+    showKeyGate();
+    return "API 키가 필요합니다.";
+  }
+  return (error && error.message) || "요청에 실패했습니다.";
 }
 
 function showError(el, message) {
@@ -159,7 +157,7 @@ async function start() {
   $("start").textContent = "질문을 만드는 중…";
 
   try {
-    const data = await post("/api/questions", { text, mode: state.mode, level: state.level });
+    const data = await Claude.questions({ text, mode: state.mode, level: state.level });
     $("setup").hidden = true;
     $("session").hidden = false;
     $("summary").textContent = data.topic_summary_ko;
@@ -175,7 +173,7 @@ async function start() {
     });
     $("answer").focus();
   } catch (err) {
-    showError($("setup-error"), err.message);
+    showError($("setup-error"), describeError(err));
   } finally {
     $("start").disabled = false;
     $("start").textContent = "대화 시작하기";
@@ -196,7 +194,7 @@ async function send() {
   $("send").disabled = true;
 
   try {
-    const data = await post("/api/chat", {
+    const data = await Claude.chat({
       message,
       topic: state.topic,
       history: state.history,
@@ -219,7 +217,7 @@ async function send() {
     say(nextQuestion ? `${data.reply_en} ${nextQuestion.en}` : data.reply_en);
   } catch (err) {
     pending.remove();
-    showError($("chat-error"), err.message);
+    showError($("chat-error"), describeError(err));
   } finally {
     $("send").disabled = false;
     $("answer").focus();
@@ -229,7 +227,7 @@ async function send() {
 async function review() {
   $("review").disabled = true;
   try {
-    const data = await post("/api/review", {
+    const data = await Claude.review({
       history: state.history,
       mode: state.mode,
       level: state.level,
@@ -270,7 +268,7 @@ async function review() {
     body.append(el("p", null, data.encouragement_ko));
     $("modal").hidden = false;
   } catch (err) {
-    showError($("chat-error"), err.message);
+    showError($("chat-error"), describeError(err));
   } finally {
     $("review").disabled = false;
   }
@@ -337,7 +335,66 @@ function setupVoiceControls() {
   }
 }
 
+// ---------- 키 화면 · 시작 ----------
+
+function showKeyGate() {
+  $("keygate").hidden = false;
+  $("setup").hidden = true;
+  $("session").hidden = true;
+  $("clear-key").hidden = !Claude.getKey();
+  $("apikey").value = "";
+  $("apikey").focus();
+}
+
+function showSetup() {
+  $("keygate").hidden = true;
+  $("setup").hidden = false;
+}
+
+function saveKey() {
+  const key = $("apikey").value.trim();
+  if (!key.startsWith("sk-ant-")) {
+    showError($("key-error"), "키는 sk-ant- 로 시작합니다. 다시 확인해 주세요.");
+    return;
+  }
+  Claude.setKey(key);
+  if (!Claude.getKey()) {
+    showError($("key-error"), "이 브라우저가 저장을 막고 있습니다. 시크릿 모드가 아닌 창에서 열어 주세요.");
+    return;
+  }
+  showError($("key-error"), "");
+  showSetup();
+}
+
+async function boot() {
+  await Claude.detectTransport();
+
+  if (Claude.transport === "direct") {
+    $("open-settings").hidden = false;
+    $("open-settings").addEventListener("click", showKeyGate);
+    $("save-key").addEventListener("click", saveKey);
+    $("apikey").addEventListener("keydown", (event) => {
+      if (event.key === "Enter") saveKey();
+    });
+    $("clear-key").addEventListener("click", () => {
+      Claude.clearKey();
+      $("clear-key").hidden = true;
+      showError($("key-error"), "저장된 키를 지웠습니다.");
+    });
+  }
+
+  if (Claude.needsKey()) showKeyGate();
+  else showSetup();
+
+  if ("serviceWorker" in navigator && location.protocol !== "file:") {
+    navigator.serviceWorker.register("sw.js").catch(() => {
+      /* 오프라인 캐시는 없어도 앱은 그대로 동작한다 */
+    });
+  }
+}
+
 setupVoiceControls();
+boot();
 
 $("start").addEventListener("click", start);
 $("send").addEventListener("click", send);

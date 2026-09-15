@@ -34,7 +34,10 @@ body {
 }
 main { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; }
 
-.topbar { padding: 28px 16px 18px; max-width: 1100px; margin: 0 auto; }
+.topbar {
+  padding: 28px 16px 18px; max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+}
 .topbar h1 { margin: 0; font-size: 1.5rem; letter-spacing: -0.01em; }
 .topbar p { margin: 6px 0 0; color: var(--muted); font-size: 0.92rem; }
 
@@ -149,3 +152,16 @@ button:disabled { opacity: 0.5; cursor: progress; }
 .voice-bar select { width: auto; padding: 4px 7px; font-size: 0.82rem; }
 .mic-status { color: var(--accent); flex: 1 1 100%; }
 @media (max-width: 480px) { .voice-bar { gap: 10px; } }
+
+/* ---------- API 키 화면 ---------- */
+#keygate h2 { margin: 0 0 8px; font-size: 1.05rem; }
+#keygate .hint { font-size: 0.88rem; line-height: 1.6; }
+#keygate a { color: var(--accent); }
+#apikey {
+  font: inherit; width: 100%; margin: 4px 0 12px;
+  color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 9px; padding: 11px;
+}
+#apikey:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.row.gap { gap: 8px; margin-bottom: 0; }
+.topbar button { white-space: nowrap; flex: 0 0 auto; }

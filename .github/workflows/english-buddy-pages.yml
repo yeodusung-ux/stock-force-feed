@@ -1,0 +1,37 @@
+# english_buddy/web 폴더를 깃허브 Pages(무료 HTTPS)로 배포한다.
+# 저장소 Settings > Pages > Source 를 "GitHub Actions" 로 한 번만 바꿔 두면 된다.
+name: Deploy English Buddy
+
+on:
+  push:
+    branches:
+      - main
+      - claude/english-conversation-app-feasibility-0wyv91
+    paths:
+      - "english_buddy/web/**"
+      - ".github/workflows/english-buddy-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: english-buddy-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: english_buddy/web
+      - id: deployment
+        uses: actions/deploy-pages@v4
