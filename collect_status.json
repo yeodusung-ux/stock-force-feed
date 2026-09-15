@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16 00:02:34",
+  "updated": "2026-09-16 00:07:37",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 12732,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 33
+    "heartbeat_age_sec": 36
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 103967191,
+      "rows": 103968955,
       "codes": 2466,
       "target": 2365,
       "first": "2023-03-24",
@@ -155,14 +155,14 @@
       "table": "morning_pool",
       "label": "시가종가풀",
       "tr": "일봉유도/CSV",
-      "rows": 94,
-      "codes": 80,
+      "rows": 96,
+      "codes": 82,
       "target": 2365,
       "first": "20250416",
-      "last": "20260902",
-      "progress_pct": 0,
-      "busy": true,
-      "state": "busy",
+      "last": "20260915",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
       "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
@@ -175,10 +175,10 @@
       "target": 2365,
       "first": "20250409",
       "last": "20260914",
-      "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 09-14 · 73,292행",
+      "progress_pct": 0,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
