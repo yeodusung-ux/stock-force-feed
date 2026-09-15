@@ -1,5 +1,5 @@
 # english_buddy/web 폴더를 깃허브 Pages(무료 HTTPS)로 배포한다.
-# 저장소 Settings > Pages > Source 를 "GitHub Actions" 로 한 번만 바꿔 두면 된다.
+# configure-pages 의 enablement 가 Pages 를 대신 켜 주므로 저장소 설정을 손댈 필요가 없다.
 name: Deploy English Buddy
 
 on:
@@ -30,6 +30,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+        with:
+          # 저장소에 Pages 가 아직 없으면 여기서 켠다 (Source = GitHub Actions)
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: english_buddy/web
