@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15 07:00",
+  "updated": "2026-09-15 09:00",
   "holdings": [
     {
       "code": "000270",
@@ -264,6 +264,19 @@
         "trailQty": 1,
         "trailExitFlag": 1,
         "fastArm": 446000
+      }
+    },
+    {
+      "code": "013810",
+      "name": "스페코",
+      "shares": 157,
+      "avgPrice": 1595,
+      "buyLevel": 1,
+      "maxLevel": 3,
+      "plan": {
+        "water": 1356,
+        "waterQty": 184,
+        "fastArm": 1675
       }
     },
     {
