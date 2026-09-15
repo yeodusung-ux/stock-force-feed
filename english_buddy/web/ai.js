@@ -15,6 +15,8 @@ window.AI = (() => {
   const GEMINI_MODEL_STORAGE = "english-buddy.gemini-model";
   const MAX_HISTORY_TURNS = 40;
 
+  const VERSION = "2026-09-15.3";
+
   let transport = "direct";
   let serverProvider = null;   // server 모드일 때 서버가 알려 주는 제공자
   let useFallbacks = true;
@@ -196,7 +198,15 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
   }
 
   function setKey(value) {
-    writeStorage(KEY_STORAGE, value.trim());
+    const next = value.trim();
+    if (next !== getKey()) {
+      try {
+        localStorage.removeItem(GEMINI_MODEL_STORAGE);  // 키가 바뀌면 쓰던 모델도 다시 고른다
+      } catch (_) {
+        /* 무시 */
+      }
+    }
+    writeStorage(KEY_STORAGE, next);
   }
 
   function clearKey() {
@@ -224,18 +234,26 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
 
   class AIError extends Error {}
 
-  function friendlyError(status, message) {
-    if (status === 401 || status === 403 || /api[ _-]?key|authentication|unauthorized/i.test(message)) {
-      return "API 키가 올바르지 않습니다. 설정에서 키를 다시 확인해 주세요.";
+  const PROVIDER_LABEL = { anthropic: "Claude", gemini: "Gemini" };
+
+  /** 사람이 읽을 안내 + 서버가 준 설명을 함께 보여 준다. 설명이 없으면 원인을 못 찾는다. */
+  function friendlyError(status, message, provider) {
+    const label = PROVIDER_LABEL[provider || currentProvider()] || "서버";
+    const detail = message ? ` — ${String(message).slice(0, 300)}` : "";
+
+    if (status === 401 || status === 403 || /api[ _-]?key|authentication|unauthorized|permission/i.test(message)) {
+      return `${label} 키가 올바르지 않거나 권한이 없습니다. 설정에서 키를 다시 확인해 주세요.${detail}`;
     }
     if (/credit balance/i.test(message)) {
-      return "크레딧이 부족합니다. console.anthropic.com 에서 충전해 주세요.";
+      return `크레딧이 부족합니다. console.anthropic.com 에서 충전해 주세요.${detail}`;
     }
     if (status === 429) {
-      return "요청이 너무 잦습니다(무료 티어는 분당 횟수 제한이 있습니다). 30초쯤 뒤에 다시 시도해 주세요.";
+      return `요청이 너무 잦습니다(무료 티어는 분당 횟수 제한이 있습니다). 30초쯤 뒤에 다시 시도해 주세요.${detail}`;
     }
-    if (status >= 500) return "서버가 일시적으로 응답하지 않습니다. 잠시 후 다시 시도해 주세요.";
-    return message || `요청에 실패했습니다 (HTTP ${status}).`;
+    if (status >= 500) {
+      return `${label} 서버가 오류를 돌려줬습니다 (HTTP ${status}). 잠시 후 다시 시도해 주세요.${detail}`;
+    }
+    return `${label} 요청이 실패했습니다 (HTTP ${status}).${detail}`;
   }
 
   async function parseJsonResponse(response) {
@@ -297,18 +315,33 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
 
   // ---------- Gemini ----------
 
-  /** Gemini 의 스키마는 OpenAPI 부분집합이라 additionalProperties 같은 건 받지 않는다. */
+  /** Gemini 의 스키마는 OpenAPI 부분집합이다. additionalProperties 같은 키는 받지 않고,
+      타입은 문서 표기대로 대문자를 쓴다. */
+  const GEMINI_TYPES = {
+    object: "OBJECT", string: "STRING", array: "ARRAY",
+    boolean: "BOOLEAN", number: "NUMBER", integer: "INTEGER",
+  };
+  const GEMINI_SCHEMA_KEYS = new Set([
+    "type", "format", "description", "nullable", "enum", "items", "properties", "required",
+    "minItems", "maxItems", "propertyOrdering",
+  ]);
+
   function toGeminiSchema(node) {
     if (Array.isArray(node)) return node.map(toGeminiSchema);
     if (!node || typeof node !== "object") return node;
+
     const out = {};
     for (const [key, value] of Object.entries(node)) {
-      if (key === "additionalProperties" || key === "cache_control") continue;
-      out[key] = key === "properties"
-        ? Object.fromEntries(Object.entries(value).map(([name, child]) => [name, toGeminiSchema(child)]))
-        : toGeminiSchema(value);
+      if (!GEMINI_SCHEMA_KEYS.has(key)) continue;
+      if (key === "type") out.type = GEMINI_TYPES[value] || value;
+      else if (key === "properties") {
+        out.properties = Object.fromEntries(
+          Object.entries(value).map(([name, child]) => [name, toGeminiSchema(child)])
+        );
+      } else if (key === "enum" || key === "required") out[key] = value;
+      else out[key] = toGeminiSchema(value);
     }
-    if (out.type === "object" && out.properties) out.propertyOrdering = Object.keys(out.properties);
+    if (out.type === "OBJECT" && out.properties) out.propertyOrdering = Object.keys(out.properties);
     return out;
   }
 
@@ -329,16 +362,26 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
     return contents;
   }
 
-  function geminiBody({ system, messages, schema, maxTokens }) {
-    const systemText = system.map((block) => block.text).join("\n\n");
+  function geminiBody({ system, messages, schema, maxTokens }, { withSchema = true } = {}) {
+    let systemText = system.map((block) => block.text).join("\n\n");
+    const generationConfig = {
+      responseMimeType: "application/json",
+      // 생각(thinking)에 쓰는 토큰도 이 한도에 포함되므로 넉넉히 준다
+      maxOutputTokens: Math.max(maxTokens, 8192),
+    };
+
+    if (withSchema) {
+      generationConfig.responseSchema = toGeminiSchema(schema);
+    } else {
+      systemText +=
+        "\n\nReply with a single JSON object and nothing else. It must match this JSON Schema exactly:\n" +
+        JSON.stringify(schema);
+    }
+
     return {
       systemInstruction: { parts: [{ text: systemText }] },
       contents: toGeminiContents(messages),
-      generationConfig: {
-        responseMimeType: "application/json",
-        responseSchema: toGeminiSchema(schema),
-        maxOutputTokens: maxTokens,
-      },
+      generationConfig,
     };
   }
 
@@ -368,18 +411,44 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
     return best;
   }
 
-  async function callGeminiDirect(body) {
-    const model = await pickGeminiModel();
-    const response = await fetch(`${GEMINI_BASE}/models/${model}:generateContent`, {
-      method: "POST",
-      headers: { "content-type": "application/json", "x-goog-api-key": getKey() },
-      body: JSON.stringify(body),
-    });
-    const data = await parseJsonResponse(response);
-    if (!response.ok) {
-      throw new AIError(friendlyError(response.status, (data.error && data.error.message) || ""));
+  /** 실제 전송. server 모드면 로컬 서버가 키를 붙여 대신 보낸다. */
+  async function postGemini(body) {
+    let response;
+    if (transport === "server") {
+      response = await fetch("api/ai", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+    } else {
+      const model = await pickGeminiModel();
+      response = await fetch(`${GEMINI_BASE}/models/${model}:generateContent`, {
+        method: "POST",
+        headers: { "content-type": "application/json", "x-goog-api-key": getKey() },
+        body: JSON.stringify(body),
+      });
     }
-    return data;
+
+    const data = await parseJsonResponse(response);
+    if (response.ok) return data;
+
+    const message = (data.error && (data.error.message || data.error)) || "";
+    const error = new AIError(friendlyError(response.status, message, "gemini"));
+    // Gemini 는 받아들이지 못하는 responseSchema 를 400 이나 500 으로 되돌려준다
+    error.retryWithoutSchema = /schema|internal|invalid|not supported/i.test(String(message)) || response.status >= 500;
+    throw error;
+  }
+
+  /** 스키마를 거부당하면 스키마 없이 한 번 더 시도한다(형식 지시는 프롬프트에 넣는다). */
+  async function callGemini(spec) {
+    try {
+      return await postGemini(geminiBody(spec));
+    } catch (error) {
+      if (error instanceof AIError && error.retryWithoutSchema) {
+        return await postGemini(geminiBody(spec, { withSchema: false }));
+      }
+      throw error;
+    }
   }
 
   function readGemini(data) {
@@ -392,24 +461,24 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
       throw new AIError("응답이 너무 길어 잘렸습니다. 입력을 조금 짧게 해서 다시 시도해 주세요.");
     }
     if (candidate.finishReason && !["STOP", "MAX_TOKENS"].includes(candidate.finishReason)) {
-      throw new AIError("모델이 이 입력에 대한 응답을 거절했습니다. 내용을 바꿔서 다시 시도해 주세요.");
+      throw new AIError(`모델이 응답을 중단했습니다 (${candidate.finishReason}). 내용을 바꿔서 다시 시도해 주세요.`);
     }
     const text = ((candidate.content || {}).parts || []).map((part) => part.text || "").join("");
     if (!text.trim()) throw new AIError("모델이 빈 응답을 반환했습니다.");
-    return JSON.parse(text);
+    try {
+      return JSON.parse(text);
+    } catch (_) {
+      // 스키마 없이 받은 응답이 코드블록에 싸여 오는 경우를 건져 낸다
+      const match = text.match(/\{[\s\S]*\}/);
+      if (!match) throw new AIError("모델 응답을 이해하지 못했습니다. 다시 시도해 주세요.");
+      return JSON.parse(match[0]);
+    }
   }
 
   // ---------- 공통 호출 ----------
 
-  async function callModel({ system, messages, schema, effort = "low", maxTokens = 4000 }) {
-    const provider = currentProvider();
-    if (!provider) throw new AIError("NO_KEY");
-
-    const body =
-      provider === "gemini"
-        ? geminiBody({ system, messages, schema, maxTokens })
-        : anthropicBody({ system, messages, schema, effort, maxTokens });
-
+  async function callAnthropic(spec) {
+    const body = anthropicBody(spec);
     if (transport === "server") {
       const response = await fetch("api/ai", {
         method: "POST",
@@ -417,16 +486,25 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
         body: JSON.stringify(body),
       });
       const data = await parseJsonResponse(response);
-      if (!response.ok) throw new AIError(data.error || friendlyError(response.status, ""));
-      return provider === "gemini" ? readGemini(data) : readAnthropic(data);
+      if (!response.ok) throw new AIError(data.error || friendlyError(response.status, "", "anthropic"));
+      return data;
     }
+    return callAnthropicDirect(body);
+  }
 
+  async function callModel(spec) {
+    const provider = currentProvider();
+    if (!provider) throw new AIError("NO_KEY");
+
+    const request = { effort: "low", maxTokens: 4000, ...spec };
     try {
-      const data = provider === "gemini" ? await callGeminiDirect(body) : await callAnthropicDirect(body);
-      return provider === "gemini" ? readGemini(data) : readAnthropic(data);
+      return provider === "gemini"
+        ? readGemini(await callGemini(request))
+        : readAnthropic(await callAnthropic(request));
     } catch (error) {
       if (error instanceof AIError) throw error;
-      throw new AIError("네트워크에 연결하지 못했습니다. 인터넷 상태를 확인해 주세요.");
+      if (error instanceof SyntaxError) throw new AIError("모델 응답을 이해하지 못했습니다. 다시 시도해 주세요.");
+      throw new AIError(`연결하지 못했습니다: ${error && error.message ? error.message : error}`);
     }
   }
 
@@ -442,6 +520,7 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
 
   return {
     AIError,
+    VERSION,
     getKey,
     setKey,
     clearKey,
@@ -467,6 +546,37 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
         serverProvider = null;
       }
       return transport;
+    },
+
+    /** 키가 실제로 통하는지 최소 비용으로 확인한다. 실패하면 서버가 준 설명이 그대로 담긴다. */
+    async testKey() {
+      const provider = currentProvider();
+      if (!provider) throw new AIError("NO_KEY");
+
+      if (provider === "gemini") {
+        // 모델 목록 조회가 곧 키 확인이다(키가 틀리면 여기서 걸린다)
+        return `Gemini 연결 성공 · 사용할 모델: ${await pickGeminiModel()}`;
+      }
+
+      const response = await fetch(ANTHROPIC_URL, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "x-api-key": getKey(),
+          "anthropic-version": "2023-06-01",
+          "anthropic-dangerous-direct-browser-access": "true",
+        },
+        body: JSON.stringify({
+          model: ANTHROPIC_MODEL,
+          max_tokens: 16,
+          messages: [{ role: "user", content: "ping" }],
+        }),
+      });
+      const data = await parseJsonResponse(response);
+      if (!response.ok) {
+        throw new AIError(friendlyError(response.status, (data.error && data.error.message) || "", "anthropic"));
+      }
+      return `Claude 연결 성공 · 모델: ${ANTHROPIC_MODEL}`;
     },
 
     /** direct 모드인데 쓸 수 있는 키가 없으면 설정 화면부터 보여 줘야 한다. */

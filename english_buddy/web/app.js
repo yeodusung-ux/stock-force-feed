@@ -337,6 +337,13 @@ function setupVoiceControls() {
 
 // ---------- 키 화면 · 시작 ----------
 
+const PROVIDER_LABEL = { anthropic: "Claude", gemini: "Gemini (무료)" };
+
+function showBuild() {
+  const provider = AI.provider ? PROVIDER_LABEL[AI.provider] : "키 없음";
+  $("build").textContent = `버전 ${AI.VERSION} · ${provider}`;
+}
+
 function showKeyGate() {
   $("keygate").hidden = false;
   $("setup").hidden = true;
@@ -363,7 +370,40 @@ function saveKey() {
     return;
   }
   showError($("key-error"), "");
+  showBuild();
   showSetup();
+}
+
+/** 지금 입력한(또는 저장된) 키로 실제 호출을 한 번 해 보고 결과를 그대로 보여 준다. */
+async function testKey() {
+  const typed = $("apikey").value.trim();
+  if (typed) {
+    if (!AI.providerOfKey(typed)) {
+      showError($("key-error"), "키 형식을 알아보지 못했습니다. Gemini 키는 AIza, Claude 키는 sk-ant- 로 시작합니다.");
+      return;
+    }
+    AI.setKey(typed);
+  }
+  if (!AI.getKey()) {
+    showError($("key-error"), "먼저 키를 입력해 주세요.");
+    return;
+  }
+
+  showError($("key-error"), "");
+  $("key-ok").hidden = true;
+  $("test-key").disabled = true;
+  $("test-key").textContent = "확인 중…";
+  try {
+    const message = await AI.testKey();
+    $("key-ok").textContent = message;
+    $("key-ok").hidden = false;
+    showBuild();
+  } catch (error) {
+    showError($("key-error"), describeError(error));
+  } finally {
+    $("test-key").disabled = false;
+    $("test-key").textContent = "연결 테스트";
+  }
 }
 
 function boot() {
@@ -373,6 +413,7 @@ function boot() {
     $("open-settings").hidden = false;
     $("open-settings").addEventListener("click", showKeyGate);
     $("save-key").addEventListener("click", saveKey);
+    $("test-key").addEventListener("click", testKey);
     $("apikey").addEventListener("keydown", (event) => {
       if (event.key === "Enter") saveKey();
     });
@@ -383,6 +424,7 @@ function boot() {
     });
   }
 
+  showBuild();
   if (AI.needsKey()) showKeyGate();
   else showSetup();
 

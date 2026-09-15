@@ -1,6 +1,7 @@
-/* 앱 껍데기를 캐시해 두는 서비스 워커. 화면은 캐시에서 즉시 띄우고 뒤에서 새 버전을 받아 둔다.
-   대화 요청(Anthropic · 로컬 서버)은 절대 캐시하지 않는다. */
-const CACHE = "english-buddy-v2";
+/* 앱 껍데기를 캐시해 두는 서비스 워커.
+   네트워크를 먼저 쓰고(고친 내용이 바로 반영되도록), 실패하면 캐시로 떨어진다(오프라인 대비).
+   대화 요청(Anthropic · Gemini · 로컬 서버)은 절대 캐시하지 않는다. */
+const CACHE = "english-buddy-2026-09-15.3";
 const ASSETS = [
   "./",
   "index.html",
@@ -33,17 +34,14 @@ self.addEventListener("fetch", (event) => {
   if (!isAppAsset) return;
 
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      const network = fetch(event.request)
-        .then((response) => {
-          if (response.ok) {
-            const copy = response.clone();
-            caches.open(CACHE).then((cache) => cache.put(event.request, copy));
-          }
-          return response;
-        })
-        .catch(() => cached);
-      return cached || network;
-    })
+    fetch(event.request)
+      .then((response) => {
+        if (response.ok) {
+          const copy = response.clone();
+          caches.open(CACHE).then((cache) => cache.put(event.request, copy));
+        }
+        return response;
+      })
+      .catch(() => caches.match(event.request).then((cached) => cached || Promise.reject(new Error("offline"))))
   );
 });
