@@ -27,21 +27,12 @@
 
 ## 1. 폰에 설치해서 쓰기 (PWA)
 
-앱스토어 · APK 없이, 크롬에서 **홈 화면에 추가**하면 아이콘이 생기고 전체화면 앱처럼 열립니다.
+앱스토어 · APK 없이, 폰 브라우저에서 **홈 화면에 추가**하면 아이콘이 생기고 전체화면 앱처럼 열립니다.
 브라우저(크롬/사파리) 엔진 위에서 돌기 때문에 **음성 기능이 그대로 동작**합니다.
 
-### 처음 한 번: 깃허브 Pages 켜기
+**주소: https://yeodusung-ux.github.io/stock-force-feed/**
 
-1. 저장소 **Settings → Pages → Build and deployment → Source** 를 **GitHub Actions** 로 바꿉니다.
-2. 이 브랜치를 `main` 에 머지합니다. (`.github/workflows/english-buddy-pages.yml` 이 `english_buddy/web` 을 배포합니다.)
-3. **Actions** 탭에서 `Deploy English Buddy` 가 초록불이 되면, 그 실행 화면에 주소가 나옵니다.
-   보통 `https://yeodusung-ux.github.io/stock-force-feed/` 형태입니다.
-
-기본 브랜치가 아닌 곳에서 배포하려면 Settings → Environments → `github-pages` 에서 그 브랜치를 허용해 주세요.
-
-### 폰에서
-
-1. 크롬(안드로이드) 또는 사파리(아이폰)로 위 주소를 엽니다.
+1. 폰에서 크롬(안드로이드) 또는 사파리(아이폰)로 위 주소를 엽니다.
 2. 처음 한 번 **Claude API 키**를 입력합니다. → https://console.anthropic.com/settings/keys
    키는 **그 폰의 브라우저 저장소에만** 남고, 대화할 때 폰에서 Anthropic 으로 바로 전송됩니다. 중간 서버가 없습니다.
 3. 메뉴에서 **홈 화면에 추가**(안드로이드: ⋮ → 앱 설치 / 아이폰: 공유 → 홈 화면에 추가)를 누릅니다.
@@ -50,6 +41,12 @@
 > **키 관리**: 페이지 주소는 공개지만 키는 각자 폰에만 있습니다. 다만 **폰 잠금이 풀린 상태면
 > 누구나 그 키로 대화할 수 있으니**, 폰을 잃어버렸거나 남에게 넘길 때는 콘솔에서 해당 키를 폐기하세요.
 > 앱 상단 「설정」에서 저장된 키를 지울 수도 있습니다.
+
+### 배포는 어떻게 되어 있나
+
+`main` 의 `english_buddy/web/**` 이 바뀌면 `.github/workflows/english-buddy-pages.yml` 이
+그 폴더를 **`gh-pages` 브랜치로 발행**하고, 깃허브가 그 브랜치를 Pages 로 서빙합니다.
+`gh-pages` 는 빌드 결과물 전용 브랜치라 매번 통째로 덮어써집니다 — 직접 커밋하지 마세요.
 
 ### APK 를 원했다면
 
