@@ -8,6 +8,11 @@ const state = {
   asked: [],       // 이미 물어본 질문(중복 방지용)
 };
 
+const voice = {
+  recognizer: null,   // 받아쓰기 중이면 컨트롤러가 들어 있다
+  autoRead: true,
+};
+
 const ANGLE_LABEL = {
   FACTS: "사실", DETAIL: "묘사", FEELING: "감정", REASON: "이유", OPINION: "의견",
   COMPARISON: "비교", HYPOTHETICAL: "가정", PAST_LINK: "과거 경험", FUTURE: "앞으로",
@@ -40,10 +45,28 @@ function el(tag, className, text) {
 
 // ---------- 렌더링 ----------
 
+function attachSpeaker(container, text) {
+  if (!Voice.ttsSupported || !text) return;
+  const button = el("button", "speak", "🔊");
+  button.title = "읽어주기";
+  button.setAttribute("aria-label", "읽어주기");
+  button.addEventListener("click", (event) => {
+    event.stopPropagation();
+    Voice.speak(text);
+  });
+  container.append(button);
+}
+
+/** 자동 읽기가 켜져 있을 때만 읽어 준다. */
+function say(text) {
+  if (voice.autoRead && Voice.ttsSupported && text) Voice.speak(text);
+}
+
 function addBubble(kind, en, ko) {
   const bubble = el("div", `bubble ${kind}`);
   bubble.append(el("div", "en", en));
   if (ko) bubble.append(el("div", "ko", ko));
+  if (kind.startsWith("buddy") && !kind.includes("thinking")) attachSpeaker(bubble, en);
   $("chat").append(bubble);
   $("chat").scrollTop = $("chat").scrollHeight;
   return bubble;
@@ -86,16 +109,28 @@ function renderQuestions(questions, { append = false } = {}) {
     if (state.asked.includes(q.en)) continue;
     state.asked.push(q.en);
 
-    const button = el("button", "q");
-    button.append(el("span", "tag", ANGLE_LABEL[q.angle] || q.angle));
-    button.append(el("span", "en", q.en));
-    button.append(el("span", "ko", q.ko));
-    button.addEventListener("click", () => {
-      button.classList.add("used");
+    const item = el("div", "q");
+    item.setAttribute("role", "button");
+    item.tabIndex = 0;
+    item.append(el("span", "tag", ANGLE_LABEL[q.angle] || q.angle));
+    item.append(el("span", "en", q.en));
+    item.append(el("span", "ko", q.ko));
+    attachSpeaker(item, q.en);
+
+    const pick = () => {
+      item.classList.add("used");
       $("answer").focus();
       $("answer").placeholder = q.en;
+      say(q.en);
+    };
+    item.addEventListener("click", pick);
+    item.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        pick();
+      }
     });
-    box.prepend(button);
+    box.prepend(item);
   }
   $("qcount").textContent = `${box.childElementCount}개`;
 }
@@ -132,6 +167,7 @@ async function start() {
     addBubble("buddy", data.opener_en, data.opener_ko);
     renderQuestions(data.questions);
     renderVocab(data.key_vocabulary);
+    say(data.opener_en);
     state.history.push({ role: "user", content: text });
     state.history.push({
       role: "assistant",
@@ -150,6 +186,8 @@ async function send() {
   const message = $("answer").value.trim();
   if (!message) return;
 
+  if (voice.recognizer) voice.recognizer.stop();
+  Voice.stop();
   showError($("chat-error"), "");
   $("answer").value = "";
   $("answer").placeholder = "영어로 답해 보세요. 막히면 한국어로 써도 영어 표현을 알려드립니다.";
@@ -178,6 +216,7 @@ async function send() {
     });
     const nextQuestion = data.questions[0];
     if (nextQuestion) addBubble("buddy", nextQuestion.en, nextQuestion.ko);
+    say(nextQuestion ? `${data.reply_en} ${nextQuestion.en}` : data.reply_en);
   } catch (err) {
     pending.remove();
     showError($("chat-error"), err.message);
@@ -236,6 +275,69 @@ async function review() {
     $("review").disabled = false;
   }
 }
+
+// ---------- 음성 ----------
+
+function setMicUI(listening) {
+  $("mic").classList.toggle("on", listening);
+  $("mic").setAttribute("aria-pressed", String(listening));
+  $("mic-status").textContent = listening ? "듣는 중… 다 말하면 마이크를 다시 누르세요." : "";
+}
+
+function toggleMic() {
+  if (voice.recognizer) {
+    voice.recognizer.stop();
+    return;
+  }
+  Voice.stop();  // 스피커 소리가 마이크로 들어가지 않게 먼저 끊는다
+  showError($("chat-error"), "");
+
+  const existing = $("answer").value.trim();
+  voice.recognizer = Voice.listen({
+    lang: $("stt-lang").value,
+    onPartial: (text) => {
+      $("answer").value = existing ? `${existing} ${text}` : text;
+    },
+    onEnd: () => {
+      voice.recognizer = null;
+      setMicUI(false);
+      $("answer").focus();
+    },
+    onError: (error) => {
+      showError(
+        $("chat-error"),
+        error === "not-allowed" || error === "service-not-allowed"
+          ? "마이크 권한이 필요합니다. 브라우저 주소창의 자물쇠 아이콘에서 마이크를 허용해 주세요."
+          : `받아쓰기 오류: ${error}`
+      );
+    },
+  });
+  setMicUI(Boolean(voice.recognizer));
+}
+
+function setupVoiceControls() {
+  if (Voice.sttSupported) {
+    $("mic").addEventListener("click", toggleMic);
+  } else {
+    $("mic").hidden = true;
+    $("stt-lang").closest("label").hidden = true;
+    $("mic-status").textContent = "이 브라우저는 받아쓰기를 지원하지 않습니다 (크롬 · 엣지 · 사파리 권장).";
+  }
+
+  if (Voice.ttsSupported) {
+    Voice.setRate(parseFloat($("rate").value));
+    $("rate").addEventListener("change", (event) => Voice.setRate(parseFloat(event.target.value)));
+    $("autoread").addEventListener("change", (event) => {
+      voice.autoRead = event.target.checked;
+      if (!voice.autoRead) Voice.stop();
+    });
+  } else {
+    $("autoread").closest("label").hidden = true;
+    $("rate").closest("label").hidden = true;
+  }
+}
+
+setupVoiceControls();
 
 $("start").addEventListener("click", start);
 $("send").addEventListener("click", send);
