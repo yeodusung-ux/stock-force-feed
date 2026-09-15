@@ -1,8 +1,9 @@
 """English Buddy - PC에서 쓸 때의 로컬 서버.
 
-정적 파일(web/)을 내려주고, /api/claude 로 들어온 요청에 API 키를 붙여 Claude 로 전달한다.
-프롬프트와 대화 로직은 web/claude.js 한곳에만 있고, 이 서버는 키를 PC 밖으로 내보내지 않는
-역할만 한다. 휴대폰에서는 서버 없이 같은 web/ 을 정적 호스팅해서 쓴다(그때는 키가 폰에 저장된다).
+정적 파일(web/)을 내려주고, /api/ai 로 들어온 요청에 API 키를 붙여 Claude 또는 Gemini 로 전달한다.
+어느 쪽으로 보낼지는 환경변수에 어떤 키가 있는지로 정해진다(ANTHROPIC_API_KEY 우선, 없으면 GEMINI_API_KEY).
+프롬프트와 대화 로직은 web/ai.js 한곳에만 있고, 이 서버는 키를 PC 밖으로 내보내지 않는 역할만 한다.
+휴대폰에서는 서버 없이 같은 web/ 을 정적 호스팅해서 쓴다(그때는 키가 폰에 저장된다).
 
 실행:
     ./start.sh          # 또는 Windows: start.bat
@@ -13,7 +14,10 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import traceback
+import urllib.error
+import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
@@ -23,7 +27,12 @@ import anthropic
 WEB_DIR = Path(__file__).parent / "web"
 
 # 브라우저가 보낼 수 있는 요청 필드만 통과시킨다.
-ALLOWED_FIELDS = {"model", "max_tokens", "system", "messages", "thinking", "output_config"}
+ANTHROPIC_FIELDS = {"model", "max_tokens", "system", "messages", "thinking", "output_config"}
+GEMINI_FIELDS = {"systemInstruction", "contents", "generationConfig"}
+GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
+
+# 테스트에서 갈아끼울 수 있도록 한 단계 감싼다
+urlopen = urllib.request.urlopen
 
 
 def load_env_file() -> None:
@@ -42,6 +51,19 @@ def load_env_file() -> None:
 load_env_file()
 
 PORT = int(os.environ.get("PORT", "8000"))
+
+
+def gemini_key() -> str:
+    return os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY") or ""
+
+
+def provider() -> str | None:
+    """어느 서비스의 키를 들고 있는지. Claude 키가 있으면 그쪽을 먼저 쓴다."""
+    if os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN"):
+        return "anthropic"
+    if gemini_key():
+        return "gemini"
+    return None
 
 _client: anthropic.Anthropic | None = None
 
@@ -62,11 +84,61 @@ class RequestError(ValueError):
     """클라이언트 입력 문제(400)."""
 
 
-def api_claude(body: dict) -> dict:
+_gemini_model: str | None = None
+
+
+def pick_gemini_model() -> str:
+    """계정에서 쓸 수 있는 Flash 계열 모델을 고른다(모델 이름이 자주 바뀌므로 목록에서 고른다)."""
+    global _gemini_model
+    if _gemini_model:
+        return _gemini_model
+
+    request = urllib.request.Request(f"{GEMINI_BASE}/models", headers={"x-goog-api-key": gemini_key()})
+    with urlopen(request, timeout=30) as response:
+        models = json.loads(response.read()).get("models", [])
+
+    usable = [
+        m for m in models
+        if "generateContent" in (m.get("supportedGenerationMethods") or []) and "flash" in m.get("name", "")
+    ]
+    if not usable:
+        raise RequestError("이 키로 쓸 수 있는 Gemini Flash 모델이 없습니다.")
+
+    def score(model: dict) -> float:
+        name = model["name"]
+        match = re.search(r"gemini-(\d+(?:\.\d+)?)", name)
+        version = float(match.group(1)) if match else 0.0
+        return version * 100 - (20 if "lite" in name else 0) - (10 if ("preview" in name or "exp" in name) else 0)
+
+    _gemini_model = max(usable, key=score)["name"].removeprefix("models/")
+    print(f"[english-buddy] Gemini 모델: {_gemini_model}")
+    return _gemini_model
+
+
+def api_gemini(body: dict) -> dict:
+    """브라우저가 만든 요청에 키를 붙여 Gemini 로 전달한다."""
+    unknown = set(body) - GEMINI_FIELDS
+    if unknown:
+        raise RequestError(f"허용되지 않은 필드: {', '.join(sorted(unknown))}")
+    if "contents" not in body:
+        raise RequestError("필수 필드가 없습니다: contents")
+
+    url = f"{GEMINI_BASE}/models/{pick_gemini_model()}:generateContent"
+    request = urllib.request.Request(
+        url,
+        data=json.dumps(body).encode("utf-8"),
+        headers={"content-type": "application/json", "x-goog-api-key": gemini_key()},
+        method="POST",
+    )
+    with urlopen(request, timeout=180) as response:
+        return json.loads(response.read())
+
+
+def api_anthropic(body: dict) -> dict:
     """브라우저가 만든 요청을 그대로 Claude 로 전달하고 응답을 JSON 으로 돌려준다."""
     global _use_fallbacks
 
-    unknown = set(body) - ALLOWED_FIELDS
+    unknown = set(body) - ANTHROPIC_FIELDS
     if unknown:
         raise RequestError(f"허용되지 않은 필드: {', '.join(sorted(unknown))}")
     for field in ("model", "max_tokens", "messages"):
@@ -119,7 +191,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:  # noqa: N802
         path = urlparse(self.path).path
         if path == "/api/health":
-            self._send_json(200, {"ok": True})
+            self._send_json(200, {"ok": True, "provider": provider()})
             return
 
         name = "index.html" if path == "/" else path.lstrip("/")
@@ -130,8 +202,9 @@ class Handler(BaseHTTPRequestHandler):
 
         if target.name == "index.html":
             # 이 서버가 키를 들고 있다는 표시. 정적 호스팅에서는 이 줄이 없으니 앱이 스스로 키를 묻는다.
+            flag = provider() or "none"
             html = target.read_text(encoding="utf-8").replace(
-                "</head>", "  <script>window.ENGLISH_BUDDY_SERVER = true;</script>\n</head>", 1
+                "</head>", f'  <script>window.ENGLISH_BUDDY_SERVER = "{flag}";</script>\n</head>', 1
             )
             self._send(200, html.encode("utf-8"), CONTENT_TYPES[".html"])
             return
@@ -139,15 +212,21 @@ class Handler(BaseHTTPRequestHandler):
         self._send(200, target.read_bytes(), CONTENT_TYPES.get(target.suffix, "application/octet-stream"))
 
     def do_POST(self) -> None:  # noqa: N802
-        if urlparse(self.path).path != "/api/claude":
+        if urlparse(self.path).path != "/api/ai":
             self._send_json(404, {"error": "not found"})
             return
         try:
             length = int(self.headers.get("Content-Length") or 0)
             body = json.loads(self.rfile.read(length) or b"{}")
-            self._send_json(200, api_claude(body))
+            which = provider()
+            if which is None:
+                raise RequestError("서버에 API 키가 없습니다. .env 를 확인한 뒤 다시 실행해 주세요.")
+            self._send_json(200, api_gemini(body) if which == "gemini" else api_anthropic(body))
         except (RequestError, json.JSONDecodeError) as exc:
             self._send_json(400, {"error": str(exc)})
+        except urllib.error.HTTPError as exc:
+            detail = exc.read().decode("utf-8", "replace")[:500]
+            self._send_json(exc.code, {"error": f"Gemini 오류 ({exc.code}): {detail}"})
         except anthropic.APIStatusError as exc:
             message = getattr(exc, "message", None) or str(exc)
             if exc.status_code == 401:
@@ -166,12 +245,15 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def main() -> None:
-    if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
+    which = provider()
+    if which is None:
         print(
-            "경고: Claude API 키가 없습니다.\n"
-            "  이 폴더에 .env 파일을 만들고 `ANTHROPIC_API_KEY=sk-ant-...` 한 줄을 넣거나,\n"
-            "  `export ANTHROPIC_API_KEY=sk-ant-...` 로 설정한 뒤 다시 실행해 주세요."
+            "경고: API 키가 없습니다. 이 폴더의 .env 파일에 둘 중 한 줄을 넣어 주세요.\n"
+            "  GEMINI_API_KEY=AIza...        (무료 티어)\n"
+            "  ANTHROPIC_API_KEY=sk-ant-...  (유료, 품질 우선)"
         )
+    else:
+        print(f"English Buddy 제공자: {which}")
     print(f"English Buddy: http://localhost:{PORT}")
     ThreadingHTTPServer(("0.0.0.0", PORT), Handler).serve_forever()
 

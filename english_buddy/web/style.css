@@ -165,3 +165,13 @@ button:disabled { opacity: 0.5; cursor: progress; }
 #apikey:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
 .row.gap { gap: 8px; margin-bottom: 0; }
 .topbar button { white-space: nowrap; flex: 0 0 auto; }
+
+/* ---------- 제공자 안내 ---------- */
+.provider-list { list-style: none; margin: 0 0 12px; padding: 0; }
+.provider-list li {
+  border: 1px solid var(--line); border-radius: 10px;
+  padding: 10px 12px; margin-bottom: 8px; background: var(--bg);
+}
+.provider-list strong { display: block; font-size: 0.92rem; margin-bottom: 3px; }
+.provider-list span { display: block; color: var(--muted); font-size: 0.83rem; line-height: 1.5; }
+.provider-list a { display: inline-block; margin-top: 5px; font-size: 0.83rem; color: var(--accent); }

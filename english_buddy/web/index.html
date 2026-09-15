@@ -26,13 +26,24 @@
   <main>
     <!-- 0단계: API 키 (정적 호스팅에서 열었을 때만) -->
     <section id="keygate" class="card" hidden>
-      <h2>먼저 Claude API 키를 넣어 주세요</h2>
+      <h2>먼저 API 키를 넣어 주세요</h2>
       <p class="hint">
-        키는 <strong>이 기기의 브라우저에만</strong> 저장되고, 대화할 때 이 기기에서 Anthropic 으로 바로 전송됩니다.
-        다른 서버를 거치지 않습니다.
-        <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">키 만들러 가기</a>
+        둘 중 아무거나 붙여넣으면 됩니다. 어느 쪽인지는 앱이 알아서 알아봅니다.
       </p>
-      <input id="apikey" type="password" inputmode="text" autocomplete="off" placeholder="sk-ant-..." />
+      <ul class="provider-list">
+        <li>
+          <strong>무료로 쓰기 · Google Gemini</strong>
+          <span>무료 티어(Flash 모델)라 요금이 청구되지 않습니다. 분당 요청 수 제한이 있어 아주 빠르게 연속으로 보내면 잠시 기다려야 합니다.</span>
+          <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">AI Studio 에서 키 받기 (AIza… 로 시작)</a>
+        </li>
+        <li>
+          <strong>품질 우선 · Anthropic Claude</strong>
+          <span>질문과 교정 품질이 가장 좋습니다. 사용한 만큼 과금되고, 한 세션에 대략 $0.5 안팎입니다.</span>
+          <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">콘솔에서 키 받기 (sk-ant-… 로 시작)</a>
+        </li>
+      </ul>
+      <p class="hint">키는 <strong>이 기기의 브라우저에만</strong> 저장되고, 대화할 때 이 기기에서 해당 서비스로 바로 전송됩니다. 다른 서버를 거치지 않습니다.</p>
+      <input id="apikey" type="password" inputmode="text" autocomplete="off" placeholder="AIza... 또는 sk-ant-..." />
       <div class="row gap">
         <button id="save-key" class="primary">저장하고 시작</button>
         <button id="clear-key" class="ghost" hidden>저장된 키 지우기</button>
@@ -118,7 +129,7 @@
   </div>
 
   <script src="voice.js"></script>
-  <script src="claude.js"></script>
+  <script src="ai.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

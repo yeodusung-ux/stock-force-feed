@@ -1,12 +1,12 @@
 /* 앱 껍데기를 캐시해 두는 서비스 워커. 화면은 캐시에서 즉시 띄우고 뒤에서 새 버전을 받아 둔다.
    대화 요청(Anthropic · 로컬 서버)은 절대 캐시하지 않는다. */
-const CACHE = "english-buddy-v1";
+const CACHE = "english-buddy-v2";
 const ASSETS = [
   "./",
   "index.html",
   "style.css",
   "app.js",
-  "claude.js",
+  "ai.js",
   "voice.js",
   "manifest.webmanifest",
   "icons/icon-192.png",
