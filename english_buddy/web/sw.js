@@ -1,7 +1,7 @@
 /* 앱 껍데기를 캐시해 두는 서비스 워커.
    네트워크를 먼저 쓰고(고친 내용이 바로 반영되도록), 실패하면 캐시로 떨어진다(오프라인 대비).
    대화 요청(Anthropic · Gemini · 로컬 서버)은 절대 캐시하지 않는다. */
-const CACHE = "english-buddy-2026-09-15.3";
+const CACHE = "english-buddy-2026-09-15.4";
 const ASSETS = [
   "./",
   "index.html",

@@ -61,8 +61,9 @@ class FakeClient:
 class FakeGeminiHTTP:
     """urllib.request.urlopen 을 대신해 Gemini 응답을 흉내 낸다."""
 
-    def __init__(self):
+    def __init__(self, busy_models=()):
         self.urls = []
+        self.busy_models = set(busy_models)
 
     def __call__(self, request, timeout=None):
         url = request.full_url
@@ -77,6 +78,11 @@ class FakeGeminiHTTP:
                 ]
             }
         else:
+            if any(name in url for name in self.busy_models):
+                raise urllib.error.HTTPError(
+                    url, 503, "Service Unavailable", {},
+                    io.BytesIO(b'{"error":{"code":503,"message":"This model is currently experiencing high demand."}}'),
+                )
             payload = {
                 "candidates": [
                     {
@@ -165,7 +171,7 @@ def check_gemini_mode():
     os.environ.pop("ANTHROPIC_API_KEY", None)
     os.environ.pop("ANTHROPIC_AUTH_TOKEN", None)
     os.environ["GEMINI_API_KEY"] = "AIza-test"
-    server._gemini_model = None
+    server._gemini_models = None
     fake_http = FakeGeminiHTTP()
     server.urlopen = fake_http
     httpd, base = serve()
@@ -177,7 +183,7 @@ def check_gemini_mode():
     assert status == 200, data
     text = data["candidates"][0]["content"]["parts"][0]["text"]
     assert json.loads(text)["opener_en"], "Gemini 응답 전달 실패"
-    assert server._gemini_model == "gemini-3-flash", f"모델 선택이 틀림: {server._gemini_model}"
+    assert server._gemini_models[0] == "gemini-3-flash", f"모델 선택이 틀림: {server._gemini_models}"
     assert any("gemini-3-flash:generateContent" in url for url in fake_http.urls), "선택한 모델로 호출하지 않음"
 
     status, data = post(base + "/api/ai", {**GEMINI_REQUEST, "x-goog-api-key": "AIza-sneaky"})
@@ -187,9 +193,30 @@ def check_gemini_mode():
     print("  Gemini 모드 통과")
 
 
+def check_gemini_busy_failover():
+    """첫 모델이 혼잡(503)하면 다음 모델로 넘어가야 한다."""
+    os.environ.pop("ANTHROPIC_API_KEY", None)
+    os.environ["GEMINI_API_KEY"] = "AIza-test"
+    server._gemini_models = None
+    fake_http = FakeGeminiHTTP(busy_models={"gemini-3-flash:"})
+    server.urlopen = fake_http
+    httpd, base = serve()
+
+    status, data = post(base + "/api/ai", GEMINI_REQUEST)
+    assert status == 200, data
+    generate_calls = [u for u in fake_http.urls if "generateContent" in u]
+    assert "gemini-3-flash:" in generate_calls[0], "첫 시도는 최우선 모델이어야 함"
+    assert "gemini-3-flash:" not in generate_calls[1], f"혼잡할 때 다른 모델로 넘어가지 않음: {generate_calls}"
+    assert json.loads(data["candidates"][0]["content"]["parts"][0]["text"])["opener_en"]
+
+    httpd.shutdown()
+    print("  Gemini 혼잡 대체 통과")
+
+
 def main() -> None:
     check_claude_mode()
     check_gemini_mode()
+    check_gemini_busy_failover()
     print("모든 스모크 테스트 통과")
 
 

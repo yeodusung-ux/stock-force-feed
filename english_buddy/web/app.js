@@ -157,7 +157,14 @@ async function start() {
   $("start").textContent = "질문을 만드는 중…";
 
   try {
-    const data = await AI.questions({ text, mode: state.mode, level: state.level });
+    const data = await AI.questions({
+      text,
+      mode: state.mode,
+      level: state.level,
+      onRetry: ({ attempt, total }) => {
+        $("start").textContent = `혼잡 · 다시 시도 중 (${attempt}/${total})`;
+      },
+    });
     $("setup").hidden = true;
     $("session").hidden = false;
     $("summary").textContent = data.topic_summary_ko;
@@ -201,6 +208,9 @@ async function send() {
       asked: state.asked,
       mode: state.mode,
       level: state.level,
+      onRetry: ({ attempt, total }) => {
+        pending.querySelector(".en").textContent = `혼잡해서 다시 시도 중… (${attempt}/${total})`;
+      },
     });
     pending.remove();
     addBubble("buddy", data.reply_en, data.reply_ko);
@@ -231,6 +241,9 @@ async function review() {
       history: state.history,
       mode: state.mode,
       level: state.level,
+      onRetry: ({ attempt, total }) => {
+        $("review").textContent = `재시도 (${attempt}/${total})`;
+      },
     });
     const body = $("modal-body");
     body.innerHTML = "";
@@ -271,6 +284,7 @@ async function review() {
     showError($("chat-error"), describeError(err));
   } finally {
     $("review").disabled = false;
+    $("review").textContent = "복습 노트";
   }
 }
 
