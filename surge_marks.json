@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-15 09:30",
-  "count": 2296,
+  "updated": "2026-09-15 09:40",
+  "count": 2298,
   "marks": {
     "026910": [
       {
@@ -9494,6 +9494,17 @@
         "reason": "init_stop",
         "origin": "sim",
         "strategy": "장중"
+      },
+      {
+        "entry": "2026-09-15",
+        "entry_price": 2890,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:30:22"
       }
     ],
     "046970": [
@@ -22964,6 +22975,17 @@
         "reason": "giveback",
         "origin": "sim",
         "strategy": "장중"
+      },
+      {
+        "entry": "2026-09-15",
+        "entry_price": 3455,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:30:23"
       }
     ],
     "058110": [
