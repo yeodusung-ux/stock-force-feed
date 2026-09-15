@@ -15,6 +15,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 import traceback
 import urllib.error
 import urllib.request
@@ -84,14 +85,15 @@ class RequestError(ValueError):
     """클라이언트 입력 문제(400)."""
 
 
-_gemini_model: str | None = None
+_gemini_models: list[str] | None = None
 
 
-def pick_gemini_model() -> str:
-    """계정에서 쓸 수 있는 Flash 계열 모델을 고른다(모델 이름이 자주 바뀌므로 목록에서 고른다)."""
-    global _gemini_model
-    if _gemini_model:
-        return _gemini_model
+def gemini_models() -> list[str]:
+    """계정에서 쓸 수 있는 Flash 계열 모델을 좋은 순서대로 모아 둔다.
+    앞의 모델이 혼잡하면(503) 다음 모델로 넘어가기 위해 목록으로 들고 있는다."""
+    global _gemini_models
+    if _gemini_models:
+        return _gemini_models
 
     request = urllib.request.Request(f"{GEMINI_BASE}/models", headers={"x-goog-api-key": gemini_key()})
     with urlopen(request, timeout=30) as response:
@@ -110,28 +112,49 @@ def pick_gemini_model() -> str:
         version = float(match.group(1)) if match else 0.0
         return version * 100 - (20 if "lite" in name else 0) - (10 if ("preview" in name or "exp" in name) else 0)
 
-    _gemini_model = max(usable, key=score)["name"].removeprefix("models/")
-    print(f"[english-buddy] Gemini 모델: {_gemini_model}")
-    return _gemini_model
+    _gemini_models = [m["name"].removeprefix("models/") for m in sorted(usable, key=score, reverse=True)][:4]
+    print(f"[english-buddy] Gemini 모델 후보: {', '.join(_gemini_models)}")
+    return _gemini_models
 
 
 def api_gemini(body: dict) -> dict:
-    """브라우저가 만든 요청에 키를 붙여 Gemini 로 전달한다."""
+    """브라우저가 만든 요청에 키를 붙여 Gemini 로 전달한다.
+    모델이 혼잡하면(429 · 5xx) 다음 모델로, 그래도 안 되면 잠깐 기다렸다 다시 시도한다."""
     unknown = set(body) - GEMINI_FIELDS
     if unknown:
         raise RequestError(f"허용되지 않은 필드: {', '.join(sorted(unknown))}")
     if "contents" not in body:
         raise RequestError("필수 필드가 없습니다: contents")
 
-    url = f"{GEMINI_BASE}/models/{pick_gemini_model()}:generateContent"
-    request = urllib.request.Request(
-        url,
-        data=json.dumps(body).encode("utf-8"),
-        headers={"content-type": "application/json", "x-goog-api-key": gemini_key()},
-        method="POST",
+    models = gemini_models()
+    waits = [0, 1, 2.5, 5]
+    last_error: urllib.error.HTTPError | None = None
+
+    for attempt, wait in enumerate(waits):
+        if wait:
+            time.sleep(wait)
+        model = models[min(attempt, len(models) - 1)]
+        request = urllib.request.Request(
+            f"{GEMINI_BASE}/models/{model}:generateContent",
+            data=json.dumps(body).encode("utf-8"),
+            headers={"content-type": "application/json", "x-goog-api-key": gemini_key()},
+            method="POST",
+        )
+        try:
+            with urlopen(request, timeout=180) as response:
+                return json.loads(response.read())
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 and exc.code < 500:
+                raise
+            print(f"[english-buddy] {model} 혼잡(HTTP {exc.code}) - 다른 모델로 다시 시도합니다")
+            if len(models) > 1:
+                models.append(models.pop(models.index(model)))  # 혼잡한 모델은 뒤로
+            last_error = exc
+
+    raise RequestError(
+        "지금 Gemini 무료 모델이 혼잡합니다. 몇 분 뒤에 다시 하시거나 .env 에 ANTHROPIC_API_KEY 를 넣어 주세요."
+        + (f" (마지막 응답 HTTP {last_error.code})" if last_error else "")
     )
-    with urlopen(request, timeout=180) as response:
-        return json.loads(response.read())
 
 
 def api_anthropic(body: dict) -> dict:

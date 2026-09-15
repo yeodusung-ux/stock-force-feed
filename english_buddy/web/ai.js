@@ -12,10 +12,11 @@ window.AI = (() => {
   const ANTHROPIC_URL = "https://api.anthropic.com/v1/messages";
   const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
   const KEY_STORAGE = "english-buddy.api-key";
-  const GEMINI_MODEL_STORAGE = "english-buddy.gemini-model";
+  const GEMINI_MODELS_STORAGE = "english-buddy.gemini-models";
+  const GEMINI_PREFERRED_STORAGE = "english-buddy.gemini-preferred";
   const MAX_HISTORY_TURNS = 40;
 
-  const VERSION = "2026-09-15.3";
+  const VERSION = "2026-09-15.4";
 
   let transport = "direct";
   let serverProvider = null;   // server 모드일 때 서버가 알려 주는 제공자
@@ -201,7 +202,9 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
     const next = value.trim();
     if (next !== getKey()) {
       try {
-        localStorage.removeItem(GEMINI_MODEL_STORAGE);  // 키가 바뀌면 쓰던 모델도 다시 고른다
+        localStorage.removeItem(GEMINI_MODELS_STORAGE);  // 키가 바뀌면 쓰던 모델도 다시 고른다
+        localStorage.removeItem(GEMINI_PREFERRED_STORAGE);
+        modelOrder = null;
       } catch (_) {
         /* 무시 */
       }
@@ -212,7 +215,8 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
   function clearKey() {
     try {
       localStorage.removeItem(KEY_STORAGE);
-      localStorage.removeItem(GEMINI_MODEL_STORAGE);
+      localStorage.removeItem(GEMINI_MODELS_STORAGE);
+      localStorage.removeItem(GEMINI_PREFERRED_STORAGE);
     } catch (_) {
       /* 무시 */
     }
@@ -231,6 +235,8 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
   }
 
   // ---------- 오류 메시지 ----------
+
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
   class AIError extends Error {}
 
@@ -274,7 +280,23 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
     };
   }
 
-  async function callAnthropicDirect(body) {
+  async function callAnthropicDirect(body, onRetry) {
+    const waits = [0, 1000, 2500, 5000];
+    let lastError = null;
+    for (let attempt = 0; attempt < waits.length; attempt += 1) {
+      if (waits[attempt]) await sleep(waits[attempt]);
+      if (attempt > 0 && onRetry) onRetry({ attempt: attempt + 1, total: waits.length, model: ANTHROPIC_MODEL });
+      try {
+        return await callAnthropicOnce(body);
+      } catch (error) {
+        if (!(error instanceof AIError) || !error.busy) throw error;
+        lastError = error;
+      }
+    }
+    throw lastError;
+  }
+
+  async function callAnthropicOnce(body) {
     const headers = {
       "content-type": "application/json",
       "x-api-key": getKey(),
@@ -294,9 +316,11 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
       // 폴백 베타를 못 쓰는 계정이면 한 번만 끄고 다시 시도한다
       if (useFallbacks && response.status === 400 && /fallback|beta/i.test(message)) {
         useFallbacks = false;
-        return callAnthropicDirect(body);
+        return callAnthropicOnce(body);
       }
-      throw new AIError(friendlyError(response.status, message));
+      const error = new AIError(friendlyError(response.status, message, "anthropic"));
+      error.busy = response.status === 429 || response.status >= 500;
+      throw error;
     }
     return data;
   }
@@ -386,14 +410,21 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
   }
 
   /** 계정에서 쓸 수 있는 Flash 계열 모델을 골라 둔다(모델 이름은 수시로 바뀌므로 목록에서 고른다). */
-  async function pickGeminiModel() {
-    const cached = readStorage(GEMINI_MODEL_STORAGE);
-    if (cached) return cached;
+  async function geminiModels() {
+    const cached = readStorage(GEMINI_MODELS_STORAGE);
+    if (cached) {
+      try {
+        const list = JSON.parse(cached);
+        if (Array.isArray(list) && list.length) return list;
+      } catch (_) {
+        /* 캐시가 깨졌으면 다시 받는다 */
+      }
+    }
 
     const response = await fetch(`${GEMINI_BASE}/models`, { headers: { "x-goog-api-key": getKey() } });
     const data = await parseJsonResponse(response);
     if (!response.ok) {
-      throw new AIError(friendlyError(response.status, (data.error && data.error.message) || ""));
+      throw new AIError(friendlyError(response.status, (data.error && data.error.message) || "", "gemini"));
     }
 
     const usable = (data.models || []).filter(
@@ -406,48 +437,100 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
       const version = parseFloat((name.match(/gemini-(\d+(?:\.\d+)?)/) || [])[1] || "0");
       return version * 100 - (/lite/i.test(name) ? 20 : 0) - (/preview|exp/i.test(name) ? 10 : 0);
     };
-    const best = usable.sort((a, b) => score(b) - score(a))[0].name.replace(/^models\//, "");
-    writeStorage(GEMINI_MODEL_STORAGE, best);
-    return best;
+    // 앞에서부터 쓰고, 혼잡하면 다음 모델로 넘어간다
+    const list = usable.sort((a, b) => score(b) - score(a)).slice(0, 4).map((m) => m.name.replace(/^models\//, ""));
+    writeStorage(GEMINI_MODELS_STORAGE, JSON.stringify(list));
+    return list;
   }
 
-  /** 실제 전송. server 모드면 로컬 서버가 키를 붙여 대신 보낸다. */
-  async function postGemini(body) {
-    let response;
-    if (transport === "server") {
-      response = await fetch("api/ai", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
-    } else {
-      const model = await pickGeminiModel();
-      response = await fetch(`${GEMINI_BASE}/models/${model}:generateContent`, {
-        method: "POST",
-        headers: { "content-type": "application/json", "x-goog-api-key": getKey() },
-        body: JSON.stringify(body),
-      });
-    }
+  let modelOrder = null;   // 이번 세션에서 실제로 쓸 순서 (혼잡한 모델은 뒤로 간다)
+
+  async function orderedModels() {
+    if (modelOrder) return modelOrder;
+    const list = await geminiModels();
+    const preferred = readStorage(GEMINI_PREFERRED_STORAGE);
+    // 지난번에 실제로 응답한 모델이 있으면 그 모델부터 쓴다
+    modelOrder = preferred && list.includes(preferred) ? [preferred, ...list.filter((m) => m !== preferred)] : [...list];
+    return modelOrder;
+  }
+
+  function demoteModel(model) {
+    if (!modelOrder || modelOrder.length < 2) return;
+    const index = modelOrder.indexOf(model);
+    if (index >= 0) modelOrder.push(...modelOrder.splice(index, 1));
+  }
+
+  async function pickGeminiModel() {
+    return (await orderedModels())[0];
+  }
+
+  /** 한 번 보내 본다. 실패는 AIError 로 올리되 재시도 가능 여부를 표시한다. */
+  async function postGeminiOnce(model, body) {
+    const response =
+      transport === "server"
+        ? await fetch("api/ai", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+          })
+        : await fetch(`${GEMINI_BASE}/models/${model}:generateContent`, {
+            method: "POST",
+            headers: { "content-type": "application/json", "x-goog-api-key": getKey() },
+            body: JSON.stringify(body),
+          });
 
     const data = await parseJsonResponse(response);
     if (response.ok) return data;
 
-    const message = (data.error && (data.error.message || data.error)) || "";
+    const message = (data.error && (data.error.message || data.error)) || data.error || "";
     const error = new AIError(friendlyError(response.status, message, "gemini"));
-    // Gemini 는 받아들이지 못하는 responseSchema 를 400 이나 500 으로 되돌려준다
-    error.retryWithoutSchema = /schema|internal|invalid|not supported/i.test(String(message)) || response.status >= 500;
+    // 503(모델 혼잡) · 429(분당 제한) · 5xx 는 기다렸다 다시 하거나 다른 모델로 넘어가면 된다
+    error.busy = response.status === 429 || response.status >= 500;
+    // 스키마를 못 받아들이는 경우는 400 으로 온다
+    error.schemaRejected = response.status === 400 && /schema|not supported|invalid/i.test(String(message));
     throw error;
   }
 
-  /** 스키마를 거부당하면 스키마 없이 한 번 더 시도한다(형식 지시는 프롬프트에 넣는다). */
-  async function callGemini(spec) {
-    try {
-      return await postGemini(geminiBody(spec));
-    } catch (error) {
-      if (error instanceof AIError && error.retryWithoutSchema) {
-        return await postGemini(geminiBody(spec, { withSchema: false }));
+  /** 모델을 바꿔 가며, 그리고 조금씩 기다리며 다시 시도한다. */
+  async function postGemini(body, onRetry, waits = [0, 1000, 2500, 5000]) {
+    const models = transport === "server" ? ["server"] : await orderedModels();
+    let lastError = null;
+
+    for (let attempt = 0; attempt < waits.length; attempt += 1) {
+      const model = models[Math.min(attempt, models.length - 1)];
+      if (waits[attempt]) await sleep(waits[attempt]);
+      if (attempt > 0 && onRetry) onRetry({ attempt: attempt + 1, total: waits.length, model });
+
+      try {
+        const data = await postGeminiOnce(model, body);
+        if (transport !== "server") writeStorage(GEMINI_PREFERRED_STORAGE, model);  // 다음엔 여기서 시작
+        return data;
+      } catch (error) {
+        if (!(error instanceof AIError) || !error.busy) throw error;
+        demoteModel(model);   // 혼잡한 모델은 이번 세션에서 뒤로 민다
+        lastError = error;
       }
-      throw error;
+    }
+
+    lastError.message =
+      "지금 Gemini 무료 모델이 혼잡합니다. 몇 분 뒤에 다시 해 보시거나, 설정에서 Claude 키로 바꾸면 바로 됩니다.\n" +
+      lastError.message;
+    throw lastError;
+  }
+
+  /** 모두 실패하면 마지막으로 스키마 없이 한 번 더 던져 본다.
+      (Gemini 는 받아들이지 못하는 responseSchema 를 400 으로도, 500 으로도 돌려준다) */
+  async function callGemini(spec, onRetry) {
+    try {
+      return await postGemini(geminiBody(spec), onRetry);
+    } catch (error) {
+      const worthOneMore = error instanceof AIError && (error.schemaRejected || error.busy);
+      if (!worthOneMore) throw error;
+      try {
+        return await postGemini(geminiBody(spec, { withSchema: false }), onRetry, [0]);
+      } catch (_) {
+        throw error;   // 원래 오류가 더 설명적이다
+      }
     }
   }
 
@@ -477,7 +560,7 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
 
   // ---------- 공통 호출 ----------
 
-  async function callAnthropic(spec) {
+  async function callAnthropic(spec, onRetry) {
     const body = anthropicBody(spec);
     if (transport === "server") {
       const response = await fetch("api/ai", {
@@ -489,18 +572,18 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
       if (!response.ok) throw new AIError(data.error || friendlyError(response.status, "", "anthropic"));
       return data;
     }
-    return callAnthropicDirect(body);
+    return callAnthropicDirect(body, onRetry);
   }
 
   async function callModel(spec) {
     const provider = currentProvider();
     if (!provider) throw new AIError("NO_KEY");
 
-    const request = { effort: "low", maxTokens: 4000, ...spec };
+    const { onRetry, ...request } = { effort: "low", maxTokens: 4000, ...spec };
     try {
       return provider === "gemini"
-        ? readGemini(await callGemini(request))
-        : readAnthropic(await callAnthropic(request));
+        ? readGemini(await callGemini(request, onRetry))
+        : readAnthropic(await callAnthropic(request, onRetry));
     } catch (error) {
       if (error instanceof AIError) throw error;
       if (error instanceof SyntaxError) throw new AIError("모델 응답을 이해하지 못했습니다. 다시 시도해 주세요.");
@@ -584,7 +667,7 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
       return transport === "direct" && !providerOfKey(getKey());
     },
 
-    questions({ text, level, mode }) {
+    questions({ text, level, mode, onRetry }) {
       const prompt =
         `Here is what the learner wrote:\n\n<learner_text>\n${text}\n</learner_text>\n\n` +
         "Summarise it in Korean, react warmly in English, list the vocabulary they'll need, " +
@@ -595,10 +678,11 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
         schema: QUESTIONS_SCHEMA,
         effort: "medium",
         maxTokens: 6000,
+        onRetry,
       });
     },
 
-    chat({ message, topic, history, asked, level, mode }) {
+    chat({ message, topic, history, asked, level, mode, onRetry }) {
       let instructions =
         "For this turn:\n" +
         "1. React in English to the MEANING of what they just said - be a person, not a grader.\n" +
@@ -616,10 +700,10 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
       messages.push({ role: "user", content: message });
       messages.push({ role: "system", content: instructions });
 
-      return callModel({ system: systemBlocks(level, mode), messages, schema: CHAT_SCHEMA, effort: "low", maxTokens: 4000 });
+      return callModel({ system: systemBlocks(level, mode), messages, schema: CHAT_SCHEMA, effort: "low", maxTokens: 4000, onRetry });
     },
 
-    review({ history, level, mode }) {
+    review({ history, level, mode, onRetry }) {
       const messages = historyToMessages(history);
       messages.push({
         role: "user",
@@ -627,7 +711,7 @@ Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in
           "That's the end of today's practice. Write my review note: what we covered, the mistakes worth " +
           "remembering, vocabulary with example sentences, and questions to revisit next time.",
       });
-      return callModel({ system: systemBlocks(level, mode), messages, schema: REVIEW_SCHEMA, effort: "medium", maxTokens: 6000 });
+      return callModel({ system: systemBlocks(level, mode), messages, schema: REVIEW_SCHEMA, effort: "medium", maxTokens: 6000, onRetry });
     },
   };
 })();
