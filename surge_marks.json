@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-15 09:10",
-  "count": 2295,
+  "updated": "2026-09-15 09:20",
+  "count": 2296,
   "marks": {
     "026910": [
       {
@@ -17074,6 +17074,17 @@
         "reason": "init_stop",
         "origin": "sim",
         "strategy": "장중"
+      },
+      {
+        "entry": "2026-09-15",
+        "entry_price": 5380,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:15:22"
       }
     ],
     "201490": [
