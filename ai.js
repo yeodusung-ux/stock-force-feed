@@ -1,0 +1,717 @@
+/* 프롬프트 · 스키마 · 모델 호출을 한곳에 모은 모듈.
+
+   제공자 두 곳을 지원한다 (키 형식으로 자동 판별).
+   - Anthropic Claude : sk-ant-... 키. 품질이 가장 좋다. 유료.
+   - Google Gemini    : AIza... 키. 무료 티어(Flash 계열, 분당 요청 수 제한)로 돈이 들지 않는다.
+
+   동작 방식 두 가지.
+   - server 모드: 옆에서 python server.py 가 돌고 있으면 그쪽으로 보낸다(키는 PC 안에만 있음).
+   - direct 모드: 정적 호스팅(깃허브 Pages)에서 열렸을 때. 이 기기에 저장한 키로 직접 호출한다. */
+window.AI = (() => {
+  const ANTHROPIC_MODEL = "claude-opus-5";
+  const ANTHROPIC_URL = "https://api.anthropic.com/v1/messages";
+  const GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta";
+  const KEY_STORAGE = "english-buddy.api-key";
+  const GEMINI_MODELS_STORAGE = "english-buddy.gemini-models";
+  const GEMINI_PREFERRED_STORAGE = "english-buddy.gemini-preferred";
+  const MAX_HISTORY_TURNS = 40;
+
+  const VERSION = "2026-09-15.4";
+
+  let transport = "direct";
+  let serverProvider = null;   // server 모드일 때 서버가 알려 주는 제공자
+  let useFallbacks = true;
+
+  // ---------- 프롬프트 ----------
+
+  const QUESTION_ANGLES = `Question variety is the whole point of this app. Rotate through these angles, never use the same
+angle twice in a row, and never repeat a question that has already been asked in this session:
+
+1.  FACTS - who / when / where / how long / how often
+2.  DETAIL - sensory detail: what it looked, sounded, smelled or tasted like
+3.  FEELING - their emotional reaction, in the moment and now
+4.  REASON - why it happened, why they chose that
+5.  OPINION - evaluation, whether they'd recommend or do it again
+6.  COMPARISON - versus another time, place, person, or versus the past
+7.  HYPOTHETICAL - what if it had gone differently
+8.  PAST LINK - an earlier experience of theirs that connects to this
+9.  FUTURE - what happens next, plans, wishes
+10. OTHER PERSPECTIVE - how another person in the story saw it
+11. CULTURE - how this works in Korea versus other countries
+12. VOCABULARY - ask them to express one specific idea from their own text a different way
+13. ROLE-PLAY - drop them into the situation and ask for the actual line ("You're at the counter - what do you say?")
+14. SUMMARY CHALLENGE - ask them to retell one part in two sentences
+
+Hard rules for every question:
+- Ask about what they actually wrote. Reuse their own nouns, names, places and details.
+  Generic textbook questions ("What is your hobby?") are failures.
+- One clear question per item. No double-barreled questions.
+- Keep it answerable at the learner's stated level. If a question needs a word they may not know,
+  put that word in the Korean gloss (\`ko\`).
+- Sound like a curious friend, not a quiz machine.`;
+
+  const BASE_SYSTEM = `You are "English Buddy", a warm and genuinely curious English conversation partner for a Korean learner.
+
+The learner writes a diary entry, describes a situation, or names a topic. Your job is to keep an English
+conversation going about *their* content by asking as many genuinely different questions as possible.
+
+${QUESTION_ANGLES}
+
+If the learner writes in Korean, treat it as "I want to say this in English": give them the English version
+in \`better_expressions\`, then carry on with the conversation in English.
+
+Write every \`ko\` / \`_ko\` field in natural Korean, and every English field in natural English.`;
+
+  const LEVEL_GUIDE = {
+    beginner:
+      "LEVEL: beginner. Use present and past simple, high-frequency vocabulary, at most ~12 words per " +
+      "question. The Korean gloss matters a lot here. Your own replies stay very short.",
+    intermediate:
+      "LEVEL: intermediate. Everyday idioms and two-clause sentences are fine. Push them toward longer " +
+      "answers with 'why' and 'how' questions.",
+    advanced:
+      "LEVEL: advanced. Ask abstract, hypothetical and nuanced questions. Challenge imprecise word choice, " +
+      "register and collocation even when the grammar is already correct.",
+  };
+
+  const MODE_GUIDE = {
+    diary: "The learner wrote a DIARY entry about their own day. Treat it as personal and real.",
+    situation: "The learner described a SITUATION (real or imagined). Explore it, and use role-play often.",
+    topic: "The learner named a TOPIC. Ask about their own experience and opinions on it, not encyclopedia facts.",
+  };
+
+  function systemBlocks(level, mode) {
+    return [
+      { type: "text", text: BASE_SYSTEM, cache_control: { type: "ephemeral" } },
+      { type: "text", text: `${LEVEL_GUIDE[level] || LEVEL_GUIDE.intermediate}\n${MODE_GUIDE[mode] || MODE_GUIDE.diary}` },
+    ];
+  }
+
+  // ---------- 스키마 ----------
+
+  const QUESTION_ITEM = {
+    type: "object",
+    properties: {
+      angle: {
+        type: "string",
+        enum: ["FACTS", "DETAIL", "FEELING", "REASON", "OPINION", "COMPARISON", "HYPOTHETICAL",
+               "PAST_LINK", "FUTURE", "OTHER_PERSPECTIVE", "CULTURE", "VOCABULARY", "ROLE_PLAY",
+               "SUMMARY_CHALLENGE"],
+      },
+      en: { type: "string", description: "The question, in English." },
+      ko: { type: "string", description: "Korean gloss of the question." },
+      difficulty: { type: "string", enum: ["easy", "medium", "hard"] },
+    },
+    required: ["angle", "en", "ko", "difficulty"],
+    additionalProperties: false,
+  };
+
+  const PAIR = {
+    type: "object",
+    properties: { en: { type: "string" }, ko: { type: "string" } },
+    required: ["en", "ko"],
+    additionalProperties: false,
+  };
+
+  const NOTE = {
+    type: "object",
+    properties: { before: { type: "string" }, after: { type: "string" }, why_ko: { type: "string" } },
+    required: ["before", "after", "why_ko"],
+    additionalProperties: false,
+  };
+
+  const QUESTIONS_SCHEMA = {
+    type: "object",
+    properties: {
+      topic_summary_ko: { type: "string", description: "학습자가 쓴 내용을 한 문장 한국어로 요약." },
+      opener_en: { type: "string", description: "A warm 1-2 sentence English reaction to what they wrote." },
+      opener_ko: { type: "string" },
+      key_vocabulary: { type: "array", items: PAIR, description: "5-8 words or phrases they will need." },
+      questions: { type: "array", items: QUESTION_ITEM, description: "12-15 questions, each from a different angle, easy to hard." },
+    },
+    required: ["topic_summary_ko", "opener_en", "opener_ko", "key_vocabulary", "questions"],
+    additionalProperties: false,
+  };
+
+  const CHAT_SCHEMA = {
+    type: "object",
+    properties: {
+      reply_en: { type: "string", description: "React to the MEANING of what they said, in 1-2 natural English sentences." },
+      reply_ko: { type: "string", description: "Korean translation of reply_en." },
+      correction: {
+        type: "object",
+        properties: {
+          has_issues: { type: "boolean" },
+          corrected_en: { type: "string", description: "Their sentence(s) rewritten correctly. Empty string if nothing to fix." },
+          notes: { type: "array", items: NOTE, description: "At most 3 real errors. Never invent errors that are not there." },
+        },
+        required: ["has_issues", "corrected_en", "notes"],
+        additionalProperties: false,
+      },
+      better_expressions: { type: "array", items: PAIR, description: "1-3 more natural or higher-level ways to say what they meant." },
+      questions: { type: "array", items: QUESTION_ITEM, description: "2-4 brand-new follow-up questions, each from a different angle." },
+    },
+    required: ["reply_en", "reply_ko", "correction", "better_expressions", "questions"],
+    additionalProperties: false,
+  };
+
+  const REVIEW_SCHEMA = {
+    type: "object",
+    properties: {
+      summary_ko: { type: "string", description: "이번 대화에서 다룬 내용 요약." },
+      mistakes: { type: "array", items: NOTE },
+      vocabulary: {
+        type: "array",
+        items: {
+          type: "object",
+          properties: { en: { type: "string" }, ko: { type: "string" }, example_en: { type: "string" } },
+          required: ["en", "ko", "example_en"],
+          additionalProperties: false,
+        },
+      },
+      unanswered_questions: { type: "array", items: { type: "string" } },
+      encouragement_ko: { type: "string" },
+    },
+    required: ["summary_ko", "mistakes", "vocabulary", "unanswered_questions", "encouragement_ko"],
+    additionalProperties: false,
+  };
+
+  // ---------- 키 보관 (이 기기에만) ----------
+
+  function readStorage(name) {
+    try {
+      return localStorage.getItem(name) || "";
+    } catch (_) {
+      return "";
+    }
+  }
+
+  function writeStorage(name, value) {
+    try {
+      localStorage.setItem(name, value);
+    } catch (_) {
+      /* 사생활 보호 모드 등에서는 저장이 막힐 수 있다 */
+    }
+  }
+
+  function getKey() {
+    return readStorage(KEY_STORAGE);
+  }
+
+  function setKey(value) {
+    const next = value.trim();
+    if (next !== getKey()) {
+      try {
+        localStorage.removeItem(GEMINI_MODELS_STORAGE);  // 키가 바뀌면 쓰던 모델도 다시 고른다
+        localStorage.removeItem(GEMINI_PREFERRED_STORAGE);
+        modelOrder = null;
+      } catch (_) {
+        /* 무시 */
+      }
+    }
+    writeStorage(KEY_STORAGE, next);
+  }
+
+  function clearKey() {
+    try {
+      localStorage.removeItem(KEY_STORAGE);
+      localStorage.removeItem(GEMINI_MODELS_STORAGE);
+      localStorage.removeItem(GEMINI_PREFERRED_STORAGE);
+    } catch (_) {
+      /* 무시 */
+    }
+  }
+
+  /** 키 생김새로 제공자를 알아본다. 구글 키는 AIza 로, Anthropic 키는 sk-ant- 로 시작한다. */
+  function providerOfKey(key) {
+    const value = (key || "").trim();
+    if (value.startsWith("sk-ant-")) return "anthropic";
+    if (value.startsWith("AIza")) return "gemini";
+    return null;
+  }
+
+  function currentProvider() {
+    return transport === "server" ? serverProvider : providerOfKey(getKey());
+  }
+
+  // ---------- 오류 메시지 ----------
+
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+  class AIError extends Error {}
+
+  const PROVIDER_LABEL = { anthropic: "Claude", gemini: "Gemini" };
+
+  /** 사람이 읽을 안내 + 서버가 준 설명을 함께 보여 준다. 설명이 없으면 원인을 못 찾는다. */
+  function friendlyError(status, message, provider) {
+    const label = PROVIDER_LABEL[provider || currentProvider()] || "서버";
+    const detail = message ? ` — ${String(message).slice(0, 300)}` : "";
+
+    if (status === 401 || status === 403 || /api[ _-]?key|authentication|unauthorized|permission/i.test(message)) {
+      return `${label} 키가 올바르지 않거나 권한이 없습니다. 설정에서 키를 다시 확인해 주세요.${detail}`;
+    }
+    if (/credit balance/i.test(message)) {
+      return `크레딧이 부족합니다. console.anthropic.com 에서 충전해 주세요.${detail}`;
+    }
+    if (status === 429) {
+      return `요청이 너무 잦습니다(무료 티어는 분당 횟수 제한이 있습니다). 30초쯤 뒤에 다시 시도해 주세요.${detail}`;
+    }
+    if (status >= 500) {
+      return `${label} 서버가 오류를 돌려줬습니다 (HTTP ${status}). 잠시 후 다시 시도해 주세요.${detail}`;
+    }
+    return `${label} 요청이 실패했습니다 (HTTP ${status}).${detail}`;
+  }
+
+  async function parseJsonResponse(response) {
+    const data = await response.json().catch(() => ({}));
+    return data;
+  }
+
+  // ---------- Anthropic ----------
+
+  function anthropicBody({ system, messages, schema, effort, maxTokens }) {
+    return {
+      model: ANTHROPIC_MODEL,
+      max_tokens: maxTokens,
+      system,
+      messages,
+      thinking: { type: "adaptive" },
+      output_config: { effort, format: { type: "json_schema", schema } },
+    };
+  }
+
+  async function callAnthropicDirect(body, onRetry) {
+    const waits = [0, 1000, 2500, 5000];
+    let lastError = null;
+    for (let attempt = 0; attempt < waits.length; attempt += 1) {
+      if (waits[attempt]) await sleep(waits[attempt]);
+      if (attempt > 0 && onRetry) onRetry({ attempt: attempt + 1, total: waits.length, model: ANTHROPIC_MODEL });
+      try {
+        return await callAnthropicOnce(body);
+      } catch (error) {
+        if (!(error instanceof AIError) || !error.busy) throw error;
+        lastError = error;
+      }
+    }
+    throw lastError;
+  }
+
+  async function callAnthropicOnce(body) {
+    const headers = {
+      "content-type": "application/json",
+      "x-api-key": getKey(),
+      "anthropic-version": "2023-06-01",
+      "anthropic-dangerous-direct-browser-access": "true",
+    };
+    const payload = { ...body };
+    if (useFallbacks) {
+      headers["anthropic-beta"] = "server-side-fallback-2026-07-01";
+      payload.fallbacks = "default";
+    }
+
+    const response = await fetch(ANTHROPIC_URL, { method: "POST", headers, body: JSON.stringify(payload) });
+    const data = await parseJsonResponse(response);
+    if (!response.ok) {
+      const message = (data.error && data.error.message) || "";
+      // 폴백 베타를 못 쓰는 계정이면 한 번만 끄고 다시 시도한다
+      if (useFallbacks && response.status === 400 && /fallback|beta/i.test(message)) {
+        useFallbacks = false;
+        return callAnthropicOnce(body);
+      }
+      const error = new AIError(friendlyError(response.status, message, "anthropic"));
+      error.busy = response.status === 429 || response.status >= 500;
+      throw error;
+    }
+    return data;
+  }
+
+  function readAnthropic(data) {
+    if (data.stop_reason === "refusal") {
+      throw new AIError("모델이 이 입력에 대한 응답을 거절했습니다. 내용을 바꿔서 다시 시도해 주세요.");
+    }
+    if (data.stop_reason === "max_tokens") {
+      throw new AIError("응답이 너무 길어 잘렸습니다. 입력을 조금 짧게 해서 다시 시도해 주세요.");
+    }
+    const block = (data.content || []).find((item) => item.type === "text");
+    if (!block) throw new AIError("모델이 빈 응답을 반환했습니다.");
+    return JSON.parse(block.text);
+  }
+
+  // ---------- Gemini ----------
+
+  /** Gemini 의 스키마는 OpenAPI 부분집합이다. additionalProperties 같은 키는 받지 않고,
+      타입은 문서 표기대로 대문자를 쓴다. */
+  const GEMINI_TYPES = {
+    object: "OBJECT", string: "STRING", array: "ARRAY",
+    boolean: "BOOLEAN", number: "NUMBER", integer: "INTEGER",
+  };
+  const GEMINI_SCHEMA_KEYS = new Set([
+    "type", "format", "description", "nullable", "enum", "items", "properties", "required",
+    "minItems", "maxItems", "propertyOrdering",
+  ]);
+
+  function toGeminiSchema(node) {
+    if (Array.isArray(node)) return node.map(toGeminiSchema);
+    if (!node || typeof node !== "object") return node;
+
+    const out = {};
+    for (const [key, value] of Object.entries(node)) {
+      if (!GEMINI_SCHEMA_KEYS.has(key)) continue;
+      if (key === "type") out.type = GEMINI_TYPES[value] || value;
+      else if (key === "properties") {
+        out.properties = Object.fromEntries(
+          Object.entries(value).map(([name, child]) => [name, toGeminiSchema(child)])
+        );
+      } else if (key === "enum" || key === "required") out[key] = value;
+      else out[key] = toGeminiSchema(value);
+    }
+    if (out.type === "OBJECT" && out.properties) out.propertyOrdering = Object.keys(out.properties);
+    return out;
+  }
+
+  /** Claude 형식의 대화를 Gemini 형식으로 옮긴다.
+      Gemini 에는 대화 중간 system 역할이 없어서 그 지시는 마지막 사용자 발화에 붙인다. */
+  function toGeminiContents(messages) {
+    const contents = [];
+    for (const message of messages) {
+      const text = typeof message.content === "string" ? message.content : "";
+      if (message.role === "system") {
+        const last = contents[contents.length - 1];
+        if (last && last.role === "user") last.parts[0].text += `\n\n${text}`;
+        else contents.push({ role: "user", parts: [{ text }] });
+        continue;
+      }
+      contents.push({ role: message.role === "assistant" ? "model" : "user", parts: [{ text }] });
+    }
+    return contents;
+  }
+
+  function geminiBody({ system, messages, schema, maxTokens }, { withSchema = true } = {}) {
+    let systemText = system.map((block) => block.text).join("\n\n");
+    const generationConfig = {
+      responseMimeType: "application/json",
+      // 생각(thinking)에 쓰는 토큰도 이 한도에 포함되므로 넉넉히 준다
+      maxOutputTokens: Math.max(maxTokens, 8192),
+    };
+
+    if (withSchema) {
+      generationConfig.responseSchema = toGeminiSchema(schema);
+    } else {
+      systemText +=
+        "\n\nReply with a single JSON object and nothing else. It must match this JSON Schema exactly:\n" +
+        JSON.stringify(schema);
+    }
+
+    return {
+      systemInstruction: { parts: [{ text: systemText }] },
+      contents: toGeminiContents(messages),
+      generationConfig,
+    };
+  }
+
+  /** 계정에서 쓸 수 있는 Flash 계열 모델을 골라 둔다(모델 이름은 수시로 바뀌므로 목록에서 고른다). */
+  async function geminiModels() {
+    const cached = readStorage(GEMINI_MODELS_STORAGE);
+    if (cached) {
+      try {
+        const list = JSON.parse(cached);
+        if (Array.isArray(list) && list.length) return list;
+      } catch (_) {
+        /* 캐시가 깨졌으면 다시 받는다 */
+      }
+    }
+
+    const response = await fetch(`${GEMINI_BASE}/models`, { headers: { "x-goog-api-key": getKey() } });
+    const data = await parseJsonResponse(response);
+    if (!response.ok) {
+      throw new AIError(friendlyError(response.status, (data.error && data.error.message) || "", "gemini"));
+    }
+
+    const usable = (data.models || []).filter(
+      (model) => (model.supportedGenerationMethods || []).includes("generateContent") && /flash/i.test(model.name)
+    );
+    if (!usable.length) throw new AIError("이 키로 쓸 수 있는 Gemini Flash 모델이 없습니다.");
+
+    const score = (model) => {
+      const name = model.name;
+      const version = parseFloat((name.match(/gemini-(\d+(?:\.\d+)?)/) || [])[1] || "0");
+      return version * 100 - (/lite/i.test(name) ? 20 : 0) - (/preview|exp/i.test(name) ? 10 : 0);
+    };
+    // 앞에서부터 쓰고, 혼잡하면 다음 모델로 넘어간다
+    const list = usable.sort((a, b) => score(b) - score(a)).slice(0, 4).map((m) => m.name.replace(/^models\//, ""));
+    writeStorage(GEMINI_MODELS_STORAGE, JSON.stringify(list));
+    return list;
+  }
+
+  let modelOrder = null;   // 이번 세션에서 실제로 쓸 순서 (혼잡한 모델은 뒤로 간다)
+
+  async function orderedModels() {
+    if (modelOrder) return modelOrder;
+    const list = await geminiModels();
+    const preferred = readStorage(GEMINI_PREFERRED_STORAGE);
+    // 지난번에 실제로 응답한 모델이 있으면 그 모델부터 쓴다
+    modelOrder = preferred && list.includes(preferred) ? [preferred, ...list.filter((m) => m !== preferred)] : [...list];
+    return modelOrder;
+  }
+
+  function demoteModel(model) {
+    if (!modelOrder || modelOrder.length < 2) return;
+    const index = modelOrder.indexOf(model);
+    if (index >= 0) modelOrder.push(...modelOrder.splice(index, 1));
+  }
+
+  async function pickGeminiModel() {
+    return (await orderedModels())[0];
+  }
+
+  /** 한 번 보내 본다. 실패는 AIError 로 올리되 재시도 가능 여부를 표시한다. */
+  async function postGeminiOnce(model, body) {
+    const response =
+      transport === "server"
+        ? await fetch("api/ai", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+          })
+        : await fetch(`${GEMINI_BASE}/models/${model}:generateContent`, {
+            method: "POST",
+            headers: { "content-type": "application/json", "x-goog-api-key": getKey() },
+            body: JSON.stringify(body),
+          });
+
+    const data = await parseJsonResponse(response);
+    if (response.ok) return data;
+
+    const message = (data.error && (data.error.message || data.error)) || data.error || "";
+    const error = new AIError(friendlyError(response.status, message, "gemini"));
+    // 503(모델 혼잡) · 429(분당 제한) · 5xx 는 기다렸다 다시 하거나 다른 모델로 넘어가면 된다
+    error.busy = response.status === 429 || response.status >= 500;
+    // 스키마를 못 받아들이는 경우는 400 으로 온다
+    error.schemaRejected = response.status === 400 && /schema|not supported|invalid/i.test(String(message));
+    throw error;
+  }
+
+  /** 모델을 바꿔 가며, 그리고 조금씩 기다리며 다시 시도한다. */
+  async function postGemini(body, onRetry, waits = [0, 1000, 2500, 5000]) {
+    const models = transport === "server" ? ["server"] : await orderedModels();
+    let lastError = null;
+
+    for (let attempt = 0; attempt < waits.length; attempt += 1) {
+      const model = models[Math.min(attempt, models.length - 1)];
+      if (waits[attempt]) await sleep(waits[attempt]);
+      if (attempt > 0 && onRetry) onRetry({ attempt: attempt + 1, total: waits.length, model });
+
+      try {
+        const data = await postGeminiOnce(model, body);
+        if (transport !== "server") writeStorage(GEMINI_PREFERRED_STORAGE, model);  // 다음엔 여기서 시작
+        return data;
+      } catch (error) {
+        if (!(error instanceof AIError) || !error.busy) throw error;
+        demoteModel(model);   // 혼잡한 모델은 이번 세션에서 뒤로 민다
+        lastError = error;
+      }
+    }
+
+    lastError.message =
+      "지금 Gemini 무료 모델이 혼잡합니다. 몇 분 뒤에 다시 해 보시거나, 설정에서 Claude 키로 바꾸면 바로 됩니다.\n" +
+      lastError.message;
+    throw lastError;
+  }
+
+  /** 모두 실패하면 마지막으로 스키마 없이 한 번 더 던져 본다.
+      (Gemini 는 받아들이지 못하는 responseSchema 를 400 으로도, 500 으로도 돌려준다) */
+  async function callGemini(spec, onRetry) {
+    try {
+      return await postGemini(geminiBody(spec), onRetry);
+    } catch (error) {
+      const worthOneMore = error instanceof AIError && (error.schemaRejected || error.busy);
+      if (!worthOneMore) throw error;
+      try {
+        return await postGemini(geminiBody(spec, { withSchema: false }), onRetry, [0]);
+      } catch (_) {
+        throw error;   // 원래 오류가 더 설명적이다
+      }
+    }
+  }
+
+  function readGemini(data) {
+    const candidate = (data.candidates || [])[0];
+    if (!candidate) {
+      const blocked = data.promptFeedback && data.promptFeedback.blockReason;
+      throw new AIError(blocked ? "모델이 이 입력을 거절했습니다. 내용을 바꿔서 다시 시도해 주세요." : "모델이 빈 응답을 반환했습니다.");
+    }
+    if (candidate.finishReason === "MAX_TOKENS") {
+      throw new AIError("응답이 너무 길어 잘렸습니다. 입력을 조금 짧게 해서 다시 시도해 주세요.");
+    }
+    if (candidate.finishReason && !["STOP", "MAX_TOKENS"].includes(candidate.finishReason)) {
+      throw new AIError(`모델이 응답을 중단했습니다 (${candidate.finishReason}). 내용을 바꿔서 다시 시도해 주세요.`);
+    }
+    const text = ((candidate.content || {}).parts || []).map((part) => part.text || "").join("");
+    if (!text.trim()) throw new AIError("모델이 빈 응답을 반환했습니다.");
+    try {
+      return JSON.parse(text);
+    } catch (_) {
+      // 스키마 없이 받은 응답이 코드블록에 싸여 오는 경우를 건져 낸다
+      const match = text.match(/\{[\s\S]*\}/);
+      if (!match) throw new AIError("모델 응답을 이해하지 못했습니다. 다시 시도해 주세요.");
+      return JSON.parse(match[0]);
+    }
+  }
+
+  // ---------- 공통 호출 ----------
+
+  async function callAnthropic(spec, onRetry) {
+    const body = anthropicBody(spec);
+    if (transport === "server") {
+      const response = await fetch("api/ai", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const data = await parseJsonResponse(response);
+      if (!response.ok) throw new AIError(data.error || friendlyError(response.status, "", "anthropic"));
+      return data;
+    }
+    return callAnthropicDirect(body, onRetry);
+  }
+
+  async function callModel(spec) {
+    const provider = currentProvider();
+    if (!provider) throw new AIError("NO_KEY");
+
+    const { onRetry, ...request } = { effort: "low", maxTokens: 4000, ...spec };
+    try {
+      return provider === "gemini"
+        ? readGemini(await callGemini(request, onRetry))
+        : readAnthropic(await callAnthropic(request, onRetry));
+    } catch (error) {
+      if (error instanceof AIError) throw error;
+      if (error instanceof SyntaxError) throw new AIError("모델 응답을 이해하지 못했습니다. 다시 시도해 주세요.");
+      throw new AIError(`연결하지 못했습니다: ${error && error.message ? error.message : error}`);
+    }
+  }
+
+  function historyToMessages(history) {
+    return (history || [])
+      .slice(-MAX_HISTORY_TURNS)
+      .map((turn) => ({
+        role: turn.role === "assistant" ? "assistant" : "user",
+        content: (turn.content || "").trim(),
+      }))
+      .filter((turn) => turn.content);
+  }
+
+  return {
+    AIError,
+    VERSION,
+    getKey,
+    setKey,
+    clearKey,
+    providerOfKey,
+
+    get transport() {
+      return transport;
+    },
+
+    get provider() {
+      return currentProvider();
+    },
+
+    /** 로컬 서버가 내려준 페이지면 server 모드, 정적 호스팅이면 direct 모드.
+        (서버가 index.html 에 window.ENGLISH_BUDDY_SERVER = "anthropic" | "gemini" 를 심어 준다) */
+    detectTransport() {
+      const flag = window.ENGLISH_BUDDY_SERVER;
+      if (flag === "anthropic" || flag === "gemini") {
+        transport = "server";
+        serverProvider = flag;
+      } else {
+        transport = "direct";
+        serverProvider = null;
+      }
+      return transport;
+    },
+
+    /** 키가 실제로 통하는지 최소 비용으로 확인한다. 실패하면 서버가 준 설명이 그대로 담긴다. */
+    async testKey() {
+      const provider = currentProvider();
+      if (!provider) throw new AIError("NO_KEY");
+
+      if (provider === "gemini") {
+        // 모델 목록 조회가 곧 키 확인이다(키가 틀리면 여기서 걸린다)
+        return `Gemini 연결 성공 · 사용할 모델: ${await pickGeminiModel()}`;
+      }
+
+      const response = await fetch(ANTHROPIC_URL, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "x-api-key": getKey(),
+          "anthropic-version": "2023-06-01",
+          "anthropic-dangerous-direct-browser-access": "true",
+        },
+        body: JSON.stringify({
+          model: ANTHROPIC_MODEL,
+          max_tokens: 16,
+          messages: [{ role: "user", content: "ping" }],
+        }),
+      });
+      const data = await parseJsonResponse(response);
+      if (!response.ok) {
+        throw new AIError(friendlyError(response.status, (data.error && data.error.message) || "", "anthropic"));
+      }
+      return `Claude 연결 성공 · 모델: ${ANTHROPIC_MODEL}`;
+    },
+
+    /** direct 모드인데 쓸 수 있는 키가 없으면 설정 화면부터 보여 줘야 한다. */
+    needsKey() {
+      return transport === "direct" && !providerOfKey(getKey());
+    },
+
+    questions({ text, level, mode, onRetry }) {
+      const prompt =
+        `Here is what the learner wrote:\n\n<learner_text>\n${text}\n</learner_text>\n\n` +
+        "Summarise it in Korean, react warmly in English, list the vocabulary they'll need, " +
+        "and write 12-15 questions about it - each from a different angle, ordered from easy to hard.";
+      return callModel({
+        system: systemBlocks(level, mode),
+        messages: [{ role: "user", content: prompt }],
+        schema: QUESTIONS_SCHEMA,
+        effort: "medium",
+        maxTokens: 6000,
+        onRetry,
+      });
+    },
+
+    chat({ message, topic, history, asked, level, mode, onRetry }) {
+      let instructions =
+        "For this turn:\n" +
+        "1. React in English to the MEANING of what they just said - be a person, not a grader.\n" +
+        "2. Correct their English gently. Flag only real errors; if the sentence is already fine, " +
+        "set has_issues to false and leave corrected_en empty. Never invent errors.\n" +
+        "3. Offer 1-3 more natural or higher-level ways to say what they meant.\n" +
+        "4. Ask 2-4 NEW questions, each from a different angle, that build on their answer.\n";
+      const recent = (asked || []).slice(-40);
+      if (recent.length) {
+        instructions += `\nAlready asked - do not repeat these or close variants:\n${recent.map((q) => `- ${q}`).join("\n")}\n`;
+      }
+
+      const messages = topic ? [{ role: "user", content: `The learner's original text was:\n\n${topic}` }] : [];
+      messages.push(...historyToMessages(history));
+      messages.push({ role: "user", content: message });
+      messages.push({ role: "system", content: instructions });
+
+      return callModel({ system: systemBlocks(level, mode), messages, schema: CHAT_SCHEMA, effort: "low", maxTokens: 4000, onRetry });
+    },
+
+    review({ history, level, mode, onRetry }) {
+      const messages = historyToMessages(history);
+      messages.push({
+        role: "user",
+        content:
+          "That's the end of today's practice. Write my review note: what we covered, the mistakes worth " +
+          "remembering, vocabulary with example sentences, and questions to revisit next time.",
+      });
+      return callModel({ system: systemBlocks(level, mode), messages, schema: REVIEW_SCHEMA, effort: "medium", maxTokens: 6000, onRetry });
+    },
+  };
+})();
