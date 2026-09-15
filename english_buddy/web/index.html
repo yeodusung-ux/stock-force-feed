@@ -19,6 +19,7 @@
     <div>
       <h1>English Buddy</h1>
       <p>일기 · 상황 · 주제를 쓰면, 그 내용으로 끝없이 질문하고 대화합니다.</p>
+      <p id="build" class="build"></p>
     </div>
     <button id="open-settings" class="ghost" hidden>설정</button>
   </header>
@@ -46,8 +47,10 @@
       <input id="apikey" type="password" inputmode="text" autocomplete="off" placeholder="AIza... 또는 sk-ant-..." />
       <div class="row gap">
         <button id="save-key" class="primary">저장하고 시작</button>
+        <button id="test-key" class="ghost">연결 테스트</button>
         <button id="clear-key" class="ghost" hidden>저장된 키 지우기</button>
       </div>
+      <p id="key-ok" class="ok" hidden></p>
       <p id="key-error" class="error" hidden></p>
     </section>
 
