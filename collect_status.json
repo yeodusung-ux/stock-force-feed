@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17 00:34:41",
+  "updated": "2026-09-17 00:39:42",
   "system": {
     "connected": true,
     "trading": true,
@@ -236,24 +236,24 @@
       "first": "2025-08-01 09:00",
       "last": "2026-09-08 15:30",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 09-08 · 6,104,218행",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "저녁 자동(이어받기·주1회)+원격"
     },
     {
       "table": "analyst_report",
       "label": "리포트",
       "tr": "웹크롤",
-      "rows": 1292,
-      "codes": 471,
+      "rows": 1333,
+      "codes": 493,
       "target": 2364,
       "first": "2026-08-03",
-      "last": "2026-09-14",
+      "last": "2026-09-16",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 09-14 · 1,292행",
+      "fmt": "최신 09-16 · 1,333행",
       "schedule": ""
     },
     {
