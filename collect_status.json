@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16 20:05:14",
+  "updated": "2026-09-16 20:11:23",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,22 +7,22 @@
     "pid": 15696,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 99
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 28615067,
+      "rows": 28620033,
       "codes": 2533,
       "target": 2364,
       "first": "2022-11-03",
       "last": "2026-09-16",
-      "progress_pct": 90,
+      "progress_pct": 100,
       "busy": true,
-      "state": "busy",
-      "fmt": "2,123/2,364 (90%)",
+      "state": "done",
+      "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -34,10 +34,10 @@
       "target": 2364,
       "first": "2026-06-24",
       "last": "2026-09-15",
-      "progress_pct": 100,
+      "progress_pct": 0,
       "busy": true,
-      "state": "idle",
-      "fmt": "2,533/2,364 (100%) · 최신 09-15 · 1일 지연",
+      "state": "busy",
+      "fmt": "0/2,364 (0%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -74,11 +74,11 @@
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 66700,
-      "codes": 2489,
+      "rows": 46798,
+      "codes": 2482,
       "target": 2364,
       "first": "2026-04-15",
-      "last": "2026-09-15",
+      "last": "2026-09-16",
       "progress_pct": null,
       "busy": true,
       "state": "busy",
@@ -110,9 +110,9 @@
       "first": "2023-03-24",
       "last": "2026-09-16",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,466/2,428 (100%) · 미도달 2,437종목(최대 76일)",
+      "busy": true,
+      "state": "busy",
+      "fmt": "미도달 2,437종목(최대 76일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
         "behind": 2437,
@@ -190,10 +190,10 @@
       "target": 2364,
       "first": "2026-06-29",
       "last": "2026-09-16",
-      "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "4,365/2,364 (100%)",
+      "progress_pct": null,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "10분 자동(장중·장후)"
     },
     {
