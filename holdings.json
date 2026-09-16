@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16 15:39",
+  "updated": "2026-09-16 17:10",
   "holdings": [
     {
       "code": "000270",
@@ -206,8 +206,10 @@
       "maxLevel": 7,
       "dps": 20000,
       "plan": {
-        "water": 1034000,
-        "waterQty": 1
+        "trailStop": 1443000,
+        "trailQty": 1,
+        "trailExitFlag": 1,
+        "fastStop": 1358000
       }
     },
     {
@@ -234,8 +236,10 @@
       "maxLevel": 7,
       "dps": 1880,
       "plan": {
-        "water": 479000,
-        "waterQty": 1
+        "trailArm": 677000,
+        "trailQty": 1,
+        "trailExitFlag": 1,
+        "fastStop": 579000
       }
     },
     {
@@ -434,8 +438,10 @@
       "maxLevel": 7,
       "dps": 75,
       "plan": {
-        "water": 30600,
-        "waterQty": 7
+        "trailArm": 43200,
+        "trailQty": 6,
+        "trailExitFlag": 1,
+        "fastArm": 37800
       }
     },
     {
@@ -460,8 +466,10 @@
       "maxLevel": 5,
       "dps": 2400,
       "plan": {
-        "water": 30150,
-        "waterQty": 8
+        "trailArm": 42600,
+        "trailQty": 7,
+        "trailExitFlag": 1,
+        "fastArm": 37300
       }
     },
     {
@@ -473,8 +481,10 @@
       "maxLevel": 5,
       "dps": 800,
       "plan": {
-        "water": 8520,
-        "waterQty": 28
+        "trailArm": 12040,
+        "trailQty": 24,
+        "trailExitFlag": 1,
+        "fastArm": 10540
       }
     },
     {
@@ -653,8 +663,10 @@
       "buyLevel": 1,
       "maxLevel": 7,
       "plan": {
-        "water": 204000,
-        "waterQty": 1
+        "trailArm": 288000,
+        "trailQty": 1,
+        "trailExitFlag": 1,
+        "fastArm": 252000
       }
     },
     {
@@ -679,8 +691,10 @@
       "maxLevel": 7,
       "dps": 1200,
       "plan": {
-        "water": 48950,
-        "waterQty": 4
+        "trailArm": 69200,
+        "trailQty": 4,
+        "trailExitFlag": 1,
+        "fastArm": 60500
       }
     },
     {
@@ -692,8 +706,10 @@
       "maxLevel": 7,
       "dps": 1000,
       "plan": {
-        "water": 27050,
-        "waterQty": 8
+        "trailArm": 38250,
+        "trailQty": 7,
+        "trailExitFlag": 1,
+        "fastArm": 33450
       }
     },
     {
@@ -705,8 +721,10 @@
       "maxLevel": 7,
       "dps": 2240,
       "plan": {
-        "water": 182700,
-        "waterQty": 1
+        "trailArm": 258000,
+        "trailQty": 1,
+        "trailExitFlag": 1,
+        "fastArm": 226000
       }
     },
     {
