@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17 01:39:42",
+  "updated": "2026-09-17 01:44:41",
   "system": {
     "connected": true,
     "trading": true,
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,425종목(최대 76일)",
+      "fmt": "미도달 2,424종목(최대 76일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2425,
+        "behind": 2424,
         "max_lag": 76,
         "latest": "2026-09-16",
         "total": 2466
@@ -230,7 +230,7 @@
       "table": "minute_ohlcv",
       "label": "분봉원본",
       "tr": "opt10080",
-      "rows": 6306402,
+      "rows": 6319270,
       "codes": 1212,
       "target": 2364,
       "first": "2025-08-01 09:00",
