@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16 23:03",
+  "updated": "2026-09-16 23:26",
   "holdings": [
     {
       "code": "000270",
@@ -98,8 +98,10 @@
       "maxLevel": 5,
       "dps": 1800,
       "plan": {
-        "water": 26050,
-        "waterQty": 9
+        "trailArm": 36800,
+        "trailQty": 8,
+        "trailExitFlag": 1,
+        "fastArm": 32200
       }
     },
     {
@@ -463,8 +465,10 @@
       "maxLevel": 5,
       "dps": 3000,
       "plan": {
-        "water": 39250,
-        "waterQty": 5
+        "trailArm": 55500,
+        "trailQty": 5,
+        "trailExitFlag": 1,
+        "fastStop": 48000
       }
     },
     {
@@ -635,10 +639,10 @@
       "maxLevel": 5,
       "dps": 1500,
       "plan": {
-        "water": 30550,
-        "waterQty": 16,
         "trailArm": 43200,
-        "trailQty": 7
+        "trailQty": 14,
+        "trailExitFlag": 1,
+        "fastArm": 37800
       }
     },
     {
