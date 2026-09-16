@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16 20:20:15",
+  "updated": "2026-09-16 20:25:14",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,14 +7,14 @@
     "pid": 15696,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 16
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 28620033,
+      "rows": 28621463,
       "codes": 2533,
       "target": 2364,
       "first": "2022-11-03",
@@ -29,15 +29,15 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 897825,
+      "rows": 898464,
       "codes": 2533,
       "target": 2364,
       "first": "2026-06-24",
       "last": "2026-09-16",
-      "progress_pct": 10,
+      "progress_pct": 13,
       "busy": true,
       "state": "busy",
-      "fmt": "237/2,364 (10%)",
+      "fmt": "308/2,364 (13%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 104039074,
+      "rows": 104039096,
       "codes": 2466,
       "target": 2364,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,437종목(최대 76일)",
+      "fmt": "미도달 2,436종목(최대 76일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2437,
+        "behind": 2436,
         "max_lag": 76,
         "latest": "2026-09-16",
         "total": 2466
