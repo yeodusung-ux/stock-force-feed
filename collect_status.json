@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16 15:49:05",
+  "updated": "2026-09-16 15:54:07",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16400,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 46
+    "heartbeat_age_sec": 32
   },
   "collections": [
     {
@@ -29,22 +29,22 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 896201,
-      "codes": 2533,
+      "rows": 0,
+      "codes": 0,
       "target": 2365,
-      "first": "2026-06-24",
-      "last": "2026-09-15",
-      "progress_pct": 100,
+      "first": "",
+      "last": "",
+      "progress_pct": 0,
       "busy": true,
-      "state": "idle",
-      "fmt": "2,533/2,365 (100%) · 최신 09-15 · 1일 지연",
+      "state": "wait",
+      "fmt": "0/2,365 (0%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 386123,
+      "rows": 386141,
       "codes": 2533,
       "target": 2365,
       "first": "2026-01-26",
@@ -52,7 +52,7 @@
       "progress_pct": 2,
       "busy": true,
       "state": "busy",
-      "fmt": "37/2,365 (2%)",
+      "fmt": "53/2,365 (2%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -233,12 +233,12 @@
       "rows": 6104218,
       "codes": 1204,
       "target": 2365,
-      "first": "",
-      "last": "",
+      "first": "2025-08-01 09:00",
+      "last": "2026-09-08 15:30",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "6,104,218행",
+      "fmt": "최신 09-08 · 6,104,218행",
       "schedule": "저녁 자동(이어받기·주1회)+원격"
     },
     {
