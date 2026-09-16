@@ -12,7 +12,7 @@
     "max_buy_mid": 5,
     "max_buy_small": 3,
     "add_buy_pct": 100,
-    "new_entry_acct_return": -10.0,
+    "new_entry_acct_return": 5.0,
     "cap_large_eok": 10000,
     "cap_mid_eok": 1000,
     "max_position_amount": 15000000,
@@ -27,7 +27,7 @@
     "max_buy_count": 5,
     "max_holdings": 60
   },
-  "updated": "2026-09-17 08:49:30",
+  "updated": "2026-09-17 08:52:40",
   "accounts": {
     "5101152910": {
       "account": "5101152910",
@@ -58,7 +58,7 @@
         "max_buy_count": 5,
         "max_holdings": 60
       },
-      "updated": "2026-09-17 08:49:30",
+      "updated": "2026-09-17 08:52:40",
       "dry_run": true,
       "entry_condition": false
     },
@@ -91,7 +91,7 @@
         "max_buy_count": 5,
         "max_holdings": 60
       },
-      "updated": "2026-09-17 08:49:30",
+      "updated": "2026-09-17 08:52:40",
       "dry_run": true,
       "entry_condition": false
     },
@@ -124,7 +124,7 @@
         "max_buy_count": 5,
         "max_holdings": 60
       },
-      "updated": "2026-09-17 08:49:30",
+      "updated": "2026-09-17 08:52:40",
       "dry_run": true,
       "entry_condition": false
     },
@@ -157,7 +157,7 @@
         "max_buy_count": 5,
         "max_holdings": 60
       },
-      "updated": "2026-09-17 08:49:30",
+      "updated": "2026-09-17 08:52:40",
       "dry_run": true,
       "entry_condition": false
     }
