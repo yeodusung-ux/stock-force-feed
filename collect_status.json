@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17 00:00:20",
+  "updated": "2026-09-17 00:05:17",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 15696,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 36
+    "heartbeat_age_sec": 33
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 104044530,
+      "rows": 104046620,
       "codes": 2466,
       "target": 2364,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,432종목(최대 76일)",
+      "fmt": "미도달 2,431종목(최대 76일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2432,
+        "behind": 2431,
         "max_lag": 76,
         "latest": "2026-09-16",
         "total": 2466
@@ -155,14 +155,14 @@
       "table": "morning_pool",
       "label": "시가종가풀",
       "tr": "일봉유도/CSV",
-      "rows": 96,
-      "codes": 82,
+      "rows": 97,
+      "codes": 83,
       "target": 2364,
       "first": "20250416",
-      "last": "20260915",
-      "progress_pct": 0,
-      "busy": true,
-      "state": "busy",
+      "last": "20260916",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
       "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
@@ -175,10 +175,10 @@
       "target": 2364,
       "first": "20250409",
       "last": "20260915",
-      "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 09-15 · 73,416행",
+      "progress_pct": 0,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
