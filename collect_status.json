@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18 00:06:34",
+  "updated": "2026-09-18 00:11:33",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 9208,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 29
   },
   "collections": [
     {
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,434종목(최대 77일)",
+      "fmt": "미도달 2,432종목(최대 77일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2434,
+        "behind": 2432,
         "max_lag": 77,
         "latest": "2026-09-17",
         "total": 2466
@@ -170,14 +170,14 @@
       "table": "closebet_pool",
       "label": "종가베팅풀",
       "tr": "일봉유도/CSV",
-      "rows": 73552,
+      "rows": 73703,
       "codes": 3197,
       "target": 2364,
       "first": "20250409",
-      "last": "20260916",
-      "progress_pct": 0,
-      "busy": true,
-      "state": "busy",
+      "last": "20260917",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
       "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
@@ -215,15 +215,15 @@
       "table": "late_rise",
       "label": "후반급등",
       "tr": "opt10080",
-      "rows": 10991,
-      "codes": 2206,
-      "target": 3634,
+      "rows": 11142,
+      "codes": 2209,
+      "target": 3573,
       "first": "20260630",
-      "last": "20260916",
+      "last": "20260917",
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "10,991/3,634 (100%) · 2,206종목",
+      "fmt": "11,142/3,573 (100%) · 2,209종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
     {
