@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-17 09:44",
-  "count": 2298,
+  "updated": "2026-09-17 09:54",
+  "count": 2302,
   "marks": {
     "026910": [
       {
@@ -3649,6 +3649,17 @@
         "reason": "init_stop",
         "origin": "sim",
         "strategy": "장중"
+      },
+      {
+        "entry": "2026-09-17",
+        "entry_price": 5350,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:47:55"
       }
     ],
     "219750": [
@@ -23611,6 +23622,17 @@
         "reason": "init_stop",
         "origin": "sim",
         "strategy": "장중"
+      },
+      {
+        "entry": "2026-09-17",
+        "entry_price": 9710,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:47:53"
       }
     ],
     "025620": [
@@ -25092,6 +25114,32 @@
         "strategy": "장중",
         "entry_time": "09:31:00",
         "exit_time": "15:25:41"
+      }
+    ],
+    "274090": [
+      {
+        "entry": "2026-09-17",
+        "entry_price": 11690,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:47:52"
+      }
+    ],
+    "042370": [
+      {
+        "entry": "2026-09-17",
+        "entry_price": 9890,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:47:54"
       }
     ]
   }
