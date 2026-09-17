@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17 15:09:31",
+  "updated": "2026-09-17 15:14:32",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 15452,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -185,15 +185,15 @@
       "table": "quant_universe",
       "label": "퀀트 유니버스",
       "tr": "opt10001",
-      "rows": 4365,
-      "codes": 4365,
+      "rows": 4370,
+      "codes": 4370,
       "target": 2364,
       "first": "2026-06-29",
       "last": "2026-09-17",
-      "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "4,365/2,364 (100%)",
+      "progress_pct": null,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "10분 자동(장중·장후)"
     },
     {
@@ -221,8 +221,8 @@
       "first": "20260630",
       "last": "20260916",
       "progress_pct": 100,
-      "busy": true,
-      "state": "busy",
+      "busy": false,
+      "state": "done",
       "fmt": "10,991/3,634 (100%) · 2,206종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
