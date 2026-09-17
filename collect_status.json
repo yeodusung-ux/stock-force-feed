@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17 22:03:03",
+  "updated": "2026-09-17 22:08:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 13552,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -59,7 +59,7 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 1146585,
+      "rows": 1146606,
       "codes": 2498,
       "target": 2364,
       "first": "2020-02-20",
@@ -67,7 +67,7 @@
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "1,146,585봉·최신",
+      "fmt": "1,146,606봉·최신",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 104112215,
+      "rows": 104112347,
       "codes": 2466,
       "target": 2364,
       "first": "2023-03-24",
@@ -140,15 +140,15 @@
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 41030,
+      "rows": 41049,
       "codes": 2077,
       "target": 2364,
       "first": "2024-07-05",
-      "last": "2026-09-16",
+      "last": "2026-09-17",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 09-16 · 41,030행",
+      "fmt": "최신 09-17 · 41,049행",
       "schedule": ""
     },
     {
