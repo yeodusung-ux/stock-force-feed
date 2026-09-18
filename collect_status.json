@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18 18:30:15",
+  "updated": "2026-09-18 18:35:16",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 6952,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 10
+    "heartbeat_age_sec": 3
   },
   "collections": [
     {
@@ -19,10 +19,10 @@
       "target": 2364,
       "first": "2022-11-03",
       "last": "2026-09-17",
-      "progress_pct": 100,
+      "progress_pct": 0,
       "busy": true,
-      "state": "idle",
-      "fmt": "2,533/2,364 (100%) · 최신 09-17 · 1일 지연",
+      "state": "busy",
+      "fmt": "0/2,364 (0%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 393138,
+      "rows": 393248,
       "codes": 2533,
       "target": 2364,
       "first": "2026-01-26",
       "last": "2026-09-17",
-      "progress_pct": 96,
+      "progress_pct": 100,
       "busy": true,
-      "state": "busy",
-      "fmt": "2,275/2,364 (96%)",
+      "state": "done",
+      "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -74,8 +74,8 @@
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 67883,
-      "codes": 2489,
+      "rows": 61710,
+      "codes": 2487,
       "target": 2364,
       "first": "2026-04-15",
       "last": "2026-09-17",
@@ -110,9 +110,9 @@
       "first": "2023-03-24",
       "last": "2026-09-18",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,466/2,428 (100%) · 미도달 2,445종목(최대 78일)",
+      "busy": true,
+      "state": "busy",
+      "fmt": "미도달 2,445종목(최대 78일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
         "behind": 2445,
