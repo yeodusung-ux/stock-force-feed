@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18 10:00:04",
+  "updated": "2026-09-18 10:10:06",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 4368,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 29
   },
   "collections": [
     {
@@ -29,30 +29,30 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 0,
-      "codes": 0,
+      "rows": 930442,
+      "codes": 2533,
       "target": 2364,
-      "first": "",
-      "last": "",
-      "progress_pct": 0,
+      "first": "2026-06-24",
+      "last": "2026-09-17",
+      "progress_pct": 100,
       "busy": false,
-      "state": "wait",
-      "fmt": "0/2,364 (0%)",
+      "state": "idle",
+      "fmt": "2,533/2,364 (100%) · 최신 09-17 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 0,
-      "codes": 0,
+      "rows": 390852,
+      "codes": 2533,
       "target": 2364,
-      "first": "",
-      "last": "",
-      "progress_pct": 0,
+      "first": "2026-01-26",
+      "last": "2026-09-16",
+      "progress_pct": 100,
       "busy": false,
-      "state": "wait",
-      "fmt": "0/2,364 (0%)",
+      "state": "idle",
+      "fmt": "2,533/2,364 (100%) · 최신 09-16 · 2일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -125,15 +125,15 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 0,
-      "codes": 0,
+      "rows": 15234,
+      "codes": 510,
       "target": 2364,
-      "first": "",
-      "last": "",
+      "first": "2025-02-03",
+      "last": "2026-09-16",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "대기",
+      "fmt": "최신 09-16 · 15,234행",
       "schedule": ""
     },
     {
