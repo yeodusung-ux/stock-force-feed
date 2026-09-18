@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19 07:00",
+  "updated": "2026-09-19 07:01",
   "holdings": [
     {
       "code": "000270",
@@ -388,10 +388,10 @@
       "maxLevel": 7,
       "dps": 2800,
       "plan": {
+        "water": 41900,
+        "waterQty": 16,
         "trailArm": 59200,
-        "trailQty": 14,
-        "trailExitFlag": 1,
-        "fastArm": 51800
+        "trailQty": 7
       }
     },
     {
