@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19 20:20",
+  "updated": "2026-09-19 20:23",
   "strategies": [
     {
       "key": "morning",
@@ -2744,6 +2744,22 @@
           "ret": -0.39
         }
       ],
+      "tradable": true
+    },
+    {
+      "key": "bbdisp",
+      "name": "📉 BB·이격 반등",
+      "desc": "밴드·이격 동시 이탈 첫날 → 익일 시가 진입 / 빠른 트레일링 청산",
+      "n": 0,
+      "open": 0,
+      "win_rate": 0.0,
+      "avg_ret": 0.0,
+      "cum_ret": 0.0,
+      "pf": 0.0,
+      "buy_rule": "볼린저 하단과 이격도선 하단을 처음 함께 이탈한 유동 종목을 다음 거래일 시가에 매수",
+      "sell_rule": "고점 수익 일부 반납 시 전량 청산(손절 없음)",
+      "open_stocks": [],
+      "closed_stocks": [],
       "tradable": true
     },
     {
