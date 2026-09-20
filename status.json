@@ -1,24 +1,24 @@
 {
-  "ts": 1789892533,
-  "ts_str": "2026-09-20 17:22:13",
+  "ts": 1789892818,
+  "ts_str": "2026-09-20 17:26:58",
   "kiwoom_alive": true,
   "kiwoom_connected": true,
   "programs": {
     "main": {
       "alive": true,
-      "age": 13
+      "age": 30
     },
     "strategy": {
       "alive": true,
-      "age": 18
+      "age": 9
     },
     "analyzer": {
       "alive": true,
-      "age": 2
+      "age": 17
     },
     "watchdog": {
       "alive": true,
-      "age": 8
+      "age": 21
     }
   },
   "trading": true,
@@ -32,7 +32,7 @@
   "watchdog_pid": 1544,
   "restarts_today": 0,
   "active_window": "07-04",
-  "last_restart_result": "부팅 유예(7s/600s, age=5)",
+  "last_restart_result": "부팅 유예(278s/600s, age=9)",
   "restart_capped": false,
   "task_ok": true,
   "push_fail_streak": 0,
