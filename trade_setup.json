@@ -29,9 +29,10 @@
     "oversold_bb_mult": 1.5,
     "oversold_atr_period": 240,
     "oversold_disp_base": 100.0,
-    "oversold_disp_extra": 2.5
+    "oversold_disp_extra": 2.5,
+    "oversold_disp_slope": 2.5
   },
-  "updated": "2026-09-21 19:00:36",
+  "updated": "2026-09-21 19:04:45",
   "accounts": {
     "5101152910": {
       "account": "5101152910",
@@ -64,9 +65,10 @@
         "oversold_bb_mult": 1.5,
         "oversold_atr_period": 240,
         "oversold_disp_base": 100.0,
-        "oversold_disp_extra": 2.5
+        "oversold_disp_extra": 2.5,
+        "oversold_disp_slope": 2.5
       },
-      "updated": "2026-09-21 19:00:36",
+      "updated": "2026-09-21 19:04:45",
       "dry_run": true,
       "entry_condition": false
     },
@@ -101,9 +103,10 @@
         "oversold_bb_mult": 1.5,
         "oversold_atr_period": 240,
         "oversold_disp_base": 100.0,
-        "oversold_disp_extra": 2.5
+        "oversold_disp_extra": 2.5,
+        "oversold_disp_slope": 2.5
       },
-      "updated": "2026-09-21 19:00:36",
+      "updated": "2026-09-21 19:04:45",
       "dry_run": true,
       "entry_condition": false
     },
@@ -138,9 +141,10 @@
         "oversold_bb_mult": 1.5,
         "oversold_atr_period": 240,
         "oversold_disp_base": 100.0,
-        "oversold_disp_extra": 2.5
+        "oversold_disp_extra": 2.5,
+        "oversold_disp_slope": 2.5
       },
-      "updated": "2026-09-21 19:00:36",
+      "updated": "2026-09-21 19:04:45",
       "dry_run": true,
       "entry_condition": false
     },
@@ -175,9 +179,10 @@
         "oversold_bb_mult": 1.5,
         "oversold_atr_period": 240,
         "oversold_disp_base": 100.0,
-        "oversold_disp_extra": 2.5
+        "oversold_disp_extra": 2.5,
+        "oversold_disp_slope": 2.5
       },
-      "updated": "2026-09-21 19:00:36",
+      "updated": "2026-09-21 19:04:45",
       "dry_run": true,
       "entry_condition": false
     }
