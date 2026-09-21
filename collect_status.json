@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21 18:08:12",
+  "updated": "2026-09-21 18:13:11",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 14912,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -19,10 +19,10 @@
       "target": 2366,
       "first": "2022-11-03",
       "last": "2026-09-21",
-      "progress_pct": 28,
+      "progress_pct": 32,
       "busy": true,
       "state": "busy",
-      "fmt": "653/2,366 (28%)",
+      "fmt": "746/2,366 (32%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -190,10 +190,10 @@
       "target": 2366,
       "first": "2026-06-29",
       "last": "2026-09-21",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,371/2,366 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
