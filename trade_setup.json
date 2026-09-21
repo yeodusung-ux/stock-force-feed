@@ -28,11 +28,11 @@
     "max_holdings": 50,
     "oversold_bb_mult": 1.5,
     "oversold_atr_period": 240,
-    "oversold_disp_base": 103.0,
+    "oversold_disp_base": 100.0,
     "oversold_disp_extra": 0.0,
-    "oversold_disp_slope": 3.3
+    "oversold_disp_slope": 3.0
   },
-  "updated": "2026-09-21 21:54:29",
+  "updated": "2026-09-21 21:57:26",
   "accounts": {
     "5101152910": {
       "account": "5101152910",
@@ -64,11 +64,11 @@
         "max_holdings": 50,
         "oversold_bb_mult": 1.5,
         "oversold_atr_period": 240,
-        "oversold_disp_base": 103.0,
+        "oversold_disp_base": 100.0,
         "oversold_disp_extra": 0.0,
-        "oversold_disp_slope": 3.3
+        "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-21 21:54:29",
+      "updated": "2026-09-21 21:57:26",
       "dry_run": true,
       "entry_condition": false
     },
@@ -102,11 +102,11 @@
         "max_holdings": 50,
         "oversold_bb_mult": 1.5,
         "oversold_atr_period": 240,
-        "oversold_disp_base": 103.0,
+        "oversold_disp_base": 100.0,
         "oversold_disp_extra": 0.0,
-        "oversold_disp_slope": 3.3
+        "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-21 21:54:29",
+      "updated": "2026-09-21 21:57:26",
       "dry_run": true,
       "entry_condition": false
     },
@@ -140,11 +140,11 @@
         "max_holdings": 50,
         "oversold_bb_mult": 1.5,
         "oversold_atr_period": 240,
-        "oversold_disp_base": 103.0,
+        "oversold_disp_base": 100.0,
         "oversold_disp_extra": 0.0,
-        "oversold_disp_slope": 3.3
+        "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-21 21:54:29",
+      "updated": "2026-09-21 21:57:26",
       "dry_run": true,
       "entry_condition": false
     },
@@ -178,11 +178,11 @@
         "max_holdings": 50,
         "oversold_bb_mult": 1.5,
         "oversold_atr_period": 240,
-        "oversold_disp_base": 103.0,
+        "oversold_disp_base": 100.0,
         "oversold_disp_extra": 0.0,
-        "oversold_disp_slope": 3.3
+        "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-21 21:54:29",
+      "updated": "2026-09-21 21:57:26",
       "dry_run": true,
       "entry_condition": false
     }
