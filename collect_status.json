@@ -1,28 +1,28 @@
 {
-  "updated": "2026-09-21 19:00:36",
+  "updated": "2026-09-21 19:05:40",
   "system": {
     "connected": true,
     "trading": true,
     "live": true,
-    "pid": 17860,
+    "pid": 7072,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 0
+    "heartbeat_age_sec": 15
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 28702349,
+      "rows": 28705105,
       "codes": 2534,
       "target": 2366,
       "first": "2022-11-03",
       "last": "2026-09-21",
-      "progress_pct": 69,
+      "progress_pct": 71,
       "busy": true,
       "state": "busy",
-      "fmt": "1,644/2,366 (69%)",
+      "fmt": "1,688/2,366 (71%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -110,9 +110,9 @@
       "first": "2023-03-24",
       "last": "2026-09-21",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,466/2,428 (100%) · 미도달 2,434종목(최대 81일)",
+      "busy": true,
+      "state": "busy",
+      "fmt": "미도달 2,434종목(최대 81일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
         "behind": 2434,
