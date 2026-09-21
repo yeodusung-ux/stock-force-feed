@@ -27,9 +27,11 @@
     "max_buy_count": 5,
     "max_holdings": 50,
     "oversold_bb_mult": 2.0,
-    "oversold_level": 82.0
+    "oversold_atr_period": 240,
+    "oversold_disp_base": 100.0,
+    "oversold_disp_extra": 3.0
   },
-  "updated": "2026-09-21 17:26:45",
+  "updated": "2026-09-21 17:28:31",
   "accounts": {
     "5101152910": {
       "account": "5101152910",
@@ -60,9 +62,11 @@
         "max_buy_count": 5,
         "max_holdings": 50,
         "oversold_bb_mult": 2.0,
-        "oversold_level": 82.0
+        "oversold_atr_period": 240,
+        "oversold_disp_base": 100.0,
+        "oversold_disp_extra": 3.0
       },
-      "updated": "2026-09-21 17:26:45",
+      "updated": "2026-09-21 17:28:31",
       "dry_run": true,
       "entry_condition": false
     },
@@ -95,9 +99,11 @@
         "max_buy_count": 5,
         "max_holdings": 50,
         "oversold_bb_mult": 2.0,
-        "oversold_level": 82.0
+        "oversold_atr_period": 240,
+        "oversold_disp_base": 100.0,
+        "oversold_disp_extra": 3.0
       },
-      "updated": "2026-09-21 17:26:45",
+      "updated": "2026-09-21 17:28:31",
       "dry_run": true,
       "entry_condition": false
     },
@@ -130,9 +136,11 @@
         "max_buy_count": 5,
         "max_holdings": 50,
         "oversold_bb_mult": 2.0,
-        "oversold_level": 82.0
+        "oversold_atr_period": 240,
+        "oversold_disp_base": 100.0,
+        "oversold_disp_extra": 3.0
       },
-      "updated": "2026-09-21 17:26:45",
+      "updated": "2026-09-21 17:28:31",
       "dry_run": true,
       "entry_condition": false
     },
@@ -165,9 +173,11 @@
         "max_buy_count": 5,
         "max_holdings": 50,
         "oversold_bb_mult": 2.0,
-        "oversold_level": 82.0
+        "oversold_atr_period": 240,
+        "oversold_disp_base": 100.0,
+        "oversold_disp_extra": 3.0
       },
-      "updated": "2026-09-21 17:26:45",
+      "updated": "2026-09-21 17:28:31",
       "dry_run": true,
       "entry_condition": false
     }
