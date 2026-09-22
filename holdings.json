@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22 09:42",
+  "updated": "2026-09-22 09:47",
   "holdings": [
     {
       "code": "000270",
@@ -13,7 +13,8 @@
         "water": 116100,
         "waterQty": 21,
         "trailArm": 164000,
-        "trailQty": 9
+        "trailQty": 9,
+        "fastStop": 140000
       }
     },
     {
@@ -41,7 +42,8 @@
       "dps": 19500,
       "plan": {
         "water": 568000,
-        "waterQty": 1
+        "waterQty": 1,
+        "fastStop": 687000
       }
     },
     {
@@ -129,7 +131,8 @@
       "dps": 7600,
       "plan": {
         "water": 159100,
-        "waterQty": 1
+        "waterQty": 1,
+        "fastStop": 197800
       }
     },
     {
@@ -159,7 +162,8 @@
         "water": 25100,
         "waterQty": 76,
         "trailArm": 35500,
-        "trailQty": 32
+        "trailQty": 32,
+        "fastArm": 31100
       }
     },
     {
@@ -333,7 +337,8 @@
         "water": 81000,
         "waterQty": 4,
         "trailArm": 114400,
-        "trailQty": 1
+        "trailQty": 1,
+        "fastArm": 100100
       }
     },
     {
@@ -376,7 +381,8 @@
         "water": 17680,
         "waterQty": 81,
         "trailArm": 25000,
-        "trailQty": 34
+        "trailQty": 34,
+        "fastArm": 21850
       }
     },
     {
@@ -391,7 +397,8 @@
         "water": 41900,
         "waterQty": 16,
         "trailArm": 59200,
-        "trailQty": 7
+        "trailQty": 7,
+        "fastArm": 51800
       }
     },
     {
@@ -406,7 +413,8 @@
         "water": 156500,
         "waterQty": 4,
         "trailArm": 221500,
-        "trailQty": 2
+        "trailQty": 2,
+        "fastArm": 193500
       }
     },
     {
@@ -494,7 +502,8 @@
       "dps": 2590,
       "plan": {
         "water": 90800,
-        "waterQty": 2
+        "waterQty": 2,
+        "fastStop": 111700
       }
     },
     {
@@ -567,7 +576,8 @@
         "water": 97900,
         "waterQty": 4,
         "trailArm": 138300,
-        "trailQty": 1
+        "trailQty": 1,
+        "fastArm": 121100
       }
     },
     {
@@ -656,19 +666,6 @@
       }
     },
     {
-      "code": "175330",
-      "name": "JB금융지주",
-      "shares": 10,
-      "avgPrice": 27640,
-      "buyLevel": 1,
-      "maxLevel": 7,
-      "dps": 1140,
-      "plan": {
-        "water": 23450,
-        "waterQty": 11
-      }
-    },
-    {
       "code": "192080",
       "name": "더블유게임즈",
       "shares": 4,
@@ -723,7 +720,8 @@
       "dps": 1360,
       "plan": {
         "water": 27900,
-        "waterQty": 7
+        "waterQty": 7,
+        "fastStop": 35100
       }
     },
     {
