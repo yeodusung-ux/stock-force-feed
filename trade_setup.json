@@ -21,7 +21,7 @@
     "fast_ts_profit": 5.0,
     "fast_ts_giveback": 50.0,
     "max_level_stop_pct": 0.0,
-    "fast_ts_on_cond": 0,
+    "fast_ts_on_cond": 1,
     "fast_ts_on_other": 0,
     "fast_ts_on_exit": 1,
     "max_buy_count": 5,
@@ -32,7 +32,7 @@
     "oversold_disp_extra": 0.0,
     "oversold_disp_slope": 3.0
   },
-  "updated": "2026-09-22 09:45:05",
+  "updated": "2026-09-22 09:46:26",
   "accounts": {
     "5101152910": {
       "account": "5101152910",
@@ -68,7 +68,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-22 09:45:05",
+      "updated": "2026-09-22 09:46:26",
       "dry_run": true,
       "entry_condition": false
     },
@@ -106,7 +106,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-22 09:45:05",
+      "updated": "2026-09-22 09:46:26",
       "dry_run": true,
       "entry_condition": false
     },
@@ -144,7 +144,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-22 09:45:05",
+      "updated": "2026-09-22 09:46:26",
       "dry_run": true,
       "entry_condition": false
     },
@@ -182,7 +182,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-22 09:45:05",
+      "updated": "2026-09-22 09:46:26",
       "dry_run": true,
       "entry_condition": false
     }
