@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22 07:00",
+  "updated": "2026-09-22 09:42",
   "holdings": [
     {
       "code": "000270",
@@ -558,14 +558,16 @@
     {
       "code": "078930",
       "name": "GS",
-      "shares": 2,
-      "avgPrice": 122600,
-      "buyLevel": 1,
+      "shares": 4,
+      "avgPrice": 115250,
+      "buyLevel": 2,
       "maxLevel": 7,
       "dps": 3000,
       "plan": {
-        "water": 104200,
-        "waterQty": 2
+        "water": 97900,
+        "waterQty": 4,
+        "trailArm": 138300,
+        "trailQty": 1
       }
     },
     {
