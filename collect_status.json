@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22 09:20:06",
+  "updated": "2026-09-22 09:25:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 5524,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -189,11 +189,11 @@
       "codes": 4371,
       "target": 2365,
       "first": "2026-06-29",
-      "last": "2026-09-21",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "last": "2026-09-22",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,371/2,365 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
