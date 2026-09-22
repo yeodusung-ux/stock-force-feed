@@ -1,7 +1,19 @@
 {
-  "updated": "2026-09-22 15:21",
-  "count": 0,
-  "orders": [],
+  "updated": "2026-09-22 15:25",
+  "count": 1,
+  "orders": [
+    {
+      "code": "055550",
+      "name": "신한지주",
+      "side": "매도",
+      "qty": 2,
+      "left": 2,
+      "price": 0,
+      "time": "152508",
+      "orderNo": "0027825",
+      "current": 113300
+    }
+  ],
   "primary_account": "3699285811",
   "accounts": {
     "5101152910": [],
