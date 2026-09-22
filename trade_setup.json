@@ -24,6 +24,7 @@
     "fast_ts_on_cond": 1,
     "fast_ts_on_other": 0,
     "fast_ts_on_exit": 1,
+    "trail_floor_pct": 15.0,
     "max_buy_count": 5,
     "max_holdings": 50,
     "oversold_bb_mult": 1.5,
@@ -32,7 +33,7 @@
     "oversold_disp_extra": 0.0,
     "oversold_disp_slope": 3.0
   },
-  "updated": "2026-09-22 11:35:05",
+  "updated": "2026-09-22 11:38:26",
   "accounts": {
     "5101152910": {
       "account": "5101152910",
@@ -60,6 +61,7 @@
         "fast_ts_on_cond": 0,
         "fast_ts_on_other": 0,
         "fast_ts_on_exit": 0,
+        "trail_floor_pct": 15.0,
         "max_buy_count": 5,
         "max_holdings": 50,
         "oversold_bb_mult": 1.5,
@@ -68,7 +70,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-22 11:35:05",
+      "updated": "2026-09-22 11:38:26",
       "dry_run": true,
       "entry_condition": false
     },
@@ -98,6 +100,7 @@
         "fast_ts_on_cond": 0,
         "fast_ts_on_other": 0,
         "fast_ts_on_exit": 0,
+        "trail_floor_pct": 15.0,
         "max_buy_count": 5,
         "max_holdings": 50,
         "oversold_bb_mult": 1.5,
@@ -106,7 +109,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-22 11:35:05",
+      "updated": "2026-09-22 11:38:26",
       "dry_run": true,
       "entry_condition": false
     },
@@ -136,6 +139,7 @@
         "fast_ts_on_cond": 0,
         "fast_ts_on_other": 0,
         "fast_ts_on_exit": 0,
+        "trail_floor_pct": 15.0,
         "max_buy_count": 5,
         "max_holdings": 50,
         "oversold_bb_mult": 1.5,
@@ -144,7 +148,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-22 11:35:05",
+      "updated": "2026-09-22 11:38:26",
       "dry_run": true,
       "entry_condition": false
     },
@@ -174,6 +178,7 @@
         "fast_ts_on_cond": 0,
         "fast_ts_on_other": 0,
         "fast_ts_on_exit": 0,
+        "trail_floor_pct": 15.0,
         "max_buy_count": 5,
         "max_holdings": 50,
         "oversold_bb_mult": 1.5,
@@ -182,7 +187,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-09-22 11:35:05",
+      "updated": "2026-09-22 11:38:26",
       "dry_run": true,
       "entry_condition": false
     }
