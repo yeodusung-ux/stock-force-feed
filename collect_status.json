@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22 16:55:31",
+  "updated": "2026-09-22 17:00:30",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 14048,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 23
+    "heartbeat_age_sec": 22
   },
   "collections": [
     {
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 396288,
+      "rows": 396305,
       "codes": 2534,
       "target": 2365,
       "first": "2026-01-26",
       "last": "2026-09-21",
-      "progress_pct": 27,
+      "progress_pct": 28,
       "busy": true,
       "state": "busy",
-      "fmt": "645/2,365 (27%)",
+      "fmt": "660/2,365 (28%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -233,27 +233,27 @@
       "rows": 7173871,
       "codes": 1236,
       "target": 2365,
-      "first": "",
-      "last": "",
+      "first": "2025-08-01 09:00",
+      "last": "2026-09-18 19:57",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "7,173,871행",
+      "fmt": "최신 09-18 · 7,173,871행",
       "schedule": "저녁 자동(이어받기·주1회)+원격"
     },
     {
       "table": "analyst_report",
       "label": "리포트",
       "tr": "웹크롤",
-      "rows": 1416,
-      "codes": 522,
+      "rows": 0,
+      "codes": 0,
       "target": 2365,
-      "first": "2026-08-03",
-      "last": "2026-09-21",
+      "first": "",
+      "last": "",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 09-21 · 1,416행",
+      "fmt": "대기",
       "schedule": ""
     },
     {
