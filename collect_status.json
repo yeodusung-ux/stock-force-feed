@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24 07:01:18",
+  "updated": "2026-09-24 07:05:03",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 10640,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -89,15 +89,15 @@
       "table": "signal_log",
       "label": "세력신호",
       "tr": "파생",
-      "rows": 3783,
+      "rows": 3793,
       "codes": 1407,
       "target": 2365,
       "first": "2026-07-02",
-      "last": "2026-09-23",
+      "last": "2026-09-24",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 09-23 · 3,783행",
+      "fmt": "최신 09-24 · 3,793행",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -203,12 +203,12 @@
       "rows": 4378,
       "codes": 4378,
       "target": 2365,
-      "first": "2026-09-23",
-      "last": "2026-09-23",
+      "first": "2026-09-24",
+      "last": "2026-09-24",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 09-23 · 4,378행",
+      "fmt": "최신 09-24 · 4,378행",
       "schedule": "5분 자동(DART)"
     },
     {
