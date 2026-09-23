@@ -2,6 +2,458 @@
   "updated": "2026-09-23 09:56",
   "holdings": [
     {
+      "code": "000270",
+      "name": "기아",
+      "shares": 18,
+      "avgPrice": 136611,
+      "buyLevel": 4,
+      "maxLevel": 7,
+      "dps": 6800,
+      "plan": {
+        "water": 116100,
+        "waterQty": 21,
+        "trailArm": 164000,
+        "trailQty": 9,
+        "fastStop": 140000
+      }
+    },
+    {
+      "code": "000810",
+      "name": "삼성화재",
+      "shares": 1,
+      "avgPrice": 669000,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 19500,
+      "plan": {
+        "water": 568000,
+        "waterQty": 1,
+        "fastStop": 687000
+      }
+    },
+    {
+      "code": "001800",
+      "name": "오리온홀딩스",
+      "shares": 14,
+      "avgPrice": 25700,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 1100,
+      "plan": {
+        "trailArm": 30850,
+        "trailQty": 14,
+        "trailExitFlag": 1,
+        "fastArm": 27000
+      }
+    },
+    {
+      "code": "002960",
+      "name": "한국쉘석유",
+      "shares": 2,
+      "avgPrice": 497000,
+      "buyLevel": 2,
+      "maxLevel": 5,
+      "dps": 36000,
+      "plan": {
+        "water": 422000,
+        "waterQty": 2,
+        "trailArm": 597000,
+        "trailQty": 1
+      }
+    },
+    {
+      "code": "003550",
+      "name": "LG",
+      "shares": 2,
+      "avgPrice": 118800,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 3100,
+      "plan": {
+        "trailArm": 142600,
+        "trailQty": 2,
+        "trailExitFlag": 1,
+        "fastArm": 124800
+      }
+    },
+    {
+      "code": "003570",
+      "name": "SNT다이내믹스",
+      "shares": 8,
+      "avgPrice": 30650,
+      "buyLevel": 1,
+      "maxLevel": 5,
+      "dps": 1800,
+      "plan": {
+        "trailArm": 36800,
+        "trailQty": 8,
+        "trailExitFlag": 1,
+        "fastArm": 32200
+      }
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "shares": 33,
+      "avgPrice": 449772,
+      "buyLevel": 6,
+      "maxLevel": 7,
+      "dps": 10000,
+      "plan": {
+        "trailArm": 540000,
+        "trailQty": 33,
+        "trailExitFlag": 1,
+        "fastArm": 472500
+      }
+    },
+    {
+      "code": "005830",
+      "name": "DB손해보험",
+      "shares": 1,
+      "avgPrice": 187200,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 7600,
+      "plan": {
+        "water": 159100,
+        "waterQty": 1,
+        "fastStop": 200500
+      }
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "shares": 4,
+      "avgPrice": 280500,
+      "buyLevel": 3,
+      "maxLevel": 7,
+      "dps": 1668,
+      "plan": {
+        "water": 238000,
+        "waterQty": 4,
+        "trailArm": 337000,
+        "trailQty": 2,
+        "fastArm": 295000
+      }
+    },
+    {
+      "code": "005940",
+      "name": "NH투자증권",
+      "shares": 65,
+      "avgPrice": 29576,
+      "buyLevel": 4,
+      "maxLevel": 7,
+      "dps": 1300,
+      "plan": {
+        "water": 25100,
+        "waterQty": 76,
+        "trailArm": 35500,
+        "trailQty": 32,
+        "fastArm": 31100
+      }
+    },
+    {
+      "code": "009970",
+      "name": "영원무역홀딩스",
+      "shares": 5,
+      "avgPrice": 183000,
+      "buyLevel": 3,
+      "maxLevel": 7,
+      "dps": 6576,
+      "plan": {
+        "trailArm": 220000,
+        "trailQty": 5,
+        "trailExitFlag": 1,
+        "fastStop": 201500
+      }
+    },
+    {
+      "code": "010130",
+      "name": "고려아연",
+      "shares": 1,
+      "avgPrice": 1217000,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 20000,
+      "plan": {
+        "trailArm": 1461000,
+        "trailQty": 1,
+        "trailExitFlag": 1,
+        "fastArm": 1278000
+      }
+    },
+    {
+      "code": "010240",
+      "name": "흥국",
+      "shares": 74,
+      "avgPrice": 5375,
+      "buyLevel": 2,
+      "maxLevel": 3,
+      "dps": 280,
+      "plan": {
+        "trailArm": 6450,
+        "trailQty": 74,
+        "trailExitFlag": 1,
+        "fastStop": 5560
+      }
+    },
+    {
+      "code": "011070",
+      "name": "LG이노텍",
+      "shares": 1,
+      "avgPrice": 564000,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 1880,
+      "plan": {
+        "trailArm": 677000,
+        "trailQty": 1,
+        "trailExitFlag": 1,
+        "fastStop": 579000
+      }
+    },
+    {
+      "code": "011200",
+      "name": "HMM",
+      "shares": 9,
+      "avgPrice": 21600,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 700,
+      "plan": {
+        "trailArm": 25950,
+        "trailQty": 9,
+        "trailExitFlag": 1,
+        "fastArm": 22700
+      }
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "shares": 1,
+      "avgPrice": 424500,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 6500,
+      "plan": {
+        "trailArm": 510000,
+        "trailQty": 1,
+        "trailExitFlag": 1,
+        "fastArm": 446000
+      }
+    },
+    {
+      "code": "013810",
+      "name": "스페코",
+      "shares": 157,
+      "avgPrice": 1595,
+      "buyLevel": 1,
+      "maxLevel": 3,
+      "plan": {
+        "trailArm": 1914,
+        "trailQty": 157,
+        "trailExitFlag": 1
+      }
+    },
+    {
+      "code": "015360",
+      "name": "INVENI",
+      "shares": 28,
+      "avgPrice": 14015,
+      "buyLevel": 2,
+      "maxLevel": 5,
+      "dps": 5400,
+      "plan": {
+        "water": 11910,
+        "waterQty": 32,
+        "trailArm": 16820,
+        "trailQty": 10
+      }
+    },
+    {
+      "code": "015760",
+      "name": "한국전력",
+      "shares": 17,
+      "avgPrice": 33064,
+      "buyLevel": 2,
+      "maxLevel": 7,
+      "dps": 1542,
+      "plan": {
+        "water": 28100,
+        "waterQty": 20,
+        "trailArm": 39700,
+        "trailQty": 8,
+        "fastArm": 34750
+      }
+    },
+    {
+      "code": "016360",
+      "name": "삼성증권",
+      "shares": 21,
+      "avgPrice": 95785,
+      "buyLevel": 4,
+      "maxLevel": 7,
+      "dps": 4000,
+      "plan": {
+        "water": 81400,
+        "waterQty": 24,
+        "trailArm": 115000,
+        "trailQty": 10
+      }
+    },
+    {
+      "code": "017670",
+      "name": "SK텔레콤",
+      "shares": 4,
+      "avgPrice": 95300,
+      "buyLevel": 2,
+      "maxLevel": 7,
+      "dps": 1660,
+      "plan": {
+        "water": 81000,
+        "waterQty": 4,
+        "trailArm": 114400,
+        "trailQty": 1,
+        "fastArm": 100100
+      }
+    },
+    {
+      "code": "017800",
+      "name": "현대엘리베이터",
+      "shares": 3,
+      "avgPrice": 75166,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 14010,
+      "plan": {
+        "water": 63800,
+        "waterQty": 3
+      }
+    },
+    {
+      "code": "019210",
+      "name": "와이지-원",
+      "shares": 17,
+      "avgPrice": 14300,
+      "buyLevel": 1,
+      "maxLevel": 5,
+      "dps": 190,
+      "plan": {
+        "trailArm": 17160,
+        "trailQty": 17,
+        "trailExitFlag": 1,
+        "fastArm": 15020
+      }
+    },
+    {
+      "code": "024110",
+      "name": "기업은행",
+      "shares": 69,
+      "avgPrice": 20810,
+      "buyLevel": 3,
+      "maxLevel": 7,
+      "dps": 1048,
+      "plan": {
+        "water": 17680,
+        "waterQty": 81,
+        "trailArm": 25000,
+        "trailQty": 34,
+        "fastArm": 21850
+      }
+    },
+    {
+      "code": "029780",
+      "name": "삼성카드",
+      "shares": 28,
+      "avgPrice": 46189,
+      "buyLevel": 3,
+      "maxLevel": 7,
+      "dps": 2800,
+      "plan": {
+        "water": 39250,
+        "waterQty": 32,
+        "trailArm": 55500,
+        "trailQty": 14,
+        "fastArm": 48500
+      }
+    },
+    {
+      "code": "033780",
+      "name": "KT&G",
+      "shares": 4,
+      "avgPrice": 184225,
+      "buyLevel": 2,
+      "maxLevel": 7,
+      "dps": 6000,
+      "plan": {
+        "water": 156500,
+        "waterQty": 4,
+        "trailArm": 221500,
+        "trailQty": 2,
+        "fastArm": 193500
+      }
+    },
+    {
+      "code": "034950",
+      "name": "한국기업평가",
+      "shares": 6,
+      "avgPrice": 104533,
+      "buyLevel": 2,
+      "maxLevel": 5,
+      "dps": 8009,
+      "plan": {
+        "trailArm": 125500,
+        "trailQty": 6,
+        "trailExitFlag": 1,
+        "fastArm": 109800
+      }
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "shares": 6,
+      "avgPrice": 36000,
+      "buyLevel": 1,
+      "maxLevel": 7,
+      "dps": 75,
+      "plan": {
+        "trailArm": 43200,
+        "trailQty": 6,
+        "trailExitFlag": 1,
+        "fastArm": 37800
+      }
+    },
+    {
+      "code": "037710",
+      "name": "광주신세계",
+      "shares": 7,
+      "avgPrice": 35500,
+      "buyLevel": 1,
+      "maxLevel": 5,
+      "dps": 2400,
+      "plan": {
+        "trailArm": 42600,
+        "trailQty": 7,
+        "trailExitFlag": 1,
+        "fastArm": 37300
+      }
+    },
+    {
+      "code": "038390",
+      "name": "레드캡투어",
+      "shares": 24,
+      "avgPrice": 10030,
+      "buyLevel": 1,
+      "maxLevel": 5,
+      "dps": 800,
+      "plan": {
+        "trailArm": 12040,
+        "trailQty": 24,
+        "trailExitFlag": 1,
+        "fastArm": 10540
+      }
+    },
+    {
       "code": "040420",
       "name": "정상제이엘에스",
       "shares": 68,
