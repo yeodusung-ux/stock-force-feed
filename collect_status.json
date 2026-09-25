@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25 20:50:05",
+  "updated": "2026-09-25 21:00:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -230,15 +230,15 @@
       "table": "minute_ohlcv",
       "label": "분봉원본",
       "tr": "opt10080",
-      "rows": 7173871,
+      "rows": 7174553,
       "codes": 1236,
       "target": 2365,
       "first": "2025-08-01 09:00",
-      "last": "2026-09-18 19:57",
+      "last": "2026-09-23 19:57",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 09-18 · 7,173,871행",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "저녁 자동(이어받기·주1회)+원격"
     },
     {
