@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25 23:35:06",
+  "updated": "2026-09-25 23:40:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 105013072,
+      "rows": 105014288,
       "codes": 2466,
       "target": 2365,
       "first": "2023-03-24",
@@ -230,8 +230,8 @@
       "table": "minute_ohlcv",
       "label": "분봉원본",
       "tr": "opt10080",
-      "rows": 7600293,
-      "codes": 1245,
+      "rows": 7620980,
+      "codes": 1246,
       "target": 2365,
       "first": "2025-08-01 09:00",
       "last": "2026-09-23 19:57",
