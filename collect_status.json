@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29 07:01:19",
+  "updated": "2026-09-29 07:05:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 19224,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -59,15 +59,15 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 1158569,
+      "rows": 1158575,
       "codes": 2500,
       "target": 2370,
       "first": "2020-02-20",
-      "last": "2026-09-28",
+      "last": "2026-09-29",
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "1,158,569봉·최신",
+      "fmt": "1,158,575봉·최신",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -260,15 +260,15 @@
       "table": "stock_name",
       "label": "종목명",
       "tr": "마스터",
-      "rows": 4378,
-      "codes": 4378,
+      "rows": 4380,
+      "codes": 4380,
       "target": 2370,
       "first": "",
       "last": "",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "4,378행",
+      "fmt": "4,380행",
       "schedule": "자동(세력수집 시 갱신)"
     },
     {
