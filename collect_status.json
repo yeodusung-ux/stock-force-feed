@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30 03:35:07",
+  "updated": "2026-09-30 03:45:07",
   "system": {
     "connected": true,
     "trading": true,
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 105463572,
+      "rows": 105465442,
       "codes": 2467,
       "target": 2369,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,409종목(최대 89일)",
+      "fmt": "미도달 2,408종목(최대 89일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2409,
+        "behind": 2408,
         "max_lag": 89,
         "latest": "2026-09-29",
         "total": 2467
@@ -200,15 +200,15 @@
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 4379,
-      "codes": 4379,
+      "rows": 4380,
+      "codes": 4380,
       "target": 2369,
-      "first": "2026-09-29",
-      "last": "2026-09-29",
+      "first": "2026-09-30",
+      "last": "2026-09-30",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 09-29 · 4,379행",
+      "fmt": "최신 09-30 · 4,380행",
       "schedule": "5분 자동(DART)"
     },
     {
