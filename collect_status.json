@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30 00:20:11",
+  "updated": "2026-09-30 00:25:07",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 12636,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 24
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 105443192,
+      "rows": 105444146,
       "codes": 2467,
       "target": 2369,
       "first": "2023-03-24",
@@ -125,15 +125,15 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 0,
-      "codes": 0,
+      "rows": 15234,
+      "codes": 510,
       "target": 2369,
-      "first": "",
-      "last": "",
+      "first": "2025-02-03",
+      "last": "2026-09-16",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "대기",
+      "fmt": "최신 09-16 · 15,234행",
       "schedule": ""
     },
     {
