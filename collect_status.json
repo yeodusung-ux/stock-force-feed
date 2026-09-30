@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30 10:15:03",
+  "updated": "2026-09-30 10:20:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 5348,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -189,7 +189,7 @@
       "codes": 4380,
       "target": 2371,
       "first": "2026-06-29",
-      "last": "2026-09-29",
+      "last": "2026-09-30",
       "progress_pct": null,
       "busy": true,
       "state": "busy",
