@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01 17:40",
+  "updated": "2026-10-01 17:50",
   "count": 47,
   "marks": {
     "352700": [
@@ -442,10 +442,10 @@
       {
         "entry": "2026-08-19",
         "entry_price": 4670,
-        "exit": "",
-        "exit_price": 0,
-        "ret": null,
-        "reason": "",
+        "exit": "2026-10-01",
+        "exit_price": 5150,
+        "ret": 10.28,
+        "reason": "tp",
         "origin": ""
       }
     ],
