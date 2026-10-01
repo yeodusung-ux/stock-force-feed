@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01 17:05:04",
+  "updated": "2026-10-01 17:10:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 4420,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 409152,
+      "rows": 409340,
       "codes": 2537,
       "target": 2372,
       "first": "2026-01-26",
       "last": "2026-09-30",
-      "progress_pct": 66,
+      "progress_pct": 74,
       "busy": true,
       "state": "busy",
-      "fmt": "1,562/2,372 (66%)",
+      "fmt": "1,744/2,372 (74%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -185,8 +185,8 @@
       "table": "quant_universe",
       "label": "퀀트 유니버스",
       "tr": "opt10001",
-      "rows": 4384,
-      "codes": 4384,
+      "rows": 4385,
+      "codes": 4385,
       "target": 2372,
       "first": "2026-06-29",
       "last": "2026-10-01",
