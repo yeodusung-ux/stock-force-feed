@@ -1,7 +1,18 @@
 {
-  "updated": "2026-10-02 12:59",
-  "count": 1,
+  "updated": "2026-10-02 13:00",
+  "count": 2,
   "orders": [
+    {
+      "code": "145020",
+      "name": "휴젤",
+      "side": "매수",
+      "qty": 2,
+      "left": 2,
+      "price": 181400,
+      "time": "130001",
+      "orderNo": "0021155",
+      "current": 181700
+    },
     {
       "code": "009970",
       "name": "영원무역홀딩스",
@@ -11,7 +22,7 @@
       "price": 190000,
       "time": "103412",
       "orderNo": "0015052",
-      "current": 160600
+      "current": 160500
     }
   ],
   "primary_account": "3699285811",
