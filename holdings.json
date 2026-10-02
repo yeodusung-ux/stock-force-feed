@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02 07:00",
+  "updated": "2026-10-02 13:07",
   "holdings": [
     {
       "code": "000270",
@@ -556,15 +556,15 @@
     {
       "code": "145020",
       "name": "휴젤",
-      "shares": 2,
-      "avgPrice": 215250,
-      "buyLevel": 2,
+      "shares": 4,
+      "avgPrice": 198325,
+      "buyLevel": 3,
       "maxLevel": 7,
       "plan": {
-        "trailArm": 258500,
-        "trailQty": 2,
+        "trailArm": 238000,
+        "trailQty": 4,
         "trailExitFlag": 1,
-        "fastArm": 226500
+        "fastArm": 208500
       }
     },
     {
