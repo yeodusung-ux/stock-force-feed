@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02 16:31:14",
+  "updated": "2026-10-02 16:36:15",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16184,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 411007,
+      "rows": 411299,
       "codes": 2538,
       "target": 2371,
       "first": "2026-01-26",
       "last": "2026-10-01",
-      "progress_pct": 44,
+      "progress_pct": 56,
       "busy": true,
       "state": "busy",
-      "fmt": "1,051/2,371 (44%)",
+      "fmt": "1,327/2,371 (56%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -190,10 +190,10 @@
       "target": 2371,
       "first": "2026-06-29",
       "last": "2026-10-02",
-      "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "4,385/2,371 (100%)",
+      "progress_pct": null,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "10분 자동(장중·장후)"
     },
     {
