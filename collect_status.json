@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06 21:42:05",
+  "updated": "2026-10-06 21:47:03",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 2372,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 32
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -245,15 +245,15 @@
       "table": "analyst_report",
       "label": "리포트",
       "tr": "웹크롤",
-      "rows": 1579,
-      "codes": 575,
+      "rows": 1615,
+      "codes": 579,
       "target": 2369,
       "first": "2026-08-03",
-      "last": "2026-10-02",
+      "last": "2026-10-06",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-02 · 1,579행",
+      "fmt": "최신 10-06 · 1,615행",
       "schedule": ""
     },
     {
@@ -320,15 +320,15 @@
       "table": "dart_event",
       "label": "공시이벤트",
       "tr": "DART",
-      "rows": 1205,
-      "codes": 542,
+      "rows": 1250,
+      "codes": 553,
       "target": 2369,
       "first": "2026-08-24",
-      "last": "2026-10-02",
+      "last": "2026-10-06",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-02 · 1,205행",
+      "fmt": "최신 10-06 · 1,250행",
       "schedule": ""
     }
   ]
