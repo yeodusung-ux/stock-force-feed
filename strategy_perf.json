@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07 13:50",
+  "updated": "2026-10-07 13:58",
   "strategies": [
     {
       "key": "morning",
@@ -2688,25 +2688,24 @@
       "key": "bbdisp",
       "name": "📉 과매도 반등",
       "desc": "밴드·이격 동시 이탈 첫날 → 익일 시가 진입 / 빠른 트레일링 청산",
-      "n": 2,
-      "open": 1,
+      "n": 3,
+      "open": 0,
       "win_rate": 100.0,
-      "avg_ret": 1.76,
-      "cum_ret": 3.5,
+      "avg_ret": 1.96,
+      "cum_ret": 5.9,
       "pf": 999.0,
       "buy_rule": "볼린저 하단과 이격도선 하단을 처음 함께 이탈한 유동 종목을 다음 거래일 시가에 매수",
       "sell_rule": "고점 수익 일부 반납 시 전량 청산(손절 없음)",
-      "open_stocks": [
+      "open_stocks": [],
+      "closed_stocks": [
         {
-          "date": "2026-10-07",
+          "date": "20261007",
           "code": "114090",
           "name": "GKL",
           "buy": 8450,
-          "cur": 8600,
-          "ret": 1.78
-        }
-      ],
-      "closed_stocks": [
+          "sell": 8650,
+          "ret": 2.37
+        },
         {
           "date": "20261006",
           "code": "298020",
