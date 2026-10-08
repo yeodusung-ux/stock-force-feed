@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08 21:25:06",
+  "updated": "2026-10-08 21:30:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 14472,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -245,7 +245,7 @@
       "table": "analyst_report",
       "label": "리포트",
       "tr": "웹크롤",
-      "rows": 1704,
+      "rows": 1722,
       "codes": 585,
       "target": 2368,
       "first": "2026-08-03",
@@ -253,7 +253,7 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-08 · 1,704행",
+      "fmt": "최신 10-08 · 1,722행",
       "schedule": ""
     },
     {
@@ -305,7 +305,7 @@
       "table": "collect_meta",
       "label": "수집마커",
       "tr": "파생",
-      "rows": 36,
+      "rows": 37,
       "codes": 0,
       "target": 2368,
       "first": "",
@@ -313,7 +313,7 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "36행",
+      "fmt": "37행",
       "schedule": "자동(수집 진행에 따라)"
     },
     {
