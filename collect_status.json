@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08 17:50:05",
+  "updated": "2026-10-08 17:55:06",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,22 +7,22 @@
     "pid": 14472,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 29001700,
+      "rows": 29008759,
       "codes": 2539,
       "target": 2368,
       "first": "2022-11-03",
       "last": "2026-10-08",
-      "progress_pct": 45,
+      "progress_pct": 57,
       "busy": true,
       "state": "busy",
-      "fmt": "1,075/2,368 (45%)",
+      "fmt": "1,351/2,368 (57%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -190,10 +190,10 @@
       "target": 2368,
       "first": "2026-06-29",
       "last": "2026-10-08",
-      "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "4,386/2,368 (100%)",
+      "progress_pct": null,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "10분 자동(장중·장후)"
     },
     {
