@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08 12:53:16",
+  "updated": "2026-10-08 13:03:16",
   "system": {
     "connected": true,
     "trading": true,
@@ -189,11 +189,11 @@
       "codes": 4386,
       "target": 2368,
       "first": "2026-06-29",
-      "last": "2026-10-07",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "last": "2026-10-08",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,386/2,368 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
