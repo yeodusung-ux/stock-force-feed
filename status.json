@@ -1,30 +1,30 @@
 {
- "ts": 1791540438,
- "ts_str": "2026-10-09 19:07:18",
+ "ts": 1791540740,
+ "ts_str": "2026-10-09 19:12:20",
  "kiwoom_alive": true,
  "kiwoom_connected": true,
  "trading": true,
  "last_real": 0.0,
  "collect_auto_on": true,
  "collect_sched": "17:00",
- "collect_done_today": false,
- "collect_last_complete": "",
- "collect_progress": "투자자 ✓ · 창구 ✓ · 신용 ✓ · 일봉 2,283/2,367",
+ "collect_done_today": true,
+ "collect_last_complete": "2026-10-09",
+ "collect_progress": "완료",
  "watchdog_pid": 3216,
  "restarts_today": 0,
  "active_window": "07-04",
  "programs": {
   "main": {
    "alive": true,
-   "age": 9
+   "age": 6
   },
   "strategy": {
    "alive": true,
-   "age": 26
+   "age": 28
   },
   "analyzer": {
    "alive": true,
-   "age": 7
+   "age": 9
   },
   "watchdog": {
    "alive": true,
