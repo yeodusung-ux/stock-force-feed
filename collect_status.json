@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09 13:44:39",
+  "updated": "2026-10-09 13:54:39",
   "system": {
     "connected": true,
     "trading": true,
@@ -190,10 +190,10 @@
       "target": 2367,
       "first": "2026-06-29",
       "last": "2026-10-09",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,386/2,367 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
