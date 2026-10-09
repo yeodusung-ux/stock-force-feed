@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-09 07:00",
-  "count": 2305,
+  "updated": "2026-10-09 09:40",
+  "count": 2312,
   "marks": {
     "026910": [
       {
@@ -9978,6 +9978,17 @@
         "reason": "giveback",
         "origin": "sim",
         "strategy": "장중"
+      },
+      {
+        "entry": "2026-10-09",
+        "entry_price": 4460,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:30:32"
       }
     ],
     "240810": [
@@ -19213,6 +19224,17 @@
         "reason": "init_stop",
         "origin": "sim",
         "strategy": "장중"
+      },
+      {
+        "entry": "2026-10-09",
+        "entry_price": 75800,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:30:25"
       }
     ],
     "481070": [
@@ -19607,6 +19629,17 @@
         "reason": "giveback",
         "origin": "sim",
         "strategy": "장중"
+      },
+      {
+        "entry": "2026-10-09",
+        "entry_price": 16870,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:30:27"
       }
     ],
     "357780": [
@@ -22173,6 +22206,17 @@
         "reason": "init_stop",
         "origin": "sim",
         "strategy": "장중"
+      },
+      {
+        "entry": "2026-10-09",
+        "entry_price": 11420,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:30:30"
       }
     ],
     "042600": [
@@ -25182,6 +25226,45 @@
         "strategy": "장중",
         "entry_time": "09:30:49",
         "exit_time": "10:23:42"
+      }
+    ],
+    "086980": [
+      {
+        "entry": "2026-10-09",
+        "entry_price": 1978,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:30:26"
+      }
+    ],
+    "012030": [
+      {
+        "entry": "2026-10-09",
+        "entry_price": 2260,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:30:28"
+      }
+    ],
+    "048910": [
+      {
+        "entry": "2026-10-09",
+        "entry_price": 8200,
+        "exit": "",
+        "exit_price": 0,
+        "ret": null,
+        "reason": "",
+        "origin": "paper",
+        "strategy": "장중",
+        "entry_time": "09:30:29"
       }
     ]
   }
