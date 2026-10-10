@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10 17:15:04",
+  "updated": "2026-10-10 17:25:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 1,518종목(최대 98일)",
+      "fmt": "미도달 1,516종목(최대 98일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 1518,
+        "behind": 1516,
         "max_lag": 98,
         "latest": "2026-10-08",
         "total": 2470
