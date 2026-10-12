@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13 00:00:05",
+  "updated": "2026-10-13 00:05:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -155,14 +155,14 @@
       "table": "morning_pool",
       "label": "시가종가풀",
       "tr": "일봉유도/CSV",
-      "rows": 99,
-      "codes": 84,
+      "rows": 101,
+      "codes": 86,
       "target": 2367,
       "first": "20250416",
-      "last": "20260918",
-      "progress_pct": 0,
-      "busy": true,
-      "state": "busy",
+      "last": "20261012",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
       "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
@@ -175,10 +175,10 @@
       "target": 2367,
       "first": "20250409",
       "last": "20261008",
-      "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 10-08 · 75,788행",
+      "progress_pct": 0,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
