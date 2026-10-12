@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13 00:10:05",
+  "updated": "2026-10-13 00:15:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -215,15 +215,15 @@
       "table": "late_rise",
       "label": "후반급등",
       "tr": "opt10080",
-      "rows": 13465,
-      "codes": 2261,
+      "rows": 13523,
+      "codes": 2262,
       "target": 3762,
       "first": "20260630",
       "last": "20261012",
       "progress_pct": 100,
-      "busy": true,
-      "state": "busy",
-      "fmt": "13,465/3,762 (100%) · 2,261종목",
+      "busy": false,
+      "state": "done",
+      "fmt": "13,523/3,762 (100%) · 2,262종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
     {
