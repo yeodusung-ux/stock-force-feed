@@ -1,6 +1,6 @@
 {
- "ts": 1791816916,
- "ts_str": "2026-10-12 23:55:16",
+ "ts": 1791817217,
+ "ts_str": "2026-10-13 00:00:17",
  "kiwoom_alive": true,
  "kiwoom_connected": true,
  "trading": true,
@@ -8,7 +8,7 @@
  "collect_auto_on": true,
  "collect_sched": "17:00",
  "collect_done_today": true,
- "collect_last_complete": "2026-10-12",
+ "collect_last_complete": "2026-10-13",
  "collect_progress": "완료",
  "watchdog_pid": 3216,
  "restarts_today": 0,
@@ -20,11 +20,11 @@
   },
   "strategy": {
    "alive": true,
-   "age": 23
+   "age": 24
   },
   "analyzer": {
    "alive": true,
-   "age": 4
+   "age": 5
   },
   "watchdog": {
    "alive": true,
