@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12 18:35:26",
+  "updated": "2026-10-12 18:40:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,312종목(최대 102일)",
+      "fmt": "미도달 2,311종목(최대 102일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2312,
+        "behind": 2311,
         "max_lag": 102,
         "latest": "2026-10-12",
         "total": 2470
@@ -140,15 +140,15 @@
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 41217,
+      "rows": 41248,
       "codes": 2078,
       "target": 2367,
       "first": "2024-07-05",
-      "last": "2026-10-08",
+      "last": "2026-10-12",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-08 · 41,217행",
+      "fmt": "최신 10-12 · 41,248행",
       "schedule": ""
     },
     {
@@ -245,15 +245,15 @@
       "table": "analyst_report",
       "label": "리포트",
       "tr": "웹크롤",
-      "rows": 1722,
-      "codes": 585,
+      "rows": 1789,
+      "codes": 591,
       "target": 2367,
       "first": "2026-08-03",
-      "last": "2026-10-08",
+      "last": "2026-10-12",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-08 · 1,722행",
+      "fmt": "최신 10-12 · 1,789행",
       "schedule": ""
     },
     {
@@ -320,15 +320,15 @@
       "table": "dart_event",
       "label": "공시이벤트",
       "tr": "DART",
-      "rows": 1343,
-      "codes": 579,
+      "rows": 1382,
+      "codes": 585,
       "target": 2367,
       "first": "2026-08-24",
-      "last": "2026-10-08",
+      "last": "2026-10-12",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-08 · 1,343행",
+      "fmt": "최신 10-12 · 1,382행",
       "schedule": ""
     }
   ]
