@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13 19:19:38",
+  "updated": "2026-10-13 19:24:39",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 17624,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 32
   },
   "collections": [
     {
@@ -230,11 +230,11 @@
       "table": "minute_ohlcv",
       "label": "분봉원본",
       "tr": "opt10080",
-      "rows": 9174918,
+      "rows": 9216006,
       "codes": 1276,
       "target": 2369,
       "first": "2025-08-01 09:00",
-      "last": "2026-10-13 19:15",
+      "last": "2026-10-13 19:21",
       "progress_pct": null,
       "busy": true,
       "state": "busy",
