@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 07:00",
+  "updated": "2026-10-14 07:01",
   "todayRealized": 0,
   "weekRealized": 76400,
   "realizedSeries": [
@@ -1426,6 +1426,10 @@
     {
       "d": "2026-10-13",
       "v": 0
+    },
+    {
+      "d": "2026-10-14",
+      "v": 0
     }
   ],
   "totalBuying": 53104136,
@@ -1440,7 +1444,7 @@
   "primary_account": "3699285811",
   "accounts": {
     "5101152910": {
-      "updated": "2026-10-14 07:00",
+      "updated": "2026-10-14 07:01",
       "todayRealized": 0,
       "weekRealized": 0,
       "realizedSeries": [],
@@ -1455,7 +1459,7 @@
       "cumRealized": 356174
     },
     "5931460210": {
-      "updated": "2026-10-14 07:00",
+      "updated": "2026-10-14 07:01",
       "todayRealized": 0,
       "weekRealized": 0,
       "realizedSeries": [],
@@ -1470,34 +1474,34 @@
       "cumRealized": 5171549
     },
     "6070547210": {
-      "updated": "2026-10-14 07:00",
-      "todayRealized": null,
-      "weekRealized": null,
+      "updated": "2026-10-14 07:01",
+      "todayRealized": 0,
+      "weekRealized": 0,
       "realizedSeries": [],
       "totalBuying": 0,
       "totalValue": 0,
       "totalProfit": 0,
       "profitRate": null,
-      "deposit": 0,
+      "deposit": 292,
       "balanceAsset": 0,
-      "monthRealized": null,
-      "yearRealized": null,
-      "cumRealized": null
+      "monthRealized": 0,
+      "yearRealized": 0,
+      "cumRealized": 788457
     },
     "6138743810": {
-      "updated": "2026-10-14 07:00",
-      "todayRealized": null,
-      "weekRealized": null,
+      "updated": "2026-10-14 07:01",
+      "todayRealized": 0,
+      "weekRealized": 0,
       "realizedSeries": [],
       "totalBuying": 0,
       "totalValue": 0,
       "totalProfit": 0,
       "profitRate": null,
-      "deposit": 0,
+      "deposit": 367,
       "balanceAsset": 0,
-      "monthRealized": null,
-      "yearRealized": null,
-      "cumRealized": null
+      "monthRealized": 0,
+      "yearRealized": 0,
+      "cumRealized": 1732214
     }
   }
 }
