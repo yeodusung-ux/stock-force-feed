@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 23:55:07",
+  "updated": "2026-10-15 00:00:08",
   "system": {
     "connected": true,
     "trading": true,
@@ -160,10 +160,10 @@
       "target": 2368,
       "first": "20250416",
       "last": "20261012",
-      "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 10-12 · 101행",
+      "progress_pct": 0,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
