@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 19:10:28",
+  "updated": "2026-10-14 19:15:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -140,7 +140,7 @@
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 41257,
+      "rows": 41276,
       "codes": 2078,
       "target": 2368,
       "first": "2024-07-05",
@@ -148,7 +148,7 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-13 · 41,257행",
+      "fmt": "최신 10-13 · 41,276행",
       "schedule": ""
     },
     {
@@ -320,15 +320,15 @@
       "table": "dart_event",
       "label": "공시이벤트",
       "tr": "DART",
-      "rows": 1413,
-      "codes": 588,
+      "rows": 1443,
+      "codes": 597,
       "target": 2368,
       "first": "2026-08-24",
-      "last": "2026-10-13",
+      "last": "2026-10-14",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-13 · 1,413행",
+      "fmt": "최신 10-14 · 1,443행",
       "schedule": ""
     }
   ]
