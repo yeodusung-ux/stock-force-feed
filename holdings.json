@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15 15:09",
+  "updated": "2026-10-15 15:30",
   "holdings": [
     {
       "code": "000270",
@@ -19,14 +19,16 @@
     {
       "code": "000810",
       "name": "삼성화재",
-      "shares": 1,
-      "avgPrice": 669000,
-      "buyLevel": 1,
+      "shares": 2,
+      "avgPrice": 624500,
+      "buyLevel": 2,
       "maxLevel": 7,
       "dps": 19500,
       "plan": {
-        "water": 568000,
-        "waterQty": 1
+        "water": 530000,
+        "waterQty": 2,
+        "trailArm": 750000,
+        "trailQty": 1
       }
     },
     {
