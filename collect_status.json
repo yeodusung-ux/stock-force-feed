@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16 08:45:04",
+  "updated": "2026-10-16 08:55:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -21,8 +21,8 @@
       "last": "2026-10-15",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "오늘완료",
+      "state": "idle",
+      "fmt": "2,541/2,369 (100%) · 최신 10-15 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -36,8 +36,8 @@
       "last": "2026-10-15",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "오늘완료",
+      "state": "idle",
+      "fmt": "2,541/2,369 (100%) · 최신 10-15 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -51,8 +51,8 @@
       "last": "2026-10-14",
       "progress_pct": 100,
       "busy": false,
-      "state": "done",
-      "fmt": "오늘완료",
+      "state": "idle",
+      "fmt": "2,540/2,369 (100%) · 최신 10-14 · 2일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -67,7 +67,7 @@
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "1,185,415봉·최신",
+      "fmt": "2,506/2,369 (100%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 107686331,
+      "rows": 107687498,
       "codes": 2472,
       "target": 2369,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,390종목(최대 106일)",
+      "fmt": "미도달 2,389종목(최대 106일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2390,
+        "behind": 2389,
         "max_lag": 106,
         "latest": "2026-10-16",
         "total": 2472
