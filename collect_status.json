@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16 10:40:05",
+  "updated": "2026-10-16 10:45:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,22 +7,22 @@
     "pid": 2768,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 0,
-      "codes": 0,
+      "rows": 29159052,
+      "codes": 2541,
       "target": 2369,
-      "first": "",
-      "last": "",
-      "progress_pct": 0,
+      "first": "2022-09-07",
+      "last": "2026-10-15",
+      "progress_pct": 100,
       "busy": false,
-      "state": "wait",
-      "fmt": "0/2,369 (0%)",
+      "state": "idle",
+      "fmt": "2,541/2,369 (100%) · 최신 10-15 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 429177,
-      "codes": 2540,
+      "rows": 0,
+      "codes": 0,
       "target": 2369,
-      "first": "2026-01-26",
-      "last": "2026-10-14",
-      "progress_pct": 100,
+      "first": "",
+      "last": "",
+      "progress_pct": 0,
       "busy": false,
-      "state": "idle",
-      "fmt": "2,540/2,369 (100%) · 최신 10-14 · 2일 지연",
+      "state": "wait",
+      "fmt": "0/2,369 (0%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 107688405,
+      "rows": 107688533,
       "codes": 2472,
       "target": 2369,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,384종목(최대 106일)",
+      "fmt": "미도달 2,383종목(최대 106일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2384,
+        "behind": 2383,
         "max_lag": 106,
         "latest": "2026-10-16",
         "total": 2472
