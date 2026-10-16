@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16 09:50:05",
+  "updated": "2026-10-16 09:55:06",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 2768,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 107687905,
+      "rows": 107688041,
       "codes": 2472,
       "target": 2369,
       "first": "2023-03-24",
@@ -189,11 +189,11 @@
       "codes": 4388,
       "target": 2369,
       "first": "2026-06-29",
-      "last": "2026-10-15",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "last": "2026-10-16",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "4,388/2,369 (100%)",
       "schedule": "10분 자동(장중·장후)"
     },
     {
