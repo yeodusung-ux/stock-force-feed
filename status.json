@@ -1,10 +1,10 @@
 {
- "ts": 1792109299,
- "ts_str": "2026-10-16 09:08:19",
+ "ts": 1792109601,
+ "ts_str": "2026-10-16 09:13:21",
  "kiwoom_alive": true,
  "kiwoom_connected": true,
  "trading": true,
- "last_real": 1792109284.2779925,
+ "last_real": 1792109585.806657,
  "collect_auto_on": true,
  "collect_sched": "17:00",
  "collect_done_today": false,
@@ -16,15 +16,15 @@
  "programs": {
   "main": {
    "alive": true,
-   "age": 15
+   "age": 16
   },
   "strategy": {
    "alive": true,
-   "age": 23
+   "age": 25
   },
   "analyzer": {
    "alive": true,
-   "age": 4
+   "age": 6
   },
   "watchdog": {
    "alive": true,
