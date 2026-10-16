@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17 07:10",
+  "updated": "2026-10-17 08:24",
   "strategies": [
     {
       "key": "morning",
@@ -216,7 +216,75 @@
           "amt_eok": 1653.06
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "cond": {
+        "editable": true,
+        "link": "",
+        "groups": [
+          {
+            "section": "morning",
+            "title": "매매조건",
+            "items": [
+              {
+                "key": "prev_up",
+                "label": "전일 등락률≥(%)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 15.0
+              },
+              {
+                "key": "today_down",
+                "label": "당일 시가 등락률≤(%)",
+                "type": "num",
+                "min": -100.0,
+                "max": 0.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": -15.0
+              }
+            ]
+          },
+          {
+            "section": "morning",
+            "title": "유동성·규모",
+            "items": [
+              {
+                "key": "min_avg_amt_eok",
+                "label": "20일평균 거래대금 ≥ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 5000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 10.0
+              },
+              {
+                "key": "min_mcap_eok",
+                "label": "시총 ≥ 억",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "max_mcap_eok",
+                "label": "시총 ≤ 억",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 10000
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "key": "closebet",
@@ -522,7 +590,143 @@
           "amt_eok": 3.71
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "cond": {
+        "editable": true,
+        "link": "",
+        "groups": [
+          {
+            "section": "closebet",
+            "title": "매매조건",
+            "items": [
+              {
+                "key": "min_rate",
+                "label": "등락률≥(%)",
+                "type": "num",
+                "min": -30.0,
+                "max": 30.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": -30.0
+              },
+              {
+                "key": "max_rate",
+                "label": "등락률≤(%)",
+                "type": "num",
+                "min": -30.0,
+                "max": 30.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 30.0
+              },
+              {
+                "key": "vol_ratio",
+                "label": "거래량 20일평균대비≥(%)",
+                "type": "num",
+                "min": 0.0,
+                "max": 3000.0,
+                "step": 10.0,
+                "dec": 0,
+                "value": 50
+              },
+              {
+                "key": "consec_days",
+                "label": "연속 하락 일수(0=미적용)",
+                "type": "num",
+                "min": 0,
+                "max": 10,
+                "step": 1,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "consec_rate",
+                "label": "연속 하락 등락률≤(%)",
+                "type": "num",
+                "min": -30.0,
+                "max": 0.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 0.0
+              },
+              {
+                "key": "late_base",
+                "label": "후반급등 기준시각",
+                "type": "choice",
+                "choices": [
+                  [
+                    "13:00",
+                    "1300"
+                  ],
+                  [
+                    "13:30",
+                    "1330"
+                  ],
+                  [
+                    "14:00",
+                    "1400"
+                  ],
+                  [
+                    "14:30",
+                    "1430"
+                  ],
+                  [
+                    "15:00",
+                    "1500"
+                  ]
+                ],
+                "value": "1400"
+              },
+              {
+                "key": "min_late_rise",
+                "label": "기준시각 이후 상승률≥(%) 0=미적용",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 10.0
+              }
+            ]
+          },
+          {
+            "section": "closebet",
+            "title": "유동성·규모",
+            "items": [
+              {
+                "key": "min_avg_amt_eok",
+                "label": "20일평균 거래대금 ≥ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 5000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 0.0
+              },
+              {
+                "key": "min_mcap_eok",
+                "label": "시총 ≥ 억",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "max_mcap_eok",
+                "label": "시총 ≤ 억",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "key": "oversold",
@@ -804,7 +1008,129 @@
           "ret": 2.16
         }
       ],
-      "tradable": false
+      "tradable": false,
+      "cond": {
+        "editable": true,
+        "link": "",
+        "groups": [
+          {
+            "section": "oversold",
+            "title": "조회조건",
+            "items": [
+              {
+                "key": "max_rate",
+                "label": "하락률 ≤ %",
+                "type": "num",
+                "min": -30.0,
+                "max": 0.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": -5.0
+              },
+              {
+                "key": "rsi_max",
+                "label": "RSI ≤",
+                "type": "num",
+                "min": 5,
+                "max": 90,
+                "step": 1,
+                "dec": 0,
+                "value": 30
+              },
+              {
+                "key": "disparity_max",
+                "label": "이격도 ≤",
+                "type": "num",
+                "min": 60,
+                "max": 120,
+                "step": 1,
+                "dec": 0,
+                "value": 92
+              },
+              {
+                "key": "min_vol_pct",
+                "label": "거래량 ≥ 20일평균 %",
+                "type": "num",
+                "min": 0,
+                "max": 3000,
+                "step": 50,
+                "dec": 0,
+                "value": 50
+              },
+              {
+                "key": "min_turnover_eok",
+                "label": "거래대금 ≥ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 5000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 10.0
+              },
+              {
+                "key": "market",
+                "label": "시장",
+                "type": "choice",
+                "choices": [
+                  [
+                    "전체",
+                    "000"
+                  ],
+                  [
+                    "코스피",
+                    "001"
+                  ],
+                  [
+                    "코스닥",
+                    "101"
+                  ]
+                ],
+                "value": "000"
+              },
+              {
+                "key": "sort",
+                "label": "정렬",
+                "type": "choice",
+                "choices": [
+                  [
+                    "하락률",
+                    "3"
+                  ],
+                  [
+                    "하락폭",
+                    "4"
+                  ],
+                  [
+                    "상승폭",
+                    "2"
+                  ]
+                ],
+                "value": "3"
+              },
+              {
+                "key": "candidate_pool",
+                "label": "후보 수",
+                "type": "num",
+                "min": 10,
+                "max": 200,
+                "step": 10,
+                "dec": 0,
+                "value": 50
+              },
+              {
+                "key": "top_n",
+                "label": "표시 상위",
+                "type": "num",
+                "min": 5,
+                "max": 100,
+                "step": 5,
+                "dec": 0,
+                "value": 20
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "key": "supply",
@@ -1126,7 +1452,115 @@
           "ret": 0.06
         }
       ],
-      "tradable": false
+      "tradable": false,
+      "cond": {
+        "editable": true,
+        "link": "",
+        "groups": [
+          {
+            "section": "supply",
+            "title": "조회조건",
+            "items": [
+              {
+                "key": "min_foreign_eok",
+                "label": "외국인 순매수 ≥ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 1000.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 1.0
+              },
+              {
+                "key": "min_inst_eok",
+                "label": "기관 순매수 ≥ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 1000.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 1.0
+              },
+              {
+                "key": "min_consec_days",
+                "label": "연속 동반매수 ≥ 일",
+                "type": "num",
+                "min": 0,
+                "max": 20,
+                "step": 1,
+                "dec": 0,
+                "value": 2
+              },
+              {
+                "key": "min_turnover_eok",
+                "label": "거래대금 ≥ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 5000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 0.0
+              },
+              {
+                "key": "market",
+                "label": "시장",
+                "type": "choice",
+                "choices": [
+                  [
+                    "전체",
+                    "000"
+                  ],
+                  [
+                    "코스피",
+                    "001"
+                  ],
+                  [
+                    "코스닥",
+                    "101"
+                  ]
+                ],
+                "value": "000"
+              },
+              {
+                "key": "incl_manage",
+                "label": "관리종목",
+                "type": "choice",
+                "choices": [
+                  [
+                    "미포함",
+                    "0"
+                  ],
+                  [
+                    "포함",
+                    "1"
+                  ]
+                ],
+                "value": "0"
+              },
+              {
+                "key": "candidate_pool",
+                "label": "후보 수",
+                "type": "num",
+                "min": 10,
+                "max": 200,
+                "step": 10,
+                "dec": 0,
+                "value": 60
+              },
+              {
+                "key": "top_n",
+                "label": "표시 상위",
+                "type": "num",
+                "min": 5,
+                "max": 100,
+                "step": 5,
+                "dec": 0,
+                "value": 30
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "key": "instodd",
@@ -1797,7 +2231,115 @@
         }
       ],
       "closed_stocks": [],
-      "tradable": false
+      "tradable": false,
+      "cond": {
+        "editable": true,
+        "link": "",
+        "groups": [
+          {
+            "section": "instodd",
+            "title": "조회조건",
+            "items": [
+              {
+                "key": "lookback_days",
+                "label": "분석 기간(일)",
+                "type": "num",
+                "min": 3,
+                "max": 60,
+                "step": 1,
+                "dec": 0,
+                "value": 10
+              },
+              {
+                "key": "min_buy_days",
+                "label": "매수일 ≥ 일",
+                "type": "num",
+                "min": 1,
+                "max": 60,
+                "step": 1,
+                "dec": 0,
+                "value": 6
+              },
+              {
+                "key": "avg_max_eok",
+                "label": "1일평균 ≤ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 0.1,
+                "dec": 1,
+                "value": 100.0
+              },
+              {
+                "key": "min_cum_eok",
+                "label": "누적 순매수 ≥ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 1000.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 50.0
+              },
+              {
+                "key": "min_turnover_eok",
+                "label": "거래대금 ≥ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 5000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 0.0
+              },
+              {
+                "key": "market",
+                "label": "시장",
+                "type": "choice",
+                "choices": [
+                  [
+                    "전체",
+                    "000"
+                  ],
+                  [
+                    "코스피",
+                    "001"
+                  ],
+                  [
+                    "코스닥",
+                    "101"
+                  ]
+                ],
+                "value": "000"
+              },
+              {
+                "key": "incl_manage",
+                "label": "관리종목",
+                "type": "choice",
+                "choices": [
+                  [
+                    "미포함",
+                    "0"
+                  ],
+                  [
+                    "포함",
+                    "1"
+                  ]
+                ],
+                "value": "0"
+              },
+              {
+                "key": "candidate_pool",
+                "label": "후보 수",
+                "type": "num",
+                "min": 10,
+                "max": 200,
+                "step": 10,
+                "dec": 0,
+                "value": 60
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "key": "force",
@@ -2231,7 +2773,12 @@
           "ret": 16.65
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "cond": {
+        "editable": false,
+        "link": "force_analysis",
+        "groups": []
+      }
     },
     {
       "key": "force_gate",
@@ -2521,7 +3068,69 @@
           "ret": 10.95
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "cond": {
+        "editable": true,
+        "link": "",
+        "groups": [
+          {
+            "section": "force_gate",
+            "title": "청산·상한",
+            "items": [
+              {
+                "key": "tp",
+                "label": "익절 % (도달 시 전량)",
+                "type": "num",
+                "min": 1.0,
+                "max": 100.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 10.0
+              },
+              {
+                "key": "sl",
+                "label": "손절 % (하락 폭)",
+                "type": "num",
+                "min": 1.0,
+                "max": 100.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 20.0
+              },
+              {
+                "key": "max_days",
+                "label": "최대 보유(거래일)",
+                "type": "num",
+                "min": 1,
+                "max": 250,
+                "step": 5,
+                "dec": 0,
+                "value": 60
+              },
+              {
+                "key": "min_amt_eok",
+                "label": "순매수 ≥ 억 (진입)",
+                "type": "num",
+                "min": 0.0,
+                "max": 1000.0,
+                "step": 5.0,
+                "dec": 1,
+                "value": 30.0
+              },
+              {
+                "key": "fresh_days",
+                "label": "신규포착 ≤ 거래일",
+                "type": "num",
+                "min": 1,
+                "max": 60,
+                "step": 1,
+                "dec": 0,
+                "value": 10
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "key": "surge_live",
@@ -2778,7 +3387,223 @@
           "ret": -4.74
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "cond": {
+        "editable": true,
+        "link": "",
+        "groups": [
+          {
+            "section": "surge",
+            "title": "진입 조회조건",
+            "items": [
+              {
+                "key": "min_rate",
+                "label": "상승률 ≥ %",
+                "type": "num",
+                "min": 0.0,
+                "max": 30.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 10.0
+              },
+              {
+                "key": "max_rate",
+                "label": "상승률 ≤ % (0=무제한)",
+                "type": "num",
+                "min": 0.0,
+                "max": 30.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 15.0
+              },
+              {
+                "key": "min_vol_pct",
+                "label": "거래량 ≥ 20일평균 %",
+                "type": "num",
+                "min": 0,
+                "max": 3000,
+                "step": 50,
+                "dec": 0,
+                "value": 300
+              },
+              {
+                "key": "min_turnover_eok",
+                "label": "거래대금 ≥ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 5000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 30.0
+              },
+              {
+                "key": "min_price",
+                "label": "현재가 ≥ 원",
+                "type": "num",
+                "min": 0,
+                "max": 500000,
+                "step": 500,
+                "dec": 0,
+                "value": 1000
+              },
+              {
+                "key": "min_mcap_eok",
+                "label": "시총 ≥ 억",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "max_mcap_eok",
+                "label": "시총 ≤ 억",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "max_consec_up",
+                "label": "연속 상승 ≤ 일 (0=무제한)",
+                "type": "num",
+                "min": 0,
+                "max": 20,
+                "step": 1,
+                "dec": 0,
+                "value": 2
+              },
+              {
+                "key": "market",
+                "label": "시장",
+                "type": "choice",
+                "choices": [
+                  [
+                    "전체",
+                    "000"
+                  ],
+                  [
+                    "코스피",
+                    "001"
+                  ],
+                  [
+                    "코스닥",
+                    "101"
+                  ]
+                ],
+                "value": "000"
+              },
+              {
+                "key": "top_n",
+                "label": "표시 상위",
+                "type": "num",
+                "min": 5,
+                "max": 100,
+                "step": 5,
+                "dec": 0,
+                "value": 30
+              }
+            ]
+          },
+          {
+            "section": "surge_live",
+            "title": "진입·청산",
+            "items": [
+              {
+                "key": "enabled",
+                "label": "동작",
+                "type": "choice",
+                "choices": [
+                  [
+                    "사용",
+                    "1"
+                  ],
+                  [
+                    "중지",
+                    "0"
+                  ]
+                ],
+                "value": "1"
+              },
+              {
+                "key": "entry_until",
+                "label": "진입 마감 시각",
+                "type": "choice",
+                "choices": [
+                  [
+                    "09:30",
+                    "09:30"
+                  ],
+                  [
+                    "10:00",
+                    "10:00"
+                  ],
+                  [
+                    "10:30",
+                    "10:30"
+                  ],
+                  [
+                    "11:00",
+                    "11:00"
+                  ],
+                  [
+                    "13:00",
+                    "13:00"
+                  ],
+                  [
+                    "제한 없음",
+                    ""
+                  ]
+                ],
+                "value": "10:00"
+              },
+              {
+                "key": "max_entries_per_day",
+                "label": "하루 최대 진입",
+                "type": "num",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "dec": 0,
+                "value": 10
+              },
+              {
+                "key": "entry_bullish_pct",
+                "label": "양봉 기준 % (시가 대비 ≥)",
+                "type": "num",
+                "min": 0.0,
+                "max": 10.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 1.0
+              },
+              {
+                "key": "init_stop_pct",
+                "label": "초기 손절 % (0=미적용)",
+                "type": "num",
+                "min": 0.0,
+                "max": 50.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 5.0
+              },
+              {
+                "key": "max_hold_days",
+                "label": "최대 보유(거래일, 1=당일청산)",
+                "type": "num",
+                "min": 0,
+                "max": 250,
+                "step": 1,
+                "dec": 0,
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "key": "bbdisp",
@@ -2996,7 +3821,39 @@
           "ret": 1.72
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "cond": {
+        "editable": true,
+        "link": "trade_config",
+        "groups": [
+          {
+            "section": "bbdisp",
+            "title": "규모",
+            "items": [
+              {
+                "key": "min_mcap_eok",
+                "label": "시총 ≥ 억 (0=조건 없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "max_mcap_eok",
+                "label": "시총 ≤ 억 (0=조건 없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "key": "q_value",
