@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17 19:53",
+  "updated": "2026-10-17 20:27",
   "strategies": [
     {
       "key": "morning",
@@ -3931,6 +3931,124 @@
         "rule": null,
         "excluded": 0,
         "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영"
+      }
+    },
+    {
+      "key": "bbbreak",
+      "name": "📈 과매수 진입",
+      "desc": "상단 동시 상향돌파 익일 시가 → ⚡ 청산·시간손절",
+      "n": 0,
+      "open": 0,
+      "win_rate": 0.0,
+      "avg_ret": 0.0,
+      "cum_ret": 0.0,
+      "pf": 0.0,
+      "buy_rule": "볼린저 상단과 이격도선 상단을 처음 함께 상향 돌파한 유동 종목을 다음 거래일 시가에 매수",
+      "sell_rule": "고점 수익 일부 반납 시 전량 청산 · N거래일 미청산 시 종가 청산",
+      "open_stocks": [],
+      "closed_stocks": [],
+      "tradable": true,
+      "cond": {
+        "editable": true,
+        "link": "",
+        "groups": [
+          {
+            "section": "bbbreak",
+            "title": "조건",
+            "items": [
+              {
+                "key": "bb_mult",
+                "label": "볼린저 배수(기본, +변동률/10)",
+                "type": "num",
+                "min": 0.5,
+                "max": 5.0,
+                "step": 0.1,
+                "dec": 1,
+                "value": 2.5
+              },
+              {
+                "key": "ma_n",
+                "label": "이격도 이평(일)",
+                "type": "num",
+                "min": 10,
+                "max": 120,
+                "step": 5,
+                "dec": 0,
+                "value": 60
+              },
+              {
+                "key": "disp_extra",
+                "label": "이격 상단 추가(%)",
+                "type": "num",
+                "min": 0.0,
+                "max": 20.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 3.0
+              },
+              {
+                "key": "disp_slope",
+                "label": "이격 상단 변동률 계수",
+                "type": "num",
+                "min": 0.0,
+                "max": 20.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 6.0
+              },
+              {
+                "key": "fast_profit",
+                "label": "⚡ 발동 수익률 %",
+                "type": "num",
+                "min": 0.5,
+                "max": 30.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 2.0
+              },
+              {
+                "key": "fast_giveback",
+                "label": "⚡ 반납률 %",
+                "type": "num",
+                "min": 5.0,
+                "max": 90.0,
+                "step": 5.0,
+                "dec": 1,
+                "value": 20.0
+              },
+              {
+                "key": "max_hold_days",
+                "label": "시간 손절(거래일, 0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 120,
+                "step": 1,
+                "dec": 0,
+                "value": 10
+              },
+              {
+                "key": "min_mcap_eok",
+                "label": "시총 ≥ 억 (0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "max_mcap_eok",
+                "label": "시총 ≤ 억 (0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              }
+            ]
+          }
+        ]
       }
     },
     {
