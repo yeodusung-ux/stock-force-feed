@@ -5,16 +5,66 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 18,
+      "n": 41,
       "open": 0,
-      "win_rate": 72.2,
-      "avg_ret": 6.59,
-      "cum_ret": 118.7,
-      "pf": 9.48,
+      "win_rate": 56.1,
+      "avg_ret": 2.52,
+      "cum_ret": 103.2,
+      "pf": 2.4,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
-      "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기) · 일봉 없는 23건 제외",
+      "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
+        {
+          "date": "20260918",
+          "code": "000950",
+          "name": "전방",
+          "buy": 30650,
+          "sell": 30150,
+          "ret": -1.63,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260902",
+          "code": "179900",
+          "name": "유티아이",
+          "buy": 2350,
+          "sell": 2175,
+          "ret": -7.45,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260805",
+          "code": "347850",
+          "name": "디앤디파마텍",
+          "buy": 54000,
+          "sell": 53100,
+          "ret": -1.67,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260707",
+          "code": "382900",
+          "name": "범한퓨얼셀",
+          "buy": 20650,
+          "sell": 19250,
+          "ret": -6.78,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260629",
+          "code": "299660",
+          "name": "셀리드",
+          "buy": 1950,
+          "sell": 1950,
+          "ret": 0.0,
+          "reason": "orig",
+          "levels": 1
+        },
         {
           "date": "20260608",
           "code": "006920",
@@ -22,6 +72,46 @@
           "buy": 3515,
           "sell": 3750,
           "ret": 6.69,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260608",
+          "code": "389650",
+          "name": "넥스트바이오메디컬",
+          "buy": 39900,
+          "sell": 39500,
+          "ret": -1.0,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260608",
+          "code": "457600",
+          "name": "벡트",
+          "buy": 1500,
+          "sell": 1569,
+          "ret": 4.6,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260608",
+          "code": "488280",
+          "name": "에스투더블유",
+          "buy": 16010,
+          "sell": 15360,
+          "ret": -4.06,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260604",
+          "code": "010660",
+          "name": "화천기계",
+          "buy": 3335,
+          "sell": 3140,
+          "ret": -5.85,
           "reason": "orig",
           "levels": 1
         },
@@ -47,11 +137,31 @@
         },
         {
           "date": "20260310",
+          "code": "000440",
+          "name": "중앙에너비스",
+          "buy": 27450,
+          "sell": 29350,
+          "ret": 6.92,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260310",
           "code": "117580",
           "name": "대성에너지",
           "buy": 12120,
           "sell": 12250,
           "ret": 1.07,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260306",
+          "code": "300120",
+          "name": "라온피플",
+          "buy": 6425,
+          "sell": 5445,
+          "ret": -15.25,
           "reason": "orig",
           "levels": 1
         },
@@ -146,12 +256,42 @@
           "levels": 1
         },
         {
+          "date": "20251229",
+          "code": "012210",
+          "name": "삼미금속",
+          "buy": 13230,
+          "sell": 13230,
+          "ret": 0.0,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
           "date": "20251212",
           "code": "000810",
           "name": "삼성화재",
           "buy": 507000,
           "sell": 489500,
           "ret": -3.45,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20251128",
+          "code": "225190",
+          "name": "LK삼양",
+          "buy": 6250,
+          "sell": 6325,
+          "ret": 1.2,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20251110",
+          "code": "082270",
+          "name": "젬백스",
+          "buy": 42200,
+          "sell": 38200,
+          "ret": -9.48,
           "reason": "orig",
           "levels": 1
         },
@@ -166,32 +306,12 @@
           "levels": 1
         },
         {
-          "date": "20250502",
-          "code": "002630",
-          "name": "오리엔트바이오",
-          "buy": 2620,
-          "sell": 2754,
-          "ret": 5.11,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20250502",
-          "code": "042940",
-          "name": "상지건설",
-          "buy": 24550,
-          "sell": 26250,
-          "ret": 6.92,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20250502",
-          "code": "065500",
-          "name": "오리엔트정공",
-          "buy": 9340,
-          "sell": 9860,
-          "ret": 5.57,
+          "date": "20250624",
+          "code": "003280",
+          "name": "흥아해운",
+          "buy": 1734,
+          "sell": 1783,
+          "ret": 2.83,
           "reason": "orig",
           "levels": 1
         }
@@ -269,7 +389,7 @@
         "fast_trail": true,
         "add_buy": true,
         "rule": null,
-        "excluded": 23,
+        "excluded": 0,
         "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영"
       }
     },
