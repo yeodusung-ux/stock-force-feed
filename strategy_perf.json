@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18 08:06",
+  "updated": "2026-10-18 08:14",
   "strategies": [
     {
       "key": "morning",
@@ -3920,6 +3920,26 @@
                 "step": 500,
                 "dec": 0,
                 "value": 0
+              },
+              {
+                "key": "min_opincome_eok",
+                "label": "영업이익 ≥ 억 (0=없음)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 0.0
+              },
+              {
+                "key": "min_opmargin_pct",
+                "label": "영업이익률 ≥ % (0=없음)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 1.0,
+                "dec": 1,
+                "value": 0.0
               }
             ]
           }
@@ -4276,6 +4296,26 @@
                 "step": 500,
                 "dec": 0,
                 "value": 0
+              },
+              {
+                "key": "min_opincome_eok",
+                "label": "영업이익 ≥ 억 (0=없음)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 0.0
+              },
+              {
+                "key": "min_opmargin_pct",
+                "label": "영업이익률 ≥ % (0=없음)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 1.0,
+                "dec": 1,
+                "value": 0.0
               }
             ]
           }
