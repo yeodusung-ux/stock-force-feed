@@ -5,26 +5,16 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 52,
+      "n": 38,
       "open": 0,
-      "win_rate": 46.2,
-      "avg_ret": 0.68,
-      "cum_ret": 35.5,
-      "pf": 1.22,
+      "win_rate": 47.4,
+      "avg_ret": 1.02,
+      "cum_ret": 38.6,
+      "pf": 1.31,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
       "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
-        {
-          "date": "20261014",
-          "code": "005820",
-          "name": "원림",
-          "buy": 15070,
-          "sell": 14380,
-          "ret": -4.58,
-          "reason": "orig",
-          "levels": 1
-        },
         {
           "date": "20261012",
           "code": "006980",
@@ -36,52 +26,12 @@
           "levels": 1
         },
         {
-          "date": "20260918",
-          "code": "000950",
-          "name": "전방",
-          "buy": 30650,
-          "sell": 30150,
-          "ret": -1.63,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260915",
-          "code": "290090",
-          "name": "트윔",
-          "buy": 4500,
-          "sell": 4905,
-          "ret": 9.0,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260902",
-          "code": "179900",
-          "name": "유티아이",
-          "buy": 2350,
-          "sell": 2175,
-          "ret": -7.45,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
           "date": "20260707",
           "code": "003200",
           "name": "일신방직",
           "buy": 11100,
           "sell": 11220,
           "ret": 1.08,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260707",
-          "code": "228340",
-          "name": "동양파일",
-          "buy": 3330,
-          "sell": 3425,
-          "ret": 2.85,
           "reason": "orig",
           "levels": 1
         },
@@ -186,16 +136,6 @@
           "levels": 1
         },
         {
-          "date": "20260408",
-          "code": "004650",
-          "name": "창해에탄올",
-          "buy": 10540,
-          "sell": 10460,
-          "ret": -0.76,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
           "date": "20260402",
           "code": "062970",
           "name": "한국첨단소재",
@@ -242,16 +182,6 @@
           "buy": 2475,
           "sell": 2410,
           "ret": -2.63,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260324",
-          "code": "003280",
-          "name": "흥아해운",
-          "buy": 3100,
-          "sell": 3455,
-          "ret": 11.45,
           "reason": "orig",
           "levels": 1
         },
@@ -312,6 +242,76 @@
           "buy": 4640,
           "sell": 4910,
           "ret": 5.82,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260305",
+          "code": "024060",
+          "name": "흥구석유",
+          "buy": 25850,
+          "sell": 32700,
+          "ret": 26.5,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260305",
+          "code": "053050",
+          "name": "지에스이",
+          "buy": 3130,
+          "sell": 3535,
+          "ret": 12.94,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260305",
+          "code": "117580",
+          "name": "대성에너지",
+          "buy": 10450,
+          "sell": 12700,
+          "ret": 21.53,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260213",
+          "code": "240810",
+          "name": "원익IPS",
+          "buy": 111600,
+          "sell": 109200,
+          "ret": -2.15,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260206",
+          "code": "115530",
+          "name": "씨엔플러스",
+          "buy": 3360,
+          "sell": 3250,
+          "ret": -3.27,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20251212",
+          "code": "000810",
+          "name": "삼성화재",
+          "buy": 507000,
+          "sell": 489500,
+          "ret": -3.45,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20250715",
+          "code": "036630",
+          "name": "세종텔레콤",
+          "buy": 6389,
+          "sell": 6111,
+          "ret": -4.35,
           "reason": "orig",
           "levels": 1
         }
