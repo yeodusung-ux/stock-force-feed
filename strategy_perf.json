@@ -5,26 +5,16 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 76,
+      "n": 52,
       "open": 0,
-      "win_rate": 50.0,
-      "avg_ret": 0.53,
-      "cum_ret": 40.6,
-      "pf": 1.19,
+      "win_rate": 46.2,
+      "avg_ret": 0.68,
+      "cum_ret": 35.5,
+      "pf": 1.22,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
       "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
-        {
-          "date": "20261015",
-          "code": "060900",
-          "name": "에이전트AI",
-          "buy": 1506,
-          "sell": 1590,
-          "ret": 5.58,
-          "reason": "orig",
-          "levels": 1
-        },
         {
           "date": "20261014",
           "code": "005820",
@@ -32,16 +22,6 @@
           "buy": 15070,
           "sell": 14380,
           "ret": -4.58,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261012",
-          "code": "003830",
-          "name": "대한화섬",
-          "buy": 107200,
-          "sell": 108200,
-          "ret": 0.93,
           "reason": "orig",
           "levels": 1
         },
@@ -66,26 +46,6 @@
           "levels": 1
         },
         {
-          "date": "20260916",
-          "code": "033560",
-          "name": "블루콤",
-          "buy": 4500,
-          "sell": 4730,
-          "ret": 5.11,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260915",
-          "code": "002420",
-          "name": "우양피앤엘",
-          "buy": 5560,
-          "sell": 5620,
-          "ret": 1.08,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
           "date": "20260915",
           "code": "290090",
           "name": "트윔",
@@ -106,26 +66,6 @@
           "levels": 1
         },
         {
-          "date": "20260818",
-          "code": "226340",
-          "name": "본느",
-          "buy": 6500,
-          "sell": 5720,
-          "ret": -12.0,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260805",
-          "code": "347850",
-          "name": "디앤디파마텍",
-          "buy": 54000,
-          "sell": 53100,
-          "ret": -1.67,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
           "date": "20260707",
           "code": "003200",
           "name": "일신방직",
@@ -142,16 +82,6 @@
           "buy": 3330,
           "sell": 3425,
           "ret": 2.85,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260707",
-          "code": "382900",
-          "name": "범한퓨얼셀",
-          "buy": 20650,
-          "sell": 19250,
-          "ret": -6.78,
           "reason": "orig",
           "levels": 1
         },
@@ -196,16 +126,6 @@
           "levels": 1
         },
         {
-          "date": "20260629",
-          "code": "299660",
-          "name": "셀리드",
-          "buy": 1950,
-          "sell": 1950,
-          "ret": 0.0,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
           "date": "20260615",
           "code": "051600",
           "name": "한전KPS",
@@ -232,46 +152,6 @@
           "buy": 3515,
           "sell": 3750,
           "ret": 6.69,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260608",
-          "code": "389650",
-          "name": "넥스트바이오메디컬",
-          "buy": 39900,
-          "sell": 39500,
-          "ret": -1.0,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260608",
-          "code": "457600",
-          "name": "벡트",
-          "buy": 1500,
-          "sell": 1569,
-          "ret": 4.6,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260608",
-          "code": "488280",
-          "name": "에스투더블유",
-          "buy": 16010,
-          "sell": 15360,
-          "ret": -4.06,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260604",
-          "code": "010660",
-          "name": "화천기계",
-          "buy": 3335,
-          "sell": 3140,
-          "ret": -5.85,
           "reason": "orig",
           "levels": 1
         },
@@ -312,6 +192,126 @@
           "buy": 10540,
           "sell": 10460,
           "ret": -0.76,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260402",
+          "code": "062970",
+          "name": "한국첨단소재",
+          "buy": 5082,
+          "sell": 5502,
+          "ret": 8.26,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260401",
+          "code": "001780",
+          "name": "알루코",
+          "buy": 2370,
+          "sell": 2415,
+          "ret": 1.9,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260401",
+          "code": "006110",
+          "name": "삼아알미늄",
+          "buy": 35700,
+          "sell": 34400,
+          "ret": -3.64,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260401",
+          "code": "018470",
+          "name": "조일알미늄",
+          "buy": 7000,
+          "sell": 6995,
+          "ret": -0.07,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260327",
+          "code": "226340",
+          "name": "본느",
+          "buy": 2475,
+          "sell": 2410,
+          "ret": -2.63,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260324",
+          "code": "003280",
+          "name": "흥아해운",
+          "buy": 3100,
+          "sell": 3455,
+          "ret": 11.45,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260310",
+          "code": "117580",
+          "name": "대성에너지",
+          "buy": 12120,
+          "sell": 12250,
+          "ret": 1.07,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260306",
+          "code": "307180",
+          "name": "아이엘",
+          "buy": 5350,
+          "sell": 5290,
+          "ret": -1.12,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260305",
+          "code": "000440",
+          "name": "중앙에너비스",
+          "buy": 26100,
+          "sell": 30850,
+          "ret": 18.2,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260305",
+          "code": "003280",
+          "name": "흥아해운",
+          "buy": 2290,
+          "sell": 2815,
+          "ret": 22.93,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260305",
+          "code": "005860",
+          "name": "한일사료",
+          "buy": 3650,
+          "sell": 4150,
+          "ret": 13.7,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260305",
+          "code": "014530",
+          "name": "극동유화",
+          "buy": 4640,
+          "sell": 4910,
+          "ret": 5.82,
           "reason": "orig",
           "levels": 1
         }
