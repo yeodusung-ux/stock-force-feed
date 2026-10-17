@@ -5,96 +5,16 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 38,
+      "n": 18,
       "open": 0,
-      "win_rate": 47.4,
-      "avg_ret": 1.02,
-      "cum_ret": 38.6,
-      "pf": 1.31,
+      "win_rate": 72.2,
+      "avg_ret": 6.59,
+      "cum_ret": 118.7,
+      "pf": 9.48,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
       "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
-        {
-          "date": "20261012",
-          "code": "006980",
-          "name": "우성",
-          "buy": 18740,
-          "sell": 16990,
-          "ret": -9.34,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260707",
-          "code": "003200",
-          "name": "일신방직",
-          "buy": 11100,
-          "sell": 11220,
-          "ret": 1.08,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260702",
-          "code": "111710",
-          "name": "남화산업",
-          "buy": 6310,
-          "sell": 5330,
-          "ret": -15.53,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260702",
-          "code": "322780",
-          "name": "코퍼스코리아",
-          "buy": 2400,
-          "sell": 1996,
-          "ret": -16.83,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260702",
-          "code": "357580",
-          "name": "아모센스",
-          "buy": 6860,
-          "sell": 6910,
-          "ret": 0.73,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260630",
-          "code": "394420",
-          "name": "리센스메디컬",
-          "buy": 17480,
-          "sell": 16220,
-          "ret": -7.21,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260615",
-          "code": "051600",
-          "name": "한전KPS",
-          "buy": 56800,
-          "sell": 54000,
-          "ret": -4.93,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260615",
-          "code": "140860",
-          "name": "파크시스템스",
-          "buy": 293000,
-          "sell": 258500,
-          "ret": -11.77,
-          "reason": "orig",
-          "levels": 1
-        },
         {
           "date": "20260608",
           "code": "006920",
@@ -102,26 +22,6 @@
           "buy": 3515,
           "sell": 3750,
           "ret": 6.69,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260604",
-          "code": "090360",
-          "name": "로보스타",
-          "buy": 137800,
-          "sell": 139200,
-          "ret": 1.02,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260602",
-          "code": "018260",
-          "name": "삼성에스디에스",
-          "buy": 310500,
-          "sell": 300500,
-          "ret": -3.22,
           "reason": "orig",
           "levels": 1
         },
@@ -142,46 +42,6 @@
           "buy": 5082,
           "sell": 5502,
           "ret": 8.26,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260401",
-          "code": "001780",
-          "name": "알루코",
-          "buy": 2370,
-          "sell": 2415,
-          "ret": 1.9,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260401",
-          "code": "006110",
-          "name": "삼아알미늄",
-          "buy": 35700,
-          "sell": 34400,
-          "ret": -3.64,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260401",
-          "code": "018470",
-          "name": "조일알미늄",
-          "buy": 7000,
-          "sell": 6995,
-          "ret": -0.07,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260327",
-          "code": "226340",
-          "name": "본느",
-          "buy": 2475,
-          "sell": 2410,
-          "ret": -2.63,
           "reason": "orig",
           "levels": 1
         },
@@ -247,16 +107,6 @@
         },
         {
           "date": "20260305",
-          "code": "024060",
-          "name": "흥구석유",
-          "buy": 25850,
-          "sell": 32700,
-          "ret": 26.5,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260305",
           "code": "053050",
           "name": "지에스이",
           "buy": 3130,
@@ -306,12 +156,42 @@
           "levels": 1
         },
         {
-          "date": "20250715",
-          "code": "036630",
-          "name": "세종텔레콤",
-          "buy": 6389,
-          "sell": 6111,
-          "ret": -4.35,
+          "date": "20250624",
+          "code": "000440",
+          "name": "중앙에너비스",
+          "buy": 17760,
+          "sell": 17050,
+          "ret": -4.0,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20250502",
+          "code": "002630",
+          "name": "오리엔트바이오",
+          "buy": 2620,
+          "sell": 2754,
+          "ret": 5.11,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20250502",
+          "code": "042940",
+          "name": "상지건설",
+          "buy": 24550,
+          "sell": 26250,
+          "ret": 6.92,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20250502",
+          "code": "065500",
+          "name": "오리엔트정공",
+          "buy": 9340,
+          "sell": 9860,
+          "ret": 5.57,
           "reason": "orig",
           "levels": 1
         }
