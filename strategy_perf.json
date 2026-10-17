@@ -190,6 +190,164 @@
             ]
           }
         ]
+      },
+      "overlay": {
+        "fast_trail": true,
+        "add_buy": true,
+        "basis": "daily_hl",
+        "setup": {
+          "fast_ts_profit": 5.0,
+          "fast_ts_giveback": 50.0,
+          "buy_profit_rate": -15.0,
+          "add_buy_pct": 100,
+          "max_buy_level": 7,
+          "max_position_amount": 15000000,
+          "buy_amount": 250000,
+          "ts_profit": 20.0,
+          "stop_rate": 20.0
+        },
+        "n": 12,
+        "win_rate": 83.3,
+        "avg_ret": 13.18,
+        "cum_ret": 158.2,
+        "pf": 31.9,
+        "open": 0,
+        "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영",
+        "rule": null,
+        "rows": [
+          {
+            "code": "307180",
+            "date": "20260306",
+            "buy": 5350,
+            "sell": 5290,
+            "ret": -1.12,
+            "exit_date": "2026-03-06",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "000440",
+            "date": "20260305",
+            "buy": 26100,
+            "sell": 30850,
+            "ret": 18.2,
+            "exit_date": "2026-03-05",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "002680",
+            "date": "20260305",
+            "buy": 3310,
+            "sell": 4325,
+            "ret": 30.66,
+            "exit_date": "2026-03-05",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "003280",
+            "date": "20260305",
+            "buy": 2290,
+            "sell": 2815,
+            "ret": 22.93,
+            "exit_date": "2026-03-05",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "014530",
+            "date": "20260305",
+            "buy": 4640,
+            "sell": 4910,
+            "ret": 5.82,
+            "exit_date": "2026-03-05",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "053050",
+            "date": "20260305",
+            "buy": 3130,
+            "sell": 3535,
+            "ret": 12.94,
+            "exit_date": "2026-03-05",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "117580",
+            "date": "20260305",
+            "buy": 10450,
+            "sell": 12700,
+            "ret": 21.53,
+            "exit_date": "2026-03-05",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "308100",
+            "date": "20260105",
+            "buy": 1381,
+            "sell": 1718,
+            "ret": 24.4,
+            "exit_date": "2026-01-05",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "000440",
+            "date": "20250624",
+            "buy": 17760,
+            "sell": 17050,
+            "ret": -4.0,
+            "exit_date": "2025-06-24",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "002630",
+            "date": "20250502",
+            "buy": 2620,
+            "sell": 2754,
+            "ret": 5.11,
+            "exit_date": "2025-05-02",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "042940",
+            "date": "20250502",
+            "buy": 24550,
+            "sell": 26250,
+            "ret": 6.92,
+            "exit_date": "2025-05-02",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "308100",
+            "date": "20250502",
+            "buy": 3247,
+            "sell": 3728,
+            "ret": 14.81,
+            "exit_date": "2025-05-02",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          }
+        ]
       }
     },
     {
@@ -3175,6 +3333,355 @@
             ]
           }
         ]
+      },
+      "overlay": {
+        "fast_trail": true,
+        "add_buy": true,
+        "basis": "daily_hl",
+        "setup": {
+          "fast_ts_profit": 5.0,
+          "fast_ts_giveback": 50.0,
+          "buy_profit_rate": -15.0,
+          "add_buy_pct": 100,
+          "max_buy_level": 7,
+          "max_position_amount": 15000000,
+          "buy_amount": 250000,
+          "ts_profit": 20.0,
+          "stop_rate": 20.0
+        },
+        "n": 28,
+        "win_rate": 92.9,
+        "avg_ret": 35.53,
+        "cum_ret": 994.7,
+        "pf": 80.14,
+        "open": 2,
+        "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영 · 전략 규칙은 현재값(익절 +10% · 손절 −20% · 60일, 평단·종가 기준)으로 재판정",
+        "rule": {
+          "tp": 10.0,
+          "sl": 20.0,
+          "max_days": 60
+        },
+        "rows": [
+          {
+            "code": "109860",
+            "date": "2026-09-18",
+            "buy": 7490,
+            "sell": null,
+            "ret": -2.54,
+            "exit_date": "",
+            "levels": 1,
+            "reason": "open",
+            "open": true
+          },
+          {
+            "code": "013810",
+            "date": "2026-09-14",
+            "buy": 1470,
+            "sell": null,
+            "ret": -1.19,
+            "exit_date": "",
+            "levels": 2,
+            "reason": "open",
+            "open": true
+          },
+          {
+            "code": "008420",
+            "date": "20261012",
+            "buy": 2180,
+            "sell": 2202,
+            "ret": 1.0,
+            "exit_date": "2026-08-10",
+            "levels": 1,
+            "reason": "gap",
+            "open": false
+          },
+          {
+            "code": "013990",
+            "date": "20261001",
+            "buy": 4670,
+            "sell": 4803,
+            "ret": 2.85,
+            "exit_date": "2026-09-15",
+            "levels": 1,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "109610",
+            "date": "2026-09-18",
+            "buy": 1892,
+            "sell": 1911,
+            "ret": 1.0,
+            "exit_date": "2026-09-28",
+            "levels": 1,
+            "reason": "gap",
+            "open": false
+          },
+          {
+            "code": "023450",
+            "date": "20260824",
+            "buy": 27900,
+            "sell": 28661,
+            "ret": 2.73,
+            "exit_date": "2026-07-16",
+            "levels": 1,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "950170",
+            "date": "20260810",
+            "buy": 4820,
+            "sell": 4971,
+            "ret": 3.13,
+            "exit_date": "2026-07-28",
+            "levels": 1,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "004920",
+            "date": "20260708",
+            "buy": 1099,
+            "sell": 10740,
+            "ret": 877.25,
+            "exit_date": "2026-05-13",
+            "levels": 1,
+            "reason": "tp",
+            "open": false
+          },
+          {
+            "code": "068790",
+            "date": "20260706",
+            "buy": 5400,
+            "sell": 5693,
+            "ret": 5.42,
+            "exit_date": "2026-07-06",
+            "levels": 1,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "032850",
+            "date": "20260623",
+            "buy": 3853,
+            "sell": 4110,
+            "ret": 6.68,
+            "exit_date": "2026-08-18",
+            "levels": 3,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "068790",
+            "date": "20260619",
+            "buy": 4901,
+            "sell": 5300,
+            "ret": 8.15,
+            "exit_date": "2026-06-30",
+            "levels": 3,
+            "reason": "gap",
+            "open": false
+          },
+          {
+            "code": "003780",
+            "date": "20260611",
+            "buy": 4785,
+            "sell": 5180,
+            "ret": 8.25,
+            "exit_date": "2026-06-11",
+            "levels": 1,
+            "reason": "gap",
+            "open": false
+          },
+          {
+            "code": "080420",
+            "date": "20260608",
+            "buy": 1468,
+            "sell": 1506,
+            "ret": 2.61,
+            "exit_date": "2026-06-26",
+            "levels": 3,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "008470",
+            "date": "20260601",
+            "buy": 1692,
+            "sell": 1709,
+            "ret": 1.0,
+            "exit_date": "2026-06-25",
+            "levels": 3,
+            "reason": "gap",
+            "open": false
+          },
+          {
+            "code": "120240",
+            "date": "20260508",
+            "buy": 13000,
+            "sell": 13561,
+            "ret": 4.31,
+            "exit_date": "2026-02-26",
+            "levels": 1,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "050960",
+            "date": "20260402",
+            "buy": 9740,
+            "sell": 8640,
+            "ret": -11.29,
+            "exit_date": "2026-04-02",
+            "levels": 1,
+            "reason": "hold",
+            "open": false
+          },
+          {
+            "code": "120240",
+            "date": "20260325",
+            "buy": 13320,
+            "sell": 13655,
+            "ret": 2.52,
+            "exit_date": "2026-02-25",
+            "levels": 1,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "191420",
+            "date": "20251217",
+            "buy": 16921,
+            "sell": 17847,
+            "ret": 5.47,
+            "exit_date": "2025-12-04",
+            "levels": 2,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "047820",
+            "date": "20251208",
+            "buy": 4708,
+            "sell": 4880,
+            "ret": 3.66,
+            "exit_date": "2026-01-05",
+            "levels": 3,
+            "reason": "gap",
+            "open": false
+          },
+          {
+            "code": "050120",
+            "date": "20251113",
+            "buy": 2840,
+            "sell": 2965,
+            "ret": 4.4,
+            "exit_date": "2025-10-29",
+            "levels": 1,
+            "reason": "gap",
+            "open": false
+          },
+          {
+            "code": "115310",
+            "date": "20251022",
+            "buy": 12640,
+            "sell": 13035,
+            "ret": 3.13,
+            "exit_date": "2025-10-16",
+            "levels": 1,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "285490",
+            "date": "20251013",
+            "buy": 20150,
+            "sell": 22700,
+            "ret": 12.66,
+            "exit_date": "2025-10-13",
+            "levels": 1,
+            "reason": "tp",
+            "open": false
+          },
+          {
+            "code": "063440",
+            "date": "20251002",
+            "buy": 1554,
+            "sell": 1610,
+            "ret": 3.62,
+            "exit_date": "2025-08-19",
+            "levels": 1,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "063440",
+            "date": "20250827",
+            "buy": 1522,
+            "sell": 1569,
+            "ret": 3.06,
+            "exit_date": "2025-06-13",
+            "levels": 1,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "285490",
+            "date": "20250814",
+            "buy": 19030,
+            "sell": 20250,
+            "ret": 6.41,
+            "exit_date": "2025-07-17",
+            "levels": 1,
+            "reason": "gap",
+            "open": false
+          },
+          {
+            "code": "008370",
+            "date": "20250605",
+            "buy": 3890,
+            "sell": 4071,
+            "ret": 4.64,
+            "exit_date": "2025-05-20",
+            "levels": 1,
+            "reason": "giveback",
+            "open": false
+          },
+          {
+            "code": "023600",
+            "date": "20250604",
+            "buy": 8270,
+            "sell": 9180,
+            "ret": 11.0,
+            "exit_date": "2025-06-04",
+            "levels": 1,
+            "reason": "tp",
+            "open": false
+          },
+          {
+            "code": "003100",
+            "date": "20250602",
+            "buy": 18710,
+            "sell": 20650,
+            "ret": 10.37,
+            "exit_date": "2025-06-02",
+            "levels": 1,
+            "reason": "tp",
+            "open": false
+          },
+          {
+            "code": "115310",
+            "date": "20250520",
+            "buy": 6430,
+            "sell": 7200,
+            "ret": 11.98,
+            "exit_date": "2025-05-20",
+            "levels": 1,
+            "reason": "tp",
+            "open": false
+          }
+        ]
       }
     },
     {
@@ -3896,6 +4403,307 @@
                 "value": 0
               }
             ]
+          }
+        ]
+      },
+      "overlay": {
+        "fast_trail": true,
+        "add_buy": true,
+        "basis": "daily_hl",
+        "setup": {
+          "fast_ts_profit": 5.0,
+          "fast_ts_giveback": 50.0,
+          "buy_profit_rate": -15.0,
+          "add_buy_pct": 100,
+          "max_buy_level": 7,
+          "max_position_amount": 15000000,
+          "buy_amount": 250000,
+          "ts_profit": 20.0,
+          "stop_rate": 20.0
+        },
+        "n": 22,
+        "win_rate": 100.0,
+        "avg_ret": 1.84,
+        "cum_ret": 40.4,
+        "pf": 999.0,
+        "open": 3,
+        "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영",
+        "rule": null,
+        "rows": [
+          {
+            "code": "039490",
+            "date": "2026-10-15",
+            "buy": 223000,
+            "sell": null,
+            "ret": -0.45,
+            "exit_date": "",
+            "levels": 1,
+            "reason": "open",
+            "open": true
+          },
+          {
+            "code": "267260",
+            "date": "2026-10-14",
+            "buy": 517075,
+            "sell": null,
+            "ret": -0.79,
+            "exit_date": "",
+            "levels": 2,
+            "reason": "open",
+            "open": true
+          },
+          {
+            "code": "138360",
+            "date": "2026-10-08",
+            "buy": 1325,
+            "sell": null,
+            "ret": -2.42,
+            "exit_date": "",
+            "levels": 1,
+            "reason": "open",
+            "open": true
+          },
+          {
+            "code": "010120",
+            "date": "20261016",
+            "buy": 157300,
+            "sell": 160700,
+            "ret": 2.16,
+            "exit_date": "2026-10-16",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "336570",
+            "date": "20261016",
+            "buy": 4115,
+            "sell": 4185,
+            "ret": 1.7,
+            "exit_date": "2026-10-16",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "001200",
+            "date": "20261016",
+            "buy": 3645,
+            "sell": 3700,
+            "ret": 1.51,
+            "exit_date": "2026-10-16",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "028260",
+            "date": "20261016",
+            "buy": 284500,
+            "sell": 289000,
+            "ret": 1.58,
+            "exit_date": "2026-10-16",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "003470",
+            "date": "20261016",
+            "buy": 3900,
+            "sell": 3965,
+            "ret": 1.67,
+            "exit_date": "2026-10-16",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "099320",
+            "date": "20261016",
+            "buy": 54700,
+            "sell": 55600,
+            "ret": 1.65,
+            "exit_date": "2026-10-16",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "004170",
+            "date": "20261016",
+            "buy": 267500,
+            "sell": 272000,
+            "ret": 1.68,
+            "exit_date": "2026-10-16",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "207940",
+            "date": "20261015",
+            "buy": 1216000,
+            "sell": 1242000,
+            "ret": 2.14,
+            "exit_date": "2026-10-15",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "034020",
+            "date": "20261015",
+            "buy": 64800,
+            "sell": 65800,
+            "ret": 1.54,
+            "exit_date": "2026-10-15",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "000660",
+            "date": "20261015",
+            "buy": 1304000,
+            "sell": 1326000,
+            "ret": 1.69,
+            "exit_date": "2026-10-15",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "298040",
+            "date": "20261014",
+            "buy": 2163000,
+            "sell": 2198000,
+            "ret": 1.62,
+            "exit_date": "2026-10-14",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "009540",
+            "date": "20261014",
+            "buy": 275000,
+            "sell": 285250,
+            "ret": 3.73,
+            "exit_date": "2026-10-14",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "462520",
+            "date": "20261014",
+            "buy": 11120,
+            "sell": 11310,
+            "ret": 1.71,
+            "exit_date": "2026-10-14",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "012450",
+            "date": "20261014",
+            "buy": 834000,
+            "sell": 853000,
+            "ret": 2.28,
+            "exit_date": "2026-10-14",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "035420",
+            "date": "20261014",
+            "buy": 178000,
+            "sell": 181500,
+            "ret": 1.97,
+            "exit_date": "2026-10-14",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "042660",
+            "date": "20261013",
+            "buy": 65000,
+            "sell": 66200,
+            "ret": 1.85,
+            "exit_date": "2026-10-13",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "036890",
+            "date": "20261013",
+            "buy": 10020,
+            "sell": 10140,
+            "ret": 1.2,
+            "exit_date": "2026-10-13",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "103140",
+            "date": "20261013",
+            "buy": 61600,
+            "sell": 62700,
+            "ret": 1.79,
+            "exit_date": "2026-10-13",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "075580",
+            "date": "20261013",
+            "buy": 8350,
+            "sell": 8440,
+            "ret": 1.08,
+            "exit_date": "2026-10-13",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "114090",
+            "date": "20261007",
+            "buy": 8450,
+            "sell": 8650,
+            "ret": 2.37,
+            "exit_date": "2026-10-07",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "298020",
+            "date": "20261006",
+            "buy": 278500,
+            "sell": 283500,
+            "ret": 1.8,
+            "exit_date": "2026-10-06",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
+          },
+          {
+            "code": "439960",
+            "date": "20261001",
+            "buy": 6400,
+            "sell": 6510,
+            "ret": 1.72,
+            "exit_date": "2026-10-01",
+            "levels": 1,
+            "reason": "orig",
+            "open": false
           }
         ]
       }
