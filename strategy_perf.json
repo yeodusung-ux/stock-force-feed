@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18 00:05",
+  "updated": "2026-10-18 00:15",
   "strategies": [
     {
       "key": "morning",
@@ -239,7 +239,7 @@
                 "max": 5000.0,
                 "step": 10.0,
                 "dec": 1,
-                "value": 0.0
+                "value": 10.0
               },
               {
                 "key": "min_mcap_eok",
@@ -249,7 +249,7 @@
                 "max": 5000000,
                 "step": 500,
                 "dec": 0,
-                "value": 0
+                "value": 1000
               },
               {
                 "key": "max_mcap_eok",
