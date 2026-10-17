@@ -3957,26 +3957,16 @@
       "key": "bbbreak",
       "name": "📈 과매수 진입",
       "desc": "상단 동시 상향돌파 익일 시가 → ⚡ 청산·시간손절(과거 시뮬 포함)",
-      "n": 730,
+      "n": 503,
       "open": 0,
-      "win_rate": 84.1,
-      "avg_ret": 2.65,
-      "cum_ret": 1937.4,
-      "pf": 3.36,
+      "win_rate": 83.5,
+      "avg_ret": 2.48,
+      "cum_ret": 1247.8,
+      "pf": 3.06,
       "buy_rule": "볼린저 상단과 이격도선 상단을 처음 함께 상향 돌파한 유동 종목을 다음 거래일 시가에 매수",
       "sell_rule": "고점 수익 일부 반납 시 전량 청산 · N거래일 미청산 시 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
-        {
-          "date": "20261016",
-          "code": "002960",
-          "name": "한국쉘석유",
-          "buy": 550000,
-          "sell": 566800,
-          "ret": 3.05,
-          "reason": "orig",
-          "levels": 1
-        },
         {
           "date": "20261016",
           "code": "012750",
@@ -4028,116 +4018,6 @@
           "levels": 1
         },
         {
-          "date": "20261013",
-          "code": "080580",
-          "name": "오킨스전자",
-          "buy": 29050,
-          "sell": 29850,
-          "ret": 2.75,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261012",
-          "code": "074600",
-          "name": "원익QnC",
-          "buy": 32650,
-          "sell": 33370,
-          "ret": 2.21,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261012",
-          "code": "137400",
-          "name": "피엔티",
-          "buy": 33250,
-          "sell": 34050,
-          "ret": 2.41,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261012",
-          "code": "281740",
-          "name": "레이크머티리얼즈",
-          "buy": 13010,
-          "sell": 13386,
-          "ret": 2.89,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261008",
-          "code": "218410",
-          "name": "RFHIC",
-          "buy": 63800,
-          "sell": 58000,
-          "ret": -9.09,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261008",
-          "code": "222080",
-          "name": "SFA넥셀",
-          "buy": 8740,
-          "sell": 9188,
-          "ret": 5.13,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261007",
-          "code": "096530",
-          "name": "씨젠",
-          "buy": 37300,
-          "sell": 39820,
-          "ret": 6.76,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261006",
-          "code": "098460",
-          "name": "고영",
-          "buy": 33800,
-          "sell": 34400,
-          "ret": 1.78,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261006",
-          "code": "078600",
-          "name": "대주전자재료",
-          "buy": 112600,
-          "sell": 114440,
-          "ret": 1.63,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261002",
-          "code": "388210",
-          "name": "씨엠티엑스",
-          "buy": 89300,
-          "sell": 93780,
-          "ret": 5.02,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261002",
-          "code": "458870",
-          "name": "씨어스",
-          "buy": 27450,
-          "sell": 27930,
-          "ret": 1.75,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
           "date": "20261002",
           "code": "357780",
           "name": "솔브레인",
@@ -4149,31 +4029,11 @@
         },
         {
           "date": "20261002",
-          "code": "033640",
-          "name": "네패스",
-          "buy": 31800,
-          "sell": 32560,
-          "ret": 2.39,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261002",
           "code": "058470",
           "name": "리노공업",
           "buy": 81800,
           "sell": 85880,
           "ret": 4.99,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20261002",
-          "code": "080220",
-          "name": "제주반도체",
-          "buy": 88800,
-          "sell": 94160,
-          "ret": 6.04,
           "reason": "orig",
           "levels": 1
         },
@@ -4208,42 +4068,12 @@
           "levels": 1
         },
         {
-          "date": "20261001",
-          "code": "083450",
-          "name": "GST",
-          "buy": 52600,
-          "sell": 54760,
-          "ret": 4.11,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
           "date": "20260930",
           "code": "005290",
           "name": "동진쎄미켐",
           "buy": 46350,
           "sell": 49150,
           "ret": 6.04,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260930",
-          "code": "053610",
-          "name": "프로텍",
-          "buy": 76100,
-          "sell": 78420,
-          "ret": 3.05,
-          "reason": "orig",
-          "levels": 1
-        },
-        {
-          "date": "20260930",
-          "code": "084370",
-          "name": "유진테크",
-          "buy": 167200,
-          "sell": 171040,
-          "ret": 2.3,
           "reason": "orig",
           "levels": 1
         },
@@ -4258,12 +4088,182 @@
           "levels": 1
         },
         {
-          "date": "20260928",
-          "code": "252990",
-          "name": "샘씨엔에스",
-          "buy": 18300,
-          "sell": 18860,
+          "date": "20260923",
+          "code": "008930",
+          "name": "한미사이언스",
+          "buy": 52910,
+          "sell": 52500,
+          "ret": -0.77,
+          "reason": "orig",
+          "levels": 2
+        },
+        {
+          "date": "20260922",
+          "code": "003490",
+          "name": "대한항공",
+          "buy": 30400,
+          "sell": 31650,
+          "ret": 4.11,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260922",
+          "code": "067310",
+          "name": "하나마이크론",
+          "buy": 45200,
+          "sell": 47320,
+          "ret": 4.69,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260918",
+          "code": "138040",
+          "name": "메리츠금융지주",
+          "buy": 137000,
+          "sell": 126700,
+          "ret": -7.52,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260916",
+          "code": "041510",
+          "name": "에스엠",
+          "buy": 86700,
+          "sell": 90140,
+          "ret": 3.97,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260914",
+          "code": "000990",
+          "name": "DB하이텍",
+          "buy": 111800,
+          "sell": 113720,
+          "ret": 1.72,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260914",
+          "code": "375500",
+          "name": "DL이앤씨",
+          "buy": 84100,
+          "sell": 85860,
+          "ret": 2.09,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260914",
+          "code": "443060",
+          "name": "HD현대마린솔루션",
+          "buy": 240000,
+          "sell": 244400,
+          "ret": 1.83,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260911",
+          "code": "012750",
+          "name": "에스원",
+          "buy": 84300,
+          "sell": 81400,
+          "ret": -3.44,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260911",
+          "code": "012630",
+          "name": "HDC",
+          "buy": 26800,
+          "sell": 28680,
+          "ret": 7.01,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260907",
+          "code": "089860",
+          "name": "롯데렌탈",
+          "buy": 50700,
+          "sell": 51580,
+          "ret": 1.74,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260901",
+          "code": "003550",
+          "name": "LG",
+          "buy": 120000,
+          "sell": 120300,
+          "ret": 0.25,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260901",
+          "code": "278470",
+          "name": "에이피알",
+          "buy": 457500,
+          "sell": 471500,
           "ret": 3.06,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260831",
+          "code": "183300",
+          "name": "코미코",
+          "buy": 26200,
+          "sell": 26640,
+          "ret": 1.68,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260828",
+          "code": "003230",
+          "name": "삼양식품",
+          "buy": 1510000,
+          "sell": 1547600,
+          "ret": 2.49,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260827",
+          "code": "068270",
+          "name": "셀트리온",
+          "buy": 208500,
+          "sell": 191300,
+          "ret": -8.25,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260827",
+          "code": "300720",
+          "name": "한일시멘트",
+          "buy": 16200,
+          "sell": 16472,
+          "ret": 1.68,
+          "reason": "orig",
+          "levels": 1
+        },
+        {
+          "date": "20260826",
+          "code": "128940",
+          "name": "한미약품",
+          "buy": 550000,
+          "sell": 561200,
+          "ret": 2.04,
           "reason": "orig",
           "levels": 1
         }
