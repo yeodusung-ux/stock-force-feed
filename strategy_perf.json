@@ -4035,7 +4035,7 @@
                 "max": 100000.0,
                 "step": 10.0,
                 "dec": 1,
-                "value": 1000.0
+                "value": 0.0
               },
               {
                 "key": "min_opmargin_pct",
@@ -4045,7 +4045,7 @@
                 "max": 100.0,
                 "step": 1.0,
                 "dec": 1,
-                "value": 3.0
+                "value": 0.0
               }
             ]
           }
