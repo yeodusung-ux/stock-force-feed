@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18 08:14",
+  "updated": "2026-10-18 08:19",
   "strategies": [
     {
       "key": "morning",
@@ -4305,7 +4305,7 @@
                 "max": 100000.0,
                 "step": 10.0,
                 "dec": 1,
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "key": "min_opmargin_pct",
@@ -4315,7 +4315,7 @@
                 "max": 100.0,
                 "step": 1.0,
                 "dec": 1,
-                "value": 0.0
+                "value": 1.0
               }
             ]
           }
