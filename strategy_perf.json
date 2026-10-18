@@ -4175,14 +4175,14 @@
       "key": "bbbreak",
       "name": "📈 과매수 진입",
       "desc": "상단 동시 상향돌파 익일 시가 → ⚡ 청산·시간손절(과거 시뮬 포함)",
-      "n": 2311,
+      "n": 2403,
       "open": 0,
-      "win_rate": 84.0,
-      "avg_ret": 4.12,
-      "cum_ret": 9518.8,
-      "pf": 4.76,
+      "win_rate": 84.3,
+      "avg_ret": 4.02,
+      "cum_ret": 9660.1,
+      "pf": 4.74,
       "buy_rule": "볼린저 상단과 이격도선 상단을 처음 함께 상향 돌파한 유동 종목을 다음 거래일 시가에 매수",
-      "sell_rule": "고점 수익 일부 반납 시 전량 청산 · N거래일 미청산 시 종가 청산 · 현재 설정 적용(⚡·물타기) · 일봉 없는 92건 제외",
+      "sell_rule": "고점 수익 일부 반납 시 전량 청산 · N거래일 미청산 시 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
         {
@@ -4220,12 +4220,12 @@
         },
         {
           "date": "20261016",
-          "code": "089590",
-          "name": "제주항공",
-          "buy": 5380,
-          "sell": 5681,
-          "ret": 5.59,
-          "reason": "giveback",
+          "code": "012750",
+          "name": "에스원",
+          "buy": 95000,
+          "sell": 97600,
+          "ret": 2.74,
+          "reason": "orig",
           "levels": 1,
           "entry_date": "20261015"
         },
@@ -4236,6 +4236,17 @@
           "buy": 5920,
           "sell": 6464,
           "ret": 9.19,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20261016"
+        },
+        {
+          "date": "20261016",
+          "code": "033780",
+          "name": "KT&G",
+          "buy": 187200,
+          "sell": 193840,
+          "ret": 3.55,
           "reason": "orig",
           "levels": 1,
           "entry_date": "20261016"
@@ -4264,6 +4275,17 @@
         },
         {
           "date": "20261015",
+          "code": "000240",
+          "name": "한국앤컴퍼니",
+          "buy": 27300,
+          "sell": 27740,
+          "ret": 1.61,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20261015"
+        },
+        {
+          "date": "20261015",
           "code": "000650",
           "name": "천일고속",
           "buy": 230000,
@@ -4275,22 +4297,22 @@
         },
         {
           "date": "20261015",
-          "code": "084670",
-          "name": "동양고속",
-          "buy": 43650,
-          "sell": 46850,
-          "ret": 7.33,
+          "code": "011200",
+          "name": "HMM",
+          "buy": 23150,
+          "sell": 23750,
+          "ret": 2.59,
           "reason": "orig",
           "levels": 1,
           "entry_date": "20261015"
         },
         {
           "date": "20261015",
-          "code": "396300",
-          "name": "HT로보틱스",
-          "buy": 7050,
-          "sell": 7866,
-          "ret": 11.57,
+          "code": "028670",
+          "name": "팬오션",
+          "buy": 7000,
+          "sell": 7664,
+          "ret": 9.49,
           "reason": "orig",
           "levels": 1,
           "entry_date": "20261015"
@@ -4305,6 +4327,17 @@
           "reason": "orig",
           "levels": 2,
           "entry_date": "20261007"
+        },
+        {
+          "date": "20261014",
+          "code": "006110",
+          "name": "삼아알미늄",
+          "buy": 74100,
+          "sell": 76180,
+          "ret": 2.81,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20261013"
         },
         {
           "date": "20261014",
@@ -4396,17 +4429,6 @@
         },
         {
           "date": "20261012",
-          "code": "137400",
-          "name": "피엔티",
-          "buy": 33250,
-          "sell": 34050,
-          "ret": 2.41,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261007"
-        },
-        {
-          "date": "20261012",
           "code": "061090",
           "name": "세나테크놀로지",
           "buy": 43700,
@@ -4461,6 +4483,17 @@
           "entry_date": "20261012"
         },
         {
+          "date": "20261012",
+          "code": "217190",
+          "name": "제너셈",
+          "buy": 10000,
+          "sell": 10480,
+          "ret": 4.8,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20261012"
+        },
+        {
           "date": "20261008",
           "code": "036830",
           "name": "솔브레인홀딩스",
@@ -4473,47 +4506,14 @@
         },
         {
           "date": "20261008",
-          "code": "078150",
-          "name": "HB테크놀러지",
-          "buy": 2410,
-          "sell": 2554,
-          "ret": 5.98,
+          "code": "018880",
+          "name": "한온시스템",
+          "buy": 3905,
+          "sell": 4049,
+          "ret": 3.69,
           "reason": "orig",
           "levels": 1,
           "entry_date": "20261007"
-        },
-        {
-          "date": "20261008",
-          "code": "142210",
-          "name": "유니트론텍",
-          "buy": 7110,
-          "sell": 7422,
-          "ret": 4.39,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261007"
-        },
-        {
-          "date": "20261008",
-          "code": "002720",
-          "name": "국제약품",
-          "buy": 4650,
-          "sell": 4814,
-          "ret": 3.53,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261008"
-        },
-        {
-          "date": "20261008",
-          "code": "126600",
-          "name": "BGF에코머티리얼즈",
-          "buy": 3650,
-          "sell": 3734,
-          "ret": 2.3,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261008"
         }
       ],
       "tradable": true,
@@ -4573,7 +4573,7 @@
         "fast_trail": true,
         "add_buy": true,
         "rule": null,
-        "excluded": 92,
+        "excluded": 0,
         "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영"
       }
     },
