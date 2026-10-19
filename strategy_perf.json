@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19 16:21",
+  "updated": "2026-10-19 16:35",
   "strategies": [
     {
       "key": "morning",
@@ -4167,9 +4167,9 @@
       "n": 554,
       "open": 1,
       "win_rate": 90.8,
-      "avg_ret": 3.1,
-      "cum_ret": 1718.4,
-      "pf": 5.49,
+      "avg_ret": 2.99,
+      "cum_ret": 1658.3,
+      "pf": 5.33,
       "buy_rule": "볼린저 상단과 이격도선 상단을 처음 함께 상향 돌파한 유동 종목을 다음 거래일 시가에 매수",
       "sell_rule": "고점 수익 일부 반납 시 전량 청산 · 소폭 수익 뒤 되밀리면 본전 근처 청산 · N거래일 미청산 시 종가 청산 · 수수료·세금 0.23% 차감 · 현재 설정 적용(⚡·물타기) · 일봉 없음·단위 불일치 8건 제외",
       "open_stocks": [
@@ -4372,8 +4372,8 @@
           "code": "222800",
           "name": "심텍",
           "buy": 162800,
-          "sell": 166880,
-          "ret": 2.27,
+          "sell": 164400,
+          "ret": 0.75,
           "reason": "orig",
           "levels": 1,
           "entry_date": "20261002"
@@ -4460,8 +4460,8 @@
           "code": "014680",
           "name": "한솔케미칼",
           "buy": 235500,
-          "sell": 239900,
-          "ret": 1.64,
+          "sell": 237855,
+          "ret": 0.77,
           "reason": "orig",
           "levels": 1,
           "entry_date": "20260928"
@@ -4579,7 +4579,7 @@
       ],
       "tradable": true,
       "avg_add_buys": 0.1,
-      "avg_hold_days": 1.9,
+      "avg_hold_days": 1.8,
       "cond": {
         "editable": true,
         "link": "trade_config",
@@ -4668,8 +4668,18 @@
           },
           {
             "section": "bbbreak",
-            "title": "본전 스탑",
+            "title": "청산",
             "items": [
+              {
+                "key": "max_hold_days",
+                "label": "시간 손절: 진입 후 거래일 (0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 120,
+                "step": 1,
+                "dec": 0,
+                "value": 15
+              },
               {
                 "key": "be_arm_pct",
                 "label": "본전 스탑 무장: 고점 ≥ 진입가 +% (0=끔)",
