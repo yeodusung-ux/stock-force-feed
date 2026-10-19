@@ -5,14 +5,14 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 18,
+      "n": 38,
       "open": 0,
-      "win_rate": 72.2,
-      "avg_ret": 6.59,
-      "cum_ret": 118.7,
-      "pf": 9.48,
+      "win_rate": 47.4,
+      "avg_ret": 1.02,
+      "cum_ret": 38.6,
+      "pf": 1.31,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
-      "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기) · 일봉 없음·단위 불일치 20건 제외",
+      "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
         {
@@ -22,7 +22,8 @@
           "buy": 18740,
           "sell": 16990,
           "ret": -9.34,
-          "amt_eok": 0.58,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20261012"
         },
         {
@@ -32,7 +33,8 @@
           "buy": 11100,
           "sell": 11220,
           "ret": 1.08,
-          "amt_eok": 20.08,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260707"
         },
         {
@@ -42,7 +44,8 @@
           "buy": 6310,
           "sell": 5330,
           "ret": -15.53,
-          "amt_eok": 75.06,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260702"
         },
         {
@@ -52,7 +55,8 @@
           "buy": 2400,
           "sell": 1996,
           "ret": -16.83,
-          "amt_eok": 3.04,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260702"
         },
         {
@@ -62,7 +66,8 @@
           "buy": 6860,
           "sell": 6910,
           "ret": 0.73,
-          "amt_eok": 14.45,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260702"
         },
         {
@@ -72,7 +77,8 @@
           "buy": 17480,
           "sell": 16220,
           "ret": -7.21,
-          "amt_eok": 47.36,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260630"
         },
         {
@@ -82,7 +88,8 @@
           "buy": 56800,
           "sell": 54000,
           "ret": -4.93,
-          "amt_eok": 97.34,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260615"
         },
         {
@@ -92,7 +99,8 @@
           "buy": 293000,
           "sell": 258500,
           "ret": -11.77,
-          "amt_eok": 168.68,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260615"
         },
         {
@@ -105,6 +113,28 @@
           "reason": "orig",
           "levels": 1,
           "entry_date": "20260608"
+        },
+        {
+          "date": "20260604",
+          "code": "090360",
+          "name": "로보스타",
+          "buy": 137800,
+          "sell": 139200,
+          "ret": 1.02,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20260604"
+        },
+        {
+          "date": "20260602",
+          "code": "018260",
+          "name": "삼성에스디에스",
+          "buy": 310500,
+          "sell": 300500,
+          "ret": -3.22,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20260602"
         },
         {
           "date": "20260417",
@@ -127,6 +157,50 @@
           "reason": "orig",
           "levels": 1,
           "entry_date": "20260402"
+        },
+        {
+          "date": "20260401",
+          "code": "001780",
+          "name": "알루코",
+          "buy": 2370,
+          "sell": 2415,
+          "ret": 1.9,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20260401"
+        },
+        {
+          "date": "20260401",
+          "code": "006110",
+          "name": "삼아알미늄",
+          "buy": 35700,
+          "sell": 34400,
+          "ret": -3.64,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20260401"
+        },
+        {
+          "date": "20260401",
+          "code": "018470",
+          "name": "조일알미늄",
+          "buy": 7000,
+          "sell": 6995,
+          "ret": -0.07,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20260401"
+        },
+        {
+          "date": "20260327",
+          "code": "226340",
+          "name": "본느",
+          "buy": 2475,
+          "sell": 2410,
+          "ret": -2.63,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20260327"
         },
         {
           "date": "20260310",
@@ -196,6 +270,17 @@
         },
         {
           "date": "20260305",
+          "code": "024060",
+          "name": "흥구석유",
+          "buy": 25850,
+          "sell": 32700,
+          "ret": 26.5,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20260305"
+        },
+        {
+          "date": "20260305",
           "code": "053050",
           "name": "지에스이",
           "buy": 3130,
@@ -250,48 +335,15 @@
           "entry_date": "20251212"
         },
         {
-          "date": "20250624",
-          "code": "000440",
-          "name": "중앙에너비스",
-          "buy": 17760,
-          "sell": 17050,
-          "ret": -4.0,
+          "date": "20250715",
+          "code": "036630",
+          "name": "세종텔레콤",
+          "buy": 6389,
+          "sell": 6111,
+          "ret": -4.35,
           "reason": "orig",
           "levels": 1,
-          "entry_date": "20250624"
-        },
-        {
-          "date": "20250502",
-          "code": "002630",
-          "name": "오리엔트바이오",
-          "buy": 2620,
-          "sell": 2754,
-          "ret": 5.11,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20250502"
-        },
-        {
-          "date": "20250502",
-          "code": "042940",
-          "name": "상지건설",
-          "buy": 24550,
-          "sell": 26250,
-          "ret": 6.92,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20250502"
-        },
-        {
-          "date": "20250502",
-          "code": "065500",
-          "name": "오리엔트정공",
-          "buy": 9340,
-          "sell": 9860,
-          "ret": 5.57,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20250502"
+          "entry_date": "20250715"
         }
       ],
       "tradable": true,
@@ -369,7 +421,7 @@
         "fast_trail": true,
         "add_buy": true,
         "rule": null,
-        "excluded": 20,
+        "excluded": 0,
         "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영"
       }
     },
