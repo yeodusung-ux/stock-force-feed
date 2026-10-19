@@ -4132,14 +4132,14 @@
       "key": "bbbreak",
       "name": "📈 과매수 진입",
       "desc": "상단 동시 상향돌파 익일 시가 → ⚡ 청산·시간손절(과거 시뮬 포함)",
-      "n": 698,
+      "n": 680,
       "open": 2,
-      "win_rate": 86.0,
-      "avg_ret": 2.47,
-      "cum_ret": 1722.1,
-      "pf": 3.35,
+      "win_rate": 85.6,
+      "avg_ret": 2.41,
+      "cum_ret": 1636.8,
+      "pf": 3.25,
       "buy_rule": "볼린저 상단과 이격도선 상단을 처음 함께 상향 돌파한 유동 종목을 다음 거래일 시가에 매수",
-      "sell_rule": "고점 수익 일부 반납 시 전량 청산 · N거래일 미청산 시 종가 청산 · 수수료·세금 0.23% 차감 · 현재 설정 적용(⚡·물타기)",
+      "sell_rule": "고점 수익 일부 반납 시 전량 청산 · N거래일 미청산 시 종가 청산 · 수수료·세금 0.23% 차감 · 현재 설정 적용(⚡·물타기) · 일봉 없음·단위 불일치 8건 제외",
       "open_stocks": [
         {
           "date": "2026-10-19",
@@ -4336,28 +4336,6 @@
         },
         {
           "date": "20261002",
-          "code": "457190",
-          "name": "이수스페셜티케미컬",
-          "buy": 77700,
-          "sell": 79060,
-          "ret": 1.52,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261001"
-        },
-        {
-          "date": "20261002",
-          "code": "000250",
-          "name": "삼천당제약",
-          "buy": 213500,
-          "sell": 218300,
-          "ret": 2.02,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261002"
-        },
-        {
-          "date": "20261002",
           "code": "058470",
           "name": "리노공업",
           "buy": 81800,
@@ -4418,6 +4396,28 @@
           "buy": 162800,
           "sell": 166880,
           "ret": 2.27,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20261002"
+        },
+        {
+          "date": "20261002",
+          "code": "232140",
+          "name": "와이씨",
+          "buy": 16330,
+          "sell": 16746,
+          "ret": 2.31,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20261002"
+        },
+        {
+          "date": "20261002",
+          "code": "240810",
+          "name": "원익IPS",
+          "buy": 143000,
+          "sell": 145320,
+          "ret": 1.39,
           "reason": "orig",
           "levels": 1,
           "entry_date": "20261002"
@@ -4545,8 +4545,8 @@
         }
       ],
       "tradable": true,
-      "avg_add_buys": 0.12,
-      "avg_hold_days": 2.6,
+      "avg_add_buys": 0.1,
+      "avg_hold_days": 2.7,
       "cond": {
         "editable": true,
         "link": "trade_config",
@@ -4603,7 +4603,7 @@
         "fast_trail": true,
         "add_buy": true,
         "rule": null,
-        "excluded": 0,
+        "excluded": 8,
         "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영 · 수수료·세금 0.23% 차감"
       }
     },
