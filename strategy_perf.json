@@ -5,27 +5,16 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 18,
+      "n": 6,
       "open": 0,
-      "win_rate": 50.0,
-      "avg_ret": 2.84,
-      "cum_ret": 51.1,
-      "pf": 2.47,
+      "win_rate": 0.0,
+      "avg_ret": -4.86,
+      "cum_ret": -29.2,
+      "pf": 0.0,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
       "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
-        {
-          "date": "20260707",
-          "code": "003200",
-          "name": "일신방직",
-          "buy": 11100,
-          "sell": 11220,
-          "ret": 1.08,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260707"
-        },
         {
           "date": "20260615",
           "code": "051600",
@@ -49,17 +38,6 @@
           "entry_date": "20260615"
         },
         {
-          "date": "20260604",
-          "code": "090360",
-          "name": "로보스타",
-          "buy": 137800,
-          "sell": 139200,
-          "ret": 1.02,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260604"
-        },
-        {
           "date": "20260602",
           "code": "018260",
           "name": "삼성에스디에스",
@@ -71,28 +49,6 @@
           "entry_date": "20260602"
         },
         {
-          "date": "20260417",
-          "code": "042510",
-          "name": "라온시큐어",
-          "buy": 12930,
-          "sell": 13440,
-          "ret": 3.94,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260417"
-        },
-        {
-          "date": "20260401",
-          "code": "001780",
-          "name": "알루코",
-          "buy": 2370,
-          "sell": 2415,
-          "ret": 1.9,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260401"
-        },
-        {
           "date": "20260401",
           "code": "006110",
           "name": "삼아알미늄",
@@ -102,83 +58,6 @@
           "reason": "orig",
           "levels": 1,
           "entry_date": "20260401"
-        },
-        {
-          "date": "20260401",
-          "code": "018470",
-          "name": "조일알미늄",
-          "buy": 7000,
-          "sell": 6995,
-          "ret": -0.07,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260401"
-        },
-        {
-          "date": "20260310",
-          "code": "117580",
-          "name": "대성에너지",
-          "buy": 12120,
-          "sell": 12250,
-          "ret": 1.07,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260310"
-        },
-        {
-          "date": "20260306",
-          "code": "307180",
-          "name": "아이엘",
-          "buy": 5350,
-          "sell": 5290,
-          "ret": -1.12,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260306"
-        },
-        {
-          "date": "20260305",
-          "code": "003280",
-          "name": "흥아해운",
-          "buy": 2290,
-          "sell": 2815,
-          "ret": 22.93,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
-          "code": "014530",
-          "name": "극동유화",
-          "buy": 4640,
-          "sell": 4910,
-          "ret": 5.82,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
-          "code": "024060",
-          "name": "흥구석유",
-          "buy": 25850,
-          "sell": 32700,
-          "ret": 26.5,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
-          "code": "117580",
-          "name": "대성에너지",
-          "buy": 10450,
-          "sell": 12700,
-          "ret": 21.53,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
         },
         {
           "date": "20260213",
@@ -201,17 +80,6 @@
           "reason": "orig",
           "levels": 1,
           "entry_date": "20251212"
-        },
-        {
-          "date": "20250715",
-          "code": "036630",
-          "name": "세종텔레콤",
-          "buy": 6389,
-          "sell": 6111,
-          "ret": -4.35,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20250715"
         }
       ],
       "tradable": true,
