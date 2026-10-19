@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20 07:01:17",
+  "updated": "2026-10-20 07:05:03",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 17636,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 14
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -59,15 +59,15 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 1190156,
+      "rows": 1190161,
       "codes": 2506,
       "target": 2368,
       "first": "2020-02-20",
-      "last": "2026-10-19",
+      "last": "2026-10-20",
       "progress_pct": 100,
       "busy": false,
       "state": "done",
-      "fmt": "1,190,156봉·최신",
+      "fmt": "1,190,161봉·최신",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -89,15 +89,15 @@
       "table": "signal_log",
       "label": "세력신호",
       "tr": "파생",
-      "rows": 3904,
+      "rows": 3912,
       "codes": 1407,
       "target": 2368,
       "first": "2026-07-02",
-      "last": "2026-10-19",
+      "last": "2026-10-20",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-19 · 3,904행",
+      "fmt": "최신 10-20 · 3,912행",
       "schedule": "매일 투17:05·창16:20·신15:35·일17:50"
     },
     {
@@ -260,15 +260,15 @@
       "table": "stock_name",
       "label": "종목명",
       "tr": "마스터",
-      "rows": 4393,
-      "codes": 4393,
+      "rows": 4401,
+      "codes": 4401,
       "target": 2368,
       "first": "",
       "last": "",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "4,393행",
+      "fmt": "4,401행",
       "schedule": "자동(세력수집 시 갱신)"
     },
     {
