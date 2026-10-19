@@ -5,14 +5,14 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 2,
+      "n": 16,
       "open": 0,
-      "win_rate": 0.0,
-      "avg_ret": -2.8,
-      "cum_ret": -5.6,
-      "pf": 0.0,
+      "win_rate": 81.2,
+      "avg_ret": 7.77,
+      "cum_ret": 124.3,
+      "pf": 15.81,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
-      "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기) · 일봉 없음·단위 불일치 14건 제외",
+      "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
         {
@@ -22,8 +22,8 @@
           "buy": 3515,
           "sell": 3750,
           "ret": 6.69,
-          "mcap": 311.0,
-          "amt_eok": 19.42,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260608"
         },
         {
@@ -33,8 +33,8 @@
           "buy": 12930,
           "sell": 13440,
           "ret": 3.94,
-          "mcap": 2249.0,
-          "amt_eok": 69.03,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260417"
         },
         {
@@ -44,8 +44,8 @@
           "buy": 5082,
           "sell": 5502,
           "ret": 8.26,
-          "mcap": 752.0,
-          "amt_eok": 115.01,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260402"
         },
         {
@@ -55,8 +55,8 @@
           "buy": 12120,
           "sell": 12250,
           "ret": 1.07,
-          "mcap": 1955.0,
-          "amt_eok": 421.61,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260310"
         },
         {
@@ -66,8 +66,8 @@
           "buy": 5350,
           "sell": 5290,
           "ret": -1.12,
-          "mcap": 1949.0,
-          "amt_eok": 221.03,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260306"
         },
         {
@@ -77,8 +77,8 @@
           "buy": 26100,
           "sell": 30850,
           "ret": 18.2,
-          "mcap": 770.0,
-          "amt_eok": 108.22,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260305"
         },
         {
@@ -88,8 +88,8 @@
           "buy": 2290,
           "sell": 2815,
           "ret": 22.93,
-          "mcap": 4378.0,
-          "amt_eok": 535.4,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260305"
         },
         {
@@ -99,8 +99,8 @@
           "buy": 3650,
           "sell": 4150,
           "ret": 13.7,
-          "mcap": 900.0,
-          "amt_eok": 166.42,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260305"
         },
         {
@@ -110,8 +110,8 @@
           "buy": 4640,
           "sell": 4910,
           "ret": 5.82,
-          "mcap": 1173.0,
-          "amt_eok": 86.62,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260305"
         },
         {
@@ -121,8 +121,8 @@
           "buy": 3130,
           "sell": 3535,
           "ret": 12.94,
-          "mcap": 569.0,
-          "amt_eok": 82.89,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260305"
         },
         {
@@ -132,31 +132,64 @@
           "buy": 10450,
           "sell": 12700,
           "ret": 21.53,
-          "mcap": 1955.0,
-          "amt_eok": 115.18,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20260305"
         },
         {
-          "date": "20260213",
-          "code": "240810",
-          "name": "원익IPS",
-          "buy": 111600,
-          "sell": 109200,
-          "ret": -2.15,
+          "date": "20260206",
+          "code": "115530",
+          "name": "씨엔플러스",
+          "buy": 3360,
+          "sell": 3250,
+          "ret": -3.27,
           "reason": "orig",
           "levels": 1,
-          "entry_date": "20260213"
+          "entry_date": "20260206"
         },
         {
-          "date": "20251212",
-          "code": "000810",
-          "name": "삼성화재",
-          "buy": 507000,
-          "sell": 489500,
-          "ret": -3.45,
+          "date": "20250624",
+          "code": "000440",
+          "name": "중앙에너비스",
+          "buy": 17760,
+          "sell": 17050,
+          "ret": -4.0,
           "reason": "orig",
           "levels": 1,
-          "entry_date": "20251212"
+          "entry_date": "20250624"
+        },
+        {
+          "date": "20250502",
+          "code": "002630",
+          "name": "오리엔트바이오",
+          "buy": 2620,
+          "sell": 2754,
+          "ret": 5.11,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20250502"
+        },
+        {
+          "date": "20250502",
+          "code": "042940",
+          "name": "상지건설",
+          "buy": 24550,
+          "sell": 26250,
+          "ret": 6.92,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20250502"
+        },
+        {
+          "date": "20250502",
+          "code": "065500",
+          "name": "오리엔트정공",
+          "buy": 9340,
+          "sell": 9860,
+          "ret": 5.57,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20250502"
         }
       ],
       "tradable": true,
@@ -234,7 +267,7 @@
         "fast_trail": true,
         "add_buy": true,
         "rule": null,
-        "excluded": 14,
+        "excluded": 0,
         "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영"
       }
     },
