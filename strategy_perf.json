@@ -5,14 +5,14 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 15,
+      "n": 16,
       "open": 0,
-      "win_rate": 80.0,
-      "avg_ret": 6.76,
-      "cum_ret": 101.4,
-      "pf": 13.08,
+      "win_rate": 81.2,
+      "avg_ret": 7.77,
+      "cum_ret": 124.3,
+      "pf": 15.81,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
-      "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기) · 일봉 없음·단위 불일치 1건 제외",
+      "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
         {
@@ -77,6 +77,17 @@
           "buy": 26100,
           "sell": 30850,
           "ret": 18.2,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20260305"
+        },
+        {
+          "date": "20260305",
+          "code": "003280",
+          "name": "흥아해운",
+          "buy": 2290,
+          "sell": 2815,
+          "ret": 22.93,
           "reason": "orig",
           "levels": 1,
           "entry_date": "20260305"
@@ -256,7 +267,7 @@
         "fast_trail": true,
         "add_buy": true,
         "rule": null,
-        "excluded": 1,
+        "excluded": 0,
         "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영"
       }
     },
