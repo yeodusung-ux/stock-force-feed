@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19 12:01",
+  "updated": "2026-10-19 12:02",
   "strategies": [
     {
       "key": "morning",
@@ -215,6 +215,8 @@
         }
       ],
       "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 0.0,
       "cond": {
         "editable": true,
         "link": "",
@@ -640,6 +642,8 @@
         }
       ],
       "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 1.0,
       "cond": {
         "editable": true,
         "link": "",
@@ -1063,6 +1067,8 @@
         }
       ],
       "tradable": false,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 0.9,
       "cond": {
         "editable": true,
         "link": "",
@@ -1529,6 +1535,8 @@
         }
       ],
       "tradable": false,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 0.5,
       "cond": {
         "editable": true,
         "link": "",
@@ -2880,6 +2888,8 @@
         }
       ],
       "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 20.1,
       "cond": {
         "editable": false,
         "link": "force_analysis",
@@ -3234,6 +3244,8 @@
         }
       ],
       "tradable": true,
+      "avg_add_buys": 0.46,
+      "avg_hold_days": 21.4,
       "cond": {
         "editable": true,
         "link": "",
@@ -3594,6 +3606,8 @@
         }
       ],
       "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 0.0,
       "cond": {
         "editable": true,
         "link": "",
@@ -4114,6 +4128,8 @@
         }
       ],
       "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 0.3,
       "cond": {
         "editable": true,
         "link": "trade_config",
@@ -4591,6 +4607,8 @@
         }
       ],
       "tradable": true,
+      "avg_add_buys": 0.12,
+      "avg_hold_days": 2.5,
       "cond": {
         "editable": true,
         "link": "trade_config",
@@ -5945,7 +5963,9 @@
           "entry_date": "20260910"
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 20.0
     },
     {
       "key": "q_magic",
@@ -7289,7 +7309,9 @@
           "entry_date": "20260910"
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 20.0
     },
     {
       "key": "q_quality",
@@ -8087,7 +8109,9 @@
           "entry_date": "20260901"
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 20.0
     },
     {
       "key": "q_momentum",
@@ -8279,7 +8303,9 @@
           "entry_date": "20260629"
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 20.0
     },
     {
       "key": "q_multi",
@@ -9629,7 +9655,9 @@
           "entry_date": "20260910"
         }
       ],
-      "tradable": true
+      "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 20.0
     }
   ]
 }
