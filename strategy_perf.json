@@ -4132,14 +4132,14 @@
       "key": "bbbreak",
       "name": "📈 과매수 진입",
       "desc": "상단 동시 상향돌파 익일 시가 → ⚡ 청산·시간손절(과거 시뮬 포함)",
-      "n": 2422,
+      "n": 1625,
       "open": 2,
       "win_rate": 84.4,
-      "avg_ret": 3.58,
-      "cum_ret": 8664.8,
-      "pf": 4.28,
+      "avg_ret": 3.04,
+      "cum_ret": 4944.1,
+      "pf": 3.86,
       "buy_rule": "볼린저 상단과 이격도선 상단을 처음 함께 상향 돌파한 유동 종목을 다음 거래일 시가에 매수",
-      "sell_rule": "고점 수익 일부 반납 시 전량 청산 · N거래일 미청산 시 종가 청산 · 수수료·세금 0.23% 차감 · 현재 설정 적용(⚡·물타기)",
+      "sell_rule": "고점 수익 일부 반납 시 전량 청산 · N거래일 미청산 시 종가 청산 · 수수료·세금 0.23% 차감 · 현재 설정 적용(⚡·물타기) · 일봉 없음·단위 불일치 8건 제외",
       "open_stocks": [
         {
           "date": "2026-10-19",
@@ -4226,14 +4226,14 @@
         },
         {
           "date": "20261016",
-          "code": "187420",
-          "name": "HLB제넥스",
-          "buy": 2215,
-          "sell": 2626,
-          "ret": 18.3,
-          "reason": "orig",
-          "levels": 2,
-          "entry_date": "20261012"
+          "code": "161000",
+          "name": "애경케미칼",
+          "buy": 11650,
+          "sell": 11766,
+          "ret": 0.77,
+          "reason": "gap",
+          "levels": 1,
+          "entry_date": "20261014"
         },
         {
           "date": "20261016",
@@ -4259,14 +4259,14 @@
         },
         {
           "date": "20261016",
-          "code": "030960",
-          "name": "양지사",
-          "buy": 5920,
-          "sell": 6464,
-          "ret": 8.94,
-          "reason": "orig",
+          "code": "089590",
+          "name": "제주항공",
+          "buy": 5380,
+          "sell": 5681,
+          "ret": 5.35,
+          "reason": "giveback",
           "levels": 1,
-          "entry_date": "20261016"
+          "entry_date": "20261015"
         },
         {
           "date": "20261016",
@@ -4278,17 +4278,6 @@
           "reason": "orig",
           "levels": 1,
           "entry_date": "20261016"
-        },
-        {
-          "date": "20261015",
-          "code": "011330",
-          "name": "유니켐",
-          "buy": 5000,
-          "sell": 6096,
-          "ret": 21.64,
-          "reason": "giveback",
-          "levels": 1,
-          "entry_date": "20261014"
         },
         {
           "date": "20261015",
@@ -4358,13 +4347,13 @@
         },
         {
           "date": "20261014",
-          "code": "002720",
-          "name": "국제약품",
-          "buy": 4051,
-          "sell": 4440,
-          "ret": 9.36,
-          "reason": "gap",
-          "levels": 3,
+          "code": "137310",
+          "name": "에스디바이오센서",
+          "buy": 6630,
+          "sell": 6798,
+          "ret": 2.29,
+          "reason": "orig",
+          "levels": 1,
           "entry_date": "20261008"
         },
         {
@@ -4423,15 +4412,15 @@
           "entry_date": "20261014"
         },
         {
-          "date": "20261013",
-          "code": "054930",
-          "name": "유신",
-          "buy": 24150,
-          "sell": 25910,
-          "ret": 7.04,
+          "date": "20261014",
+          "code": "079650",
+          "name": "서산",
+          "buy": 8780,
+          "sell": 9108,
+          "ret": 3.5,
           "reason": "orig",
           "levels": 1,
-          "entry_date": "20261013"
+          "entry_date": "20261014"
         },
         {
           "date": "20261012",
@@ -4489,17 +4478,6 @@
           "entry_date": "20261012"
         },
         {
-          "date": "20261012",
-          "code": "323350",
-          "name": "다원넥스뷰",
-          "buy": 10910,
-          "sell": 11174,
-          "ret": 2.18,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261012"
-        },
-        {
           "date": "20261008",
           "code": "036830",
           "name": "솔브레인홀딩스",
@@ -4542,11 +4520,33 @@
           "reason": "orig",
           "levels": 1,
           "entry_date": "20261008"
+        },
+        {
+          "date": "20261008",
+          "code": "126600",
+          "name": "BGF에코머티리얼즈",
+          "buy": 3650,
+          "sell": 3734,
+          "ret": 2.07,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20261008"
+        },
+        {
+          "date": "20261008",
+          "code": "128820",
+          "name": "대성산업",
+          "buy": 5200,
+          "sell": 5352,
+          "ret": 2.68,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20261008"
         }
       ],
       "tradable": true,
-      "avg_add_buys": 0.12,
-      "avg_hold_days": 2.5,
+      "avg_add_buys": 0.11,
+      "avg_hold_days": 2.6,
       "cond": {
         "editable": true,
         "link": "trade_config",
@@ -4603,7 +4603,7 @@
         "fast_trail": true,
         "add_buy": true,
         "rule": null,
-        "excluded": 0,
+        "excluded": 8,
         "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영 · 수수료·세금 0.23% 차감"
       }
     },
