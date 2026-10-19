@@ -5,12 +5,12 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 16,
+      "n": 14,
       "open": 0,
-      "win_rate": 81.2,
-      "avg_ret": 7.77,
-      "cum_ret": 124.3,
-      "pf": 15.81,
+      "win_rate": 85.7,
+      "avg_ret": 8.62,
+      "cum_ret": 120.6,
+      "pf": 24.56,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
       "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
@@ -137,17 +137,6 @@
           "entry_date": "20260305"
         },
         {
-          "date": "20260206",
-          "code": "115530",
-          "name": "씨엔플러스",
-          "buy": 3360,
-          "sell": 3250,
-          "ret": -3.27,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260206"
-        },
-        {
           "date": "20250624",
           "code": "000440",
           "name": "중앙에너비스",
@@ -165,17 +154,6 @@
           "buy": 2620,
           "sell": 2754,
           "ret": 5.11,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20250502"
-        },
-        {
-          "date": "20250502",
-          "code": "042940",
-          "name": "상지건설",
-          "buy": 24550,
-          "sell": 26250,
-          "ret": 6.92,
           "reason": "orig",
           "levels": 1,
           "entry_date": "20250502"
