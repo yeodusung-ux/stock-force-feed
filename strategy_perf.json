@@ -5,27 +5,16 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 38,
+      "n": 18,
       "open": 0,
-      "win_rate": 47.4,
-      "avg_ret": 1.02,
-      "cum_ret": 38.6,
-      "pf": 1.31,
+      "win_rate": 50.0,
+      "avg_ret": 2.84,
+      "cum_ret": 51.1,
+      "pf": 2.47,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
       "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
       "open_stocks": [],
       "closed_stocks": [
-        {
-          "date": "20261012",
-          "code": "006980",
-          "name": "우성",
-          "buy": 18740,
-          "sell": 16990,
-          "ret": -9.34,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261012"
-        },
         {
           "date": "20260707",
           "code": "003200",
@@ -36,50 +25,6 @@
           "reason": "orig",
           "levels": 1,
           "entry_date": "20260707"
-        },
-        {
-          "date": "20260702",
-          "code": "111710",
-          "name": "남화산업",
-          "buy": 6310,
-          "sell": 5330,
-          "ret": -15.53,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260702"
-        },
-        {
-          "date": "20260702",
-          "code": "322780",
-          "name": "코퍼스코리아",
-          "buy": 2400,
-          "sell": 1996,
-          "ret": -16.83,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260702"
-        },
-        {
-          "date": "20260702",
-          "code": "357580",
-          "name": "아모센스",
-          "buy": 6860,
-          "sell": 6910,
-          "ret": 0.73,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260702"
-        },
-        {
-          "date": "20260630",
-          "code": "394420",
-          "name": "리센스메디컬",
-          "buy": 17480,
-          "sell": 16220,
-          "ret": -7.21,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260630"
         },
         {
           "date": "20260615",
@@ -102,17 +47,6 @@
           "reason": "orig",
           "levels": 1,
           "entry_date": "20260615"
-        },
-        {
-          "date": "20260608",
-          "code": "006920",
-          "name": "모헨즈",
-          "buy": 3515,
-          "sell": 3750,
-          "ret": 6.69,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260608"
         },
         {
           "date": "20260604",
@@ -148,17 +82,6 @@
           "entry_date": "20260417"
         },
         {
-          "date": "20260402",
-          "code": "062970",
-          "name": "한국첨단소재",
-          "buy": 5082,
-          "sell": 5502,
-          "ret": 8.26,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260402"
-        },
-        {
           "date": "20260401",
           "code": "001780",
           "name": "알루코",
@@ -192,17 +115,6 @@
           "entry_date": "20260401"
         },
         {
-          "date": "20260327",
-          "code": "226340",
-          "name": "본느",
-          "buy": 2475,
-          "sell": 2410,
-          "ret": -2.63,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260327"
-        },
-        {
           "date": "20260310",
           "code": "117580",
           "name": "대성에너지",
@@ -226,33 +138,11 @@
         },
         {
           "date": "20260305",
-          "code": "000440",
-          "name": "중앙에너비스",
-          "buy": 26100,
-          "sell": 30850,
-          "ret": 18.2,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
           "code": "003280",
           "name": "흥아해운",
           "buy": 2290,
           "sell": 2815,
           "ret": 22.93,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
-          "code": "005860",
-          "name": "한일사료",
-          "buy": 3650,
-          "sell": 4150,
-          "ret": 13.7,
           "reason": "orig",
           "levels": 1,
           "entry_date": "20260305"
@@ -281,17 +171,6 @@
         },
         {
           "date": "20260305",
-          "code": "053050",
-          "name": "지에스이",
-          "buy": 3130,
-          "sell": 3535,
-          "ret": 12.94,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
           "code": "117580",
           "name": "대성에너지",
           "buy": 10450,
@@ -311,17 +190,6 @@
           "reason": "orig",
           "levels": 1,
           "entry_date": "20260213"
-        },
-        {
-          "date": "20260206",
-          "code": "115530",
-          "name": "씨엔플러스",
-          "buy": 3360,
-          "sell": 3250,
-          "ret": -3.27,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260206"
         },
         {
           "date": "20251212",
