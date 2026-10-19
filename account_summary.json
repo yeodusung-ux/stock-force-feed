@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-19 12:02",
-  "todayRealized": null,
-  "weekRealized": null,
+  "todayRealized": 0,
+  "weekRealized": 0,
   "realizedSeries": [
     {
       "d": "2008-12-23",
@@ -1450,21 +1450,21 @@
   "profitRate": -15.67,
   "deposit": 324634,
   "balanceAsset": 45439817,
-  "monthRealized": null,
-  "yearRealized": null,
-  "cumRealized": null,
+  "monthRealized": 88537,
+  "yearRealized": 3613956,
+  "cumRealized": 7828637,
   "primary_account": "3699285811",
   "accounts": {
     "5101152910": {
       "updated": "2026-10-19 12:02",
-      "todayRealized": null,
+      "todayRealized": 0,
       "weekRealized": null,
       "realizedSeries": [],
       "totalBuying": 0,
       "totalValue": 0,
       "totalProfit": 0,
       "profitRate": null,
-      "deposit": 0,
+      "deposit": 20301,
       "balanceAsset": 0,
       "monthRealized": null,
       "yearRealized": null,
