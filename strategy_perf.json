@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19 18:09",
+  "updated": "2026-10-19 18:11",
   "strategies": [
     {
       "key": "morning",
@@ -3817,11 +3817,11 @@
       "key": "bbdisp",
       "name": "📉 과매도 반등",
       "desc": "밴드·이격 동시 이탈 첫날 → 익일 시가 진입 / 빠른 트레일링 청산",
-      "n": 23,
+      "n": 24,
       "open": 3,
       "win_rate": 100.0,
-      "avg_ret": 1.82,
-      "cum_ret": 42.0,
+      "avg_ret": 1.81,
+      "cum_ret": 43.5,
       "pf": 999.0,
       "buy_rule": "볼린저 하단과 이격도선 하단을 처음 함께 이탈한 유동 종목을 다음 거래일 시가에 매수",
       "sell_rule": "고점 수익 일부 반납 시 전량 청산(손절 없음) · 현재 설정 적용(⚡·물타기)",
@@ -3857,6 +3857,17 @@
       "closed_stocks": [
         {
           "date": "20261019",
+          "code": "039490",
+          "name": "키움증권",
+          "buy": 223000,
+          "sell": 226500,
+          "ret": 1.57,
+          "reason": "orig",
+          "levels": 1,
+          "entry_date": "20261015"
+        },
+        {
+          "date": "20261019",
           "code": "003490",
           "name": "대한항공",
           "buy": 26150,
@@ -3865,15 +3876,6 @@
           "reason": "orig",
           "levels": 1,
           "entry_date": "20261019"
-        },
-        {
-          "date": "20261019",
-          "code": "039490",
-          "name": "키움증권",
-          "buy": 223000,
-          "sell": 226500,
-          "ret": 1.57,
-          "entry_date": "20261015"
         },
         {
           "date": "20261016",
@@ -4120,7 +4122,7 @@
       ],
       "tradable": true,
       "avg_add_buys": 0.0,
-      "avg_hold_days": 0.3,
+      "avg_hold_days": 0.4,
       "cond": {
         "editable": true,
         "link": "trade_config",
