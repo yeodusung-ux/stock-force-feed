@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20 00:03",
+  "updated": "2026-10-20 00:13",
   "strategies": [
     {
       "key": "morning",
@@ -253,21 +253,21 @@
       "key": "closebet",
       "name": "🌆 종가베팅",
       "desc": "종가매수→익일시가",
-      "n": 110,
+      "n": 111,
       "open": 5,
-      "win_rate": 34.5,
-      "avg_ret": -0.63,
-      "cum_ret": -69.2,
-      "pf": 0.67,
+      "win_rate": 34.2,
+      "avg_ret": -0.66,
+      "cum_ret": -73.4,
+      "pf": 0.66,
       "buy_rule": "당일 강세·거래 급증 종목 종가 매수",
       "sell_rule": "익일 시가 청산",
       "open_stocks": [
         {
-          "date": "20261016",
-          "code": "088280",
-          "name": "쏘닉스",
-          "buy": 3780,
-          "amt_eok": 4.63
+          "date": "20261019",
+          "code": "089230",
+          "name": "THE E&M",
+          "buy": 2825,
+          "amt_eok": 7.98
         },
         {
           "date": "20261016",
@@ -296,6 +296,16 @@
         }
       ],
       "closed_stocks": [
+        {
+          "date": "20261016",
+          "code": "088280",
+          "name": "쏘닉스",
+          "buy": 3785,
+          "sell": 3625,
+          "ret": -4.23,
+          "amt_eok": 4.63,
+          "entry_date": "20261016"
+        },
         {
           "date": "20261014",
           "code": "049120",
@@ -585,16 +595,6 @@
           "ret": -0.8,
           "amt_eok": 0.5,
           "entry_date": "20260923"
-        },
-        {
-          "date": "20260922",
-          "code": "044450",
-          "name": "KSS해운",
-          "buy": 11540,
-          "sell": 11400,
-          "ret": -1.21,
-          "amt_eok": 3.71,
-          "entry_date": "20260922"
         }
       ],
       "tradable": true,
