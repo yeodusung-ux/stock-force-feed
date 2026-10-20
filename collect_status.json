@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21 02:45:15",
+  "updated": "2026-10-21 02:50:17",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 13472,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 32
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 108080789,
+      "rows": 108082385,
       "codes": 2472,
       "target": 2368,
       "first": "2023-03-24",
