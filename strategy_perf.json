@@ -1,178 +1,23 @@
 {
-  "updated": "2026-10-21 11:00",
+  "updated": "2026-10-21 11:01",
   "strategies": [
     {
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 14,
+      "n": 0,
       "open": 0,
-      "win_rate": 85.7,
-      "avg_ret": 8.62,
-      "cum_ret": 120.6,
-      "pf": 24.56,
+      "win_rate": 0.0,
+      "avg_ret": 0.0,
+      "cum_ret": 0.0,
+      "pf": 0.0,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
-      "sell_rule": "당일 종가 청산 · 현재 설정 적용(⚡·물타기)",
+      "sell_rule": "당일 종가 청산",
       "open_stocks": [],
-      "closed_stocks": [
-        {
-          "date": "20260608",
-          "code": "006920",
-          "name": "모헨즈",
-          "buy": 3515,
-          "sell": 3750,
-          "ret": 6.69,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260608"
-        },
-        {
-          "date": "20260417",
-          "code": "042510",
-          "name": "라온시큐어",
-          "buy": 12930,
-          "sell": 13440,
-          "ret": 3.94,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260417"
-        },
-        {
-          "date": "20260402",
-          "code": "062970",
-          "name": "한국첨단소재",
-          "buy": 5082,
-          "sell": 5502,
-          "ret": 8.26,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260402"
-        },
-        {
-          "date": "20260310",
-          "code": "117580",
-          "name": "대성에너지",
-          "buy": 12120,
-          "sell": 12250,
-          "ret": 1.07,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260310"
-        },
-        {
-          "date": "20260306",
-          "code": "307180",
-          "name": "아이엘",
-          "buy": 5350,
-          "sell": 5290,
-          "ret": -1.12,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260306"
-        },
-        {
-          "date": "20260305",
-          "code": "000440",
-          "name": "중앙에너비스",
-          "buy": 26100,
-          "sell": 30850,
-          "ret": 18.2,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
-          "code": "003280",
-          "name": "흥아해운",
-          "buy": 2290,
-          "sell": 2815,
-          "ret": 22.93,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
-          "code": "005860",
-          "name": "한일사료",
-          "buy": 3650,
-          "sell": 4150,
-          "ret": 13.7,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
-          "code": "014530",
-          "name": "극동유화",
-          "buy": 4640,
-          "sell": 4910,
-          "ret": 5.82,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
-          "code": "053050",
-          "name": "지에스이",
-          "buy": 3130,
-          "sell": 3535,
-          "ret": 12.94,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20260305",
-          "code": "117580",
-          "name": "대성에너지",
-          "buy": 10450,
-          "sell": 12700,
-          "ret": 21.53,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260305"
-        },
-        {
-          "date": "20250624",
-          "code": "000440",
-          "name": "중앙에너비스",
-          "buy": 17760,
-          "sell": 17050,
-          "ret": -4.0,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20250624"
-        },
-        {
-          "date": "20250502",
-          "code": "002630",
-          "name": "오리엔트바이오",
-          "buy": 2620,
-          "sell": 2754,
-          "ret": 5.11,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20250502"
-        },
-        {
-          "date": "20250502",
-          "code": "065500",
-          "name": "오리엔트정공",
-          "buy": 9340,
-          "sell": 9860,
-          "ret": 5.57,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20250502"
-        }
-      ],
+      "closed_stocks": [],
       "tradable": true,
-      "avg_add_buys": 0.0,
-      "avg_hold_days": 0.0,
+      "real_only": true,
+      "real_note": "실제 신호만 0건 · 실시간 신호가 없는 전략(장 마감 뒤 사후 판정) · 과거 실적은 Test",
       "cond": {
         "editable": true,
         "link": "",
@@ -240,25 +85,18 @@
             ]
           }
         ]
-      },
-      "applied": {
-        "fast_trail": true,
-        "add_buy": true,
-        "rule": null,
-        "excluded": 0,
-        "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영"
       }
     },
     {
       "key": "closebet",
       "name": "🌆 종가베팅",
       "desc": "종가매수→익일시가",
-      "n": 114,
-      "open": 4,
-      "win_rate": 34.2,
-      "avg_ret": -0.64,
-      "cum_ret": -72.5,
-      "pf": 0.66,
+      "n": 129,
+      "open": 5,
+      "win_rate": 33.3,
+      "avg_ret": -0.65,
+      "cum_ret": -84.0,
+      "pf": 0.65,
       "buy_rule": "당일 강세·거래 급증 종목 종가 매수",
       "sell_rule": "익일 시가 청산",
       "open_stocks": [
@@ -268,6 +106,13 @@
           "name": "엔바이오니아",
           "buy": 5500,
           "amt_eok": 0.57
+        },
+        {
+          "date": "20261007",
+          "code": "054410",
+          "name": "케이피티유",
+          "buy": 2990,
+          "amt_eok": 0.23
         },
         {
           "date": "20260708",
@@ -560,6 +405,16 @@
           "entry_date": "20260929"
         },
         {
+          "date": "20260929",
+          "code": "335870",
+          "name": "윙스풋",
+          "buy": 4700,
+          "sell": 4350,
+          "ret": -7.45,
+          "amt_eok": 0.22,
+          "entry_date": "20260929"
+        },
+        {
           "date": "20260928",
           "code": "001260",
           "name": "남광토건",
@@ -577,16 +432,6 @@
           "sell": 4880,
           "ret": -1.81,
           "amt_eok": 0.53,
-          "entry_date": "20260928"
-        },
-        {
-          "date": "20260928",
-          "code": "360350",
-          "name": "코셈",
-          "buy": 8590,
-          "sell": 8600,
-          "ret": 0.12,
-          "amt_eok": 1.28,
           "entry_date": "20260928"
         }
       ],
@@ -734,12 +579,12 @@
       "key": "oversold",
       "name": "📉 과대낙폭주",
       "desc": "조회=진행 / 이탈=종료",
-      "n": 74,
+      "n": 84,
       "open": 3,
-      "win_rate": 45.9,
-      "avg_ret": -0.55,
-      "cum_ret": -40.4,
-      "pf": 0.85,
+      "win_rate": 44.0,
+      "avg_ret": -1.51,
+      "cum_ret": -126.4,
+      "pf": 0.65,
       "buy_rule": "과매도(낙폭과대) 반등 후보 종목 포착 시 진입",
       "sell_rule": "조회 이탈 시 청산",
       "open_stocks": [
@@ -1042,7 +887,7 @@
       ],
       "tradable": false,
       "avg_add_buys": 0.0,
-      "avg_hold_days": 0.9,
+      "avg_hold_days": 0.8,
       "cond": {
         "editable": true,
         "link": "",
@@ -1601,7 +1446,7 @@
       "name": "🏦 기관단주",
       "desc": "조회=진행 / 이탈=종료(가격 공란)",
       "n": 0,
-      "open": 111,
+      "open": 133,
       "win_rate": 0.0,
       "avg_ret": 0.0,
       "cum_ret": 0.0,
@@ -1631,6 +1476,12 @@
           "date": "2026-10-16",
           "code": "352820",
           "name": "하이브",
+          "buy": 0
+        },
+        {
+          "date": "2026-10-16",
+          "code": "499660",
+          "name": "TIGER CD금리플러스액티브(합성)",
           "buy": 0
         },
         {
@@ -1724,6 +1575,12 @@
           "buy": 0
         },
         {
+          "date": "2026-09-21",
+          "code": "069500",
+          "name": "KODEX 200",
+          "buy": 0
+        },
+        {
           "date": "2026-09-18",
           "code": "272210",
           "name": "한화시스템",
@@ -1755,6 +1612,30 @@
         },
         {
           "date": "2026-09-14",
+          "code": "475630",
+          "name": "TIGER CD1년금리액티브(합성)",
+          "buy": 0
+        },
+        {
+          "date": "2026-09-14",
+          "code": "481050",
+          "name": "KODEX CD1년금리플러스액티브(합성)",
+          "buy": 0
+        },
+        {
+          "date": "2026-09-14",
+          "code": "472150",
+          "name": "TIGER 배당커버드콜액티브",
+          "buy": 0
+        },
+        {
+          "date": "2026-09-14",
+          "code": "228790",
+          "name": "TIGER 화장품",
+          "buy": 0
+        },
+        {
+          "date": "2026-09-14",
           "code": "010140",
           "name": "삼성중공업",
           "buy": 0
@@ -1763,6 +1644,12 @@
           "date": "2026-09-10",
           "code": "000990",
           "name": "DB하이텍",
+          "buy": 0
+        },
+        {
+          "date": "2026-09-10",
+          "code": "455850",
+          "name": "SOL AI반도체소부장",
           "buy": 0
         },
         {
@@ -1793,6 +1680,12 @@
           "date": "2026-09-08",
           "code": "015760",
           "name": "한국전력",
+          "buy": 0
+        },
+        {
+          "date": "2026-09-07",
+          "code": "232080",
+          "name": "TIGER 코스닥150",
           "buy": 0
         },
         {
@@ -1833,6 +1726,12 @@
         },
         {
           "date": "2026-09-02",
+          "code": "396500",
+          "name": "TIGER 반도체TOP10",
+          "buy": 0
+        },
+        {
+          "date": "2026-09-02",
           "code": "051910",
           "name": "LG화학",
           "buy": 0
@@ -1853,6 +1752,12 @@
           "date": "2026-09-01",
           "code": "028260",
           "name": "삼성물산",
+          "buy": 0
+        },
+        {
+          "date": "2026-08-31",
+          "code": "487240",
+          "name": "KODEX AI전력핵심설비",
           "buy": 0
         },
         {
@@ -1917,6 +1822,12 @@
         },
         {
           "date": "2026-08-24",
+          "code": "395160",
+          "name": "KODEX AI반도체TOP2플러스",
+          "buy": 0
+        },
+        {
+          "date": "2026-08-24",
           "code": "066970",
           "name": "엘앤에프",
           "buy": 0
@@ -1931,6 +1842,12 @@
           "date": "2026-08-24",
           "code": "096770",
           "name": "SK이노베이션",
+          "buy": 0
+        },
+        {
+          "date": "2026-08-19",
+          "code": "0167A0",
+          "name": "SOL AI반도체TOP2플러스",
           "buy": 0
         },
         {
@@ -1955,6 +1872,18 @@
           "date": "2026-08-18",
           "code": "298040",
           "name": "효성중공업",
+          "buy": 0
+        },
+        {
+          "date": "2026-08-17",
+          "code": "102110",
+          "name": "TIGER 200",
+          "buy": 0
+        },
+        {
+          "date": "2026-08-14",
+          "code": "229200",
+          "name": "KODEX 코스닥150",
           "buy": 0
         },
         {
@@ -2033,6 +1962,12 @@
           "date": "2026-08-10",
           "code": "347700",
           "name": "스피어",
+          "buy": 0
+        },
+        {
+          "date": "2026-08-10",
+          "code": "442580",
+          "name": "PLUS 글로벌HBM반도체",
           "buy": 0
         },
         {
@@ -2139,6 +2074,12 @@
         },
         {
           "date": "2026-08-04",
+          "code": "459580",
+          "name": "KODEX CD금리액티브(합성)",
+          "buy": 0
+        },
+        {
+          "date": "2026-08-04",
           "code": "058610",
           "name": "에스피지",
           "buy": 0
@@ -2183,6 +2124,12 @@
           "date": "2026-07-30",
           "code": "051900",
           "name": "LG생활건강",
+          "buy": 0
+        },
+        {
+          "date": "2026-07-30",
+          "code": "0162Z0",
+          "name": "RISE 삼성전자SK하이닉스채권혼합50",
           "buy": 0
         },
         {
@@ -2265,8 +2212,38 @@
         },
         {
           "date": "2026-07-24",
+          "code": "498400",
+          "name": "KODEX 200타겟위클리커버드콜",
+          "buy": 0
+        },
+        {
+          "date": "2026-07-24",
+          "code": "091160",
+          "name": "KODEX 반도체",
+          "buy": 0
+        },
+        {
+          "date": "2026-07-24",
           "code": "068270",
           "name": "셀트리온",
+          "buy": 0
+        },
+        {
+          "date": "2026-07-24",
+          "code": "278530",
+          "name": "KODEX 200TR",
+          "buy": 0
+        },
+        {
+          "date": "2026-07-24",
+          "code": "148020",
+          "name": "RISE 200",
+          "buy": 0
+        },
+        {
+          "date": "2026-07-24",
+          "code": "395270",
+          "name": "HANARO Fn K-반도체",
           "buy": 0
         },
         {
@@ -2391,14 +2368,14 @@
       "key": "force",
       "name": "🔍 세력탐지기",
       "desc": "이탈표 실현(매집→청산 수익률)",
-      "n": 48,
+      "n": 50,
       "open": 22,
-      "win_rate": 58.3,
-      "avg_ret": 9.27,
-      "cum_ret": 444.9,
-      "pf": 2.71,
+      "win_rate": 58.0,
+      "avg_ret": 28.66,
+      "cum_ret": 1432.8,
+      "pf": 6.43,
       "buy_rule": "세력(주체·창구) 매집 구간 진입",
-      "sell_rule": "매집 이탈 전환 시 청산 · 액면변경 단위 보정 1건",
+      "sell_rule": "매집 이탈 전환 시 청산",
       "open_stocks": [
         {
           "date": "2026-09-01",
@@ -2609,9 +2586,9 @@
           "date": "20260914",
           "code": "001210",
           "name": "금호전기",
-          "buy": 4815,
+          "buy": 963,
           "sell": 10782,
-          "ret": 123.93,
+          "ret": 1019.63,
           "entry_date": "20260706"
         },
         {
@@ -2667,6 +2644,15 @@
           "sell": 2660,
           "ret": 5.35,
           "entry_date": "20260817"
+        },
+        {
+          "date": "20260821",
+          "code": "101000",
+          "name": "KS인더스트리",
+          "buy": 378,
+          "sell": 738,
+          "ret": 95.24,
+          "entry_date": "20260706"
         },
         {
           "date": "20260821",
@@ -2838,20 +2824,11 @@
           "sell": 912,
           "ret": -18.21,
           "entry_date": "20260706"
-        },
-        {
-          "date": "20260720",
-          "code": "147760",
-          "name": "피엠티",
-          "buy": 4105,
-          "sell": 3530,
-          "ret": -14.01,
-          "entry_date": "20260706"
         }
       ],
       "tradable": true,
       "avg_add_buys": 0.0,
-      "avg_hold_days": 20.1,
+      "avg_hold_days": 20.0,
       "cond": {
         "editable": false,
         "link": "force_analysis",
@@ -2861,342 +2838,29 @@
     {
       "key": "force_gate",
       "name": "🎯 세력게이트",
-      "desc": "세력평단 아래 대규모 매집 신규포착 / 익절·손절·최대보유 청산 (과거시뮬 포함)",
-      "n": 26,
-      "open": 4,
-      "win_rate": 92.3,
-      "avg_ret": 4.73,
-      "cum_ret": 123.0,
-      "pf": 10.79,
+      "desc": "세력평단 아래 대규모 매집 신규포착 / 익절·손절·최대보유 청산 (실제 신호 · 과거 실적은 Test)",
+      "n": 0,
+      "open": 1,
+      "win_rate": 0.0,
+      "avg_ret": 0.0,
+      "cum_ret": 0.0,
+      "pf": 0.0,
       "buy_rule": "세력평단 아래에서 대규모 매집이 새로 포착되면 매수",
-      "sell_rule": "익절·손절 도달 또는 최대 보유기간 경과 시 청산 · 현재 설정 적용(⚡·물타기·현재 규칙) · 일봉 없음·단위 불일치 16건 제외 · 보유 중 재진입 1건 제외",
+      "sell_rule": "익절·손절 도달 또는 최대 보유기간 경과 시 청산",
       "open_stocks": [
-        {
-          "date": "2026-09-18",
-          "code": "109610",
-          "name": "에스와이",
-          "buy": 1892,
-          "cur": 1752,
-          "ret": -7.4
-        },
-        {
-          "date": "2026-09-18",
-          "code": "109860",
-          "name": "동일금속",
-          "buy": 7490,
-          "cur": 7350,
-          "ret": -1.87,
-          "levels": 1
-        },
-        {
-          "date": "2026-09-18",
-          "code": "004250",
-          "name": "NPC",
-          "buy": 2855,
-          "cur": 2865,
-          "ret": 0.35
-        },
         {
           "date": "2026-09-14",
           "code": "013810",
           "name": "스페코",
-          "buy": 1470,
+          "buy": 1599,
           "cur": 1428,
-          "ret": -2.83,
-          "levels": 2
+          "ret": -10.69
         }
       ],
-      "closed_stocks": [
-        {
-          "date": "20260915",
-          "code": "013990",
-          "name": "아가방컴퍼니",
-          "buy": 4670,
-          "sell": 4803,
-          "ret": 2.85,
-          "reason": "giveback",
-          "levels": 1,
-          "entry_date": "20260819"
-        },
-        {
-          "date": "20260818",
-          "code": "032850",
-          "name": "비트컴퓨터",
-          "buy": 3853,
-          "sell": 4110,
-          "ret": 6.68,
-          "reason": "giveback",
-          "levels": 3,
-          "entry_date": "20260527"
-        },
-        {
-          "date": "20260810",
-          "code": "008420",
-          "name": "문배철강",
-          "buy": 2180,
-          "sell": 2202,
-          "ret": 1.0,
-          "reason": "gap",
-          "levels": 1,
-          "entry_date": "20260710"
-        },
-        {
-          "date": "20260728",
-          "code": "950170",
-          "name": "JTC",
-          "buy": 4820,
-          "sell": 4971,
-          "ret": 3.13,
-          "reason": "giveback",
-          "levels": 1,
-          "entry_date": "20260625"
-        },
-        {
-          "date": "20260716",
-          "code": "023450",
-          "name": "동남합성",
-          "buy": 27900,
-          "sell": 28661,
-          "ret": 2.73,
-          "reason": "giveback",
-          "levels": 1,
-          "entry_date": "20260714"
-        },
-        {
-          "date": "20260706",
-          "code": "068790",
-          "name": "DMS",
-          "buy": 5400,
-          "sell": 5693,
-          "ret": 5.42,
-          "reason": "giveback",
-          "levels": 1,
-          "entry_date": "20260702"
-        },
-        {
-          "date": "20260630",
-          "code": "068790",
-          "name": "DMS",
-          "buy": 4901,
-          "sell": 5300,
-          "ret": 8.15,
-          "reason": "gap",
-          "levels": 3,
-          "entry_date": "20260601"
-        },
-        {
-          "date": "20260626",
-          "code": "080420",
-          "name": "모다이노칩",
-          "buy": 1468,
-          "sell": 1506,
-          "ret": 2.61,
-          "reason": "giveback",
-          "levels": 3,
-          "entry_date": "20260518"
-        },
-        {
-          "date": "20260625",
-          "code": "008470",
-          "name": "부스타",
-          "buy": 1692,
-          "sell": 1709,
-          "ret": 1.0,
-          "reason": "gap",
-          "levels": 3,
-          "entry_date": "20260420"
-        },
-        {
-          "date": "20260612",
-          "code": "004920",
-          "name": "씨아이테크",
-          "buy": 10113,
-          "sell": 11210,
-          "ret": 10.85,
-          "reason": "tp",
-          "levels": 2,
-          "entry_date": "20260512"
-        },
-        {
-          "date": "20260611",
-          "code": "003780",
-          "name": "진양산업",
-          "buy": 4785,
-          "sell": 5180,
-          "ret": 8.25,
-          "reason": "gap",
-          "levels": 1,
-          "entry_date": "20260605"
-        },
-        {
-          "date": "20260402",
-          "code": "050960",
-          "name": "수산아이앤티",
-          "buy": 9740,
-          "sell": 8640,
-          "ret": -11.29,
-          "reason": "hold",
-          "levels": 1,
-          "entry_date": "20260102"
-        },
-        {
-          "date": "20260225",
-          "code": "120240",
-          "name": "대정화금",
-          "buy": 13320,
-          "sell": 13655,
-          "ret": 2.52,
-          "reason": "giveback",
-          "levels": 1,
-          "entry_date": "20251222"
-        },
-        {
-          "date": "20260105",
-          "code": "047820",
-          "name": "초록뱀미디어",
-          "buy": 4708,
-          "sell": 4880,
-          "ret": 3.66,
-          "reason": "gap",
-          "levels": 3,
-          "entry_date": "20251023"
-        },
-        {
-          "date": "20251204",
-          "code": "191420",
-          "name": "테고사이언스",
-          "buy": 16921,
-          "sell": 17847,
-          "ret": 5.47,
-          "reason": "giveback",
-          "levels": 2,
-          "entry_date": "20251024"
-        },
-        {
-          "date": "20251029",
-          "code": "050120",
-          "name": "ES큐브",
-          "buy": 2840,
-          "sell": 2965,
-          "ret": 4.4,
-          "reason": "gap",
-          "levels": 1,
-          "entry_date": "20251024"
-        },
-        {
-          "date": "20251016",
-          "code": "115310",
-          "name": "인포바인",
-          "buy": 12640,
-          "sell": 13035,
-          "ret": 3.13,
-          "reason": "giveback",
-          "levels": 1,
-          "entry_date": "20251010"
-        },
-        {
-          "date": "20251013",
-          "code": "285490",
-          "name": "노바텍",
-          "buy": 20150,
-          "sell": 22700,
-          "ret": 12.66,
-          "reason": "tp",
-          "levels": 1,
-          "entry_date": "20251010"
-        },
-        {
-          "date": "20250819",
-          "code": "063440",
-          "name": "SM Life Design",
-          "buy": 1554,
-          "sell": 1610,
-          "ret": 3.62,
-          "reason": "giveback",
-          "levels": 1,
-          "entry_date": "20250716"
-        },
-        {
-          "date": "20250717",
-          "code": "285490",
-          "name": "노바텍",
-          "buy": 19030,
-          "sell": 20250,
-          "ret": 6.41,
-          "reason": "gap",
-          "levels": 1,
-          "entry_date": "20250617"
-        },
-        {
-          "date": "20250613",
-          "code": "063440",
-          "name": "SM Life Design",
-          "buy": 1522,
-          "sell": 1569,
-          "ret": 3.06,
-          "reason": "giveback",
-          "levels": 1,
-          "entry_date": "20250530"
-        },
-        {
-          "date": "20250604",
-          "code": "023600",
-          "name": "삼보판지",
-          "buy": 8270,
-          "sell": 9180,
-          "ret": 11.0,
-          "reason": "tp",
-          "levels": 1,
-          "entry_date": "20250523"
-        },
-        {
-          "date": "20250602",
-          "code": "003100",
-          "name": "선광",
-          "buy": 18710,
-          "sell": 20650,
-          "ret": 10.37,
-          "reason": "tp",
-          "levels": 1,
-          "entry_date": "20250523"
-        },
-        {
-          "date": "20250520",
-          "code": "008370",
-          "name": "원풍",
-          "buy": 3890,
-          "sell": 4071,
-          "ret": 4.64,
-          "reason": "giveback",
-          "levels": 1,
-          "entry_date": "20250408"
-        },
-        {
-          "date": "20250520",
-          "code": "115310",
-          "name": "인포바인",
-          "buy": 6430,
-          "sell": 7200,
-          "ret": 11.98,
-          "reason": "tp",
-          "levels": 1,
-          "entry_date": "20250512"
-        },
-        {
-          "date": "20230911",
-          "code": "352700",
-          "name": "씨앤투스",
-          "buy": 3824,
-          "sell": 3775,
-          "ret": -1.28,
-          "reason": "hold",
-          "levels": 2,
-          "entry_date": "20230616"
-        }
-      ],
+      "closed_stocks": [],
       "tradable": true,
-      "avg_add_buys": 0.5,
-      "avg_hold_days": 22.4,
+      "real_only": true,
+      "real_note": "실제 신호만 0건 · 과거 시뮬 42건 제외 · 오진입 4건 제외 · 과거 실적은 Test",
       "cond": {
         "editable": true,
         "link": "",
@@ -3284,29 +2948,18 @@
             ]
           }
         ]
-      },
-      "applied": {
-        "fast_trail": true,
-        "add_buy": true,
-        "rule": {
-          "tp": 10.0,
-          "sl": 20.0,
-          "max_days": 60
-        },
-        "excluded": 16,
-        "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영 · 전략 규칙은 현재값(익절 +10% · 손절 −20% · 60일, 평단·종가 기준)으로 재판정"
       }
     },
     {
       "key": "surge_live",
       "name": "🚀 급등주",
       "desc": "장중 편입 즉시 진입 / 단계형 되돌림 청산 (과거시뮬 포함)",
-      "n": 185,
+      "n": 191,
       "open": 1,
-      "win_rate": 41.6,
-      "avg_ret": -0.24,
-      "cum_ret": -44.9,
-      "pf": 0.91,
+      "win_rate": 41.9,
+      "avg_ret": -0.18,
+      "cum_ret": -33.9,
+      "pf": 0.94,
       "buy_rule": "장중 급등 상위 편입 시점에 즉시 매수",
       "sell_rule": "고점 대비 되돌림 또는 손절선 도달 시 청산(최대 보유기간 있음)",
       "open_stocks": [
@@ -3822,49 +3475,47 @@
       "cum_ret": 45.4,
       "pf": 999.0,
       "buy_rule": "볼린저 하단과 이격도선 하단을 처음 함께 이탈한 유동 종목을 다음 거래일 시가에 매수",
-      "sell_rule": "고점 수익 일부 반납 시 전량 청산(손절 없음) · 현재 설정 적용(⚡·물타기) · 일봉 없음·단위 불일치 3건 제외",
+      "sell_rule": "고점 수익 일부 반납 시 전량 청산(손절 없음)",
       "open_stocks": [
         {
           "date": "2026-10-21",
           "code": "101160",
           "name": "월덱스",
           "buy": 25900,
-          "cur": 26050,
-          "ret": 0.58
+          "cur": 26000,
+          "ret": 0.39
         },
         {
           "date": "2026-10-21",
           "code": "031330",
           "name": "에스에이엠티",
           "buy": 7000,
-          "cur": 7160,
-          "ret": 2.29
+          "cur": 7140,
+          "ret": 2.0
         },
         {
           "date": "2026-10-21",
           "code": "073240",
           "name": "금호타이어",
           "buy": 5460,
-          "cur": 5560,
-          "ret": 1.83
+          "cur": 5550,
+          "ret": 1.65
         },
         {
           "date": "2026-10-19",
           "code": "007690",
           "name": "국도화학",
           "buy": 32450,
-          "cur": 30600,
-          "ret": -4.31,
-          "levels": 1
+          "cur": 30650,
+          "ret": -5.55
         },
         {
           "date": "2026-10-14",
           "code": "267260",
           "name": "HD현대일렉트릭",
-          "buy": 517075,
+          "buy": 559000,
           "cur": 504000,
-          "ret": -6.59,
-          "levels": 2
+          "ret": -9.84
         }
       ],
       "closed_stocks": [
@@ -3875,8 +3526,6 @@
           "buy": 1325,
           "sell": 1350,
           "ret": 1.89,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261008"
         },
         {
@@ -3886,8 +3535,6 @@
           "buy": 223000,
           "sell": 226500,
           "ret": 1.57,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261015"
         },
         {
@@ -3897,8 +3544,6 @@
           "buy": 26150,
           "sell": 26550,
           "ret": 1.53,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261019"
         },
         {
@@ -3908,8 +3553,6 @@
           "buy": 157300,
           "sell": 160700,
           "ret": 2.16,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261016"
         },
         {
@@ -3919,8 +3562,6 @@
           "buy": 4115,
           "sell": 4185,
           "ret": 1.7,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261016"
         },
         {
@@ -3930,8 +3571,6 @@
           "buy": 3645,
           "sell": 3700,
           "ret": 1.51,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261016"
         },
         {
@@ -3941,8 +3580,6 @@
           "buy": 284500,
           "sell": 289000,
           "ret": 1.58,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261016"
         },
         {
@@ -3952,8 +3589,6 @@
           "buy": 3900,
           "sell": 3965,
           "ret": 1.67,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261016"
         },
         {
@@ -3963,8 +3598,6 @@
           "buy": 54700,
           "sell": 55600,
           "ret": 1.65,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261016"
         },
         {
@@ -3974,8 +3607,6 @@
           "buy": 267500,
           "sell": 272000,
           "ret": 1.68,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261016"
         },
         {
@@ -3985,8 +3616,6 @@
           "buy": 1216000,
           "sell": 1242000,
           "ret": 2.14,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261012"
         },
         {
@@ -3996,8 +3625,6 @@
           "buy": 64800,
           "sell": 65800,
           "ret": 1.54,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261015"
         },
         {
@@ -4007,8 +3634,6 @@
           "buy": 1304000,
           "sell": 1326000,
           "ret": 1.69,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261015"
         },
         {
@@ -4018,8 +3643,6 @@
           "buy": 2163000,
           "sell": 2198000,
           "ret": 1.62,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261013"
         },
         {
@@ -4029,8 +3652,6 @@
           "buy": 275000,
           "sell": 285250,
           "ret": 3.73,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261013"
         },
         {
@@ -4040,8 +3661,6 @@
           "buy": 11120,
           "sell": 11310,
           "ret": 1.71,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261014"
         },
         {
@@ -4051,8 +3670,6 @@
           "buy": 834000,
           "sell": 853000,
           "ret": 2.28,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261014"
         },
         {
@@ -4062,8 +3679,6 @@
           "buy": 178000,
           "sell": 181500,
           "ret": 1.97,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261014"
         },
         {
@@ -4073,8 +3688,6 @@
           "buy": 65000,
           "sell": 66200,
           "ret": 1.85,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261013"
         },
         {
@@ -4084,8 +3697,6 @@
           "buy": 10020,
           "sell": 10140,
           "ret": 1.2,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261013"
         },
         {
@@ -4095,8 +3706,6 @@
           "buy": 61600,
           "sell": 62700,
           "ret": 1.79,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261013"
         },
         {
@@ -4106,8 +3715,6 @@
           "buy": 8350,
           "sell": 8440,
           "ret": 1.08,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261013"
         },
         {
@@ -4117,8 +3724,6 @@
           "buy": 8450,
           "sell": 8650,
           "ret": 2.37,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261007"
         },
         {
@@ -4128,8 +3733,6 @@
           "buy": 278500,
           "sell": 283500,
           "ret": 1.8,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261001"
         },
         {
@@ -4139,14 +3742,14 @@
           "buy": 6400,
           "sell": 6510,
           "ret": 1.72,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261001"
         }
       ],
       "tradable": true,
       "avg_add_buys": 0.0,
-      "avg_hold_days": 0.6,
+      "avg_hold_days": 0.7,
+      "real_only": true,
+      "real_note": "실제 신호만 25건 · 과거 실적은 Test",
       "cond": {
         "editable": true,
         "link": "trade_config",
@@ -4225,36 +3828,28 @@
           }
         ],
         "note": "청산 = 실계좌 ⚡ 설정 +5% 발동·되돌림 50%→20% (자동매매 설정에서 변경)"
-      },
-      "applied": {
-        "fast_trail": true,
-        "add_buy": true,
-        "rule": null,
-        "excluded": 3,
-        "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영"
       }
     },
     {
       "key": "bbbreak",
       "name": "📈 과매수 돌파",
-      "desc": "상단 동시 상향돌파 익일 시가 → ⚡ 청산·시간손절(과거 시뮬 포함)",
-      "n": 552,
+      "desc": "상단 동시 상향돌파 익일 시가 → ⚡ 청산·시간손절(실제 신호 · 과거 실적은 Test)",
+      "n": 9,
       "open": 1,
-      "win_rate": 92.8,
-      "avg_ret": 3.24,
-      "cum_ret": 1788.9,
-      "pf": 6.9,
+      "win_rate": 100.0,
+      "avg_ret": 1.69,
+      "cum_ret": 15.2,
+      "pf": 999.0,
       "buy_rule": "볼린저 상단과 이격도선 상단을 처음 함께 상향 돌파한 유동 종목을 다음 거래일 시가에 매수",
-      "sell_rule": "고점 수익 일부 반납 시 전량 청산 · 소폭 수익 뒤 되밀리면 본전 근처 청산 · N거래일 미청산 시 종가 청산 · 수수료·세금 0.23% 차감 · 현재 설정 적용(⚡·물타기)",
+      "sell_rule": "고점 수익 일부 반납 시 전량 청산 · 소폭 수익 뒤 되밀리면 본전 근처 청산 · N거래일 미청산 시 종가 청산 · 수수료·세금 0.23% 차감",
       "open_stocks": [
         {
           "date": "2026-10-19",
           "code": "290650",
           "name": "엘앤씨바이오",
           "buy": 69400,
-          "cur": 66100,
-          "ret": -10.23,
-          "levels": 1
+          "cur": 66000,
+          "ret": -4.9
         }
       ],
       "closed_stocks": [
@@ -4265,8 +3860,6 @@
           "buy": 185400,
           "sell": 192600,
           "ret": 3.64,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261020"
         },
         {
@@ -4276,8 +3869,6 @@
           "buy": 425500,
           "sell": 429500,
           "ret": 0.71,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261020"
         },
         {
@@ -4287,8 +3878,6 @@
           "buy": 8810,
           "sell": 8950,
           "ret": 1.36,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261019"
         },
         {
@@ -4298,8 +3887,6 @@
           "buy": 7880,
           "sell": 7990,
           "ret": 1.17,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261019"
         },
         {
@@ -4309,8 +3896,6 @@
           "buy": 30250,
           "sell": 30850,
           "ret": 1.75,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261019"
         },
         {
@@ -4320,8 +3905,6 @@
           "buy": 10130,
           "sell": 10320,
           "ret": 1.65,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261019"
         },
         {
@@ -4331,8 +3914,6 @@
           "buy": 71000,
           "sell": 72600,
           "ret": 2.02,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261019"
         },
         {
@@ -4342,8 +3923,6 @@
           "buy": 65300,
           "sell": 66300,
           "ret": 1.3,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261019"
         },
         {
@@ -4353,245 +3932,14 @@
           "buy": 193900,
           "sell": 197500,
           "ret": 1.63,
-          "reason": "orig",
-          "levels": 1,
           "entry_date": "20261019"
-        },
-        {
-          "date": "20261016",
-          "code": "218410",
-          "name": "RFHIC",
-          "buy": 53228,
-          "sell": 50200,
-          "ret": -5.91,
-          "reason": "orig",
-          "levels": 3,
-          "entry_date": "20260921"
-        },
-        {
-          "date": "20261012",
-          "code": "005440",
-          "name": "현대지에프홀딩스",
-          "buy": 13800,
-          "sell": 12620,
-          "ret": -8.76,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260915"
-        },
-        {
-          "date": "20261012",
-          "code": "018880",
-          "name": "한온시스템",
-          "buy": 3925,
-          "sell": 3993,
-          "ret": 1.5,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261012"
-        },
-        {
-          "date": "20261007",
-          "code": "096530",
-          "name": "씨젠",
-          "buy": 37350,
-          "sell": 38110,
-          "ret": 1.8,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261002"
-        },
-        {
-          "date": "20261006",
-          "code": "078600",
-          "name": "대주전자재료",
-          "buy": 110600,
-          "sell": 112520,
-          "ret": 1.51,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261006"
-        },
-        {
-          "date": "20261002",
-          "code": "000250",
-          "name": "삼천당제약",
-          "buy": 213500,
-          "sell": 218300,
-          "ret": 2.02,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261002"
-        },
-        {
-          "date": "20261002",
-          "code": "058470",
-          "name": "리노공업",
-          "buy": 81800,
-          "sell": 85880,
-          "ret": 4.75,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261002"
-        },
-        {
-          "date": "20261002",
-          "code": "080220",
-          "name": "제주반도체",
-          "buy": 88400,
-          "sell": 90080,
-          "ret": 1.67,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261002"
-        },
-        {
-          "date": "20261002",
-          "code": "089970",
-          "name": "브이엠",
-          "buy": 70900,
-          "sell": 71600,
-          "ret": 0.76,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261002"
-        },
-        {
-          "date": "20261002",
-          "code": "095610",
-          "name": "테스",
-          "buy": 184300,
-          "sell": 186143,
-          "ret": 0.77,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261002"
-        },
-        {
-          "date": "20261002",
-          "code": "098460",
-          "name": "고영",
-          "buy": 33600,
-          "sell": 34160,
-          "ret": 1.44,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261002"
-        },
-        {
-          "date": "20261002",
-          "code": "166090",
-          "name": "하나머티리얼즈",
-          "buy": 63500,
-          "sell": 64700,
-          "ret": 1.66,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20261002"
-        },
-        {
-          "date": "20260930",
-          "code": "084370",
-          "name": "유진테크",
-          "buy": 167200,
-          "sell": 171040,
-          "ret": 2.07,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260930"
-        },
-        {
-          "date": "20260930",
-          "code": "353200",
-          "name": "대덕전자",
-          "buy": 130100,
-          "sell": 132340,
-          "ret": 1.49,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260930"
-        },
-        {
-          "date": "20260930",
-          "code": "403870",
-          "name": "HPSP",
-          "buy": 61100,
-          "sell": 65020,
-          "ret": 6.18,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260930"
-        },
-        {
-          "date": "20260929",
-          "code": "138040",
-          "name": "메리츠금융지주",
-          "buy": 137000,
-          "sell": 132500,
-          "ret": -3.5,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260904"
-        },
-        {
-          "date": "20260929",
-          "code": "281820",
-          "name": "케이씨텍",
-          "buy": 86900,
-          "sell": 87769,
-          "ret": 0.77,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260928"
-        },
-        {
-          "date": "20260929",
-          "code": "006120",
-          "name": "SK디스커버리",
-          "buy": 64300,
-          "sell": 64943,
-          "ret": 0.77,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260929"
-        },
-        {
-          "date": "20260928",
-          "code": "007810",
-          "name": "코리아써키트",
-          "buy": 64600,
-          "sell": 66040,
-          "ret": 2.0,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260923"
-        },
-        {
-          "date": "20260928",
-          "code": "014680",
-          "name": "한솔케미칼",
-          "buy": 235500,
-          "sell": 237855,
-          "ret": 0.77,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260928"
-        },
-        {
-          "date": "20260922",
-          "code": "003670",
-          "name": "포스코퓨처엠",
-          "buy": 197100,
-          "sell": 186100,
-          "ret": -5.8,
-          "reason": "orig",
-          "levels": 1,
-          "entry_date": "20260901"
         }
       ],
       "tradable": true,
-      "avg_add_buys": 0.12,
-      "avg_hold_days": 2.2,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 0.0,
+      "real_only": true,
+      "real_note": "실제 신호만 9건 · 과거 시뮬 544건 제외 · 과거 실적은 Test",
       "cond": {
         "editable": true,
         "link": "trade_config",
@@ -4715,13 +4063,6 @@
             ]
           }
         ]
-      },
-      "applied": {
-        "fast_trail": true,
-        "add_buy": true,
-        "rule": null,
-        "excluded": 0,
-        "note": "일봉 고저 근사 · 진입일 장중 미판정 · 과매도 물타기 스위치 미반영 · 수수료·세금 0.23% 차감"
       }
     },
     {
@@ -4729,14 +4070,20 @@
       "name": "💎 퀀트 가치",
       "desc": "저PER·저PBR · 20거래일",
       "n": 431,
-      "open": 165,
-      "win_rate": 60.3,
-      "avg_ret": 1.9,
-      "cum_ret": 819.6,
-      "pf": 1.79,
+      "open": 179,
+      "win_rate": 64.3,
+      "avg_ret": 28.41,
+      "cum_ret": 12244.3,
+      "pf": 13.81,
       "buy_rule": "가치 팩터 상위 정기 리밸런스 매수",
-      "sell_rule": "일정 보유 후 청산 · 액면변경 단위 보정 37건",
+      "sell_rule": "일정 보유 후 청산",
       "open_stocks": [
+        {
+          "date": "20261021",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
+        },
         {
           "date": "20261021",
           "code": "900110",
@@ -4760,6 +4107,12 @@
           "code": "021820",
           "name": "세원정공",
           "buy": 10860
+        },
+        {
+          "date": "20261020",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
         },
         {
           "date": "20261020",
@@ -4793,6 +4146,12 @@
         },
         {
           "date": "20261019",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
+        },
+        {
+          "date": "20261019",
           "code": "900110",
           "name": "딥커머스",
           "buy": 5760
@@ -4817,6 +4176,12 @@
         },
         {
           "date": "20261018",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
+        },
+        {
+          "date": "20261018",
           "code": "900110",
           "name": "딥커머스",
           "buy": 5760
@@ -4841,6 +4206,12 @@
         },
         {
           "date": "20261017",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
+        },
+        {
+          "date": "20261017",
           "code": "900110",
           "name": "딥커머스",
           "buy": 5760
@@ -4862,6 +4233,12 @@
           "code": "004960",
           "name": "한신공영",
           "buy": 10760
+        },
+        {
+          "date": "20261016",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
         },
         {
           "date": "20261016",
@@ -4895,6 +4272,12 @@
         },
         {
           "date": "20261015",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
+        },
+        {
+          "date": "20261015",
           "code": "900110",
           "name": "딥커머스",
           "buy": 6420
@@ -4916,6 +4299,12 @@
           "code": "004960",
           "name": "한신공영",
           "buy": 10700
+        },
+        {
+          "date": "20261014",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
         },
         {
           "date": "20261014",
@@ -4943,6 +4332,12 @@
         },
         {
           "date": "20261013",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
+        },
+        {
+          "date": "20261013",
           "code": "900110",
           "name": "딥커머스",
           "buy": 6100
@@ -4967,6 +4362,12 @@
         },
         {
           "date": "20261012",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
+        },
+        {
+          "date": "20261012",
           "code": "900110",
           "name": "딥커머스",
           "buy": 6430
@@ -4991,6 +4392,12 @@
         },
         {
           "date": "20261011",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
+        },
+        {
+          "date": "20261011",
           "code": "900110",
           "name": "딥커머스",
           "buy": 6430
@@ -5015,6 +4422,12 @@
         },
         {
           "date": "20261010",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
+        },
+        {
+          "date": "20261010",
           "code": "900110",
           "name": "딥커머스",
           "buy": 6430
@@ -5036,6 +4449,12 @@
           "code": "040610",
           "name": "SG&G",
           "buy": 3225
+        },
+        {
+          "date": "20261009",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4690
         },
         {
           "date": "20261009",
@@ -5066,6 +4485,12 @@
           "code": "000950",
           "name": "전방",
           "buy": 29900
+        },
+        {
+          "date": "20261008",
+          "code": "900120",
+          "name": "씨엑스아이",
+          "buy": 4885
         },
         {
           "date": "20261008",
@@ -7342,10 +6767,10 @@
       "key": "q_quality",
       "name": "🏅 퀀트 퀄리티",
       "desc": "고ROE · 20거래일",
-      "n": 165,
-      "open": 87,
-      "win_rate": 28.5,
-      "avg_ret": -4.39,
+      "n": 410,
+      "open": 170,
+      "win_rate": 11.5,
+      "avg_ret": -1.76,
       "cum_ret": -723.6,
       "pf": 0.7,
       "buy_rule": "퀄리티 팩터 상위 정기 리밸런스 매수",
@@ -7362,6 +6787,18 @@
           "code": "476830",
           "name": "알지노믹스",
           "buy": 23350
+        },
+        {
+          "date": "20261021",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261021",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
         },
         {
           "date": "20261021",
@@ -7383,6 +6820,18 @@
         },
         {
           "date": "20261020",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261020",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261020",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 11650
@@ -7401,6 +6850,18 @@
         },
         {
           "date": "20261019",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261019",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261019",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 11650
@@ -7416,6 +6877,18 @@
           "code": "476830",
           "name": "알지노믹스",
           "buy": 22400
+        },
+        {
+          "date": "20261018",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261018",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
         },
         {
           "date": "20261018",
@@ -7434,6 +6907,18 @@
           "code": "476830",
           "name": "알지노믹스",
           "buy": 22400
+        },
+        {
+          "date": "20261017",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261017",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
         },
         {
           "date": "20261017",
@@ -7455,6 +6940,18 @@
         },
         {
           "date": "20261016",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261016",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261016",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 10720
@@ -7470,6 +6967,18 @@
           "code": "476830",
           "name": "알지노믹스",
           "buy": 22850
+        },
+        {
+          "date": "20261015",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261015",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
         },
         {
           "date": "20261015",
@@ -7491,6 +7000,18 @@
         },
         {
           "date": "20261014",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261014",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261014",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 12240
@@ -7506,6 +7027,18 @@
           "code": "476830",
           "name": "알지노믹스",
           "buy": 24750
+        },
+        {
+          "date": "20261013",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261013",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
         },
         {
           "date": "20261013",
@@ -7527,6 +7060,18 @@
         },
         {
           "date": "20261012",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261012",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261012",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 14390
@@ -7545,6 +7090,18 @@
         },
         {
           "date": "20261011",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261011",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261011",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 14390
@@ -7560,6 +7117,18 @@
           "code": "476830",
           "name": "알지노믹스",
           "buy": 26350
+        },
+        {
+          "date": "20261010",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261010",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
         },
         {
           "date": "20261010",
@@ -7581,6 +7150,18 @@
         },
         {
           "date": "20261009",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261009",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261009",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 14390
@@ -7596,6 +7177,18 @@
           "code": "476830",
           "name": "알지노믹스",
           "buy": 27850
+        },
+        {
+          "date": "20261008",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261008",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
         },
         {
           "date": "20261008",
@@ -7617,6 +7210,18 @@
         },
         {
           "date": "20261007",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261007",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261007",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 17170
@@ -7635,6 +7240,18 @@
         },
         {
           "date": "20261006",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261006",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261006",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 18090
@@ -7653,6 +7270,18 @@
         },
         {
           "date": "20261005",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261005",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261005",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 18090
@@ -7668,6 +7297,18 @@
           "code": "476830",
           "name": "알지노믹스",
           "buy": 28150
+        },
+        {
+          "date": "20261004",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261004",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
         },
         {
           "date": "20261004",
@@ -7686,6 +7327,18 @@
           "code": "476830",
           "name": "알지노믹스",
           "buy": 28150
+        },
+        {
+          "date": "20261003",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261003",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
         },
         {
           "date": "20261003",
@@ -7701,15 +7354,45 @@
         },
         {
           "date": "20261002",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261002",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20261002",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 18420
+        },
+        {
+          "date": "20261002",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20261001",
           "code": "476830",
           "name": "알지노믹스",
           "buy": 23950
+        },
+        {
+          "date": "20261001",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20261001",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
         },
         {
           "date": "20261001",
@@ -7718,6 +7401,12 @@
           "buy": 18330
         },
         {
+          "date": "20261001",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
           "date": "20260930",
           "code": "476830",
           "name": "알지노믹스",
@@ -7725,9 +7414,27 @@
         },
         {
           "date": "20260930",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260930",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260930",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 17940
+        },
+        {
+          "date": "20260930",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20260929",
@@ -7737,11 +7444,29 @@
         },
         {
           "date": "20260929",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260929",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260929",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 21350
         },
         {
+          "date": "20260929",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
           "date": "20260928",
           "code": "476830",
           "name": "알지노믹스",
@@ -7749,9 +7474,27 @@
         },
         {
           "date": "20260928",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260928",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260928",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 23050
+        },
+        {
+          "date": "20260928",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20260927",
@@ -7761,9 +7504,27 @@
         },
         {
           "date": "20260927",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260927",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260927",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 23050
+        },
+        {
+          "date": "20260927",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20260926",
@@ -7773,9 +7534,27 @@
         },
         {
           "date": "20260926",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260926",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260926",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 23050
+        },
+        {
+          "date": "20260926",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20260925",
@@ -7785,9 +7564,27 @@
         },
         {
           "date": "20260925",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260925",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260925",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 23050
+        },
+        {
+          "date": "20260925",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20260924",
@@ -7797,9 +7594,27 @@
         },
         {
           "date": "20260924",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260924",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260924",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 22950
+        },
+        {
+          "date": "20260924",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20260923",
@@ -7809,9 +7624,27 @@
         },
         {
           "date": "20260923",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260923",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260923",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 24050
+        },
+        {
+          "date": "20260923",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20260922",
@@ -7821,11 +7654,29 @@
         },
         {
           "date": "20260922",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260922",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260922",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 25250
         },
         {
+          "date": "20260922",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
           "date": "20260921",
           "code": "476830",
           "name": "알지노믹스",
@@ -7833,9 +7684,27 @@
         },
         {
           "date": "20260921",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260921",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260921",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 19500
+        },
+        {
+          "date": "20260921",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20260920",
@@ -7845,9 +7714,27 @@
         },
         {
           "date": "20260920",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260920",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260920",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 19500
+        },
+        {
+          "date": "20260920",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20260919",
@@ -7857,9 +7744,27 @@
         },
         {
           "date": "20260919",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260919",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260919",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 19500
+        },
+        {
+          "date": "20260919",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         },
         {
           "date": "20260918",
@@ -7869,9 +7774,27 @@
         },
         {
           "date": "20260918",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530
+        },
+        {
+          "date": "20260918",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410
+        },
+        {
+          "date": "20260918",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 21050
+        },
+        {
+          "date": "20260918",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
         }
       ],
       "closed_stocks": [
@@ -7886,11 +7809,38 @@
         },
         {
           "date": "20260917",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530,
+          "sell": 3530,
+          "ret": 0.0,
+          "entry_date": "20260917"
+        },
+        {
+          "date": "20260917",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410,
+          "sell": 2410,
+          "ret": 0.0,
+          "entry_date": "20260917"
+        },
+        {
+          "date": "20260917",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 21050,
           "sell": 11210,
           "ret": -46.75,
+          "entry_date": "20260917"
+        },
+        {
+          "date": "20260917",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
           "entry_date": "20260917"
         },
         {
@@ -7904,11 +7854,38 @@
         },
         {
           "date": "20260916",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530,
+          "sell": 3530,
+          "ret": 0.0,
+          "entry_date": "20260916"
+        },
+        {
+          "date": "20260916",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410,
+          "sell": 2410,
+          "ret": 0.0,
+          "entry_date": "20260916"
+        },
+        {
+          "date": "20260916",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 20850,
           "sell": 11780,
           "ret": -43.5,
+          "entry_date": "20260916"
+        },
+        {
+          "date": "20260916",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
           "entry_date": "20260916"
         },
         {
@@ -7922,11 +7899,38 @@
         },
         {
           "date": "20260915",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530,
+          "sell": 3530,
+          "ret": 0.0,
+          "entry_date": "20260915"
+        },
+        {
+          "date": "20260915",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410,
+          "sell": 2410,
+          "ret": 0.0,
+          "entry_date": "20260915"
+        },
+        {
+          "date": "20260915",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 23450,
           "sell": 11800,
           "ret": -49.68,
+          "entry_date": "20260915"
+        },
+        {
+          "date": "20260915",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
           "entry_date": "20260915"
         },
         {
@@ -7940,11 +7944,38 @@
         },
         {
           "date": "20260914",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530,
+          "sell": 3530,
+          "ret": 0.0,
+          "entry_date": "20260914"
+        },
+        {
+          "date": "20260914",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410,
+          "sell": 2410,
+          "ret": 0.0,
+          "entry_date": "20260914"
+        },
+        {
+          "date": "20260914",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 25550,
           "sell": 10800,
           "ret": -57.73,
+          "entry_date": "20260914"
+        },
+        {
+          "date": "20260914",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
           "entry_date": "20260914"
         },
         {
@@ -7958,11 +7989,38 @@
         },
         {
           "date": "20260913",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530,
+          "sell": 3530,
+          "ret": 0.0,
+          "entry_date": "20260913"
+        },
+        {
+          "date": "20260913",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410,
+          "sell": 2410,
+          "ret": 0.0,
+          "entry_date": "20260913"
+        },
+        {
+          "date": "20260913",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 25550,
           "sell": 12120,
           "ret": -52.56,
+          "entry_date": "20260913"
+        },
+        {
+          "date": "20260913",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
           "entry_date": "20260913"
         },
         {
@@ -7976,6 +8034,24 @@
         },
         {
           "date": "20260912",
+          "code": "011810",
+          "name": "STX",
+          "buy": 3530,
+          "sell": 3530,
+          "ret": 0.0,
+          "entry_date": "20260912"
+        },
+        {
+          "date": "20260912",
+          "code": "080720",
+          "name": "한국유니온제약",
+          "buy": 2410,
+          "sell": 2410,
+          "ret": 0.0,
+          "entry_date": "20260912"
+        },
+        {
+          "date": "20260912",
           "code": "386380",
           "name": "스카이랩스",
           "buy": 25550,
@@ -7984,166 +8060,13 @@
           "entry_date": "20260912"
         },
         {
-          "date": "20260911",
-          "code": "476830",
-          "name": "알지노믹스",
-          "buy": 27150,
-          "sell": 22200,
-          "ret": -18.23,
-          "entry_date": "20260911"
-        },
-        {
-          "date": "20260911",
-          "code": "298000",
-          "name": "효성화학",
-          "buy": 55400,
-          "sell": 49350,
-          "ret": -10.92,
-          "entry_date": "20260911"
-        },
-        {
-          "date": "20260911",
-          "code": "386380",
-          "name": "스카이랩스",
-          "buy": 25450,
-          "sell": 12120,
-          "ret": -52.38,
-          "entry_date": "20260911"
-        },
-        {
-          "date": "20260910",
-          "code": "476830",
-          "name": "알지노믹스",
-          "buy": 28750,
-          "sell": 22450,
-          "ret": -21.91,
-          "entry_date": "20260910"
-        },
-        {
-          "date": "20260910",
-          "code": "298000",
-          "name": "효성화학",
-          "buy": 57900,
-          "sell": 48850,
-          "ret": -15.63,
-          "entry_date": "20260910"
-        },
-        {
-          "date": "20260909",
-          "code": "476830",
-          "name": "알지노믹스",
-          "buy": 28950,
-          "sell": 24150,
-          "ret": -16.58,
-          "entry_date": "20260909"
-        },
-        {
-          "date": "20260909",
-          "code": "298000",
-          "name": "효성화학",
-          "buy": 58000,
-          "sell": 50200,
-          "ret": -13.45,
-          "entry_date": "20260909"
-        },
-        {
-          "date": "20260908",
-          "code": "476830",
-          "name": "알지노믹스",
-          "buy": 28650,
-          "sell": 26300,
-          "ret": -8.2,
-          "entry_date": "20260908"
-        },
-        {
-          "date": "20260908",
-          "code": "298000",
-          "name": "효성화학",
-          "buy": 57000,
-          "sell": 51300,
-          "ret": -10.0,
-          "entry_date": "20260908"
-        },
-        {
-          "date": "20260907",
-          "code": "476830",
-          "name": "알지노믹스",
-          "buy": 28200,
-          "sell": 28300,
-          "ret": 0.35,
-          "entry_date": "20260907"
-        },
-        {
-          "date": "20260907",
-          "code": "298000",
-          "name": "효성화학",
-          "buy": 56000,
-          "sell": 52000,
-          "ret": -7.14,
-          "entry_date": "20260907"
-        },
-        {
-          "date": "20260906",
-          "code": "476830",
-          "name": "알지노믹스",
-          "buy": 28200,
-          "sell": 29900,
-          "ret": 6.03,
-          "entry_date": "20260906"
-        },
-        {
-          "date": "20260906",
-          "code": "298000",
-          "name": "효성화학",
-          "buy": 56000,
-          "sell": 52700,
-          "ret": -5.89,
-          "entry_date": "20260906"
-        },
-        {
-          "date": "20260905",
-          "code": "476830",
-          "name": "알지노믹스",
-          "buy": 28200,
-          "sell": 29900,
-          "ret": 6.03,
-          "entry_date": "20260905"
-        },
-        {
-          "date": "20260905",
-          "code": "298000",
-          "name": "효성화학",
-          "buy": 56000,
-          "sell": 52700,
-          "ret": -5.89,
-          "entry_date": "20260905"
-        },
-        {
-          "date": "20260904",
-          "code": "476830",
-          "name": "알지노믹스",
-          "buy": 26400,
-          "sell": 29900,
-          "ret": 13.26,
-          "entry_date": "20260904"
-        },
-        {
-          "date": "20260904",
-          "code": "298000",
-          "name": "효성화학",
-          "buy": 55400,
-          "sell": 52700,
-          "ret": -4.87,
-          "entry_date": "20260904"
-        },
-        {
-          "date": "20260903",
-          "code": "476830",
-          "name": "알지노믹스",
-          "buy": 27750,
-          "sell": 28150,
-          "ret": 1.44,
-          "entry_date": "20260903"
+          "date": "20260912",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
+          "entry_date": "20260912"
         }
       ],
       "tradable": true,
@@ -8154,20 +8077,944 @@
       "key": "q_momentum",
       "name": "🚀 퀀트 모멘텀",
       "desc": "52주근접 · 20거래일",
-      "n": 16,
-      "open": 5,
-      "win_rate": 18.8,
-      "avg_ret": -4.41,
-      "cum_ret": -70.5,
-      "pf": 0.7,
+      "n": 426,
+      "open": 179,
+      "win_rate": 30.0,
+      "avg_ret": 112.6,
+      "cum_ret": 47968.7,
+      "pf": 1445.41,
       "buy_rule": "모멘텀 팩터 상위 정기 리밸런스 매수",
-      "sell_rule": "일정 보유 후 청산 · 액면변경 단위 보정 9건",
+      "sell_rule": "일정 보유 후 청산",
       "open_stocks": [
+        {
+          "date": "20261021",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261021",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261021",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261021",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261021",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261020",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261020",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261020",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261020",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261020",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261019",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261019",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261019",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261019",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261019",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261018",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261018",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261018",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261018",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261018",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261017",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261017",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261017",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261017",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261017",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261016",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261016",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261016",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261016",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261016",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261015",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261015",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261015",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261015",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261015",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261014",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261014",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261014",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261014",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261014",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261013",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261013",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261013",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261013",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261013",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261012",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261012",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261012",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261012",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261012",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261011",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261011",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261011",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261011",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261011",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261010",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261010",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261010",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261010",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261010",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261009",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261009",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261009",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261009",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261009",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261008",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261008",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261008",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261008",
+          "code": "0016X0",
+          "name": "SOL 중단기회사채(A-이상)액티브",
+          "buy": 51650
+        },
+        {
+          "date": "20261008",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261008",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103930
+        },
+        {
+          "date": "20261007",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261007",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261007",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261007",
+          "code": "0016X0",
+          "name": "SOL 중단기회사채(A-이상)액티브",
+          "buy": 51625
+        },
+        {
+          "date": "20261007",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261006",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261006",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261006",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261006",
+          "code": "0016X0",
+          "name": "SOL 중단기회사채(A-이상)액티브",
+          "buy": 51610
+        },
+        {
+          "date": "20261006",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261005",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261005",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261005",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261005",
+          "code": "0016X0",
+          "name": "SOL 중단기회사채(A-이상)액티브",
+          "buy": 51610
+        },
+        {
+          "date": "20261005",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261004",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261004",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261004",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261004",
+          "code": "0016X0",
+          "name": "SOL 중단기회사채(A-이상)액티브",
+          "buy": 51610
+        },
+        {
+          "date": "20261004",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261003",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261003",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261003",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261003",
+          "code": "0016X0",
+          "name": "SOL 중단기회사채(A-이상)액티브",
+          "buy": 51610
+        },
+        {
+          "date": "20261003",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261002",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261002",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261002",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261002",
+          "code": "0016X0",
+          "name": "SOL 중단기회사채(A-이상)액티브",
+          "buy": 51545
+        },
+        {
+          "date": "20261002",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261001",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20261001",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20261001",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20261001",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20261001",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103810
+        },
+        {
+          "date": "20260930",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260930",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20260930",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260930",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260930",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103800
+        },
+        {
+          "date": "20260929",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260929",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20260929",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260929",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260929",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103797
+        },
+        {
+          "date": "20260928",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260928",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20260928",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260928",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260928",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103775
+        },
+        {
+          "date": "20260927",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260927",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20260927",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260927",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260927",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103775
+        },
+        {
+          "date": "20260926",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260926",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20260926",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260926",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260926",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103775
+        },
+        {
+          "date": "20260925",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260925",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20260925",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260925",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260925",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103775
+        },
+        {
+          "date": "20260924",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260924",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20260924",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260924",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260924",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103775
+        },
+        {
+          "date": "20260923",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260923",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20260923",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260923",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
         {
           "date": "20260923",
           "code": "003490",
           "name": "대한항공",
           "buy": 31650
+        },
+        {
+          "date": "20260923",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103775
+        },
+        {
+          "date": "20260922",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260922",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20260922",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260922",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260922",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103720
+        },
+        {
+          "date": "20260922",
+          "code": "0016X0",
+          "name": "SOL 중단기회사채(A-이상)액티브",
+          "buy": 51525
+        },
+        {
+          "date": "20260921",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260921",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
         },
         {
           "date": "20260921",
@@ -8176,10 +9023,64 @@
           "buy": 1353
         },
         {
+          "date": "20260921",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260921",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260921",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103720
+        },
+        {
+          "date": "20260920",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260920",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
           "date": "20260920",
           "code": "001520",
           "name": "동양",
           "buy": 1353
+        },
+        {
+          "date": "20260920",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260920",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260919",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260919",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
         },
         {
           "date": "20260919",
@@ -8188,156 +9089,348 @@
           "buy": 1353
         },
         {
+          "date": "20260919",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260919",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260918",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200
+        },
+        {
+          "date": "20260918",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820
+        },
+        {
+          "date": "20260918",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900
+        },
+        {
+          "date": "20260918",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935
+        },
+        {
+          "date": "20260918",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103690
+        },
+        {
           "date": "20260918",
           "code": "001520",
           "name": "동양",
           "buy": 1353
+        },
+        {
+          "date": "20260907",
+          "code": "046070",
+          "name": "코다코",
+          "buy": 82300
+        },
+        {
+          "date": "20260906",
+          "code": "046070",
+          "name": "코다코",
+          "buy": 82300
+        },
+        {
+          "date": "20260905",
+          "code": "046070",
+          "name": "코다코",
+          "buy": 82300
+        },
+        {
+          "date": "20260904",
+          "code": "046070",
+          "name": "코다코",
+          "buy": 82300
         }
       ],
       "closed_stocks": [
         {
-          "date": "20260831",
-          "code": "001210",
-          "name": "금호전기",
-          "buy": 10680,
-          "sell": 9650,
-          "ret": -9.64,
-          "entry_date": "20260831"
+          "date": "20260917",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200,
+          "sell": 4200,
+          "ret": 0.0,
+          "entry_date": "20260917"
         },
         {
-          "date": "20260830",
-          "code": "001210",
-          "name": "금호전기",
-          "buy": 10680,
-          "sell": 9890,
-          "ret": -7.4,
-          "entry_date": "20260830"
+          "date": "20260917",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820,
+          "sell": 5820,
+          "ret": 0.0,
+          "entry_date": "20260917"
         },
         {
-          "date": "20260829",
-          "code": "001210",
-          "name": "금호전기",
-          "buy": 10680,
-          "sell": 9890,
-          "ret": -7.4,
-          "entry_date": "20260829"
+          "date": "20260917",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900,
+          "sell": 9900,
+          "ret": 0.0,
+          "entry_date": "20260917"
         },
         {
-          "date": "20260828",
-          "code": "001210",
-          "name": "금호전기",
-          "buy": 10680,
-          "sell": 9890,
-          "ret": -7.4,
-          "entry_date": "20260828"
+          "date": "20260917",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
+          "entry_date": "20260917"
         },
         {
-          "date": "20260814",
-          "code": "001210",
-          "name": "금호전기",
-          "buy": 6890,
-          "sell": 12450,
-          "ret": 80.7,
-          "entry_date": "20260814"
+          "date": "20260917",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103670,
+          "sell": 104030,
+          "ret": 0.35,
+          "entry_date": "20260917"
         },
         {
-          "date": "20260813",
-          "code": "001210",
-          "name": "금호전기",
-          "buy": 6890,
-          "sell": 11800,
-          "ret": 71.26,
-          "entry_date": "20260813"
+          "date": "20260916",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200,
+          "sell": 4200,
+          "ret": 0.0,
+          "entry_date": "20260916"
         },
         {
-          "date": "20260730",
-          "code": "002210",
-          "name": "동성제약",
-          "buy": 1946,
-          "sell": 1500,
-          "ret": -22.92,
-          "entry_date": "20260730"
+          "date": "20260916",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820,
+          "sell": 5820,
+          "ret": 0.0,
+          "entry_date": "20260916"
         },
         {
-          "date": "20260729",
-          "code": "002210",
-          "name": "동성제약",
-          "buy": 1946,
-          "sell": 1534,
-          "ret": -21.17,
-          "entry_date": "20260729"
+          "date": "20260916",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900,
+          "sell": 9900,
+          "ret": 0.0,
+          "entry_date": "20260916"
         },
         {
-          "date": "20260728",
-          "code": "002210",
-          "name": "동성제약",
-          "buy": 1946,
-          "sell": 1475,
-          "ret": -24.2,
-          "entry_date": "20260728"
+          "date": "20260916",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
+          "entry_date": "20260916"
         },
         {
-          "date": "20260727",
-          "code": "002210",
-          "name": "동성제약",
-          "buy": 1946,
-          "sell": 1458,
-          "ret": -25.08,
-          "entry_date": "20260727"
+          "date": "20260916",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103670,
+          "sell": 104020,
+          "ret": 0.34,
+          "entry_date": "20260916"
         },
         {
-          "date": "20260726",
-          "code": "002210",
-          "name": "동성제약",
-          "buy": 1946,
-          "sell": 1495,
-          "ret": -23.18,
-          "entry_date": "20260726"
+          "date": "20260915",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200,
+          "sell": 4200,
+          "ret": 0.0,
+          "entry_date": "20260915"
         },
         {
-          "date": "20260725",
-          "code": "002210",
-          "name": "동성제약",
-          "buy": 1946,
-          "sell": 1495,
-          "ret": -23.18,
-          "entry_date": "20260725"
+          "date": "20260915",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820,
+          "sell": 5820,
+          "ret": 0.0,
+          "entry_date": "20260915"
         },
         {
-          "date": "20260724",
-          "code": "002210",
-          "name": "동성제약",
-          "buy": 1946,
-          "sell": 1495,
-          "ret": -23.18,
-          "entry_date": "20260724"
+          "date": "20260915",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900,
+          "sell": 9900,
+          "ret": 0.0,
+          "entry_date": "20260915"
         },
         {
-          "date": "20260723",
-          "code": "002210",
-          "name": "동성제약",
-          "buy": 1946,
-          "sell": 1555,
-          "ret": -20.09,
-          "entry_date": "20260723"
+          "date": "20260915",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
+          "entry_date": "20260915"
         },
         {
-          "date": "20260722",
-          "code": "002210",
-          "name": "동성제약",
-          "buy": 1946,
-          "sell": 1607,
-          "ret": -17.42,
-          "entry_date": "20260722"
+          "date": "20260915",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103640,
+          "sell": 104005,
+          "ret": 0.35,
+          "entry_date": "20260915"
         },
         {
-          "date": "20260629",
-          "code": "002990",
-          "name": "금호건설",
-          "buy": 8610,
-          "sell": 9450,
-          "ret": 9.76,
-          "entry_date": "20260629"
+          "date": "20260914",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200,
+          "sell": 4200,
+          "ret": 0.0,
+          "entry_date": "20260914"
+        },
+        {
+          "date": "20260914",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820,
+          "sell": 5820,
+          "ret": 0.0,
+          "entry_date": "20260914"
+        },
+        {
+          "date": "20260914",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900,
+          "sell": 9900,
+          "ret": 0.0,
+          "entry_date": "20260914"
+        },
+        {
+          "date": "20260914",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
+          "entry_date": "20260914"
+        },
+        {
+          "date": "20260914",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103635,
+          "sell": 103990,
+          "ret": 0.34,
+          "entry_date": "20260914"
+        },
+        {
+          "date": "20260913",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200,
+          "sell": 4200,
+          "ret": 0.0,
+          "entry_date": "20260913"
+        },
+        {
+          "date": "20260913",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820,
+          "sell": 5820,
+          "ret": 0.0,
+          "entry_date": "20260913"
+        },
+        {
+          "date": "20260913",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900,
+          "sell": 9900,
+          "ret": 0.0,
+          "entry_date": "20260913"
+        },
+        {
+          "date": "20260913",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
+          "entry_date": "20260913"
+        },
+        {
+          "date": "20260913",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103635,
+          "sell": 103965,
+          "ret": 0.32,
+          "entry_date": "20260913"
+        },
+        {
+          "date": "20260912",
+          "code": "000300",
+          "name": "DH오토넥스",
+          "buy": 4200,
+          "sell": 4200,
+          "ret": 0.0,
+          "entry_date": "20260912"
+        },
+        {
+          "date": "20260912",
+          "code": "001470",
+          "name": "삼부토건",
+          "buy": 5820,
+          "sell": 5820,
+          "ret": 0.0,
+          "entry_date": "20260912"
+        },
+        {
+          "date": "20260912",
+          "code": "001570",
+          "name": "금양",
+          "buy": 9900,
+          "sell": 9900,
+          "ret": 0.0,
+          "entry_date": "20260912"
+        },
+        {
+          "date": "20260912",
+          "code": "002410",
+          "name": "범양건영",
+          "buy": 1935,
+          "sell": 1935,
+          "ret": 0.0,
+          "entry_date": "20260912"
+        },
+        {
+          "date": "20260912",
+          "code": "0043B0",
+          "name": "TIGER 머니마켓액티브",
+          "buy": 103635,
+          "sell": 103965,
+          "ret": 0.32,
+          "entry_date": "20260912"
         }
       ],
       "tradable": true,
@@ -8351,11 +9444,11 @@
       "n": 419,
       "open": 178,
       "win_rate": 49.6,
-      "avg_ret": 4.85,
-      "cum_ret": 2033.7,
-      "pf": 2.68,
+      "avg_ret": 5.86,
+      "cum_ret": 2455.0,
+      "pf": 3.02,
       "buy_rule": "멀티팩터 상위 정기 리밸런스 매수",
-      "sell_rule": "일정 보유 후 청산 · 액면변경 단위 보정 4건",
+      "sell_rule": "일정 보유 후 청산",
       "open_stocks": [
         {
           "date": "20261021",
