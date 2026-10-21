@@ -1,0 +1,510 @@
+{
+  "updated": "2026-10-21 11:01",
+  "v": 1,
+  "strategies": {
+    "bbdisp": {
+      "key": "bbdisp",
+      "name": "📉 과매도 반등",
+      "available": true,
+      "n": 0,
+      "open": 0,
+      "win_rate": 0.0,
+      "avg_ret": 0.0,
+      "cum_ret": 0.0,
+      "pf": 0.0,
+      "closed_stocks": [],
+      "open_stocks": [],
+      "settings_fp": "",
+      "computed_at": "",
+      "note": "계산 전 — 잠시 뒤 채워진다",
+      "stale": true,
+      "computing": true,
+      "cond_test": {
+        "editable": true,
+        "scope": "test",
+        "link": "trade_config",
+        "groups": [
+          {
+            "section": "bbdisp_test",
+            "title": "규모",
+            "items": [
+              {
+                "key": "min_mcap_eok",
+                "label": "시총 ≥ 억 (0=조건 없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 1000
+              },
+              {
+                "key": "max_mcap_eok",
+                "label": "시총 ≤ 억 (0=조건 없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "min_opincome_eok",
+                "label": "영업이익 ≥ 억 (0=없음)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 0.0
+              },
+              {
+                "key": "min_opmargin_pct",
+                "label": "영업이익률 ≥ % (0=없음)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 1.0,
+                "dec": 1,
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "section": "bbdisp_test",
+            "title": "보유·재진입",
+            "items": [
+              {
+                "key": "max_positions",
+                "label": "동시 보유 상한(대기 포함, 0=신규 진입 중지)",
+                "type": "num",
+                "min": 0,
+                "max": 10,
+                "step": 1,
+                "dec": 0,
+                "value": 10
+              },
+              {
+                "key": "cooldown_days",
+                "label": "같은 종목 재진입 금지(앞 진입 후 거래일, 0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 120,
+                "step": 1,
+                "dec": 0,
+                "value": 20
+              }
+            ]
+          },
+          {
+            "section": "bbdisp_test",
+            "title": "청산 ⚡",
+            "items": [
+              {
+                "key": "fast_profit",
+                "label": "⚡ 발동: 고점 수익 ≥ %",
+                "type": "num",
+                "min": 0.5,
+                "max": 100.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 5.0
+              },
+              {
+                "key": "fast_giveback",
+                "label": "⚡ 되돌림: 고점 수익의 % 반납 시 청산",
+                "type": "num",
+                "min": 1.0,
+                "max": 99.0,
+                "step": 5.0,
+                "dec": 1,
+                "value": 50.0
+              },
+              {
+                "key": "ts_profit",
+                "label": "⚡ 끝점: 되돌림이 줄어드는 고점 수익 %",
+                "type": "num",
+                "min": 0.0,
+                "max": 500.0,
+                "step": 1.0,
+                "dec": 1,
+                "value": 20.0
+              },
+              {
+                "key": "stop_rate",
+                "label": "⚡ 끝 되돌림: 끝점에서의 반납 %",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 5.0,
+                "dec": 1,
+                "value": 20.0
+              }
+            ]
+          }
+        ],
+        "materialized": false,
+        "diff": [],
+        "actions": [
+          "copy_real_to_test",
+          "apply_test_to_real"
+        ]
+      }
+    },
+    "bbbreak": {
+      "key": "bbbreak",
+      "name": "📈 과매수 돌파",
+      "available": true,
+      "n": 0,
+      "open": 0,
+      "win_rate": 0.0,
+      "avg_ret": 0.0,
+      "cum_ret": 0.0,
+      "pf": 0.0,
+      "closed_stocks": [],
+      "open_stocks": [],
+      "settings_fp": "",
+      "computed_at": "",
+      "note": "계산 전 — 잠시 뒤 채워진다",
+      "stale": true,
+      "computing": true,
+      "cond_test": {
+        "editable": true,
+        "scope": "test",
+        "link": "trade_config",
+        "groups": [
+          {
+            "section": "bbbreak_test",
+            "title": "규모",
+            "items": [
+              {
+                "key": "min_mcap_eok",
+                "label": "시총 ≥ 억 (0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 10000
+              },
+              {
+                "key": "max_mcap_eok",
+                "label": "시총 ≤ 억 (0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "min_opincome_eok",
+                "label": "영업이익 ≥ 억 (0=없음)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 10.0
+              },
+              {
+                "key": "min_opmargin_pct",
+                "label": "영업이익률 ≥ % (0=없음)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 1.0,
+                "dec": 1,
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "section": "bbbreak_test",
+            "title": "진입 필터",
+            "items": [
+              {
+                "key": "max_upper_wick",
+                "label": "윗꼬리 상한: 신호일 윗꼬리 ÷ 봉 길이 ≤ (1=끔)",
+                "type": "num",
+                "min": 0.0,
+                "max": 1.0,
+                "step": 0.05,
+                "dec": 2,
+                "value": 0.3
+              },
+              {
+                "key": "min_bandwidth",
+                "label": "밴드폭 하한: 신호일 4σ ÷ 20일선 ≥ (0=끔)",
+                "type": "num",
+                "min": 0.0,
+                "max": 1.0,
+                "step": 0.01,
+                "dec": 2,
+                "value": 0.18
+              },
+              {
+                "key": "max_gap_down_pct",
+                "label": "진입 갭 하한: 시가가 신호일 종가 −% 미만이면 안 삼 (0=끔)",
+                "type": "num",
+                "min": 0.0,
+                "max": 30.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 2.0
+              }
+            ]
+          },
+          {
+            "section": "bbbreak_test",
+            "title": "청산",
+            "items": [
+              {
+                "key": "max_hold_days",
+                "label": "시간 손절: 진입 후 거래일 (0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 120,
+                "step": 1,
+                "dec": 0,
+                "value": 15
+              },
+              {
+                "key": "be_arm_pct",
+                "label": "본전 스탑 무장: 고점 ≥ 진입가 +% (0=끔)",
+                "type": "num",
+                "min": 0.0,
+                "max": 30.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 1.5
+              },
+              {
+                "key": "be_exit_pct",
+                "label": "본전 스탑 청산: 무장 뒤 ≤ 진입가 +% (무장보다 작게)",
+                "type": "num",
+                "min": 0.0,
+                "max": 20.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 1.0
+              }
+            ]
+          }
+        ],
+        "materialized": false,
+        "diff": [],
+        "actions": [
+          "copy_real_to_test",
+          "apply_test_to_real"
+        ]
+      }
+    },
+    "force_gate": {
+      "key": "force_gate",
+      "name": "🎯 세력게이트",
+      "available": true,
+      "n": 0,
+      "open": 0,
+      "win_rate": 0.0,
+      "avg_ret": 0.0,
+      "cum_ret": 0.0,
+      "pf": 0.0,
+      "closed_stocks": [],
+      "open_stocks": [],
+      "settings_fp": "",
+      "computed_at": "",
+      "note": "계산 전 — 잠시 뒤 채워진다",
+      "stale": true,
+      "computing": true,
+      "cond_test": {
+        "editable": true,
+        "scope": "test",
+        "link": "",
+        "groups": [
+          {
+            "section": "force_gate_test",
+            "title": "청산·상한",
+            "items": [
+              {
+                "key": "tp",
+                "label": "익절 % (도달 시 전량)",
+                "type": "num",
+                "min": 1.0,
+                "max": 100.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 10.0
+              },
+              {
+                "key": "sl",
+                "label": "손절 % (하락 폭)",
+                "type": "num",
+                "min": 1.0,
+                "max": 100.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 20.0
+              },
+              {
+                "key": "max_days",
+                "label": "최대 보유(거래일)",
+                "type": "num",
+                "min": 1,
+                "max": 250,
+                "step": 5,
+                "dec": 0,
+                "value": 60
+              },
+              {
+                "key": "min_amt_eok",
+                "label": "순매수 ≥ 억 (진입)",
+                "type": "num",
+                "min": 0.0,
+                "max": 1000.0,
+                "step": 5.0,
+                "dec": 1,
+                "value": 30.0
+              },
+              {
+                "key": "fresh_days",
+                "label": "신규포착 ≤ 거래일",
+                "type": "num",
+                "min": 1,
+                "max": 60,
+                "step": 1,
+                "dec": 0,
+                "value": 10
+              }
+            ]
+          },
+          {
+            "section": "force_gate_test",
+            "title": "규모",
+            "items": [
+              {
+                "key": "min_mcap_eok",
+                "label": "시총 ≥ 억 (0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "max_mcap_eok",
+                "label": "시총 ≤ 억 (0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "materialized": false,
+        "diff": [],
+        "actions": [
+          "copy_real_to_test",
+          "apply_test_to_real"
+        ]
+      }
+    },
+    "morning": {
+      "key": "morning",
+      "name": "🌅 시가종가",
+      "available": true,
+      "n": 0,
+      "open": 0,
+      "win_rate": 0.0,
+      "avg_ret": 0.0,
+      "cum_ret": 0.0,
+      "pf": 0.0,
+      "closed_stocks": [],
+      "open_stocks": [],
+      "settings_fp": "",
+      "computed_at": "",
+      "note": "계산 전 — 잠시 뒤 채워진다",
+      "stale": true,
+      "computing": true,
+      "cond_test": {
+        "editable": true,
+        "scope": "test",
+        "link": "",
+        "groups": [
+          {
+            "section": "morning_test",
+            "title": "매매조건",
+            "items": [
+              {
+                "key": "prev_up",
+                "label": "전일 등락률≥(%)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 20.0
+              },
+              {
+                "key": "today_down",
+                "label": "당일 시가 등락률≤(%)",
+                "type": "num",
+                "min": -100.0,
+                "max": 0.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": -15.0
+              }
+            ]
+          },
+          {
+            "section": "morning_test",
+            "title": "유동성·규모",
+            "items": [
+              {
+                "key": "min_avg_amt_eok",
+                "label": "20일평균 거래대금 ≥ 억",
+                "type": "num",
+                "min": 0.0,
+                "max": 5000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 5.0
+              },
+              {
+                "key": "min_mcap_eok",
+                "label": "시총 ≥ 억",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "max_mcap_eok",
+                "label": "시총 ≤ 억",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 10000
+              }
+            ]
+          }
+        ],
+        "materialized": false,
+        "diff": [],
+        "actions": [
+          "copy_real_to_test",
+          "apply_test_to_real"
+        ]
+      }
+    }
+  }
+}
