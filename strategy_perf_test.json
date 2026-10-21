@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21 17:31",
+  "updated": "2026-10-21 18:32",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -13,7 +13,7 @@
       "cum_ret": 658.9,
       "pf": 999.0,
       "avg_hold_days": 62.9,
-      "open_avg_ret": -32.07,
+      "open_avg_ret": -32.09,
       "closed_stocks": [
         {
           "date": "20260917",
@@ -1177,36 +1177,36 @@
           "code": "029780",
           "name": "삼성카드",
           "buy": 43000,
-          "cur": 42650,
-          "ret": -0.81,
-          "days": 15
+          "cur": 42150,
+          "ret": -1.98,
+          "days": 16
         },
         {
           "date": "2026-08-04",
           "code": "002210",
           "name": "동성제약",
           "buy": 1729,
-          "cur": 1296,
-          "ret": -25.04,
-          "days": 50
+          "cur": 1321,
+          "ret": -23.6,
+          "days": 51
         },
         {
           "date": "2025-07-23",
           "code": "009410",
           "name": "태영건설",
           "buy": 2340,
-          "cur": 1570,
-          "ret": -32.91,
-          "days": 301
+          "cur": 1564,
+          "ret": -33.16,
+          "days": 302
         },
         {
           "date": "2025-07-03",
           "code": "088980",
           "name": "맥쿼리인프라",
           "buy": 11350,
-          "cur": 9680,
-          "ret": -14.71,
-          "days": 315
+          "cur": 9710,
+          "ret": -14.45,
+          "days": 316
         },
         {
           "date": "2023-04-25",
@@ -1215,49 +1215,49 @@
           "buy": 229500,
           "cur": 52200,
           "ret": -77.25,
-          "days": 846
+          "days": 847
         },
         {
           "date": "2023-02-14",
           "code": "095570",
           "name": "AJ네트웍스",
           "buy": 5470,
-          "cur": 4195,
-          "ret": -23.31,
-          "days": 895
+          "cur": 4155,
+          "ret": -24.04,
+          "days": 896
         },
         {
           "date": "2021-08-20",
           "code": "100700",
           "name": "세운메디칼",
           "buy": 4655,
-          "cur": 2305,
-          "ret": -50.48,
-          "days": 1260
+          "cur": 2320,
+          "ret": -50.16,
+          "days": 1261
         }
       ],
       "period": {
         "from": "2020-06-16",
         "to": "2026-09-23"
       },
-      "settings_fp": "f0f40b442df2@2026-10-20",
-      "computed_at": "2026-10-21 11:03",
+      "settings_fp": "f0f40b442df2@2026-10-21",
+      "computed_at": "2026-10-21 18:32",
       "note": "과거 시뮬 · 신호 다음 거래일 시가(분봉 있으면 09:01) 진입 · ⚡ = Test 설정 · 손절 없음 — 미청산은 마지막 종가 평가로 따로 · 시총·재무 = 현재 값",
       "stats": {
-        "min_partial": 306,
-        "min_day": 20263,
-        "mcap": 1210,
-        "not_first": 1290,
-        "open_end": 109,
-        "cooldown": 197,
-        "illiquid": 532,
+        "min_partial": 305,
+        "min_day": 20217,
+        "mcap": 1213,
+        "not_first": 1293,
+        "open_end": 113,
+        "cooldown": 202,
+        "illiquid": 535,
         "no_atr": 1575,
-        "min_unit": 105,
         "min_scaled": 8,
+        "min_unit": 80,
         "split": 2,
-        "cap_positions": 735
+        "cap_positions": 738
       },
-      "until": "2026-10-20",
+      "until": "2026-10-21",
       "stale": false,
       "computing": false,
       "cond_test": {
@@ -1396,11 +1396,11 @@
       "key": "bbbreak",
       "name": "📈 과매수 돌파",
       "available": true,
-      "n": 545,
+      "n": 546,
       "open": 0,
       "win_rate": 91.2,
-      "avg_ret": 2.59,
-      "cum_ret": 1410.1,
+      "avg_ret": 2.58,
+      "cum_ret": 1410.9,
       "pf": 3.02,
       "avg_hold_days": 2.3,
       "closed_stocks": [
@@ -4710,24 +4710,23 @@
         "from": "2020-06-25",
         "to": "2026-10-20"
       },
-      "settings_fp": "1d44339f8a72@2026-10-20",
-      "computed_at": "2026-10-21 11:03",
+      "settings_fp": "1d44339f8a72@2026-10-21",
+      "computed_at": "2026-10-21 18:32",
       "note": "과거 시뮬(엔진 시드와 같은 판정, 실시간 경계 없음) · 수수료·세금 차감 · 시간 손절 전 미청산은 싣지 않음 · 시총·재무 = 현재 값",
       "stats": {
-        "mcap": 2207,
+        "mcap": 2206,
         "wick": 325,
-        "not_first": 2486,
-        "min_day": 845,
+        "not_first": 2495,
+        "min_day": 853,
         "open_end": 10,
-        "bandwidth": 322,
-        "cooldown": 372,
+        "bandwidth": 323,
+        "cooldown": 373,
         "min_partial": 4,
-        "fin": 47,
-        "min_unit": 8,
+        "fin": 48,
         "gap": 107,
         "cap_positions": 128
       },
-      "until": "2026-10-20",
+      "until": "2026-10-21",
       "stale": false,
       "computing": false,
       "cond_test": {
@@ -4873,7 +4872,7 @@
       "cum_ret": 47.7,
       "pf": 1.19,
       "avg_hold_days": 32.6,
-      "open_avg_ret": -9.33,
+      "open_avg_ret": -9.84,
       "closed_stocks": [
         {
           "date": "20261012",
@@ -5322,17 +5321,17 @@
           "code": "013810",
           "name": "스페코",
           "buy": 1575,
-          "cur": 1428,
-          "ret": -9.33,
-          "days": 22
+          "cur": 1420,
+          "ret": -9.84,
+          "days": 23
         }
       ],
       "period": {
         "from": "2023-06-16",
         "to": "2026-09-14"
       },
-      "settings_fp": "e4b972eaef3d@2026-10-20@lab129-2026-07-15",
-      "computed_at": "2026-10-21 11:03",
+      "settings_fp": "e4b972eaef3d@2026-10-21@lab129-2026-07-15",
+      "computed_at": "2026-10-21 18:32",
       "note": "진입 = 세력분석 랩 스냅샷 이벤트(이격 ≤ 0 · 순매수 ≥ Test 금액) + 랩 이후 실시간 진입 · 청산 = 일봉 종가로 익절·손절·최대보유 · 랭킹 재계산·신규포착 일수는 미반영(랩 이벤트는 순매수 20억 이상으로 뽑힌 것) · 시총 = 현재 값",
       "stats": {
         "disp": 51,
@@ -5341,7 +5340,7 @@
         "mcap": 0,
         "overlap": 2
       },
-      "until": "2026-10-20",
+      "until": "2026-10-21",
       "stale": false,
       "computing": false,
       "cond_test": {
@@ -5612,14 +5611,14 @@
         "from": "2025-05-02",
         "to": "2026-06-08"
       },
-      "settings_fp": "388951ad0ad6@2026-10-20",
-      "computed_at": "2026-10-21 11:03",
+      "settings_fp": "388951ad0ad6@2026-10-21",
+      "computed_at": "2026-10-21 18:32",
       "note": "daily_ohlcv 전 기간 · 당일 시가 매수 → 당일 종가 매도 · 시총 = 현재 값",
       "stats": {
         "match": 25,
         "scope": 5
       },
-      "until": "2026-10-20",
+      "until": "2026-10-21",
       "stale": false,
       "computing": false,
       "cond_test": {
