@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22 19:15:04",
+  "updated": "2026-10-22 19:20:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 15356,
     "watchdog_enabled": true,
     "restarts_today": 0,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -200,15 +200,15 @@
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 4389,
-      "codes": 4389,
+      "rows": 4390,
+      "codes": 4390,
       "target": 2372,
       "first": "2026-10-22",
       "last": "2026-10-22",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-22 · 4,389행",
+      "fmt": "최신 10-22 · 4,390행",
       "schedule": "5분 자동(DART)"
     },
     {
