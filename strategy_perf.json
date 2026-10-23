@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23 17:40",
+  "updated": "2026-10-23 18:10",
   "strategies": [
     {
       "key": "morning",
@@ -2745,28 +2745,31 @@
       "key": "force_gate",
       "name": "🎯 세력게이트",
       "desc": "세력평단 아래 대규모 매집 신규포착 / 익절·손절·최대보유 청산 (실제 신호 · 과거 실적은 Test)",
-      "n": 0,
-      "open": 1,
-      "win_rate": 0.0,
-      "avg_ret": 0.0,
-      "cum_ret": 0.0,
-      "pf": 0.0,
+      "n": 1,
+      "open": 0,
+      "win_rate": 100.0,
+      "avg_ret": 28.52,
+      "cum_ret": 28.5,
+      "pf": 999.0,
       "buy_rule": "세력평단 아래에서 대규모 매집이 새로 포착되면 매수",
       "sell_rule": "익절·손절 도달 또는 최대 보유기간 경과 시 청산",
-      "open_stocks": [
+      "open_stocks": [],
+      "closed_stocks": [
         {
-          "date": "2026-09-14",
+          "date": "20261023",
           "code": "013810",
           "name": "스페코",
           "buy": 1599,
-          "cur": 1637,
-          "ret": 2.38
+          "sell": 2055,
+          "ret": 28.52,
+          "entry_date": "20260914"
         }
       ],
-      "closed_stocks": [],
       "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 29.0,
       "real_only": true,
-      "real_note": "실제 신호만 0건 · 과거 시뮬 42건 제외 · 오진입 4건 제외 · 과거 실적은 Test",
+      "real_note": "실제 신호만 1건 · 과거 시뮬 42건 제외 · 오진입 4건 제외 · 과거 실적은 Test",
       "cond": {
         "editable": true,
         "link": "",
