@@ -1,34 +1,34 @@
 {
- "ts": 1792799546,
- "ts_str": "2026-10-24 08:52:26",
+ "ts": 1792799848,
+ "ts_str": "2026-10-24 08:57:28",
  "kiwoom_alive": true,
  "kiwoom_connected": true,
  "trading": true,
  "last_real": 0.0,
  "collect_auto_on": true,
  "collect_sched": "17:00",
- "collect_done_today": true,
- "collect_last_complete": "2026-10-24",
- "collect_progress": "완료",
+ "collect_done_today": false,
+ "collect_last_complete": "",
+ "collect_progress": "",
  "watchdog_pid": 3216,
  "restarts_today": 0,
  "active_window": "07-04",
  "programs": {
   "main": {
    "alive": true,
-   "age": 22
+   "age": 24
   },
   "strategy": {
    "alive": true,
-   "age": 30
+   "age": 2
   },
   "analyzer": {
    "alive": true,
-   "age": 5
+   "age": 7
   },
   "watchdog": {
    "alive": true,
-   "age": 0
+   "age": 1
   }
  },
  "alert": null,
