@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25 16:55:04",
+  "updated": "2026-10-25 17:05:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -109,13 +109,13 @@
       "target": 2371,
       "first": "2023-03-24",
       "last": "2026-10-23",
-      "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "미도달 411종목(최대 113일)",
+      "progress_pct": 100,
+      "busy": false,
+      "state": "done",
+      "fmt": "2,473/2,371 (100%) · 미도달 401종목(최대 113일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 411,
+        "behind": 401,
         "max_lag": 113,
         "latest": "2026-10-23",
         "total": 2473
