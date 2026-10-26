@@ -1,30 +1,30 @@
 {
- "ts": 1793005968,
- "ts_str": "2026-10-26 18:12:48",
+ "ts": 1793006271,
+ "ts_str": "2026-10-26 18:17:51",
  "kiwoom_alive": true,
  "kiwoom_connected": true,
  "trading": true,
- "last_real": 1793005955.6041934,
+ "last_real": 1793006255.609821,
  "collect_auto_on": true,
  "collect_sched": "17:00",
  "collect_done_today": false,
  "collect_last_complete": "",
- "collect_progress": "투자자 ✓ · 창구 ✓ · 신용 ✓ · 일봉 1,191/2,373",
+ "collect_progress": "투자자 ✓ · 창구 ✓ · 신용 ✓ · 일봉 1,480/2,373",
  "watchdog_pid": 3216,
  "restarts_today": 0,
  "active_window": "07-04",
  "programs": {
   "main": {
    "alive": true,
-   "age": 13
+   "age": 16
   },
   "strategy": {
    "alive": true,
-   "age": 19
+   "age": 22
   },
   "analyzer": {
    "alive": true,
-   "age": 24
+   "age": 27
   },
   "watchdog": {
    "alive": true,
