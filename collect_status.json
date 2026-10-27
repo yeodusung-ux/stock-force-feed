@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27 18:40:14",
+  "updated": "2026-10-27 18:45:16",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 13744,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 32
   },
   "collections": [
     {
@@ -230,30 +230,30 @@
       "table": "minute_ohlcv",
       "label": "분봉원본",
       "tr": "opt10080",
-      "rows": 10797924,
+      "rows": 10800726,
       "codes": 1297,
       "target": 2374,
       "first": "2025-08-01 09:00",
-      "last": "2026-10-20 20:00",
+      "last": "2026-10-27 18:42",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 10-20 · 10,797,924행",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "저녁 자동(이어받기·주1회)+원격"
     },
     {
       "table": "analyst_report",
       "label": "리포트",
       "tr": "웹크롤",
-      "rows": 2198,
-      "codes": 642,
+      "rows": 2244,
+      "codes": 649,
       "target": 2374,
       "first": "2026-08-03",
-      "last": "2026-10-26",
+      "last": "2026-10-27",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-26 · 2,198행",
+      "fmt": "최신 10-27 · 2,244행",
       "schedule": ""
     },
     {
