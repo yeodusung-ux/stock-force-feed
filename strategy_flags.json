@@ -1,25 +1,25 @@
 {
-  "updated": "2026-10-27 19:20:43",
+  "updated": "2026-10-28 01:25:16",
   "flags": {
     "bbdisp": {
-      "enabled": false,
       "fast_trail": true,
-      "add_buy": true
+      "add_buy": true,
+      "enabled": false
     },
     "morning": {
-      "enabled": false,
       "fast_trail": true,
-      "add_buy": true
+      "add_buy": true,
+      "enabled": false
     },
     "force_gate": {
-      "enabled": false,
       "fast_trail": true,
-      "add_buy": true
+      "add_buy": true,
+      "enabled": false
     },
     "bbbreak": {
-      "enabled": false,
       "fast_trail": true,
-      "add_buy": true
+      "add_buy": true,
+      "enabled": false
     }
   }
 }
