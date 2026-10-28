@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29 08:27:43",
+  "updated": "2026-10-29 08:27:46",
   "flags": {
     "bbdisp": {
       "fast_trail": true,
@@ -23,7 +23,7 @@
     },
     "stochgc": {
       "fast_trail": true,
-      "add_buy": false,
+      "add_buy": true,
       "enabled": false
     }
   }
