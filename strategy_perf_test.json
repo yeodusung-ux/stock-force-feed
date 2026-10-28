@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28 16:14",
+  "updated": "2026-10-28 17:53",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -1258,7 +1258,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -4727,7 +4727,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -4848,6 +4848,231 @@
                 "step": 0.5,
                 "dec": 1,
                 "value": 1.0
+              }
+            ]
+          }
+        ],
+        "materialized": false,
+        "diff": [],
+        "actions": [
+          "copy_real_to_test",
+          "apply_test_to_real"
+        ]
+      }
+    },
+    "stochgc": {
+      "key": "stochgc",
+      "name": "📈 눌림 골든크로스",
+      "available": true,
+      "n": 0,
+      "open": 0,
+      "win_rate": 0.0,
+      "avg_ret": 0.0,
+      "cum_ret": 0.0,
+      "pf": 0.0,
+      "closed_stocks": [],
+      "open_stocks": [],
+      "settings_fp": "",
+      "computed_at": "",
+      "note": "계산 전 — 잠시 뒤 채워진다",
+      "stale": true,
+      "computing": true,
+      "cond_test": {
+        "editable": true,
+        "scope": "test",
+        "link": "trade_config",
+        "groups": [
+          {
+            "section": "stochgc_test",
+            "title": "진입 조건",
+            "items": [
+              {
+                "key": "stoch_k",
+                "label": "스토캐스틱 기간(일)",
+                "type": "num",
+                "min": 5,
+                "max": 60,
+                "step": 1,
+                "dec": 0,
+                "value": 14
+              },
+              {
+                "key": "stoch_smooth",
+                "label": "스토캐스틱 %K 평활(일)",
+                "type": "num",
+                "min": 1,
+                "max": 20,
+                "step": 1,
+                "dec": 0,
+                "value": 3
+              },
+              {
+                "key": "stoch_d",
+                "label": "스토캐스틱 %D 기간(일)",
+                "type": "num",
+                "min": 1,
+                "max": 20,
+                "step": 1,
+                "dec": 0,
+                "value": 3
+              },
+              {
+                "key": "stoch_zone",
+                "label": "골든크로스 구간: 그날 %D <",
+                "type": "num",
+                "min": 5.0,
+                "max": 50.0,
+                "step": 1.0,
+                "dec": 1,
+                "value": 20.0
+              },
+              {
+                "key": "trend_ma_n",
+                "label": "추세: 종가 ≥ N일 이평",
+                "type": "num",
+                "min": 5,
+                "max": 120,
+                "step": 1,
+                "dec": 0,
+                "value": 20
+              },
+              {
+                "key": "vol_ratio",
+                "label": "거래량: 직전 평균 × 배 이상 (0=끔)",
+                "type": "num",
+                "min": 0.0,
+                "max": 20.0,
+                "step": 0.1,
+                "dec": 1,
+                "value": 1.5
+              },
+              {
+                "key": "vol_n",
+                "label": "거래량 평균 기간(일)",
+                "type": "num",
+                "min": 5,
+                "max": 60,
+                "step": 1,
+                "dec": 0,
+                "value": 20
+              }
+            ]
+          },
+          {
+            "section": "stochgc_test",
+            "title": "규모",
+            "items": [
+              {
+                "key": "min_mcap_eok",
+                "label": "시총 ≥ 억 (0=조건 없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "max_mcap_eok",
+                "label": "시총 ≤ 억 (0=조건 없음)",
+                "type": "num",
+                "min": 0,
+                "max": 5000000,
+                "step": 500,
+                "dec": 0,
+                "value": 0
+              },
+              {
+                "key": "min_opincome_eok",
+                "label": "영업이익 ≥ 억 (0=없음)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100000.0,
+                "step": 10.0,
+                "dec": 1,
+                "value": 0.0
+              },
+              {
+                "key": "min_opmargin_pct",
+                "label": "영업이익률 ≥ % (0=없음)",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 1.0,
+                "dec": 1,
+                "value": 0.0
+              }
+            ]
+          },
+          {
+            "section": "stochgc_test",
+            "title": "보유·재진입",
+            "items": [
+              {
+                "key": "max_positions",
+                "label": "동시 보유 상한(대기 포함, 0=신규 진입 중지)",
+                "type": "num",
+                "min": 0,
+                "max": 10,
+                "step": 1,
+                "dec": 0,
+                "value": 10
+              },
+              {
+                "key": "cooldown_days",
+                "label": "같은 종목 재진입 금지(앞 진입 후 거래일, 0=없음)",
+                "type": "num",
+                "min": 0,
+                "max": 120,
+                "step": 1,
+                "dec": 0,
+                "value": 20
+              }
+            ]
+          },
+          {
+            "section": "stochgc_test",
+            "title": "청산 ⚡",
+            "items": [
+              {
+                "key": "fast_profit",
+                "label": "⚡ 발동: 고점 수익 ≥ %",
+                "type": "num",
+                "min": 0.5,
+                "max": 100.0,
+                "step": 0.5,
+                "dec": 1,
+                "value": 5.0
+              },
+              {
+                "key": "fast_giveback",
+                "label": "⚡ 되돌림: 고점 수익의 % 반납 시 청산",
+                "type": "num",
+                "min": 1.0,
+                "max": 99.0,
+                "step": 5.0,
+                "dec": 1,
+                "value": 50.0
+              },
+              {
+                "key": "ts_profit",
+                "label": "⚡ 끝점: 되돌림이 줄어드는 고점 수익 %",
+                "type": "num",
+                "min": 0.0,
+                "max": 500.0,
+                "step": 1.0,
+                "dec": 1,
+                "value": 20.0
+              },
+              {
+                "key": "stop_rate",
+                "label": "⚡ 끝 되돌림: 끝점에서의 반납 %",
+                "type": "num",
+                "min": 0.0,
+                "max": 100.0,
+                "step": 5.0,
+                "dec": 1,
+                "value": 20.0
               }
             ]
           }
@@ -5341,7 +5566,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -5619,7 +5844,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
