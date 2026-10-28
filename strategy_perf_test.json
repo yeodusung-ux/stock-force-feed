@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29 07:00",
+  "updated": "2026-10-29 08:29",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -1258,7 +1258,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -4727,7 +4727,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -6624,8 +6624,8 @@
         "cap_positions": 596
       },
       "until": "2026-10-28",
-      "stale": false,
-      "computing": false,
+      "stale": true,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -6719,7 +6719,7 @@
                 "max": 5000000,
                 "step": 500,
                 "dec": 0,
-                "value": 0
+                "value": 1000
               },
               {
                 "key": "max_mcap_eok",
@@ -6739,7 +6739,7 @@
                 "max": 100000.0,
                 "step": 10.0,
                 "dec": 1,
-                "value": 0.0
+                "value": 1.0
               },
               {
                 "key": "min_opmargin_pct",
@@ -6826,8 +6826,11 @@
             ]
           }
         ],
-        "materialized": false,
-        "diff": [],
+        "materialized": true,
+        "diff": [
+          "min_mcap_eok",
+          "min_opincome_eok"
+        ],
         "actions": [
           "copy_real_to_test",
           "apply_test_to_real"
@@ -7315,7 +7318,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -7593,7 +7596,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -7670,5 +7673,38 @@
         ]
       }
     }
+  },
+  "last_cond": {
+    "nonce": 1793230185194,
+    "strategy": "stochgc",
+    "scope": "test",
+    "action": "set",
+    "valid": true,
+    "applied": {
+      "stochgc_test": {
+        "min_mcap_eok": 1000,
+        "min_opincome_eok": 1.0,
+        "stoch_k": 14,
+        "stoch_smooth": 3,
+        "stoch_d": 3,
+        "stoch_zone": 20.0,
+        "trend_ma_n": 20,
+        "vol_ratio": 1.5,
+        "vol_n": 20,
+        "max_mcap_eok": 0,
+        "min_opmargin_pct": 0.0,
+        "max_positions": 10,
+        "cooldown_days": 20,
+        "fast_profit": 5.0,
+        "fast_giveback": 50.0,
+        "ts_profit": 20.0,
+        "stop_rate": 20.0
+      }
+    },
+    "notes": [
+      "Test 절 처음 생성 — 실제 값 15키 복사"
+    ],
+    "by": "app",
+    "ts": "2026-10-29 08:29:49"
   }
 }
