@@ -1258,7 +1258,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -4727,7 +4727,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -5098,8 +5098,8 @@
         "cap_positions": 270
       },
       "until": "2026-10-28",
-      "stale": false,
-      "computing": false,
+      "stale": true,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -5716,7 +5716,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -5994,7 +5994,7 @@
       },
       "until": "2026-10-28",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
