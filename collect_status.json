@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 01:13:37",
+  "updated": "2026-10-30 01:18:39",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16272,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 32
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 108976446,
+      "rows": 108978837,
       "codes": 2473,
       "target": 2371,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,078종목(최대 119일)",
+      "fmt": "미도달 2,071종목(최대 119일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2078,
+        "behind": 2071,
         "max_lag": 119,
         "latest": "2026-10-29",
         "total": 2473
@@ -200,15 +200,15 @@
       "table": "dart_dividend",
       "label": "배당",
       "tr": "DART",
-      "rows": 4392,
-      "codes": 4392,
+      "rows": 4393,
+      "codes": 4393,
       "target": 2371,
       "first": "2026-10-30",
       "last": "2026-10-30",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-30 · 4,392행",
+      "fmt": "최신 10-30 · 4,393행",
       "schedule": "5분 자동(DART)"
     },
     {
