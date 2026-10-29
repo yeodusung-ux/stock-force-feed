@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29 19:09:52",
+  "updated": "2026-10-29 19:13:37",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16272,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 14
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -89,15 +89,15 @@
       "table": "signal_log",
       "label": "세력신호",
       "tr": "파생",
-      "rows": 3983,
-      "codes": 1411,
+      "rows": 3991,
+      "codes": 1413,
       "target": 2371,
       "first": "2026-07-02",
       "last": "2026-10-29",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 10-29 · 3,983행",
+      "fmt": "최신 10-29 · 3,991행",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -109,10 +109,10 @@
       "target": 2371,
       "first": "2023-03-24",
       "last": "2026-10-29",
-      "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,473/2,371 (100%) · 미도달 2,438종목(최대 119일)",
+      "progress_pct": null,
+      "busy": true,
+      "state": "busy",
+      "fmt": "미도달 2,438종목(최대 119일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
         "behind": 2438,
