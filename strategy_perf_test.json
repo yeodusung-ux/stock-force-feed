@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29 08:30",
+  "updated": "2026-10-29 09:47",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -7368,36 +7368,14 @@
     }
   },
   "last_cond": {
-    "nonce": 1793230185194,
+    "nonce": 1793234874856,
     "strategy": "stochgc",
-    "scope": "test",
+    "scope": "real",
     "action": "set",
     "valid": true,
-    "applied": {
-      "stochgc_test": {
-        "min_mcap_eok": 1000,
-        "min_opincome_eok": 1.0,
-        "stoch_k": 14,
-        "stoch_smooth": 3,
-        "stoch_d": 3,
-        "stoch_zone": 20.0,
-        "trend_ma_n": 20,
-        "vol_ratio": 1.5,
-        "vol_n": 20,
-        "max_mcap_eok": 0,
-        "min_opmargin_pct": 0.0,
-        "max_positions": 10,
-        "cooldown_days": 20,
-        "fast_profit": 5.0,
-        "fast_giveback": 50.0,
-        "ts_profit": 20.0,
-        "stop_rate": 20.0
-      }
-    },
-    "notes": [
-      "Test 절 처음 생성 — 실제 값 15키 복사"
-    ],
+    "applied": {},
+    "notes": [],
     "by": "app",
-    "ts": "2026-10-29 08:29:49"
+    "ts": "2026-10-29 09:47:59"
   }
 }
