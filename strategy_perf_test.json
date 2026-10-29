@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29 16:16",
+  "updated": "2026-10-29 19:08",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -1247,7 +1247,7 @@
       },
       "until": "2026-10-29",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -4716,7 +4716,7 @@
       },
       "until": "2026-10-29",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -6626,8 +6626,8 @@
         "cap_positions": 133
       },
       "until": "2026-10-29",
-      "stale": false,
-      "computing": false,
+      "stale": true,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -6656,6 +6656,16 @@
                 "step": 1,
                 "dec": 0,
                 "value": 20
+              },
+              {
+                "key": "trend_rise_n",
+                "label": "추세: 그 이평이 n일 전보다 높을 때만 (0=끔)",
+                "type": "num",
+                "min": 0,
+                "max": 60,
+                "step": 1,
+                "dec": 0,
+                "value": 1
               },
               {
                 "key": "vol_ratio",
@@ -7244,7 +7254,7 @@
       },
       "until": "2026-10-29",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -7522,7 +7532,7 @@
       },
       "until": "2026-10-29",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
