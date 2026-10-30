@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 13:18",
+  "updated": "2026-10-30 13:26",
   "primary": "3699285811",
   "accounts": [
     {
@@ -14,7 +14,7 @@
       "account": "5101152910",
       "alias": "1",
       "auto_trade": true,
-      "dry_run": true,
+      "dry_run": false,
       "entry_condition": false,
       "view": true
     },
@@ -70,7 +70,7 @@
       "account": "5931460210",
       "alias": "2",
       "auto_trade": true,
-      "dry_run": true,
+      "dry_run": false,
       "entry_condition": false,
       "view": true
     },
@@ -78,7 +78,7 @@
       "account": "6070547210",
       "alias": "3",
       "auto_trade": true,
-      "dry_run": true,
+      "dry_run": false,
       "entry_condition": false,
       "view": true
     },
@@ -86,7 +86,7 @@
       "account": "6138743810",
       "alias": "4",
       "auto_trade": true,
-      "dry_run": true,
+      "dry_run": false,
       "entry_condition": false,
       "view": true
     }
