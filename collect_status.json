@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 13:19:46",
+  "updated": "2026-10-30 13:23:31",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 6504,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -109,11 +109,17 @@
       "target": 2372,
       "first": "2023-03-24",
       "last": "2026-10-29",
-      "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,473/2,372 (100%)",
-      "schedule": "상시(장외 이어받기)"
+      "progress_pct": null,
+      "busy": true,
+      "state": "busy",
+      "fmt": "미도달 1,785종목(최대 119일)",
+      "schedule": "상시(장외 이어받기)",
+      "lag": {
+        "behind": 1785,
+        "max_lag": 119,
+        "latest": "2026-10-29",
+        "total": 2473
+      }
     },
     {
       "table": "news_volume",
