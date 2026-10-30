@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 18:32",
+  "updated": "2026-10-30 18:33",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -1258,7 +1258,7 @@
       },
       "until": "2026-10-30",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -4727,7 +4727,7 @@
       },
       "until": "2026-10-30",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -6382,7 +6382,7 @@
       },
       "until": "2026-10-30",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -7009,7 +7009,7 @@
       },
       "until": "2026-10-30",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -10432,8 +10432,8 @@
         "scope": 547
       },
       "until": "2026-10-30",
-      "stale": false,
-      "computing": false,
+      "stale": true,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -10461,7 +10461,7 @@
                 "max": 0.0,
                 "step": 0.5,
                 "dec": 1,
-                "value": 0.0
+                "value": -15.0
               }
             ]
           },
@@ -10503,9 +10503,7 @@
           }
         ],
         "materialized": true,
-        "diff": [
-          "today_down"
-        ],
+        "diff": [],
         "actions": [
           "copy_real_to_test",
           "apply_test_to_real"
@@ -10514,25 +10512,18 @@
     }
   },
   "last_cond": {
-    "nonce": 1793352720491,
+    "nonce": 1793352818060,
     "strategy": "morning",
     "scope": "test",
-    "action": "set",
+    "action": "copy_real_to_test",
     "valid": true,
     "applied": {
       "morning_test": {
-        "today_down": 0.0,
-        "prev_up": 20.0,
-        "min_avg_amt_eok": 5.0,
-        "min_mcap_eok": 0,
-        "max_mcap_eok": 10000
+        "today_down": -15.0
       }
     },
-    "notes": [
-      "클램프: morning_test.today_down 10→0",
-      "Test 절 처음 생성 — 실제 값 4키 복사"
-    ],
+    "notes": [],
     "by": "app",
-    "ts": "2026-10-30 18:32:04"
+    "ts": "2026-10-30 18:33:40"
   }
 }
