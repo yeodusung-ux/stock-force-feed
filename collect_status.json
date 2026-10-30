@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 12:30:05",
+  "updated": "2026-10-30 12:35:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 6924,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -22,7 +22,7 @@
       "progress_pct": 2,
       "busy": false,
       "state": "busy",
-      "fmt": "40/2,335 (2%)",
+      "fmt": "48/2,335 (2%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -109,7 +109,7 @@
       "target": 2372,
       "first": "2023-03-24",
       "last": "2026-10-29",
-      "progress_pct": 100,
+      "progress_pct": null,
       "busy": true,
       "state": "busy",
       "fmt": "미도달 1,801종목(최대 119일)",
