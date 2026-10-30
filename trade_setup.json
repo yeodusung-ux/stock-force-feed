@@ -36,7 +36,7 @@
     "oversold_disp_extra": 0.0,
     "oversold_disp_slope": 3.0
   },
-  "updated": "2026-10-30 07:00:23",
+  "updated": "2026-10-30 11:21:36",
   "accounts": {
     "5101152910": {
       "account": "5101152910",
@@ -53,18 +53,18 @@
         "max_buy_small": 7,
         "max_buy_level": 7,
         "add_buy_pct": 100,
-        "new_entry_acct_return": 5.0,
+        "new_entry_acct_return": 0.0,
         "cap_large_eok": 10000,
         "cap_mid_eok": 1000,
         "max_position_amount": 1000000,
         "water_yn": 1,
-        "fast_ts_enabled": 0,
+        "fast_ts_enabled": 1,
         "fast_ts_profit": 5.0,
         "fast_ts_giveback": 50.0,
         "max_level_stop_pct": 20.0,
         "fast_ts_on_cond": 0,
         "fast_ts_on_other": 0,
-        "fast_ts_on_exit": 0,
+        "fast_ts_on_exit": 1,
         "trail_floor_pct": 15.0,
         "entry_oversold_yn": 0,
         "add_buy_oversold_yn": 0,
@@ -76,7 +76,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-10-30 07:00:23",
+      "updated": "2026-10-30 11:21:36",
       "dry_run": true,
       "entry_condition": false
     },
@@ -118,7 +118,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-10-30 07:00:23",
+      "updated": "2026-10-30 11:21:36",
       "dry_run": true,
       "entry_condition": false
     },
@@ -160,7 +160,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-10-30 07:00:23",
+      "updated": "2026-10-30 11:21:36",
       "dry_run": true,
       "entry_condition": false
     },
@@ -202,7 +202,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-10-30 07:00:23",
+      "updated": "2026-10-30 11:21:36",
       "dry_run": true,
       "entry_condition": false
     }
