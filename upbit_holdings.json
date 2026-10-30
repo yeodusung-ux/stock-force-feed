@@ -1,11 +1,11 @@
 {
- "updated": "2026-10-30 09:18",
+ "updated": "2026-10-30 09:23",
  "holdings": [
   {
    "code": "KRW-BTC",
    "name": "BTC",
-   "shares": 8.32e-06,
-   "avgPrice": 100437771.28824197
+   "shares": 0.00287832,
+   "avgPrice": 104388546.880513
   },
   {
    "code": "KRW-ETH",
@@ -22,7 +22,7 @@
   {
    "code": "KRW-USDT",
    "name": "USDT",
-   "shares": 36503.21526686,
+   "shares": 35021.73526686,
    "avgPrice": 1353.30172547
   },
   {
@@ -82,15 +82,15 @@
   {
    "code": "KRW-USDC",
    "name": "USDC",
-   "shares": 5961.03721269,
-   "avgPrice": 1348.3123179
+   "shares": 4481.74721269,
+   "avgPrice": 1349.22745248
   }
  ],
  "account": {
-  "deposit": 14775342,
-  "monthRealized": 495253,
-  "yearRealized": 1693136,
-  "cumRealized": 1693136,
+  "deposit": 18489314,
+  "monthRealized": 506995,
+  "yearRealized": 1704878,
+  "cumRealized": 1704878,
   "acctMonthRealized": -153474,
   "acctYearRealized": -7067987,
   "acctCumRealized": 7175410,
