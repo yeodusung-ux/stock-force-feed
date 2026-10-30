@@ -1,58 +1,53 @@
 {
-  "updated": "2026-10-30 16:24:03",
+  "updated": "2026-10-30 18:26:18",
   "flags": {
-    "bbdisp": {
-      "enabled": false,
-      "fast_trail": true,
-      "add_buy": true
-    },
     "morning": {
-      "enabled": false,
       "fast_trail": true,
-      "add_buy": true
+      "add_buy": true,
+      "enabled": false
     },
     "force_gate": {
-      "enabled": false,
       "fast_trail": true,
-      "add_buy": true
+      "add_buy": true,
+      "enabled": false
     },
     "bbbreak": {
-      "enabled": false,
       "fast_trail": true,
-      "add_buy": true
+      "add_buy": true,
+      "enabled": false
     },
     "stochgc": {
-      "enabled": false,
       "fast_trail": true,
-      "add_buy": true
+      "add_buy": true,
+      "enabled": false
     }
   },
   "accounts": {
     "5101152910": {
       "bbdisp": {
-        "enabled": true,
         "fast_trail": true,
-        "add_buy": true
+        "add_buy": true,
+        "enabled": true
       },
       "force_gate": {
-        "enabled": true,
         "fast_trail": true,
-        "add_buy": true
+        "add_buy": true,
+        "enabled": true
       },
       "bbbreak": {
-        "enabled": true,
         "fast_trail": true,
-        "add_buy": true
+        "add_buy": true,
+        "enabled": true
       },
       "stochgc": {
-        "enabled": true,
         "fast_trail": true,
-        "add_buy": true
+        "add_buy": true,
+        "enabled": true
       },
       "morning": {
-        "enabled": true,
         "fast_trail": true,
-        "add_buy": true
+        "add_buy": true,
+        "enabled": true
       }
     },
     "5931460210": {},
