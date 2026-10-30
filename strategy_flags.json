@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30 15:10:56",
+  "updated": "2026-10-30 15:11:00",
   "flags": {
     "bbdisp": {
       "fast_trail": true,
@@ -30,6 +30,11 @@
   "accounts": {
     "5101152910": {
       "bbdisp": {
+        "fast_trail": true,
+        "add_buy": true,
+        "enabled": false
+      },
+      "force_gate": {
         "fast_trail": true,
         "add_buy": true,
         "enabled": false
