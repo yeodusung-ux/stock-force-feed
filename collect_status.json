@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 07:50:05",
+  "updated": "2026-11-02 07:55:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 7540,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -109,13 +109,13 @@
       "target": 2373,
       "first": "2023-03-24",
       "last": "2026-10-30",
-      "progress_pct": null,
+      "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 222종목(최대 120일)",
+      "fmt": "미도달 214종목(최대 120일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 222,
+        "behind": 214,
         "max_lag": 120,
         "latest": "2026-10-30",
         "total": 2475
