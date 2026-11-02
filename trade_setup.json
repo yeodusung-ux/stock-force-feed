@@ -36,7 +36,7 @@
     "oversold_disp_extra": 0.0,
     "oversold_disp_slope": 3.0
   },
-  "updated": "2026-11-02 07:00:24",
+  "updated": "2026-11-02 11:11:42",
   "accounts": {
     "5101152910": {
       "account": "5101152910",
@@ -76,7 +76,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-11-02 07:00:24",
+      "updated": "2026-11-02 11:11:42",
       "dry_run": false,
       "entry_condition": false
     },
@@ -118,7 +118,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-11-02 07:00:24",
+      "updated": "2026-11-02 11:11:42",
       "dry_run": false,
       "entry_condition": false
     },
@@ -160,13 +160,13 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-11-02 07:00:24",
+      "updated": "2026-11-02 11:11:42",
       "dry_run": false,
       "entry_condition": false
     },
     "6138743810": {
       "account": "6138743810",
-      "auto_trade_enabled": true,
+      "auto_trade_enabled": false,
       "emergency_stop": false,
       "setup": {
         "buy_profit_rate": -10.0,
@@ -183,7 +183,7 @@
         "cap_large_eok": 10000,
         "cap_mid_eok": 1000,
         "max_position_amount": 0,
-        "water_yn": 1,
+        "water_yn": 0,
         "fast_ts_enabled": 0,
         "fast_ts_profit": 5.0,
         "fast_ts_giveback": 50.0,
@@ -202,7 +202,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-11-02 07:00:24",
+      "updated": "2026-11-02 11:11:42",
       "dry_run": false,
       "entry_condition": false
     }
