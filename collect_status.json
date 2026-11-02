@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02 14:35:04",
+  "updated": "2026-11-02 15:00:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 7540,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -221,8 +221,8 @@
       "first": "20260630",
       "last": "20261030",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
+      "busy": true,
+      "state": "busy",
       "fmt": "16,437/4,692 (100%) · 2,303종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
