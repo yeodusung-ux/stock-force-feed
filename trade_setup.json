@@ -36,7 +36,7 @@
     "oversold_disp_extra": 0.0,
     "oversold_disp_slope": 3.0
   },
-  "updated": "2026-11-02 12:42:10",
+  "updated": "2026-11-02 17:53:51",
   "accounts": {
     "5101152910": {
       "account": "5101152910",
@@ -76,13 +76,13 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-11-02 12:42:10",
+      "updated": "2026-11-02 17:53:51",
       "dry_run": false,
       "entry_condition": false
     },
     "5931460210": {
       "account": "5931460210",
-      "auto_trade_enabled": true,
+      "auto_trade_enabled": false,
       "emergency_stop": false,
       "setup": {
         "buy_profit_rate": -10.0,
@@ -118,7 +118,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-11-02 12:42:10",
+      "updated": "2026-11-02 17:53:51",
       "dry_run": false,
       "entry_condition": false
     },
@@ -160,7 +160,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-11-02 12:42:10",
+      "updated": "2026-11-02 17:53:51",
       "dry_run": false,
       "entry_condition": false
     },
@@ -202,7 +202,7 @@
         "oversold_disp_extra": 0.0,
         "oversold_disp_slope": 3.0
       },
-      "updated": "2026-11-02 12:42:10",
+      "updated": "2026-11-02 17:53:51",
       "dry_run": false,
       "entry_condition": false
     }
