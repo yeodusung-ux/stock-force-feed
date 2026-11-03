@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03 22:40",
+  "updated": "2026-11-04 07:00",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -7367,20 +7367,5 @@
         ]
       }
     }
-  },
-  "last_cond": {
-    "nonce": 1793677496886,
-    "strategy": "bbbreak",
-    "scope": "real",
-    "action": "apply_test_to_real",
-    "valid": true,
-    "applied": {
-      "bbbreak": {
-        "min_mcap_eok": 1000
-      }
-    },
-    "notes": [],
-    "by": "app",
-    "ts": "2026-11-03 12:45:01"
   }
 }
