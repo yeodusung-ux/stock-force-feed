@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03 07:00",
+  "updated": "2026-11-03 12:44",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -1269,7 +1269,7 @@
       },
       "until": "2026-11-02",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -4737,8 +4737,8 @@
         "cap_positions": 133
       },
       "until": "2026-11-02",
-      "stale": false,
-      "computing": false,
+      "stale": true,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -4756,7 +4756,7 @@
                 "max": 5000000,
                 "step": 500,
                 "dec": 0,
-                "value": 10000
+                "value": 1000
               },
               {
                 "key": "max_mcap_eok",
@@ -4863,8 +4863,10 @@
             ]
           }
         ],
-        "materialized": false,
-        "diff": [],
+        "materialized": true,
+        "diff": [
+          "min_mcap_eok"
+        ],
         "actions": [
           "copy_real_to_test",
           "apply_test_to_real"
@@ -6393,7 +6395,7 @@
       },
       "until": "2026-11-02",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -7020,7 +7022,7 @@
       },
       "until": "2026-11-02",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -7298,7 +7300,7 @@
       },
       "until": "2026-11-02",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -7375,5 +7377,31 @@
         ]
       }
     }
+  },
+  "last_cond": {
+    "nonce": 1793677444717,
+    "strategy": "bbbreak",
+    "scope": "test",
+    "action": "set",
+    "valid": true,
+    "applied": {
+      "bbbreak_test": {
+        "min_mcap_eok": 1000,
+        "max_mcap_eok": 0,
+        "min_opincome_eok": 10.0,
+        "min_opmargin_pct": 0.0,
+        "max_upper_wick": 0.3,
+        "min_bandwidth": 0.18,
+        "max_gap_down_pct": 2.0,
+        "max_hold_days": 15,
+        "be_arm_pct": 1.5,
+        "be_exit_pct": 1.0
+      }
+    },
+    "notes": [
+      "Test 절 처음 생성 — 실제 값 9키 복사"
+    ],
+    "by": "app",
+    "ts": "2026-11-03 12:44:09"
   }
 }
