@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03 12:44",
+  "updated": "2026-11-03 12:45",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -4867,9 +4867,7 @@
           }
         ],
         "materialized": true,
-        "diff": [
-          "min_mcap_eok"
-        ],
+        "diff": [],
         "actions": [
           "copy_real_to_test",
           "apply_test_to_real"
@@ -7382,29 +7380,18 @@
     }
   },
   "last_cond": {
-    "nonce": 1793677444717,
+    "nonce": 1793677496886,
     "strategy": "bbbreak",
-    "scope": "test",
-    "action": "set",
+    "scope": "real",
+    "action": "apply_test_to_real",
     "valid": true,
     "applied": {
-      "bbbreak_test": {
-        "min_mcap_eok": 1000,
-        "max_mcap_eok": 0,
-        "min_opincome_eok": 10.0,
-        "min_opmargin_pct": 0.0,
-        "max_upper_wick": 0.3,
-        "min_bandwidth": 0.18,
-        "max_gap_down_pct": 2.0,
-        "max_hold_days": 15,
-        "be_arm_pct": 1.5,
-        "be_exit_pct": 1.0
+      "bbbreak": {
+        "min_mcap_eok": 1000
       }
     },
-    "notes": [
-      "Test 절 처음 생성 — 실제 값 9키 복사"
-    ],
+    "notes": [],
     "by": "app",
-    "ts": "2026-11-03 12:44:09"
+    "ts": "2026-11-03 12:45:01"
   }
 }
