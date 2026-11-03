@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04 07:01:19",
+  "updated": "2026-11-04 07:05:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11876,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 0
   },
   "collections": [
     {
@@ -89,15 +89,15 @@
       "table": "signal_log",
       "label": "세력신호",
       "tr": "파생",
-      "rows": 4047,
-      "codes": 1413,
+      "rows": 4063,
+      "codes": 1415,
       "target": 2377,
       "first": "2026-07-02",
-      "last": "2026-11-03",
+      "last": "2026-11-04",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-03 · 4,047행",
+      "fmt": "최신 11-04 · 4,063행",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -260,15 +260,15 @@
       "table": "stock_name",
       "label": "종목명",
       "tr": "마스터",
-      "rows": 4424,
-      "codes": 4424,
+      "rows": 4426,
+      "codes": 4426,
       "target": 2377,
       "first": "",
       "last": "",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "4,424행",
+      "fmt": "4,426행",
       "schedule": "자동(세력수집 시 갱신)"
     },
     {
