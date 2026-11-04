@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04 12:20:05",
+  "updated": "2026-11-04 12:25:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -19,10 +19,10 @@
       "target": 2377,
       "first": "2022-09-07",
       "last": "2026-11-03",
-      "progress_pct": 100,
+      "progress_pct": 0,
       "busy": false,
-      "state": "done",
-      "fmt": "2,562/2,377 (100%)",
+      "state": "idle",
+      "fmt": "0/1 (0%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -104,12 +104,12 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 109466021,
+      "rows": 109466487,
       "codes": 2477,
       "target": 2377,
       "first": "2023-03-24",
       "last": "2026-11-03",
-      "progress_pct": 100,
+      "progress_pct": null,
       "busy": true,
       "state": "busy",
       "fmt": "미도달 1,786종목(최대 124일)",
