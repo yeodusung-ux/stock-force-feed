@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04 16:31",
+  "updated": "2026-11-04 21:54",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -7389,5 +7389,16 @@
         ]
       }
     }
+  },
+  "last_cond": {
+    "nonce": 1793796811522,
+    "strategy": "stochgc",
+    "scope": "real",
+    "action": "set",
+    "valid": true,
+    "applied": {},
+    "notes": [],
+    "by": "app",
+    "ts": "2026-11-04 21:54:04"
   }
 }
