@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04 18:30:30",
+  "updated": "2026-11-04 18:35:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11876,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 56
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -74,15 +74,15 @@
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 91652,
-      "codes": 2505,
+      "rows": 92039,
+      "codes": 2507,
       "target": 2377,
       "first": "2026-04-15",
       "last": "2026-11-04",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-04 · 91,652행",
+      "fmt": "최신 11-04 · 92,039행",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -109,7 +109,7 @@
       "target": 2377,
       "first": "2023-03-24",
       "last": "2026-11-04",
-      "progress_pct": null,
+      "progress_pct": 100,
       "busy": true,
       "state": "busy",
       "fmt": "미도달 2,470종목(최대 125일)",
@@ -140,15 +140,15 @@
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 41533,
+      "rows": 41537,
       "codes": 2082,
       "target": 2377,
       "first": "2024-07-05",
-      "last": "2026-11-03",
+      "last": "2026-11-04",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-03 · 41,533행",
+      "fmt": "최신 11-04 · 41,537행",
       "schedule": ""
     },
     {
@@ -320,15 +320,15 @@
       "table": "dart_event",
       "label": "공시이벤트",
       "tr": "DART",
-      "rows": 2026,
-      "codes": 757,
+      "rows": 2059,
+      "codes": 766,
       "target": 2377,
       "first": "2026-08-24",
-      "last": "2026-11-03",
+      "last": "2026-11-04",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-03 · 2,026행",
+      "fmt": "최신 11-04 · 2,059행",
       "schedule": ""
     }
   ]
