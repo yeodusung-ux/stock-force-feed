@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05 08:25:04",
+  "updated": "2026-11-05 08:35:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 109601337,
+      "rows": 109603995,
       "codes": 2479,
       "target": 2379,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 1,962종목(최대 125일)",
+      "fmt": "미도달 1,951종목(최대 125일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 1962,
+        "behind": 1951,
         "max_lag": 125,
         "latest": "2026-11-04",
         "total": 2479
