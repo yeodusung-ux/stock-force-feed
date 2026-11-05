@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06 03:51",
+ "updated": "2026-11-06 03:56",
  "holdings": [
   {
    "code": "KRW-BTC",
@@ -82,21 +82,21 @@
   {
    "code": "KRW-USDC",
    "name": "USDC",
-   "shares": 2011.98153396,
-   "avgPrice": 1360.27825574
+   "shares": 2027.8072126900001,
+   "avgPrice": 1360.29949714
   }
  ],
  "account": {
-  "deposit": 15412401,
+  "deposit": 15390820,
   "monthRealized": 91418,
   "yearRealized": 1821424,
   "cumRealized": 1821424,
-  "acctMonthRealized": 4391,
-  "acctYearRealized": -7037030,
-  "acctCumRealized": 7206368,
+  "acctMonthRealized": 24979,
+  "acctYearRealized": -7016442,
+  "acctCumRealized": 7226955,
   "acctSince": "2020-11-24",
-  "todayRealized": 38722,
-  "weekRealized": 2495,
+  "todayRealized": 59309,
+  "weekRealized": 23083,
   "realizedSeries": [
    {
     "d": "2025-10-02",
@@ -1412,7 +1412,7 @@
    },
    {
     "d": "2026-11-06",
-    "v": 38722
+    "v": 59309
    }
   ],
   "acctQuality": {
