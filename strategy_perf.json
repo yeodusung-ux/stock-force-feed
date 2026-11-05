@@ -6,14 +6,23 @@
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
       "n": 0,
-      "open": 0,
+      "open": 1,
       "win_rate": 0.0,
       "avg_ret": 0.0,
       "cum_ret": 0.0,
       "pf": 0.0,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
       "sell_rule": "당일 종가 청산",
-      "open_stocks": [],
+      "open_stocks": [
+        {
+          "date": "20261105",
+          "code": "340810",
+          "name": "시선AI",
+          "buy": 2745,
+          "cur": 2745,
+          "ret": 0.0
+        }
+      ],
       "closed_stocks": [],
       "tradable": true,
       "real_only": true,
