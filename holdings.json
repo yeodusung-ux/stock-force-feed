@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05 12:56",
+  "updated": "2026-11-05 12:57",
   "holdings": [
     {
       "code": "000270",
@@ -541,8 +541,10 @@
       "maxLevel": 7,
       "dps": 2240,
       "plan": {
-        "water": 182700,
-        "waterQty": 1
+        "trailArm": 258000,
+        "trailQty": 1,
+        "trailExitFlag": 1,
+        "fastArm": 226000
       }
     },
     {
@@ -563,7 +565,16 @@
   ],
   "primary_account": "3699285811",
   "accounts": {
-    "5101152910": [],
+    "5101152910": [
+      {
+        "code": "340810",
+        "name": "시선AI",
+        "shares": 78,
+        "avgPrice": 2560,
+        "buyLevel": 1,
+        "maxLevel": 7
+      }
+    ],
     "5931460210": [],
     "6070547210": [],
     "6138743810": []
