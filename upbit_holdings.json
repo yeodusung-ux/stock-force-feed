@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06 00:16",
+ "updated": "2026-11-06 00:21",
  "holdings": [
   {
    "code": "KRW-BTC",
@@ -91,12 +91,12 @@
   "monthRealized": 64090,
   "yearRealized": 1794096,
   "cumRealized": 1794096,
-  "acctMonthRealized": -34331,
-  "acctYearRealized": -7075751,
-  "acctCumRealized": 7167646,
+  "acctMonthRealized": -30579,
+  "acctYearRealized": -7072000,
+  "acctCumRealized": 7171398,
   "acctSince": "2020-11-24",
-  "todayRealized": -3457,
-  "weekRealized": -36227,
+  "todayRealized": 3752,
+  "weekRealized": -32475,
   "realizedSeries": [
    {
     "d": "2025-10-02",
@@ -1409,6 +1409,10 @@
    {
     "d": "2026-11-05",
     "v": -3457
+   },
+   {
+    "d": "2026-11-06",
+    "v": 3752
    }
   ],
   "acctQuality": {
