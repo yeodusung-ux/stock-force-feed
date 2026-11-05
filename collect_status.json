@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05 16:25:37",
+  "updated": "2026-11-05 16:30:36",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11396,
     "watchdog_enabled": true,
     "restarts_today": 1,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -44,15 +44,15 @@
       "table": "flow_credit",
       "label": "신용",
       "tr": "opt10013",
-      "rows": 463154,
+      "rows": 463283,
       "codes": 2551,
       "target": 2378,
       "first": "2026-01-26",
       "last": "2026-11-04",
-      "progress_pct": 20,
+      "progress_pct": 27,
       "busy": true,
       "state": "busy",
-      "fmt": "472/2,378 (20%)",
+      "fmt": "633/2,378 (27%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
