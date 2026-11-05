@@ -5,28 +5,32 @@
       "key": "morning",
       "name": "🌅 시가종가",
       "desc": "시가매수→종가매도",
-      "n": 0,
-      "open": 1,
+      "n": 1,
+      "open": 0,
       "win_rate": 0.0,
-      "avg_ret": 0.0,
-      "cum_ret": 0.0,
+      "avg_ret": -4.19,
+      "cum_ret": -4.2,
       "pf": 0.0,
       "buy_rule": "전일 급등 종목의 당일 시가 급락 반전 포착 매수",
       "sell_rule": "당일 종가 청산",
-      "open_stocks": [
+      "open_stocks": [],
+      "closed_stocks": [
         {
           "date": "20261105",
           "code": "340810",
           "name": "시선AI",
           "buy": 2745,
-          "cur": 2745,
-          "ret": 0.0
+          "sell": 2630,
+          "ret": -4.19,
+          "entry_date": "20261105",
+          "exit_date": "20261105"
         }
       ],
-      "closed_stocks": [],
       "tradable": true,
+      "avg_add_buys": 0.0,
+      "avg_hold_days": 0.0,
       "real_only": true,
-      "real_note": "실제 신호만 0건 · 09:00 시가 실시간 진입분만(2026-10-30 이후) · 과거 실적은 Test",
+      "real_note": "실제 신호만 1건 · 09:00 시가 실시간 진입분만(2026-10-30 이후) · 과거 실적은 Test",
       "cond": {
         "editable": true,
         "link": "",
