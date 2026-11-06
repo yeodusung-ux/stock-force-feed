@@ -1,7 +1,19 @@
 {
-  "updated": "2026-11-06 07:00",
-  "count": 0,
-  "orders": [],
+  "updated": "2026-11-06 12:59",
+  "count": 1,
+  "orders": [
+    {
+      "code": "071050",
+      "name": "한국금융지주",
+      "side": "매수",
+      "qty": 40,
+      "left": 18,
+      "price": 120200,
+      "time": "125920",
+      "orderNo": "0019350",
+      "current": 120300
+    }
+  ],
   "primary_account": "3699285811",
   "accounts": {
     "5101152910": [],
