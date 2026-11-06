@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-06 23:55",
+ "updated": "2026-11-07 00:00",
  "holdings": [
   {
    "code": "KRW-BTC",
    "name": "BTC",
-   "shares": 0.0032220200000000004,
-   "avgPrice": 102978094.41659608
+   "shares": 0.00614202,
+   "avgPrice": 102862048.60488258
   },
   {
    "code": "KRW-ETH",
@@ -87,7 +87,7 @@
   }
  ],
  "account": {
-  "deposit": 6906743,
+  "deposit": 6606610,
   "monthRealized": 120234,
   "yearRealized": 1850240,
   "cumRealized": 1850240,
@@ -98,10 +98,6 @@
   "todayRealized": 97500,
   "weekRealized": 61274,
   "realizedSeries": [
-   {
-    "d": "2025-10-02",
-    "v": -20026
-   },
    {
     "d": "2025-10-03",
     "v": -37336
