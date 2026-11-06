@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06 12:52",
+  "updated": "2026-11-06 12:53",
   "holdings": [
     {
       "code": "000270",
@@ -49,16 +49,16 @@
     {
       "code": "003550",
       "name": "LG",
-      "shares": 2,
-      "avgPrice": 118800,
-      "buyLevel": 1,
+      "shares": 4,
+      "avgPrice": 104175,
+      "buyLevel": 2,
       "maxLevel": 7,
       "dps": 3100,
       "plan": {
-        "trailArm": 142600,
-        "trailQty": 2,
+        "trailArm": 125100,
+        "trailQty": 4,
         "trailExitFlag": 1,
-        "fastArm": 124800
+        "fastArm": 109400
       }
     },
     {
