@@ -62,13 +62,17 @@
     "395400"
   ],
   "strategy": {},
-  "updated": "2026-11-06 08:31:04",
+  "updated": "2026-11-06 09:03:14",
   "primary_account": "3699285811",
   "accounts": {
     "5101152910": {
-      "codes": [],
+      "codes": [
+        "041830"
+      ],
       "exiting": [],
-      "strategy": {}
+      "strategy": {
+        "041830": "morning"
+      }
     },
     "5931460210": {
       "codes": [],
