@@ -1513,15 +1513,15 @@
   "accounts": {
     "5101152910": {
       "updated": "2026-11-08 08:14",
-      "todayRealized": null,
+      "todayRealized": 0,
       "weekRealized": null,
       "realizedSeries": [],
       "totalBuying": 0,
       "totalValue": 0,
       "totalProfit": 0,
-      "profitRate": null,
-      "deposit": 0,
-      "balanceAsset": 0,
+      "profitRate": 0.0,
+      "deposit": 10001501,
+      "balanceAsset": 10001501,
       "monthRealized": null,
       "yearRealized": null,
       "cumRealized": null
