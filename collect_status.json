@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09 00:18:37",
+  "updated": "2026-11-09 00:23:35",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 11840,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 33
+    "heartbeat_age_sec": 29
   },
   "collections": [
     {
@@ -215,7 +215,7 @@
       "table": "late_rise",
       "label": "후반급등",
       "tr": "opt10080",
-      "rows": 17265,
+      "rows": 17305,
       "codes": 2324,
       "target": 5235,
       "first": "20260630",
@@ -223,7 +223,7 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "17,265/5,235 (100%) · 2,324종목",
+      "fmt": "17,305/5,235 (100%) · 2,324종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
     {
