@@ -1,4 +1,36 @@
 {
-  "updated": "2026-11-09 07:59:02",
-  "flags": {}
+  "updated": "2026-11-09 08:15:36",
+  "flags": {},
+  "accounts": {
+    "5101152910": {
+      "bbdisp": {
+        "fast_trail": true,
+        "add_buy": true,
+        "enabled": true
+      },
+      "force_gate": {
+        "fast_trail": true,
+        "add_buy": true,
+        "enabled": true
+      },
+      "bbbreak": {
+        "fast_trail": true,
+        "add_buy": true,
+        "enabled": true
+      },
+      "stochgc": {
+        "fast_trail": true,
+        "add_buy": true,
+        "enabled": true
+      },
+      "morning": {
+        "fast_trail": true,
+        "add_buy": true,
+        "enabled": true
+      }
+    },
+    "5931460210": {},
+    "6070547210": {},
+    "6138743810": {}
+  }
 }
