@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09 15:40:06",
+  "updated": "2026-11-09 15:45:07",
   "system": {
     "connected": true,
     "trading": true,
@@ -59,15 +59,15 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 1224395,
+      "rows": 1224697,
       "codes": 2518,
       "target": 2377,
       "first": "2020-02-20",
       "last": "2026-11-09",
-      "progress_pct": 7,
+      "progress_pct": 19,
       "busy": true,
       "state": "busy",
-      "fmt": "164/2,377 (7%)",
+      "fmt": "448/2,377 (19%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
