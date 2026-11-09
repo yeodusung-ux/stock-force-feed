@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09 08:14",
+  "updated": "2026-11-09 09:01",
   "holdings": [
     {
       "code": "000270",
@@ -565,7 +565,35 @@
   ],
   "primary_account": "3699285811",
   "accounts": {
-    "5101152910": [],
+    "5101152910": [
+      {
+        "code": "032640",
+        "name": "LG유플러스",
+        "shares": 11,
+        "avgPrice": 16710,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 660
+      },
+      {
+        "code": "091700",
+        "name": "파트론",
+        "shares": 53,
+        "avgPrice": 3780,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 310
+      },
+      {
+        "code": "099190",
+        "name": "아이센스",
+        "shares": 16,
+        "avgPrice": 12193,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 100
+      }
+    ],
     "5931460210": [],
     "6070547210": [],
     "6138743810": []
