@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10 07:00",
+  "updated": "2026-11-10 09:02",
   "holdings": [
     {
       "code": "000270",
@@ -552,6 +552,32 @@
   "accounts": {
     "5101152910": [
       {
+        "code": "003010",
+        "name": "혜인",
+        "shares": 21,
+        "avgPrice": 9190,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 200
+      },
+      {
+        "code": "005320",
+        "name": "온타이드",
+        "shares": 185,
+        "avgPrice": 1081,
+        "buyLevel": 1,
+        "maxLevel": 7
+      },
+      {
+        "code": "008930",
+        "name": "한미사이언스",
+        "shares": 3,
+        "avgPrice": 57500,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 300
+      },
+      {
         "code": "032640",
         "name": "LG유플러스",
         "shares": 11,
@@ -568,6 +594,24 @@
         "buyLevel": 1,
         "maxLevel": 7,
         "dps": 310
+      },
+      {
+        "code": "096530",
+        "name": "씨젠",
+        "shares": 7,
+        "avgPrice": 25250,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 1000
+      },
+      {
+        "code": "108670",
+        "name": "LX하우시스",
+        "shares": 7,
+        "avgPrice": 26050,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 1000
       }
     ],
     "5931460210": [],
