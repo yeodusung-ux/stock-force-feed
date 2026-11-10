@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10 16:22:30",
+  "updated": "2026-11-10 16:27:32",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 7532,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 32
   },
   "collections": [
     {
@@ -29,15 +29,15 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 1559943,
+      "rows": 1561320,
       "codes": 2552,
       "target": 2377,
       "first": "2026-06-24",
-      "last": "2026-11-09",
-      "progress_pct": 100,
+      "last": "2026-11-10",
+      "progress_pct": 8,
       "busy": true,
-      "state": "idle",
-      "fmt": "2,552/2,377 (100%) · 최신 11-09 · 1일 지연",
+      "state": "busy",
+      "fmt": "192/2,377 (8%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -59,15 +59,15 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 1228970,
+      "rows": 1229058,
       "codes": 2519,
       "target": 2377,
       "first": "2020-02-20",
       "last": "2026-11-10",
-      "progress_pct": 98,
+      "progress_pct": 100,
       "busy": true,
-      "state": "busy",
-      "fmt": "2,341/2,377 (98%)",
+      "state": "done",
+      "fmt": "1,229,058봉·최신",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -290,7 +290,7 @@
       "table": "collect_log",
       "label": "수집커서",
       "tr": "파생",
-      "rows": 258,
+      "rows": 259,
       "codes": 0,
       "target": 2377,
       "first": "",
@@ -298,7 +298,7 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "258행",
+      "fmt": "259행",
       "schedule": "자동(수집 진행에 따라)"
     },
     {
