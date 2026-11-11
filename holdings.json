@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11 09:12",
+  "updated": "2026-11-11 09:18",
   "holdings": [
     {
       "code": "000270",
@@ -552,6 +552,15 @@
   "accounts": {
     "5101152910": [
       {
+        "code": "003490",
+        "name": "대한항공",
+        "shares": 6,
+        "avgPrice": 32250,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 750
+      },
+      {
         "code": "005320",
         "name": "온타이드",
         "shares": 185,
@@ -594,6 +603,14 @@
         "buyLevel": 1,
         "maxLevel": 7,
         "dps": 1000
+      },
+      {
+        "code": "300120",
+        "name": "라온피플",
+        "shares": 78,
+        "avgPrice": 2581,
+        "buyLevel": 1,
+        "maxLevel": 7
       }
     ],
     "5931460210": [],
