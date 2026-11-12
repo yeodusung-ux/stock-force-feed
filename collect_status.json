@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 01:58:32",
+  "updated": "2026-11-13 02:03:34",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16132,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 32
   },
   "collections": [
     {
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,081종목(최대 133일)",
+      "fmt": "미도달 2,076종목(최대 133일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2081,
+        "behind": 2076,
         "max_lag": 133,
         "latest": "2026-11-12",
         "total": 2480
