@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 18:38:32",
+  "updated": "2026-11-12 18:43:35",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16132,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 33
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 110203081,
+      "rows": 110203257,
       "codes": 2480,
       "target": 2375,
       "first": "2023-03-24",
@@ -140,15 +140,15 @@
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 41638,
-      "codes": 2083,
+      "rows": 41660,
+      "codes": 2084,
       "target": 2375,
       "first": "2024-07-05",
-      "last": "2026-11-11",
+      "last": "2026-11-12",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-11 · 41,638행",
+      "fmt": "최신 11-12 · 41,660행",
       "schedule": ""
     },
     {
@@ -320,15 +320,15 @@
       "table": "dart_event",
       "label": "공시이벤트",
       "tr": "DART",
-      "rows": 2258,
-      "codes": 803,
+      "rows": 2304,
+      "codes": 812,
       "target": 2375,
       "first": "2026-08-24",
-      "last": "2026-11-11",
+      "last": "2026-11-12",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-11 · 2,258행",
+      "fmt": "최신 11-12 · 2,304행",
       "schedule": ""
     }
   ]
