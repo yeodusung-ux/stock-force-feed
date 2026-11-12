@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12 07:00",
+  "updated": "2026-11-12 09:01",
   "holdings": [
     {
       "code": "000270",
@@ -536,6 +536,15 @@
   "primary_account": "3699285811",
   "accounts": {
     "5101152910": [
+      {
+        "code": "002900",
+        "name": "TYM",
+        "shares": 27,
+        "avgPrice": 7330,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 290
+      },
       {
         "code": "003490",
         "name": "대한항공",
