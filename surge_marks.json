@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 10:00",
+  "updated": "2026-11-13 15:30",
   "count": 2344,
   "marks": {
     "026910": [
@@ -4989,13 +4989,14 @@
       {
         "entry": "2026-11-13",
         "entry_price": 4960,
-        "exit": "",
-        "exit_price": 0,
-        "ret": null,
-        "reason": "",
+        "exit": "2026-11-13",
+        "exit_price": 4795,
+        "ret": -3.33,
+        "reason": "eod",
         "origin": "paper",
         "strategy": "장중",
-        "entry_time": "09:54:29"
+        "entry_time": "09:54:29",
+        "exit_time": "15:25:04"
       }
     ],
     "037710": [
