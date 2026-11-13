@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13 17:50:06",
+  "updated": "2026-11-13 17:55:07",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,37 +7,37 @@
     "pid": 11944,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 30561375,
+      "rows": 30570722,
       "codes": 2571,
       "target": 2376,
       "first": "2022-09-07",
       "last": "2026-11-13",
-      "progress_pct": 96,
+      "progress_pct": 100,
       "busy": true,
-      "state": "busy",
-      "fmt": "2,291/2,376 (96%)",
+      "state": "done",
+      "fmt": "오늘완료",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 1611503,
+      "rows": 1612437,
       "codes": 2555,
       "target": 2376,
       "first": "2026-06-24",
-      "last": "2026-11-12",
-      "progress_pct": 100,
+      "last": "2026-11-13",
+      "progress_pct": 7,
       "busy": true,
-      "state": "idle",
-      "fmt": "2,555/2,376 (100%) · 최신 11-12 · 1일 지연",
+      "state": "busy",
+      "fmt": "172/2,376 (7%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -74,7 +74,7 @@
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 96836,
+      "rows": 96846,
       "codes": 2511,
       "target": 2376,
       "first": "2026-04-15",
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 110354654,
+      "rows": 110354666,
       "codes": 2480,
       "target": 2376,
       "first": "2023-03-24",
@@ -290,7 +290,7 @@
       "table": "collect_log",
       "label": "수집커서",
       "tr": "파생",
-      "rows": 269,
+      "rows": 270,
       "codes": 0,
       "target": 2376,
       "first": "",
@@ -298,7 +298,7 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "269행",
+      "fmt": "270행",
       "schedule": "자동(수집 진행에 따라)"
     },
     {
