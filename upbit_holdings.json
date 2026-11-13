@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-13 14:14",
+ "updated": "2026-11-13 14:20",
  "holdings": [
   {
    "code": "KRW-BTC",
    "name": "BTC",
-   "shares": 0.05168888,
-   "avgPrice": 98206780.51482847
+   "shares": 0.05808888,
+   "avgPrice": 97660111.42265622
   },
   {
    "code": "KRW-ETH",
    "name": "ETH",
-   "shares": 1.02003544,
-   "avgPrice": 2751748.99398662
+   "shares": 1.2470354399999999,
+   "avgPrice": 2727220.40349607
   },
   {
    "code": "KRW-XRP",
@@ -82,15 +82,15 @@
   {
    "code": "KRW-USDC",
    "name": "USDC",
-   "shares": 3241.18721269,
+   "shares": 1977.8972126899998,
    "avgPrice": 1369.10090415
   }
  ],
  "account": {
-  "deposit": 98168,
-  "monthRealized": 194869,
-  "yearRealized": 1924875,
-  "cumRealized": 1924875,
+  "deposit": 625223,
+  "monthRealized": 198203,
+  "yearRealized": 1928209,
+  "cumRealized": 1928209,
   "acctMonthRealized": 169835,
   "acctYearRealized": -6131550,
   "acctCumRealized": 6959905,
@@ -1358,7 +1358,7 @@
     "TOKAMAK": "ok",
     "TRX": "ok",
     "TSHP": "ok",
-    "USDC": "mismatch(재구성 3721.50000000 vs 잔고 3241.18721269)",
+    "USDC": "mismatch(재구성 2458.21000000 vs 잔고 1977.8972126899998)",
     "USDT": "ok",
     "WAVES": "ok",
     "XCORE": "ok",
