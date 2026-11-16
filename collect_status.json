@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-16 15:05:04",
+  "updated": "2026-11-16 15:37:14",
   "system": {
     "connected": true,
     "trading": true,
     "live": true,
-    "pid": 2968,
+    "pid": 23496,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 15
   },
   "collections": [
     {
@@ -20,9 +20,9 @@
       "first": "2022-09-07",
       "last": "2026-11-13",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,571/2,374 (100%)",
+      "busy": true,
+      "state": "idle",
+      "fmt": "2,571/2,374 (100%) · 최신 11-13 · 3일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -35,9 +35,9 @@
       "first": "2026-06-24",
       "last": "2026-11-13",
       "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,555/2,374 (100%)",
+      "busy": true,
+      "state": "idle",
+      "fmt": "2,555/2,374 (100%) · 최신 11-13 · 3일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -50,24 +50,24 @@
       "first": "2026-01-26",
       "last": "2026-11-12",
       "progress_pct": 100,
-      "busy": false,
+      "busy": true,
       "state": "idle",
-      "fmt": "2,555/2,374 (100%) · 최신 11-12 · 1일 지연",
+      "fmt": "2,555/2,374 (100%) · 최신 11-12 · 4일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 1236237,
+      "rows": 1236282,
       "codes": 2521,
       "target": 2374,
       "first": "2020-02-20",
-      "last": "2026-11-13",
-      "progress_pct": 100,
-      "busy": false,
-      "state": "done",
-      "fmt": "2,521/2,374 (100%)",
+      "last": "2026-11-16",
+      "progress_pct": 2,
+      "busy": true,
+      "state": "busy",
+      "fmt": "45/2,374 (2%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -80,9 +80,9 @@
       "first": "2026-04-15",
       "last": "2026-11-13",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 11-13 · 97,243행",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -95,29 +95,29 @@
       "first": "2026-07-02",
       "last": "2026-11-16",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 11-16 · 4,172행",
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 110661842,
+      "rows": 110661906,
       "codes": 2480,
       "target": 2374,
       "first": "2023-03-24",
-      "last": "2026-11-13",
+      "last": "2026-11-16",
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 164종목(최대 134일)",
+      "fmt": "미도달 2,478종목(최대 137일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 164,
-        "max_lag": 134,
-        "latest": "2026-11-13",
+        "behind": 2478,
+        "max_lag": 137,
+        "latest": "2026-11-16",
         "total": 2480
       }
     },
@@ -266,8 +266,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
+      "busy": true,
+      "state": "busy",
       "fmt": "4,447행",
       "schedule": "자동(세력수집 시 갱신)"
     },
@@ -281,8 +281,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
+      "busy": true,
+      "state": "busy",
       "fmt": "54행",
       "schedule": "자동(세력수집 시 갱신)"
     },
@@ -296,8 +296,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
+      "busy": true,
+      "state": "busy",
       "fmt": "270행",
       "schedule": "자동(수집 진행에 따라)"
     },
@@ -311,8 +311,8 @@
       "first": "",
       "last": "",
       "progress_pct": null,
-      "busy": false,
-      "state": "idle",
+      "busy": true,
+      "state": "busy",
       "fmt": "47행",
       "schedule": "자동(수집 진행에 따라)"
     },
