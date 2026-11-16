@@ -1269,7 +1269,7 @@
       },
       "until": "2026-11-16",
       "stale": false,
-      "computing": true,
+      "computing": false,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -4741,7 +4741,7 @@
       },
       "until": "2026-11-16",
       "stale": false,
-      "computing": true,
+      "computing": false,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -6343,7 +6343,7 @@
       },
       "until": "2026-11-16",
       "stale": false,
-      "computing": true,
+      "computing": false,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -6969,19 +6969,20 @@
         "from": "2023-06-16",
         "to": "2026-11-09"
       },
-      "settings_fp": "0143f93d0eb1@2026-11-16@lab129-2026-07-15",
-      "computed_at": "2026-11-16 16:17",
+      "settings_fp": "bce52a3a6607@2026-11-16@lab129-2026-07-15",
+      "computed_at": "2026-11-16 23:06",
       "note": "진입 = 세력분석 랩 스냅샷 이벤트(이격 ≤ 0 · 순매수 ≥ Test 금액) + 랩 이후 실시간 진입 · 청산 = 일봉 종가로 익절·손절·최대보유 · 랭킹 재계산·신규포착 일수는 미반영(랩 이벤트는 순매수 20억 이상으로 뽑힌 것) · 시총 = 현재 값",
       "stats": {
         "disp": 51,
         "amt": 36,
-        "live": 2,
+        "live": 3,
         "mcap": 0,
+        "no_path": 1,
         "overlap": 2
       },
       "until": "2026-11-16",
-      "stale": true,
-      "computing": true,
+      "stale": false,
+      "computing": false,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -7270,7 +7271,7 @@
       },
       "until": "2026-11-16",
       "stale": false,
-      "computing": true,
+      "computing": false,
       "cond_test": {
         "editable": true,
         "scope": "test",
