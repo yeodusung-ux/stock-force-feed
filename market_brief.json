@@ -1,62 +1,62 @@
 {
-  "asof": "2026-11-16 08:00",
-  "generated_at": "2026-11-16T08:00:11.618105+09:00",
-  "summary": "미국 연준의 긴축 경계감과 달러 강세 속에서 코스피와 코스닥 시장은 하락 압력을 받았습니다. 채권시장 역시 글로벌 금리 급등으로 불확실성이 이어졌습니다. 다만 은행주와 반도체 소부장 종목 등 개별 종목 위주의 장세가 전개되었습니다.",
-  "summary_long": "미국 연방준비제도의 인플레이션 경계감과 자산 고평가 경고 속에서 원·달러 환율은 1337.6원을 기록하며 달러 강세 흐름을 보였습니다. 뉴욕증시의 반도체주 급락과 연준의 추가 긴축 관련 발언들이 국내 증시에도 부담으로 작용하며 코스피와 코스닥 시장 모두 정책 모멘텀과 수요 회복의 부족 속에서 하락 압력을 받았습니다. 채권시장 역시 글로벌 금리 급등과 정책적 불확실성이 겹치며 복잡한 셈법이 이어졌습니다. 이러한 시장 환경 속에서 업종별로는 글로벌 금리 상승에 따라 은행주가 방어주로서의 매력이 부각되었으며, 반도체 소부장 종목들이 주목을 받는 등 개별 종목 장세가 전개됐습니다. 기업별로는 신세계의 4분기 백화점 및 면세 사업 둔화 전망과 함께 증권사들이 거래 감소 및 채권 손실 등으로 실적 삼중고를 겪고 있다는 소식이 전해졌습니다. 또한 삼성전자의 연산하는 메모리가 주가 재평가 열쇠로 제시되었으며, HMM은 규모의 경제를 통한 압도적인 수익성을 유지하고 있다는 분석이 나왔습니다. 외환시장에서는 강달러 압력과 수출업체의 네고 물량 간의 공방전이 펼쳐졌으며, 대외적으로는 중국증시의 AI 및 경기 변수와 함께 APEC 일정이 투자 심리에 영향을 미치는 모습을 보였습니다.",
+  "asof": "2026-11-16 12:00",
+  "generated_at": "2026-11-16T12:00:13.295304+09:00",
+  "summary": "국내 증시는 미 연준의 금리 경계감과 엔비디아 불확실성 여파로 외국인 순매도가 이어지며 2%대 하락 마감했습니다. 반도체 중심의 약세로 코스피가 5170선을 나타냈으며, 일본 등 글로벌 증시 전반의 투자 심리가 위축되었습니다. 채권시장의 국고채 금리는 대체로 상승세를 보였습니다.",
+  "summary_long": "국내 증시는 미국 연방준비제도의 금리 전망 경계감과 엔비디아 관련 불확실성 여파 속에서 외국인 순매도가 이어지며 약세로 마감했습니다. 코스피는 장중 낙폭을 확대하며 2%대 하락률을 기록해 5170선을 나타냈고 한때 5100선을 위협받는 흐름을 보였습니다. 반도체 중심의 증시 약세가 나타난 가운데 SK하이닉스는 4%대 하락세를 기록했습니다. 이와 함께 일본 증시도 엔비디아 불확실성의 여파로 장 초반 하락 전환하는 등 글로벌 증시 전반에 투자 심리가 위축되었습니다. 채권시장에서는 국고채 금리가 대체로 상승세를 보였으며, 3년물 국고채 금리가 장중 연 3.767%를 기록했습니다. 연준의 정책 방향성에 대한 경계감이 이어지는 가운데 금 가격은 0.3% 상승세를 보였습니다. 연준 당국자가 AI 투자가 성장에 기여하지만 인플레이션과 금리 상승 등의 부작용을 유발할 수 있으며 빚으로 얽힌 투자 위험에 대해 경고했습니다. 업계와 금융시장에서는 미국 대표지수 채권혼합형 ETF에 올해 자금 유입액이 1조원을 돌파하는 등 안전자산과 혼합형 상품으로의 자금 이동 양상이 나타났습니다. 기업 및 산업계에서는 아마데우스 해킹 사고로 국내 여행사의 개인정보 유출 확산 우려가 제기되었고, OCI홀딩스와 OCI가 ESG 평가에서 A등급을 획득했습니다. 또한 네오플이 게임 기획 인턴을 두 자릿수 규모로 채용하고 정규직과 동일한 급여를 지급하기로 했으며, IBK기업은행은 매월 이자가 지급되는 연 3.85% 금리의 통장을 출시했습니다.",
   "themes": [
-    "반도체",
     "금리/연준",
+    "반도체",
     "환율",
     "중국/수출"
   ],
   "highlights": [
     {
-      "title": "[AI MY 뉴스] 16일 중국증시 'APEC·엔비디아가 가를 투심, AI·경기 변수 주목'",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9sRTNUNmhwWlB3WjZEQ3c4cERXY2lvb29jLXNaaUg5UzJIZHM5OVQ1NGQxTEdyX3JFQ3l4R3JuXzZzOG1KNW1zWXQtMmRQTlJVb2NTakJNTmhablRm?oc=5",
-      "source": "뉴스핌",
-      "time": "07:55"
+      "title": "“중간선거 충격에 엔비디아 악재까지 겹친 AI 랠리” 연준, 빚으로 얽힌 투자 위험 경고",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4zbEJfaVp2MjNnZUQtbE51d2dZc3d6eHNkczNkNFhDR0NhMlBoM181MzVPbXd3cWRZdEhFQU9hdHBIdmZ0anYwUXczYWtjcGh3OGJZbHFOcGhLUVU?oc=5",
+      "source": "The Economy Korea",
+      "time": "11:57"
     },
     {
-      "title": "원·달러 환율, 1337.6원…달러, 美 인플레이션 경계 속 강세",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90THNQeWY5RkNhVkhGTnNHV3kyQWlsYzJ4Tk1kTjNXa2RoTXctUDExVGRsdkg4TjdmZDQ3MlBvdi05TVVVcFFWMVczc2twNVZFaXhvTEFzTzF6aXp1Y0g4cTQ3M1ZWQ1cwdUtBUTkwS0dJOEVx?oc=5",
-      "source": "조세일보",
-      "time": "07:54"
+      "title": "코스피, 장중 낙폭 확대…한때 5,100선 위협",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9uV2FEVW9xUTZMZFQyeF8ydHFCRldJa3d6OGJvOXF4V0s3QTU5R2FOWDFTSm5CR05Tdjk1bVpzVFFTQ1FQaXlnUmxFUkZuaWFhbVZYX3dCXzJtdUpWeTAxVjh1ZEVNeWc?oc=5",
+      "source": "연합뉴스TV",
+      "time": "11:50"
     },
     {
-      "title": "[오늘의 증시]美 반도체주 급락·연준 '고평가' 경고…코스피, 또 하락하나",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02OGl2QTVjZGRaZW44QkVPcnRFS3V3Mm1NY1lLLUpoTVJlQkRlaTVJZ3dDTkw0aVVHeWxvWVlrRl9ZV2Eyd1lCYkdFbDNMbkhJVDRnaTBHbTJORUpyZHhiRtIBeEFVX3lxTE1fWlVRaGRVNFowRi1yakt4elRJODgtaHZ4aTE4eXZIazM1VjVjRDhtb09rdGxXaDlRTnZseU1BbGhIa3hFaUo4T0lDam9VSkNnRGhoSDFkLWw5MGdzQTBMTlpNeWd2bGlycW5ybWROc0QzVnhIVGhXNw?oc=5",
-      "source": "뉴시스",
-      "time": "07:50"
+      "title": "아마데우스 해킹사고로 국내 여행사 개인정보 유출 확산 우려",
+      "link": "https://www.yna.co.kr/view/AKR20261116058500030",
+      "source": "",
+      "time": "11:47"
     },
     {
-      "title": "양산 쌀 생산량 2천800t선 무너졌다",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8wLUpmTEM5SHBwV1lfNDYyMGFyWE9hUF9WSHFfUDBaODMwT3JOMXBvRTZOQjN2ZDB1b0ZqSDF6c2ZTRXhjRno5UlVYaDVNbm1aQTQxb0VFUGxZejZjS01fTURvaHNwZlJfcGYwWW9lYw?oc=5",
-      "source": "양산신문",
-      "time": "07:48"
+      "title": "국고채 금리 대체로 상승…3년물 장중 연 3.767%",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmZDNuUEU2R3JQZk5vTkVRQ0V6bE85QUdDZWhPeGd4ZzhfUmhYS2E4YS1WV0JzWU1UUVlUbWNoRXhEQjRvdnZTQTNwcWFhMjJFVGVEaWNkZVJWZDA?oc=5",
+      "source": "연합뉴스",
+      "time": "11:42"
     },
     {
-      "title": "[신윤우의 외환분석] 뾰족해진 강달러와 네고 방패의 공방전",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBYaDcwQW5kLXpkTTI0N2VrRmRMTmxEUXBsczBWNS1INzFTVEJzMEJMOE5FZlpQRHA5MFNRMmtZMGY4VU9xLVlOZHYwY3N6X0oxM0FndEJwNHA5bVlxcDJpazhiU0V4dmFjYVJHM1dSNER0UQ?oc=5",
-      "source": "KB Think",
-      "time": "07:47"
+      "title": "네오플, 게임기획 인턴 두자릿수 채용…정규직과 동일 급여",
+      "link": "https://www.yna.co.kr/view/AKR20261116080600017",
+      "source": "",
+      "time": "11:42"
     },
     {
-      "title": "\"신세계, 4분기 백화점·면세 둔화…목표가↓\"-유안타",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NUWdnLU5hN2toaDV4YkxRSFd1MXFtVEhQNTBzal9fQUk5YS1LeE1NNDhteGxUNFlkV0E2X0dHRWpDcWJmeHNPa1BBdWNuU1RqbU1haTZSbEdOZw?oc=5",
-      "source": "한국경제",
-      "time": "07:45"
+      "title": "OCI홀딩스·OCI, ESG 평가 'A등급' 획득",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9NN3dVNnBDQ2dHeXFYWnJqS2hVX3JNeTVCa3FkZklKMGRQeGtTaWZLdDBjR2hVQURhbHVST0czdXc0Vl9QT29FM3FKMTk4c21IdXM4eGRxOHBSVUsxQm5wT2FtcUw?oc=5",
+      "source": "매일일보",
+      "time": "11:40"
     },
     {
-      "title": "[노현우의 채권분석] '딜러X'의 퇴각…금리의 반격",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBBSWd4Y2Q0OEZhb3F2dV9HemZiNWhWTXM3eDFsMW8xenAxdE1QR2pwLTd1LTFMaHhJaUNFeUZxejJUTk1vOVJaajBSeHA0N3Z6MUEybmYxZGNqMDhWeFhwckVFZC1wVnByZGJ3Sl9xQXBSQQ?oc=5",
-      "source": "KB Think",
-      "time": "07:44"
+      "title": "홍릉 창업학교 대상에 이루비·플랜트너…AI·바이오 기술 인정",
+      "link": "https://www.yna.co.kr/view/AKR20261116077800017",
+      "source": "",
+      "time": "11:39"
     },
     {
-      "title": "\"코스닥, 정책 모멘텀 동력 부족해...본격적 수요회복 아직\"",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSF9leHFWMFpfZDBUYUxHekF2QmdrbGpMbktPblNadzBmWFctVGlqQkY2eGkxTEh1SnktMDdjQ2g2Tk9GRnl3bnQtTWFnd0xqLWV6Y2xVNFowdXdJYzFFVFNtVk4yR3hpTHBtV2pkTEw5b3NDZDNIbEJRa0dBY2xscA?oc=5",
-      "source": "m.edaily.co.kr",
-      "time": "07:42"
+      "title": "반도체 중심 증시 약세 속 연준 금리 전망까지 이시각 주요뉴스",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBBalFTa1BMY2Y5N3RrdThKWEN6RkRPT0IzMm9IUW9QUUc0UWlQMzZlRGhLbFV6REh0c2QxbXJYcTRoNHZJNU9ZcUZjb3B5QmsxM0JoTmZ1bm9oX05sT0hXUmVIN2F0TC1XeU1pcl9EQXbSAXRBVV95cUxQd1pxMzNIYXRUQmtJUGQ0aTA0SnZXczgyT3gyYmZPcFp1UDl0UGVwbm5ucVlpUl9XT3dFSGtfdTJwREg0MDNWWkJqd2huRk5WX3RMdEw0NFJxa0luSWdEUGYzRk9RbGt4ZXZYT1g4SXhiVkZXZA?oc=5",
+      "source": "연합인포맥스",
+      "time": "11:39"
     }
   ],
   "note": "AI 작성 시황 · 참고용(투자판단 책임은 본인)"
