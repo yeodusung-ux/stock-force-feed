@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16 22:26",
+  "updated": "2026-11-16 23:06",
   "v": 1,
   "strategies": {
     "bbdisp": {
@@ -1269,7 +1269,7 @@
       },
       "until": "2026-11-16",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -4741,7 +4741,7 @@
       },
       "until": "2026-11-16",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -6343,7 +6343,7 @@
       },
       "until": "2026-11-16",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -6980,8 +6980,8 @@
         "overlap": 2
       },
       "until": "2026-11-16",
-      "stale": false,
-      "computing": false,
+      "stale": true,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
@@ -7270,7 +7270,7 @@
       },
       "until": "2026-11-16",
       "stale": false,
-      "computing": false,
+      "computing": true,
       "cond_test": {
         "editable": true,
         "scope": "test",
