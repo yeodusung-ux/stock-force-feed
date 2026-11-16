@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16 18:46:02",
+  "updated": "2026-11-16 18:50:59",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 23496,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 33
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -245,15 +245,15 @@
       "table": "analyst_report",
       "label": "리포트",
       "tr": "웹크롤",
-      "rows": 3327,
-      "codes": 712,
+      "rows": 3402,
+      "codes": 719,
       "target": 2374,
       "first": "2026-08-03",
-      "last": "2026-11-13",
+      "last": "2026-11-16",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-13 · 3,327행",
+      "fmt": "최신 11-16 · 3,402행",
       "schedule": ""
     },
     {
