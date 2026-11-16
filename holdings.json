@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16 07:00",
+  "updated": "2026-11-16 09:01",
   "holdings": [
     {
       "code": "000270",
@@ -549,6 +549,15 @@
         "dps": 660
       },
       {
+        "code": "071280",
+        "name": "로체시스템즈",
+        "shares": 20,
+        "avgPrice": 9823,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 50
+      },
+      {
         "code": "096530",
         "name": "씨젠",
         "shares": 7,
@@ -565,6 +574,24 @@
         "buyLevel": 1,
         "maxLevel": 7,
         "dps": 1000
+      },
+      {
+        "code": "136490",
+        "name": "선진",
+        "shares": 22,
+        "avgPrice": 8722,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 200
+      },
+      {
+        "code": "489460",
+        "name": "바이오비쥬",
+        "shares": 12,
+        "avgPrice": 15450,
+        "buyLevel": 1,
+        "maxLevel": 7,
+        "dps": 100
       }
     ],
     "5931460210": [],
