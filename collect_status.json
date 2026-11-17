@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17 15:35:04",
+  "updated": "2026-11-17 15:40:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 16148,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
@@ -21,8 +21,8 @@
       "last": "2026-11-16",
       "progress_pct": 100,
       "busy": true,
-      "state": "done",
-      "fmt": "2,572/2,374 (100%)",
+      "state": "idle",
+      "fmt": "2,572/2,374 (100%) · 최신 11-16 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -36,8 +36,8 @@
       "last": "2026-11-16",
       "progress_pct": 100,
       "busy": true,
-      "state": "done",
-      "fmt": "2,556/2,374 (100%)",
+      "state": "idle",
+      "fmt": "2,556/2,374 (100%) · 최신 11-16 · 1일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -52,22 +52,22 @@
       "progress_pct": 100,
       "busy": true,
       "state": "idle",
-      "fmt": "2,555/2,374 (100%) · 최신 11-13 · 3일 지연",
+      "fmt": "2,555/2,374 (100%) · 최신 11-13 · 4일 지연",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 1238611,
+      "rows": 1238877,
       "codes": 2522,
       "target": 2374,
       "first": "2020-02-20",
-      "last": "2026-11-16",
-      "progress_pct": 0,
+      "last": "2026-11-17",
+      "progress_pct": 12,
       "busy": true,
       "state": "busy",
-      "fmt": "0/2,374 (0%)",
+      "fmt": "276/2,374 (12%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -112,13 +112,13 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 1,751종목(최대 137일)",
+      "fmt": "미도달 2,476종목(최대 138일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 1751,
-        "max_lag": 137,
-        "latest": "2026-11-16",
-        "total": 2481
+        "behind": 2476,
+        "max_lag": 138,
+        "latest": "2026-11-17",
+        "total": 2482
       }
     },
     {
