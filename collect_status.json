@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18 18:35:06",
+  "updated": "2026-11-18 18:40:07",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,14 +7,14 @@
     "pid": 8320,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 23
+    "heartbeat_age_sec": 32
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 30657783,
+      "rows": 30664816,
       "codes": 2574,
       "target": 2375,
       "first": "2022-09-07",
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 110788198,
+      "rows": 110788510,
       "codes": 2482,
       "target": 2375,
       "first": "2023-03-24",
@@ -125,7 +125,7 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 18452,
+      "rows": 18461,
       "codes": 559,
       "target": 2375,
       "first": "2025-02-03",
@@ -133,22 +133,22 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-18 · 18,452행",
+      "fmt": "최신 11-18 · 18,461행",
       "schedule": ""
     },
     {
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 41795,
+      "rows": 41811,
       "codes": 2086,
       "target": 2375,
       "first": "2024-07-05",
-      "last": "2026-11-17",
+      "last": "2026-11-18",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-17 · 41,795행",
+      "fmt": "최신 11-18 · 41,811행",
       "schedule": ""
     },
     {
@@ -245,15 +245,15 @@
       "table": "analyst_report",
       "label": "리포트",
       "tr": "웹크롤",
-      "rows": 3457,
-      "codes": 729,
+      "rows": 3488,
+      "codes": 734,
       "target": 2375,
       "first": "2026-08-03",
-      "last": "2026-11-17",
+      "last": "2026-11-18",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-17 · 3,457행",
+      "fmt": "최신 11-18 · 3,488행",
       "schedule": ""
     },
     {
@@ -320,15 +320,15 @@
       "table": "dart_event",
       "label": "공시이벤트",
       "tr": "DART",
-      "rows": 2426,
-      "codes": 843,
+      "rows": 2466,
+      "codes": 853,
       "target": 2375,
       "first": "2026-08-24",
-      "last": "2026-11-17",
+      "last": "2026-11-18",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-17 · 2,426행",
+      "fmt": "최신 11-18 · 2,466행",
       "schedule": ""
     }
   ]
