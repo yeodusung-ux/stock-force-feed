@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18 20:40:07",
+  "updated": "2026-11-18 20:45:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 8320,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 32
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -112,10 +112,10 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,449종목(최대 139일)",
+      "fmt": "미도달 2,448종목(최대 139일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2449,
+        "behind": 2448,
         "max_lag": 139,
         "latest": "2026-11-18",
         "total": 2482
@@ -230,7 +230,7 @@
       "table": "minute_ohlcv",
       "label": "분봉원본",
       "tr": "opt10080",
-      "rows": 14759432,
+      "rows": 14782774,
       "codes": 1356,
       "target": 2375,
       "first": "2025-08-01 09:00",
