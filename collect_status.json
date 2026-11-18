@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19 00:10:07",
+  "updated": "2026-11-19 00:15:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 8320,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 32
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 110824454,
+      "rows": 110825861,
       "codes": 2483,
       "target": 2375,
       "first": "2023-03-24",
@@ -112,10 +112,10 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,251종목(최대 139일)",
+      "fmt": "미도달 2,246종목(최대 139일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2251,
+        "behind": 2246,
         "max_lag": 139,
         "latest": "2026-11-18",
         "total": 2483
@@ -215,15 +215,15 @@
       "table": "late_rise",
       "label": "후반급등",
       "tr": "opt10080",
-      "rows": 19849,
+      "rows": 19909,
       "codes": 2350,
       "target": 5376,
       "first": "20260630",
       "last": "20261118",
       "progress_pct": 100,
-      "busy": true,
-      "state": "busy",
-      "fmt": "19,849/5,376 (100%) · 2,350종목",
+      "busy": false,
+      "state": "done",
+      "fmt": "19,909/5,376 (100%) · 2,350종목",
       "schedule": "저녁 자동 + 장중 15:00 1회"
     },
     {
