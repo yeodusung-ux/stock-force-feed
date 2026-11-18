@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 20:46",
+ "updated": "2026-11-18 20:51",
  "holdings": [
   {
    "code": "KRW-BTC",
@@ -82,8 +82,8 @@
   {
    "code": "KRW-USDC",
    "name": "USDC",
-   "shares": 1730.16561561,
-   "avgPrice": 1364.79374532
+   "shares": 1940.71721269,
+   "avgPrice": 1363.94818909
   },
   {
    "code": "KRW-KAT",
@@ -93,7 +93,7 @@
   }
  ],
  "account": {
-  "deposit": 3817439,
+  "deposit": 3531578,
   "monthRealized": 299695,
   "yearRealized": 2029701,
   "cumRealized": 2029701,
@@ -1373,7 +1373,7 @@
     "TOKAMAK": "ok",
     "TRX": "ok",
     "TSHP": "ok",
-    "USDC": "mismatch(재구성 1215.00000000 vs 잔고 677.42721269)",
+    "USDC": "mismatch(재구성 2478.29000000 vs 잔고 1940.71721269)",
     "USDT": "ok",
     "WAVES": "ok",
     "XCORE": "ok",
