@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19 17:10:06",
+  "updated": "2026-11-19 17:15:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 15504,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 32
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -29,15 +29,15 @@
       "table": "flow_broker",
       "label": "주요거래원",
       "tr": "opt10040",
-      "rows": 1681835,
+      "rows": 1683837,
       "codes": 2558,
       "target": 2375,
       "first": "2026-06-24",
       "last": "2026-11-19",
-      "progress_pct": 15,
+      "progress_pct": 26,
       "busy": true,
       "state": "busy",
-      "fmt": "347/2,375 (15%)",
+      "fmt": "626/2,375 (26%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -112,10 +112,10 @@
       "progress_pct": null,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,477종목(최대 140일)",
+      "fmt": "미도달 2,476종목(최대 140일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2477,
+        "behind": 2476,
         "max_lag": 140,
         "latest": "2026-11-19",
         "total": 2483
