@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19 18:30:19",
+  "updated": "2026-11-19 18:35:11",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 15504,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 45
+    "heartbeat_age_sec": 36
   },
   "collections": [
     {
@@ -74,7 +74,7 @@
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 100028,
+      "rows": 100508,
       "codes": 2515,
       "target": 2375,
       "first": "2026-04-15",
@@ -82,7 +82,7 @@
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-19 · 100,028행",
+      "fmt": "최신 11-19 · 100,508행",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -125,15 +125,15 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 18461,
-      "codes": 559,
+      "rows": 18613,
+      "codes": 562,
       "target": 2375,
       "first": "2025-02-03",
-      "last": "2026-11-18",
+      "last": "2026-11-19",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-18 · 18,461행",
+      "fmt": "최신 11-19 · 18,613행",
       "schedule": ""
     },
     {
