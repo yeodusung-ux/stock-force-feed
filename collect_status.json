@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19 18:35:11",
+  "updated": "2026-11-19 18:40:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,14 +7,14 @@
     "pid": 15504,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 36
+    "heartbeat_age_sec": 31
   },
   "collections": [
     {
       "table": "flow_investor",
       "label": "투자자",
       "tr": "opt10059",
-      "rows": 30690478,
+      "rows": 30696575,
       "codes": 2575,
       "target": 2375,
       "first": "2022-09-07",
@@ -104,7 +104,7 @@
       "table": "broker_daily",
       "label": "창구일별",
       "tr": "opt10078",
-      "rows": 110906118,
+      "rows": 110906982,
       "codes": 2483,
       "target": 2375,
       "first": "2023-03-24",
@@ -140,15 +140,15 @@
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 41811,
+      "rows": 41821,
       "codes": 2086,
       "target": 2375,
       "first": "2024-07-05",
-      "last": "2026-11-18",
+      "last": "2026-11-19",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-18 · 41,811행",
+      "fmt": "최신 11-19 · 41,821행",
       "schedule": ""
     },
     {
@@ -245,15 +245,15 @@
       "table": "analyst_report",
       "label": "리포트",
       "tr": "웹크롤",
-      "rows": 3488,
-      "codes": 734,
+      "rows": 3511,
+      "codes": 740,
       "target": 2375,
       "first": "2026-08-03",
-      "last": "2026-11-18",
+      "last": "2026-11-19",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-18 · 3,488행",
+      "fmt": "최신 11-19 · 3,511행",
       "schedule": ""
     },
     {
@@ -320,15 +320,15 @@
       "table": "dart_event",
       "label": "공시이벤트",
       "tr": "DART",
-      "rows": 2466,
-      "codes": 853,
+      "rows": 2514,
+      "codes": 866,
       "target": 2375,
       "first": "2026-08-24",
-      "last": "2026-11-18",
+      "last": "2026-11-19",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-18 · 2,466행",
+      "fmt": "최신 11-19 · 2,514행",
       "schedule": ""
     }
   ]
