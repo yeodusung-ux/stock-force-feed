@@ -1,19 +1,19 @@
 {
-  "updated": "2026-11-19 13:30",
+  "updated": "2026-11-19 16:21",
   "v": 1,
   "strategies": {
     "bbdisp": {
       "key": "bbdisp",
       "name": "📉 과매도 반등",
       "available": true,
-      "n": 103,
+      "n": 106,
       "open": 7,
       "win_rate": 100.0,
-      "avg_ret": 6.24,
-      "cum_ret": 643.2,
+      "avg_ret": 6.33,
+      "cum_ret": 671.5,
       "pf": 999.0,
-      "avg_hold_days": 72.2,
-      "open_avg_ret": -32.45,
+      "avg_hold_days": 70.4,
+      "open_avg_ret": -32.51,
       "closed_stocks": [
         {
           "date": "20261026",
@@ -368,6 +368,17 @@
           "days": 2
         },
         {
+          "date": "20240702",
+          "entry_date": "20240701",
+          "code": "413630",
+          "name": "씨피시스템",
+          "buy": 2930,
+          "sell": 3380,
+          "ret": 15.35,
+          "reason": "giveback",
+          "days": 1
+        },
+        {
           "date": "20240627",
           "entry_date": "20240520",
           "code": "099430",
@@ -388,6 +399,17 @@
           "ret": 2.51,
           "reason": "giveback",
           "days": 38
+        },
+        {
+          "date": "20240327",
+          "entry_date": "20240319",
+          "code": "413630",
+          "name": "씨피시스템",
+          "buy": 3505,
+          "sell": 3862,
+          "ret": 10.2,
+          "reason": "giveback",
+          "days": 6
         },
         {
           "date": "20240319",
@@ -754,17 +776,6 @@
         },
         {
           "date": "20211220",
-          "entry_date": "20211201",
-          "code": "001740",
-          "name": "SK네트웍스",
-          "buy": 4770,
-          "sell": 4968,
-          "ret": 4.16,
-          "reason": "giveback",
-          "days": 13
-        },
-        {
-          "date": "20211220",
           "entry_date": "20211130",
           "code": "088350",
           "name": "한화생명",
@@ -816,6 +827,17 @@
           "sell": 3935,
           "ret": 3.01,
           "reason": "gap",
+          "days": 8
+        },
+        {
+          "date": "20211210",
+          "entry_date": "20211130",
+          "code": "008040",
+          "name": "사조동아원",
+          "buy": 1080,
+          "sell": 1114,
+          "ret": 3.13,
+          "reason": "giveback",
           "days": 8
         },
         {
@@ -1127,6 +1149,17 @@
           "days": 17
         },
         {
+          "date": "20200915",
+          "entry_date": "20200819",
+          "code": "148150",
+          "name": "세경하이테크",
+          "buy": 8359,
+          "sell": 8674,
+          "ret": 3.77,
+          "reason": "giveback",
+          "days": 19
+        },
+        {
           "date": "20200826",
           "entry_date": "20200821",
           "code": "035810",
@@ -1155,86 +1188,87 @@
           "code": "017960",
           "name": "한국카본",
           "buy": 15610,
-          "cur": 13280,
-          "ret": -14.93,
-          "days": 16
+          "cur": 13290,
+          "ret": -14.86,
+          "days": 17
         },
         {
           "date": "2026-09-23",
           "code": "029780",
           "name": "삼성카드",
           "buy": 43000,
-          "cur": 41350,
-          "ret": -3.84,
-          "days": 36
+          "cur": 41600,
+          "ret": -3.26,
+          "days": 37
         },
         {
           "date": "2026-05-12",
           "code": "003520",
           "name": "영진약품",
           "buy": 1600,
-          "cur": 738,
-          "ret": -53.87,
-          "days": 128
+          "cur": 768,
+          "ret": -52.0,
+          "days": 129
         },
         {
           "date": "2025-07-23",
           "code": "009410",
           "name": "태영건설",
           "buy": 2340,
-          "cur": 1433,
-          "ret": -38.76,
-          "days": 322
+          "cur": 1418,
+          "ret": -39.4,
+          "days": 323
         },
         {
           "date": "2025-07-03",
           "code": "088980",
           "name": "맥쿼리인프라",
           "buy": 11350,
-          "cur": 9770,
-          "ret": -13.92,
-          "days": 336
+          "cur": 9580,
+          "ret": -15.59,
+          "days": 337
         },
         {
           "date": "2023-04-25",
           "code": "017390",
           "name": "서울가스",
           "buy": 229500,
-          "cur": 55000,
-          "ret": -76.03,
-          "days": 867
+          "cur": 54300,
+          "ret": -76.34,
+          "days": 868
         },
         {
           "date": "2023-02-14",
           "code": "095570",
           "name": "AJ네트웍스",
           "buy": 5470,
-          "cur": 4060,
-          "ret": -25.78,
-          "days": 916
+          "cur": 4040,
+          "ret": -26.14,
+          "days": 917
         }
       ],
       "period": {
         "from": "2020-06-16",
         "to": "2026-10-27"
       },
-      "settings_fp": "f0f40b442df2@2026-11-18",
-      "computed_at": "2026-11-18 16:11",
+      "settings_fp": "f0f40b442df2@2026-11-19",
+      "computed_at": "2026-11-19 16:21",
       "note": "과거 시뮬 · 신호 다음 거래일 시가(분봉 있으면 09:01) 진입 · ⚡ = Test 설정 · 손절 없음 — 미청산은 마지막 종가 평가로 따로 · 시총·재무 = 현재 값",
       "stats": {
-        "min_partial": 304,
-        "min_day": 24340,
-        "mcap": 1307,
-        "not_first": 1226,
-        "open_end": 105,
-        "cooldown": 193,
-        "illiquid": 490,
-        "no_atr": 1263,
+        "min_partial": 317,
+        "min_day": 26599,
+        "mcap": 1305,
+        "not_first": 1270,
+        "open_end": 103,
+        "cooldown": 197,
+        "illiquid": 506,
+        "no_atr": 1334,
+        "min_scaled": 8,
+        "min_unit": 76,
         "split": 2,
-        "min_unit": 74,
-        "cap_positions": 709
+        "cap_positions": 715
       },
-      "until": "2026-11-18",
+      "until": "2026-11-19",
       "stale": false,
       "computing": false,
       "cond_test": {
@@ -1373,22 +1407,88 @@
       "key": "bbbreak",
       "name": "📈 과매수 돌파",
       "available": true,
-      "n": 1039,
+      "n": 1055,
       "open": 0,
-      "win_rate": 89.2,
-      "avg_ret": 2.4,
-      "cum_ret": 2494.3,
-      "pf": 2.37,
+      "win_rate": 89.1,
+      "avg_ret": 2.35,
+      "cum_ret": 2482.3,
+      "pf": 2.33,
       "avg_hold_days": 2.7,
       "closed_stocks": [
+        {
+          "date": "20261119",
+          "entry_date": "20261119",
+          "code": "280360",
+          "name": "롯데웰푸드",
+          "buy": 139300,
+          "sell": 140693,
+          "ret": 0.77,
+          "reason": "be",
+          "days": 0
+        },
+        {
+          "date": "20261119",
+          "entry_date": "20261119",
+          "code": "039130",
+          "name": "하나투어",
+          "buy": 37100,
+          "sell": 38820,
+          "ret": 4.4,
+          "reason": "giveback",
+          "days": 0
+        },
+        {
+          "date": "20261119",
+          "entry_date": "20261119",
+          "code": "037270",
+          "name": "YG PLUS",
+          "buy": 3660,
+          "sell": 3796,
+          "ret": 3.48,
+          "reason": "giveback",
+          "days": 0
+        },
+        {
+          "date": "20261119",
+          "entry_date": "20261119",
+          "code": "034230",
+          "name": "파라다이스",
+          "buy": 11010,
+          "sell": 11714,
+          "ret": 6.15,
+          "reason": "giveback",
+          "days": 0
+        },
+        {
+          "date": "20261119",
+          "entry_date": "20261111",
+          "code": "003490",
+          "name": "대한항공",
+          "buy": 32050,
+          "sell": 32770,
+          "ret": 2.02,
+          "reason": "giveback",
+          "days": 6
+        },
+        {
+          "date": "20261119",
+          "entry_date": "20261029",
+          "code": "093320",
+          "name": "케이아이엔엑스",
+          "buy": 179300,
+          "sell": 174500,
+          "ret": -2.9,
+          "reason": "hold",
+          "days": 15
+        },
         {
           "date": "20261118",
           "entry_date": "20261118",
           "code": "069960",
           "name": "현대백화점",
           "buy": 94700,
-          "sell": 97740,
-          "ret": 2.97,
+          "sell": 98540,
+          "ret": 3.81,
           "reason": "giveback",
           "days": 0
         },
@@ -1397,9 +1497,9 @@
           "entry_date": "20261117",
           "code": "039830",
           "name": "오로라",
-          "buy": 16000,
-          "sell": 16352,
-          "ret": 1.97,
+          "buy": 15660,
+          "sell": 16012,
+          "ret": 2.02,
           "reason": "giveback",
           "days": 0
         },
@@ -1408,10 +1508,10 @@
           "entry_date": "20261112",
           "code": "002900",
           "name": "TYM",
-          "buy": 7340,
-          "sell": 7508,
-          "ret": 2.06,
-          "reason": "giveback",
+          "buy": 7310,
+          "sell": 7383,
+          "ret": 0.77,
+          "reason": "be",
           "days": 2
         },
         {
@@ -1419,10 +1519,10 @@
           "entry_date": "20261113",
           "code": "005430",
           "name": "한국공항",
-          "buy": 105700,
-          "sell": 109060,
-          "ret": 2.94,
-          "reason": "giveback",
+          "buy": 106500,
+          "sell": 107565,
+          "ret": 0.77,
+          "reason": "be",
           "days": 0
         },
         {
@@ -1430,10 +1530,10 @@
           "entry_date": "20261112",
           "code": "489460",
           "name": "바이오비쥬",
-          "buy": 15140,
-          "sell": 15396,
-          "ret": 1.46,
-          "reason": "giveback",
+          "buy": 14900,
+          "sell": 15049,
+          "ret": 0.77,
+          "reason": "be",
           "days": 0
         },
         {
@@ -1442,8 +1542,8 @@
           "code": "009900",
           "name": "명신산업",
           "buy": 9990,
-          "sell": 7130,
-          "ret": -28.8,
+          "sell": 7140,
+          "ret": -28.7,
           "reason": "hold",
           "days": 15
         },
@@ -1578,17 +1678,6 @@
           "ret": 0.77,
           "reason": "be",
           "days": 0
-        },
-        {
-          "date": "20261029",
-          "entry_date": "20261026",
-          "code": "003780",
-          "name": "진양산업",
-          "buy": 6230,
-          "sell": 6366,
-          "ret": 1.95,
-          "reason": "giveback",
-          "days": 3
         },
         {
           "date": "20261029",
@@ -4625,88 +4714,33 @@
           "ret": 13.01,
           "reason": "giveback",
           "days": 0
-        },
-        {
-          "date": "20260414",
-          "entry_date": "20260414",
-          "code": "004710",
-          "name": "한솔테크닉스",
-          "buy": 6608,
-          "sell": 7326,
-          "ret": 10.61,
-          "reason": "giveback",
-          "days": 0
-        },
-        {
-          "date": "20260413",
-          "entry_date": "20260413",
-          "code": "010820",
-          "name": "퍼스텍",
-          "buy": 11800,
-          "sell": 12144,
-          "ret": 2.68,
-          "reason": "giveback",
-          "days": 0
-        },
-        {
-          "date": "20260413",
-          "entry_date": "20260413",
-          "code": "005880",
-          "name": "대한해운",
-          "buy": 3310,
-          "sell": 3370,
-          "ret": 1.58,
-          "reason": "giveback",
-          "days": 0
-        },
-        {
-          "date": "20260413",
-          "entry_date": "20260410",
-          "code": "092790",
-          "name": "넥스틸",
-          "buy": 17000,
-          "sell": 17912,
-          "ret": 5.12,
-          "reason": "giveback",
-          "days": 1
-        },
-        {
-          "date": "20260408",
-          "entry_date": "20260407",
-          "code": "097950",
-          "name": "CJ제일제당",
-          "buy": 232000,
-          "sell": 237000,
-          "ret": 1.93,
-          "reason": "gap",
-          "days": 1
         }
       ],
       "open_stocks": [],
       "period": {
         "from": "2020-05-26",
-        "to": "2026-11-18"
+        "to": "2026-11-19"
       },
-      "settings_fp": "c08bacf5143d@2026-11-18",
-      "computed_at": "2026-11-18 16:11",
+      "settings_fp": "c08bacf5143d@2026-11-19",
+      "computed_at": "2026-11-19 16:21",
       "note": "과거 시뮬(엔진 시드와 같은 판정, 실시간 경계 없음) · 수수료·세금 차감 · 시간 손절 전 미청산은 싣지 않음 · 시총·재무 = 현재 값",
       "stats": {
-        "fin": 270,
-        "mcap": 1307,
-        "illiquid": 614,
-        "wick": 1157,
-        "not_first": 7754,
-        "bandwidth": 978,
-        "min_day": 3611,
-        "cooldown": 952,
-        "min_partial": 17,
-        "open_end": 4,
-        "no_atr": 805,
-        "split": 8,
-        "gap": 177,
-        "cap_positions": 1133
+        "fin": 271,
+        "mcap": 1305,
+        "illiquid": 634,
+        "wick": 1167,
+        "not_first": 7850,
+        "bandwidth": 981,
+        "min_day": 3667,
+        "cooldown": 953,
+        "min_partial": 18,
+        "no_atr": 876,
+        "split": 9,
+        "open_end": 3,
+        "gap": 182,
+        "cap_positions": 1134
       },
-      "until": "2026-11-18",
+      "until": "2026-11-19",
       "stale": false,
       "computing": false,
       "cond_test": {
@@ -4845,23 +4879,34 @@
       "key": "stochgc",
       "name": "📈 눌림 골든크로스",
       "available": true,
-      "n": 124,
+      "n": 129,
       "open": 4,
       "win_rate": 100.0,
-      "avg_ret": 7.64,
-      "cum_ret": 948.0,
+      "avg_ret": 7.53,
+      "cum_ret": 971.5,
       "pf": 999.0,
-      "avg_hold_days": 22.0,
-      "open_avg_ret": -25.19,
+      "avg_hold_days": 22.5,
+      "open_avg_ret": -22.79,
       "closed_stocks": [
+        {
+          "date": "20261119",
+          "entry_date": "20261119",
+          "code": "032350",
+          "name": "롯데관광개발",
+          "buy": 11510,
+          "sell": 11861,
+          "ret": 3.05,
+          "reason": "giveback",
+          "days": 0
+        },
         {
           "date": "20261105",
           "entry_date": "20261023",
           "code": "005500",
           "name": "삼진제약",
-          "buy": 19530,
-          "sell": 20100,
-          "ret": 2.92,
+          "buy": 19260,
+          "sell": 20150,
+          "ret": 4.62,
           "reason": "giveback",
           "days": 9
         },
@@ -5735,6 +5780,17 @@
           "days": 4
         },
         {
+          "date": "20250715",
+          "entry_date": "20250623",
+          "code": "362320",
+          "name": "청담글로벌",
+          "buy": 6100,
+          "sell": 6732,
+          "ret": 10.36,
+          "reason": "giveback",
+          "days": 16
+        },
+        {
           "date": "20250714",
           "entry_date": "20250702",
           "code": "016710",
@@ -5843,6 +5899,17 @@
           "ret": 4.5,
           "reason": "giveback",
           "days": 3
+        },
+        {
+          "date": "20250311",
+          "entry_date": "20240709",
+          "code": "008040",
+          "name": "사조동아원",
+          "buy": 1023,
+          "sell": 1054,
+          "ret": 3.02,
+          "reason": "giveback",
+          "days": 160
         },
         {
           "date": "20241122",
@@ -6065,6 +6132,17 @@
           "days": 1
         },
         {
+          "date": "20220126",
+          "entry_date": "20220125",
+          "code": "008040",
+          "name": "사조동아원",
+          "buy": 1145,
+          "sell": 1174,
+          "ret": 2.53,
+          "reason": "giveback",
+          "days": 1
+        },
+        {
           "date": "20211126",
           "entry_date": "20211108",
           "code": "035150",
@@ -6085,6 +6163,17 @@
           "ret": 13.34,
           "reason": "giveback",
           "days": 12
+        },
+        {
+          "date": "20210824",
+          "entry_date": "20210824",
+          "code": "148150",
+          "name": "세경하이테크",
+          "buy": 8343,
+          "sell": 8580,
+          "ret": 2.84,
+          "reason": "giveback",
+          "days": 0
         },
         {
           "date": "20210806",
@@ -6225,57 +6314,59 @@
           "code": "212560",
           "name": "네오오토",
           "buy": 11210,
-          "cur": 9190,
-          "ret": -18.02,
-          "days": 30
+          "cur": 9290,
+          "ret": -17.13,
+          "days": 31
         },
         {
           "date": "2026-09-22",
           "code": "462860",
           "name": "더즌",
           "buy": 3250,
-          "cur": 1836,
-          "ret": -43.51,
-          "days": 36
+          "cur": 1875,
+          "ret": -42.31,
+          "days": 38
         },
         {
           "date": "2026-08-31",
           "code": "018290",
           "name": "브이티",
           "buy": 13850,
-          "cur": 10620,
-          "ret": -23.32,
-          "days": 53
+          "cur": 11140,
+          "ret": -19.57,
+          "days": 54
         },
         {
           "date": "2026-05-08",
           "code": "002150",
           "name": "도화엔지니어링",
           "buy": 5863,
-          "cur": 4930,
-          "ret": -15.91,
-          "days": 130
+          "cur": 5150,
+          "ret": -12.16,
+          "days": 131
         }
       ],
       "period": {
         "from": "2020-06-23",
-        "to": "2026-10-23"
+        "to": "2026-11-19"
       },
-      "settings_fp": "767213065961@2026-11-18",
-      "computed_at": "2026-11-18 16:11",
+      "settings_fp": "767213065961@2026-11-19",
+      "computed_at": "2026-11-19 16:21",
       "note": "과거 시뮬 · 신호(스토캐스틱 골든크로스·이평·거래량) 다음 거래일 시가(분봉 있으면 09:01) 진입 · 청산 = 지금 자동매매 설정(물타기·⚡·트레일링·마지노선, 과매도 게이트는 전일 일봉) · 수익률 = 총매도÷총매수 · 미청산은 평단 대비 마지막 종가로 따로 · 시총·재무 = 현재 값",
       "stats": {
-        "mcap": 1307,
-        "min_partial": 99,
-        "min_day": 9083,
+        "mcap": 1305,
+        "min_partial": 106,
+        "min_day": 10055,
         "open_end": 7,
-        "illiquid": 18,
-        "fin": 250,
+        "illiquid": 19,
+        "fin": 251,
+        "min_scaled": 8,
+        "min_unit": 2,
+        "split": 3,
         "cooldown": 2,
-        "split": 2,
-        "cap_positions": 62
+        "cap_positions": 63
       },
-      "until": "2026-11-18",
+      "until": "2026-11-19",
       "stale": false,
       "computing": false,
       "cond_test": {
@@ -6434,7 +6525,7 @@
       "cum_ret": 78.2,
       "pf": 1.3,
       "avg_hold_days": 32.4,
-      "open_avg_ret": -3.88,
+      "open_avg_ret": -0.69,
       "closed_stocks": [
         {
           "date": "20261023",
@@ -6894,26 +6985,26 @@
           "code": "009320",
           "name": "아진전자부품",
           "buy": 962,
-          "cur": 965,
-          "ret": 0.31,
-          "days": 2
+          "cur": 969,
+          "ret": 0.73,
+          "days": 3
         },
         {
           "date": "2026-11-09",
           "code": "005320",
           "name": "온타이드",
           "buy": 1090,
-          "cur": 1002,
-          "ret": -8.07,
-          "days": 7
+          "cur": 1067,
+          "ret": -2.11,
+          "days": 8
         }
       ],
       "period": {
         "from": "2023-06-16",
         "to": "2026-11-16"
       },
-      "settings_fp": "bce52a3a6607@2026-11-18@lab129-2026-07-15",
-      "computed_at": "2026-11-18 16:11",
+      "settings_fp": "bce52a3a6607@2026-11-19@lab129-2026-07-15",
+      "computed_at": "2026-11-19 16:21",
       "note": "진입 = 세력분석 랩 스냅샷 이벤트(이격 ≤ 0 · 순매수 ≥ Test 금액) + 랩 이후 실시간 진입 · 청산 = 일봉 종가로 익절·손절·최대보유 · 랭킹 재계산·신규포착 일수는 미반영(랩 이벤트는 순매수 20억 이상으로 뽑힌 것) · 시총 = 현재 값",
       "stats": {
         "disp": 51,
@@ -6922,7 +7013,7 @@
         "mcap": 0,
         "overlap": 2
       },
-      "until": "2026-11-18",
+      "until": "2026-11-19",
       "stale": false,
       "computing": false,
       "cond_test": {
@@ -7204,14 +7295,14 @@
         "from": "2025-05-02",
         "to": "2026-11-06"
       },
-      "settings_fp": "388951ad0ad6@2026-11-18",
-      "computed_at": "2026-11-18 16:11",
+      "settings_fp": "388951ad0ad6@2026-11-19",
+      "computed_at": "2026-11-19 16:21",
       "note": "daily_ohlcv 전 기간 · 당일 시가 매수 → 당일 종가 매도 · 시총 = 현재 값",
       "stats": {
         "match": 26,
         "scope": 5
       },
-      "until": "2026-11-18",
+      "until": "2026-11-19",
       "stale": false,
       "computing": false,
       "cond_test": {
