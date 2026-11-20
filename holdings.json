@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20 07:00",
+  "updated": "2026-11-20 09:49",
   "holdings": [
     {
       "code": "000270",
@@ -214,14 +214,16 @@
     {
       "code": "017800",
       "name": "현대엘리베이터",
-      "shares": 3,
-      "avgPrice": 75166,
-      "buyLevel": 1,
+      "shares": 6,
+      "avgPrice": 68233,
+      "buyLevel": 2,
       "maxLevel": 7,
       "dps": 14010,
       "plan": {
-        "water": 63800,
-        "waterQty": 3
+        "water": 57900,
+        "waterQty": 7,
+        "trailArm": 81900,
+        "trailQty": 2
       }
     },
     {
