@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21 04:25",
+ "updated": "2026-11-21 04:30",
  "holdings": [
   {
    "code": "KRW-BTC",
@@ -97,12 +97,12 @@
   "monthRealized": 379500,
   "yearRealized": 2109506,
   "cumRealized": 2109506,
-  "acctMonthRealized": 520677,
-  "acctYearRealized": -5780708,
-  "acctCumRealized": 7310747,
+  "acctMonthRealized": 551646,
+  "acctYearRealized": -5749740,
+  "acctCumRealized": 7341715,
   "acctSince": "2020-11-24",
-  "todayRealized": 43569,
-  "weekRealized": 10571,
+  "todayRealized": 74537,
+  "weekRealized": 41540,
   "realizedSeries": [
    {
     "d": "2025-10-18",
@@ -1326,7 +1326,7 @@
    },
    {
     "d": "2026-11-21",
-    "v": 43569
+    "v": 74537
    }
   ],
   "acctQuality": {
@@ -1385,7 +1385,7 @@
     "TOKAMAK": "ok",
     "TRX": "ok",
     "TSHP": "ok",
-    "USDC": "mismatch(재구성 4157.11193564 vs 잔고 3619.53914833)",
+    "USDC": "mismatch(재구성 2667.48000000 vs 잔고 2129.90721269)",
     "USDT": "ok",
     "WAVES": "ok",
     "XCORE": "ok",
