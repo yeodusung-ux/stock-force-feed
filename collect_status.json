@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23 07:01:19",
+  "updated": "2026-11-23 07:05:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 18916,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 15
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -89,15 +89,15 @@
       "table": "signal_log",
       "label": "세력신호",
       "tr": "파생",
-      "rows": 4218,
+      "rows": 4220,
       "codes": 1418,
       "target": 2370,
       "first": "2026-07-02",
-      "last": "2026-11-22",
+      "last": "2026-11-23",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-22 · 4,218행",
+      "fmt": "최신 11-23 · 4,220행",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -160,10 +160,10 @@
       "target": 2370,
       "first": "20250416",
       "last": "20261118",
-      "progress_pct": null,
+      "progress_pct": 100,
       "busy": false,
-      "state": "idle",
-      "fmt": "최신 11-18 · 114행",
+      "state": "done",
+      "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
@@ -175,10 +175,10 @@
       "target": 2370,
       "first": "20250409",
       "last": "20261119",
-      "progress_pct": null,
-      "busy": false,
-      "state": "idle",
-      "fmt": "최신 11-19 · 82,714행",
+      "progress_pct": 0,
+      "busy": true,
+      "state": "busy",
+      "fmt": "",
       "schedule": "장외 5분주기(09:00-15:30 제외)"
     },
     {
