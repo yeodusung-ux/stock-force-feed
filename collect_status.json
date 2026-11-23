@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23 18:30:07",
+  "updated": "2026-11-23 18:35:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 18916,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 32
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -74,15 +74,15 @@
       "table": "match",
       "label": "매칭",
       "tr": "파생",
-      "rows": 102147,
-      "codes": 2517,
+      "rows": 102544,
+      "codes": 2516,
       "target": 2370,
       "first": "2026-04-15",
       "last": "2026-11-23",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-23 · 102,147행",
+      "fmt": "최신 11-23 · 102,544행",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,478종목(최대 144일)",
+      "fmt": "미도달 2,477종목(최대 144일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2478,
+        "behind": 2477,
         "max_lag": 144,
         "latest": "2026-11-23",
         "total": 2484
@@ -125,30 +125,30 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 18730,
-      "codes": 565,
+      "rows": 18952,
+      "codes": 569,
       "target": 2370,
       "first": "2025-02-03",
-      "last": "2026-11-20",
+      "last": "2026-11-23",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-20 · 18,730행",
+      "fmt": "최신 11-23 · 18,952행",
       "schedule": ""
     },
     {
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 41845,
+      "rows": 41854,
       "codes": 2087,
       "target": 2370,
       "first": "2024-07-05",
-      "last": "2026-11-20",
+      "last": "2026-11-23",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-20 · 41,845행",
+      "fmt": "최신 11-23 · 41,854행",
       "schedule": ""
     },
     {
