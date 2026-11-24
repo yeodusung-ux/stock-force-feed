@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24 18:30:06",
+  "updated": "2026-11-24 18:35:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 22152,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 32
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -125,30 +125,30 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 18956,
-      "codes": 569,
+      "rows": 19069,
+      "codes": 571,
       "target": 2370,
       "first": "2025-02-03",
       "last": "2026-11-24",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-24 · 18,956행",
+      "fmt": "최신 11-24 · 19,069행",
       "schedule": ""
     },
     {
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 41854,
+      "rows": 41860,
       "codes": 2087,
       "target": 2370,
       "first": "2024-07-05",
-      "last": "2026-11-23",
+      "last": "2026-11-24",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-23 · 41,854행",
+      "fmt": "최신 11-24 · 41,860행",
       "schedule": ""
     },
     {
