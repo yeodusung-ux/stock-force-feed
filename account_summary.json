@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26 07:00",
+  "updated": "2026-11-26 07:01",
   "todayRealized": 0,
   "weekRealized": 0,
   "realizedSeries": [
@@ -1550,6 +1550,10 @@
     {
       "d": "2026-11-25",
       "v": 0
+    },
+    {
+      "d": "2026-11-26",
+      "v": 0
     }
   ],
   "totalBuying": 63458770,
@@ -1564,9 +1568,9 @@
   "primary_account": "3699285811",
   "accounts": {
     "5101152910": {
-      "updated": "2026-11-26 07:00",
-      "todayRealized": null,
-      "weekRealized": null,
+      "updated": "2026-11-26 07:01",
+      "todayRealized": 0,
+      "weekRealized": 0,
       "realizedSeries": [],
       "totalBuying": 1681860,
       "totalValue": 1611770,
@@ -1574,12 +1578,12 @@
       "profitRate": -4.38,
       "deposit": 8304328,
       "balanceAsset": 9912671,
-      "monthRealized": null,
-      "yearRealized": null,
-      "cumRealized": null
+      "monthRealized": -33963,
+      "yearRealized": -33963,
+      "cumRealized": 322211
     },
     "5931460210": {
-      "updated": "2026-11-26 07:00",
+      "updated": "2026-11-26 07:01",
       "todayRealized": null,
       "weekRealized": null,
       "realizedSeries": [],
@@ -1594,7 +1598,7 @@
       "cumRealized": null
     },
     "6070547210": {
-      "updated": "2026-11-26 07:00",
+      "updated": "2026-11-26 07:01",
       "todayRealized": null,
       "weekRealized": null,
       "realizedSeries": [],
@@ -1609,7 +1613,7 @@
       "cumRealized": null
     },
     "6138743810": {
-      "updated": "2026-11-26 07:00",
+      "updated": "2026-11-26 07:01",
       "todayRealized": null,
       "weekRealized": null,
       "realizedSeries": [],
