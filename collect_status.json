@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25 20:45:05",
+  "updated": "2026-11-25 20:50:07",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 21116,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 30
+    "heartbeat_age_sec": 32
   },
   "collections": [
     {
@@ -230,15 +230,15 @@
       "table": "minute_ohlcv",
       "label": "분봉원본",
       "tr": "opt10080",
-      "rows": 15748227,
+      "rows": 15758194,
       "codes": 1367,
       "target": 2369,
       "first": "2025-08-01 09:00",
       "last": "2026-11-25 20:00",
       "progress_pct": null,
-      "busy": true,
-      "state": "busy",
-      "fmt": "",
+      "busy": false,
+      "state": "idle",
+      "fmt": "최신 11-25 · 15,758,194행",
       "schedule": "저녁 자동(이어받기·주1회)+원격"
     },
     {
