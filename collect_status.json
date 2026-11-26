@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26 18:30:09",
+  "updated": "2026-11-26 18:35:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 19288,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 33
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,479종목(최대 147일)",
+      "fmt": "미도달 2,478종목(최대 147일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2479,
+        "behind": 2478,
         "max_lag": 147,
         "latest": "2026-11-26",
         "total": 2485
@@ -125,30 +125,30 @@
       "table": "news_volume",
       "label": "뉴스량",
       "tr": "뉴스크롤",
-      "rows": 19187,
-      "codes": 573,
+      "rows": 19293,
+      "codes": 575,
       "target": 2368,
       "first": "2025-02-03",
-      "last": "2026-11-25",
+      "last": "2026-11-26",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-25 · 19,187행",
+      "fmt": "최신 11-26 · 19,293행",
       "schedule": ""
     },
     {
       "table": "dart_insider",
       "label": "내부자",
       "tr": "DART",
-      "rows": 41868,
+      "rows": 41883,
       "codes": 2087,
       "target": 2368,
       "first": "2024-07-05",
-      "last": "2026-11-25",
+      "last": "2026-11-26",
       "progress_pct": null,
       "busy": false,
       "state": "idle",
-      "fmt": "최신 11-25 · 41,868행",
+      "fmt": "최신 11-26 · 41,883행",
       "schedule": ""
     },
     {
