@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-12 15:23",
+ "updated": "2026-11-26 13:34",
  "auto_trade_enabled": true,
  "auto_trade_saved": true,
  "emergency_stop": false,
  "emergency_active": false,
  "global": {
   "fx_target_enabled": true,
-  "fx_target_rate": 1500.0,
+  "fx_target_rate": 1300.0,
   "fx_target_gap": 100.0,
   "fx_target_steps": 5,
   "fx_live_enabled": true,
@@ -21,7 +21,7 @@
   "KRW-USDT": {
    "interval": 4,
    "fixed_base": null,
-   "sell_profit_threshold": -5.0,
+   "sell_profit_threshold": 0.0,
    "trim_enabled": false,
    "target_mode": "fixed",
    "target_value": 0.0,
@@ -32,7 +32,7 @@
   "KRW-USDC": {
    "interval": 4,
    "fixed_base": null,
-   "sell_profit_threshold": -5.0,
+   "sell_profit_threshold": 0.0,
    "trim_enabled": false,
    "target_mode": "percent",
    "target_value": 0.0,
