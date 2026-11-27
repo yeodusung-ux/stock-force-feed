@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27 15:40:06",
+  "updated": "2026-11-27 15:45:05",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 20620,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 31
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -59,15 +59,15 @@
       "table": "daily_ohlcv",
       "label": "일봉",
       "tr": "opt10081",
-      "rows": 1258176,
+      "rows": 1258485,
       "codes": 2526,
       "target": 2367,
       "first": "2020-02-20",
       "last": "2026-11-27",
-      "progress_pct": 12,
+      "progress_pct": 23,
       "busy": true,
       "state": "busy",
-      "fmt": "276/2,367 (12%)",
+      "fmt": "554/2,367 (23%)",
       "schedule": "매일 투17:05·창16:20·신15:35·일15:35"
     },
     {
@@ -112,10 +112,10 @@
       "progress_pct": 100,
       "busy": true,
       "state": "busy",
-      "fmt": "미도달 2,484종목(최대 148일)",
+      "fmt": "미도달 2,478종목(최대 148일)",
       "schedule": "상시(장외 이어받기)",
       "lag": {
-        "behind": 2484,
+        "behind": 2478,
         "max_lag": 148,
         "latest": "2026-11-27",
         "total": 2485
