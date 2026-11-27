@@ -1573,8 +1573,8 @@
   "accounts": {
     "5101152910": {
       "updated": "2026-11-28 07:00",
-      "todayRealized": null,
-      "weekRealized": null,
+      "todayRealized": 0,
+      "weekRealized": 8333,
       "realizedSeries": [],
       "totalBuying": 1688960,
       "totalValue": 1619380,
@@ -1582,9 +1582,9 @@
       "profitRate": -4.33,
       "deposit": 8305561,
       "balanceAsset": 9921509,
-      "monthRealized": null,
-      "yearRealized": null,
-      "cumRealized": null
+      "monthRealized": -25630,
+      "yearRealized": -25630,
+      "cumRealized": 330544
     },
     "5931460210": {
       "updated": "2026-11-28 07:00",
