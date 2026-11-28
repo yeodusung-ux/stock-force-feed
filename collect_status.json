@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28 18:30:06",
+  "updated": "2026-11-28 18:35:04",
   "system": {
     "connected": true,
     "trading": true,
@@ -7,7 +7,7 @@
     "pid": 18208,
     "watchdog_enabled": true,
     "restarts_today": 2,
-    "heartbeat_age_sec": 32
+    "heartbeat_age_sec": 30
   },
   "collections": [
     {
@@ -109,7 +109,7 @@
       "target": 2367,
       "first": "2023-03-24",
       "last": "2026-11-27",
-      "progress_pct": 100,
+      "progress_pct": null,
       "busy": true,
       "state": "busy",
       "fmt": "미도달 1,688종목(최대 148일)",
